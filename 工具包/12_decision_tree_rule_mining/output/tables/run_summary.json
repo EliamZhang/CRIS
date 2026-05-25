@@ -1,0 +1,89 @@
+{
+  "config": {
+    "input_path": "input/lending_club_loan_two.csv",
+    "output_dir": "output",
+    "target_col": "loan_status",
+    "target_mapping": {
+      "Fully Paid": 0,
+      "Charged Off": 1
+    },
+    "exclude_cols": [
+      "loan_status",
+      "issue_d",
+      "address",
+      "emp_title",
+      "earliest_cr_line",
+      "title"
+    ],
+    "test_size": 0.2,
+    "random_state": 42,
+    "tree_criterion": "gini",
+    "tree_splitter": "best",
+    "tree_max_depth": 3,
+    "tree_min_samples_leaf": 0.05,
+    "tree_min_samples_split": 0.05,
+    "positive_label": 1,
+    "negative_label": 0,
+    "grid_max_depths": [
+      2,
+      3,
+      4,
+      5
+    ],
+    "grid_min_samples_leaf": [
+      0.01,
+      0.03,
+      0.05
+    ],
+    "grid_min_samples_split": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "grid_criteria": [
+      "gini",
+      "entropy"
+    ],
+    "grid_top_n": 20
+  },
+  "raw_sample_cnt": 396030,
+  "raw_feature_cnt": 27,
+  "train_sample_cnt": 316824,
+  "test_sample_cnt": 79206,
+  "rule_cnt": 8,
+  "best_rule_by_bad_rate": {
+    "leaf_id": 14,
+    "sample_cnt": 16002,
+    "good_cnt": 8690,
+    "bad_cnt": 7312,
+    "bad_rate": 0.45694288213973255,
+    "hit_rate": 0.05050753730777972,
+    "recall_rate": 0.11767356529016061,
+    "lift": 2.3298218753586957,
+    "rule_name": "sub_grade > 11.5 and sub_grade > 19.5 and dti > 20.795"
+  },
+  "metrics": [
+    {
+      "dataset": "train",
+      "sample_cnt": 316824,
+      "bad_cnt": 62138,
+      "bad_rate": 0.19612781859960104,
+      "auc": 0.6862324747537961,
+      "accuracy": 0.803872181400399,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    {
+      "dataset": "test",
+      "sample_cnt": 79206,
+      "bad_cnt": 15535,
+      "bad_rate": 0.19613413125268286,
+      "auc": 0.6843929510366134,
+      "accuracy": 0.8038658687473171,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    }
+  ]
+}

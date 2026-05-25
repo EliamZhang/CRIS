@@ -1,0 +1,5 @@
+
+# Ignore large csv/excel files > 50MB
+工具包/11_rule_crosstab_analysis/input/lending_club_loan_two.csv
+工具包/12_decision_tree_rule_mining/input/lending_club_loan_two.csv
+工具包/13_lending_club_tree_rule_mining/input/lending_club_loan_two.csv

@@ -1,0 +1,9 @@
+﻿leaf_id,sample_cnt,good_cnt,bad_cnt,bad_rate,hit_rate,recall_rate,lift,rule,rule_readable
+14,16002.0,8690.0,7312.0,0.456943,0.050508,0.117674,2.329822,sub_grade > 11.5 and sub_grade > 19.5 and dti > 20.795,"sub_grade in ['E1', 'E2', 'E3', 'E4', 'E5', 'F1', 'F2', 'F3', 'F4', 'F5', 'G1', 'G2', 'G3', 'G4', 'G5'] and dti > 20.795"
+13,21057.0,13762.0,7295.0,0.346441,0.066463,0.1174,1.766402,sub_grade > 11.5 and sub_grade > 19.5 and dti <= 20.795,"sub_grade in ['E1', 'E2', 'E3', 'E4', 'E5', 'F1', 'F2', 'F3', 'F4', 'F5', 'G1', 'G2', 'G3', 'G4', 'G5'] and dti <= 20.795"
+11,32958.0,22505.0,10453.0,0.317161,0.104026,0.168222,1.617115,sub_grade > 11.5 and sub_grade <= 19.5 and dti > 22.025,"sub_grade in ['C3', 'C4', 'C5', 'D1', 'D2', 'D3', 'D4', 'D5'] and dti > 22.025"
+10,65607.0,50261.0,15346.0,0.233908,0.207077,0.246966,1.19263,sub_grade > 11.5 and sub_grade <= 19.5 and dti <= 22.025,"sub_grade in ['C3', 'C4', 'C5', 'D1', 'D2', 'D3', 'D4', 'D5'] and dti <= 22.025"
+7,21727.0,17256.0,4471.0,0.205781,0.068578,0.071953,1.049218,sub_grade <= 11.5 and sub_grade > 7.5 and dti > 21.745,"sub_grade in ['B4', 'B5', 'C1', 'C2'] and dti > 21.745"
+6,53536.0,45544.0,7992.0,0.149283,0.168977,0.128617,0.76115,sub_grade <= 11.5 and sub_grade > 7.5 and dti <= 21.745,"sub_grade in ['B4', 'B5', 'C1', 'C2'] and dti <= 21.745"
+4,69446.0,62133.0,7313.0,0.105305,0.219194,0.11769,0.536919,sub_grade <= 11.5 and sub_grade <= 7.5 and sub_grade > 3.5,"sub_grade in ['A5', 'B1', 'B2', 'B3']"
+3,36491.0,34535.0,1956.0,0.053602,0.115178,0.031478,0.273303,sub_grade <= 11.5 and sub_grade <= 7.5 and sub_grade <= 3.5,"sub_grade in ['A1', 'A2', 'A3', 'A4']"

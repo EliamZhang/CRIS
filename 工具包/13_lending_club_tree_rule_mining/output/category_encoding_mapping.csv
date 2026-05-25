@@ -1,0 +1,85 @@
+﻿feature,raw_value,encoded_value
+term, 36 months,0
+term, 60 months,1
+grade,A,0
+grade,B,1
+grade,C,2
+grade,D,3
+grade,E,4
+grade,F,5
+grade,G,6
+sub_grade,A1,0
+sub_grade,A2,1
+sub_grade,A3,2
+sub_grade,A4,3
+sub_grade,A5,4
+sub_grade,B1,5
+sub_grade,B2,6
+sub_grade,B3,7
+sub_grade,B4,8
+sub_grade,B5,9
+sub_grade,C1,10
+sub_grade,C2,11
+sub_grade,C3,12
+sub_grade,C4,13
+sub_grade,C5,14
+sub_grade,D1,15
+sub_grade,D2,16
+sub_grade,D3,17
+sub_grade,D4,18
+sub_grade,D5,19
+sub_grade,E1,20
+sub_grade,E2,21
+sub_grade,E3,22
+sub_grade,E4,23
+sub_grade,E5,24
+sub_grade,F1,25
+sub_grade,F2,26
+sub_grade,F3,27
+sub_grade,F4,28
+sub_grade,F5,29
+sub_grade,G1,30
+sub_grade,G2,31
+sub_grade,G3,32
+sub_grade,G4,33
+sub_grade,G5,34
+emp_length,1 year,0
+emp_length,10+ years,1
+emp_length,2 years,2
+emp_length,3 years,3
+emp_length,4 years,4
+emp_length,5 years,5
+emp_length,6 years,6
+emp_length,7 years,7
+emp_length,8 years,8
+emp_length,9 years,9
+emp_length,< 1 year,10
+emp_length,__MISSING__,11
+home_ownership,ANY,0
+home_ownership,MORTGAGE,1
+home_ownership,NONE,2
+home_ownership,OTHER,3
+home_ownership,OWN,4
+home_ownership,RENT,5
+verification_status,Not Verified,0
+verification_status,Source Verified,1
+verification_status,Verified,2
+purpose,car,0
+purpose,credit_card,1
+purpose,debt_consolidation,2
+purpose,educational,3
+purpose,home_improvement,4
+purpose,house,5
+purpose,major_purchase,6
+purpose,medical,7
+purpose,moving,8
+purpose,other,9
+purpose,renewable_energy,10
+purpose,small_business,11
+purpose,vacation,12
+purpose,wedding,13
+initial_list_status,f,0
+initial_list_status,w,1
+application_type,DIRECT_PAY,0
+application_type,INDIVIDUAL,1
+application_type,JOINT,2

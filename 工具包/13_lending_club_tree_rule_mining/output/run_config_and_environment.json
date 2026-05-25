@@ -1,0 +1,29 @@
+{
+  "config": {
+    "input_path": "input/lending_club_loan_two.csv",
+    "output_dir": "output",
+    "target_col": "loan_status",
+    "positive_label": "Charged Off",
+    "negative_label": "Fully Paid",
+    "drop_cols": [
+      "issue_d",
+      "address",
+      "emp_title",
+      "earliest_cr_line",
+      "title"
+    ],
+    "missing_value": -9999,
+    "test_size": 0.2,
+    "random_state": 42,
+    "max_depth": 3,
+    "min_samples_leaf": 0.05,
+    "min_samples_split": 0.05,
+    "criterion": "gini",
+    "splitter": "best"
+  },
+  "python": "3.11.9 (tags/v3.11.9:de54cf5, Apr  2 2024, 10:12:12) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.22631-SP0",
+  "pandas": "2.2.3",
+  "numpy": "2.2.2",
+  "sklearn": "1.8.0"
+}

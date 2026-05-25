@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label=<sub_grade &le; 11.5<br/>gini = 0.315<br/>samples = 316824<br/>value = [254686, 62138]<br/>class = Fully Paid>, fillcolor="#eba069"] ;
+1 [label=<sub_grade &le; 7.5<br/>gini = 0.211<br/>samples = 181200<br/>value = [159468, 21732]<br/>class = Fully Paid>, fillcolor="#e99254"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<sub_grade &le; 3.5<br/>gini = 0.16<br/>samples = 105937<br/>value = [96668, 9269]<br/>class = Fully Paid>, fillcolor="#e78d4c"] ;
+1 -> 2 ;
+3 [label=<gini = 0.101<br/>samples = 36491<br/>value = [34535, 1956]<br/>class = Fully Paid>, fillcolor="#e68844"] ;
+2 -> 3 ;
+4 [label=<gini = 0.188<br/>samples = 69446<br/>value = [62133.0, 7313.0]<br/>class = Fully Paid>, fillcolor="#e89050"] ;
+2 -> 4 ;
+5 [label=<dti &le; 21.745<br/>gini = 0.276<br/>samples = 75263<br/>value = [62800, 12463]<br/>class = Fully Paid>, fillcolor="#ea9a60"] ;
+1 -> 5 ;
+6 [label=<gini = 0.254<br/>samples = 53536<br/>value = [45544.0, 7992.0]<br/>class = Fully Paid>, fillcolor="#ea975c"] ;
+5 -> 6 ;
+7 [label=<gini = 0.327<br/>samples = 21727<br/>value = [17256, 4471]<br/>class = Fully Paid>, fillcolor="#eca26c"] ;
+5 -> 7 ;
+8 [label=<sub_grade &le; 19.5<br/>gini = 0.418<br/>samples = 135624<br/>value = [95218, 40406]<br/>class = Fully Paid>, fillcolor="#f0b68d"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<dti &le; 22.025<br/>gini = 0.386<br/>samples = 98565<br/>value = [72766, 25799]<br/>class = Fully Paid>, fillcolor="#eeae7f"] ;
+8 -> 9 ;
+10 [label=<gini = 0.358<br/>samples = 65607<br/>value = [50261, 15346]<br/>class = Fully Paid>, fillcolor="#eda775"] ;
+9 -> 10 ;
+11 [label=<gini = 0.433<br/>samples = 32958<br/>value = [22505, 10453]<br/>class = Fully Paid>, fillcolor="#f1bc95"] ;
+9 -> 11 ;
+12 [label=<dti &le; 20.795<br/>gini = 0.478<br/>samples = 37059<br/>value = [22452, 14607]<br/>class = Fully Paid>, fillcolor="#f6d3ba"] ;
+8 -> 12 ;
+13 [label=<gini = 0.453<br/>samples = 21057<br/>value = [13762, 7295]<br/>class = Fully Paid>, fillcolor="#f3c4a2"] ;
+12 -> 13 ;
+14 [label=<gini = 0.496<br/>samples = 16002<br/>value = [8690, 7312]<br/>class = Fully Paid>, fillcolor="#fbebe0"] ;
+12 -> 14 ;
+}

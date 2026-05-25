@@ -1,0 +1,9 @@
+pandas>=1.5.0
+numpy>=1.23.0
+matplotlib>=3.6.0
+openpyxl>=3.0.0
+
+# 可选：如需尽量复刻 notebook 中 scorecardpy.woebin 的树分箱逻辑，可以额外安装：
+# scorecardpy>=0.1.9.7
+# scikit-learn>=1.1.0
+# seaborn>=0.12.0

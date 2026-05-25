@@ -1,0 +1,48 @@
+{
+  "config": {
+    "input_path": "input/data_v5.xlsx",
+    "output_dir": "output",
+    "sample_id_col": "sample_id",
+    "month_col": "sample_month",
+    "new_score_col": "risk_score",
+    "old_card_col": "card_level",
+    "target_col": "is_dlq_30d",
+    "new_score_reject_cutoff": 6,
+    "old_card_reject_levels": [
+      "D",
+      "E"
+    ],
+    "risk_score_bins": [
+      0,
+      2,
+      3,
+      4,
+      5,
+      6,
+      10
+    ],
+    "card_level_order": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "save_plots": true,
+    "grid_min_score_cutoff": 2,
+    "grid_max_score_cutoff": 8,
+    "grid_top_n": 20
+  },
+  "summary": {
+    "total_sample_cnt": 50000,
+    "observed_target_sample_cnt": 40407,
+    "missing_target_sample_cnt": 9593,
+    "observed_bad_rate": 0.07793204147796173,
+    "old_card_pass_rate": 0.80814,
+    "new_score_pass_rate": 0.86292,
+    "pass_rate_uplift": 0.05478000000000005,
+    "new_score_pass_observed_bad_rate": 0.03803365317758309,
+    "new_pass_old_reject_estimated_bad_rate": 0.0665081747441576,
+    "old_pass_new_reject_observed_bad_rate": 0.3779448621553885
+  }
+}

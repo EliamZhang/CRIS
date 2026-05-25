@@ -1,0 +1,159 @@
+{
+  "config": {
+    "input_file": "input/data_v4.xlsx",
+    "output_dir": "output",
+    "target_col": "is_dlq_30d",
+    "sample_id_col": "sample_id",
+    "sample_month_col": "sample_month",
+    "new_features": [
+      "risk_score",
+      "ovd_order_cnt_6m_grade"
+    ],
+    "cross_index": "risk_score",
+    "cross_columns": "ovd_order_cnt_6m_grade",
+    "existing_rules": [
+      [
+        "positive_biz_cnt_1y_grade",
+        "positive_biz_cnt_1y_grade < 2"
+      ],
+      [
+        "adr_stability_grade",
+        "adr_stability_grade < 2"
+      ]
+    ],
+    "single_var_rules": [
+      [
+        "positive_biz_cnt_1y_grade",
+        "positive_biz_cnt_1y_grade < 2"
+      ],
+      [
+        "adr_stability_grade",
+        "adr_stability_grade < 2"
+      ],
+      [
+        "risk_score",
+        "risk_score > 5"
+      ]
+    ],
+    "cross_rules": [
+      [
+        "positive_biz_cnt_1y_grade",
+        "positive_biz_cnt_1y_grade < 2"
+      ],
+      [
+        "adr_stability_grade",
+        "adr_stability_grade < 2"
+      ],
+      [
+        "risk_positive_0",
+        "(risk_score >= 7) & (positive_biz_cnt_1y_grade >= 2)"
+      ],
+      [
+        "risk_positive_1",
+        "(risk_score == 8) & (positive_biz_cnt_1y_grade == 1)"
+      ],
+      [
+        "risk_positive_2",
+        "(risk_score == 6) & (positive_biz_cnt_1y_grade == 5)"
+      ]
+    ],
+    "fallback_max_bins": 6,
+    "low_cardinality_threshold": 20,
+    "grid_candidate_features": [
+      "risk_score",
+      "ovd_order_cnt_6m_grade",
+      "positive_biz_cnt_1y_grade",
+      "adr_stability_grade"
+    ],
+    "grid_top_n": 30,
+    "grid_min_hit_rate": 0.01,
+    "grid_max_hit_rate": 0.4,
+    "grid_min_lift": 1.1,
+    "grid_min_bad_capture": 0.01,
+    "grid_pair_top_k_single_rules": 12
+  },
+  "data_overview": [
+    {
+      "metric": "raw_sample_cnt",
+      "value": 50000
+    },
+    {
+      "metric": "passed_observed_sample_cnt",
+      "value": 47430
+    },
+    {
+      "metric": "passed_observed_sample_pct",
+      "value": 0.9486
+    },
+    {
+      "metric": "overall_bad_rate",
+      "value": 0.09502424625764284
+    },
+    {
+      "metric": "input_columns",
+      "value": "sample_id, sample_month, adr_stability_grade, ovd_order_cnt_6m_grade, positive_biz_cnt_1y_grade, risk_score, is_dlq_30d"
+    }
+  ],
+  "top_existing_vars": [
+    {
+      "name": "positive_biz_cnt_1y_grade",
+      "iv": 0.32998129385968317,
+      "max_lift": 1.9867179246288753,
+      "method": "fallback"
+    },
+    {
+      "name": "adr_stability_grade",
+      "iv": 0.29121180337678887,
+      "max_lift": 1.876374718851509,
+      "method": "fallback"
+    }
+  ],
+  "top_new_vars": [
+    {
+      "name": "risk_score",
+      "iv": 2.4640509634777548,
+      "max_lift": 7.107263097982848,
+      "method": "fallback"
+    },
+    {
+      "name": "ovd_order_cnt_6m_grade",
+      "iv": 1.07780468767819,
+      "max_lift": 4.1797148618283995,
+      "method": "fallback"
+    }
+  ],
+  "single_rule_effect": [
+    {
+      "scenario": "single_risk_score_rule",
+      "raw_sample_cnt": 50000,
+      "before_passed_sample_cnt": 47430,
+      "after_passed_sample_cnt": 41359,
+      "rejected_sample_cnt": 6071,
+      "before_bad_rate": 0.09502424625764284,
+      "after_bad_rate": 0.04661621412509974,
+      "bad_rate_drop_abs": 0.048408032132543105,
+      "bad_rate_drop_pct": 0.5094282147873351,
+      "before_pass_rate": 0.9486,
+      "after_pass_rate": 0.82718,
+      "pass_rate_drop_abs": 0.12141999999999997,
+      "pass_rate_drop_pct": 0.12799915665190806
+    }
+  ],
+  "cross_rule_effect": [
+    {
+      "scenario": "cross_rule",
+      "raw_sample_cnt": 50000,
+      "before_passed_sample_cnt": 47430,
+      "after_passed_sample_cnt": 43846,
+      "rejected_sample_cnt": 3584,
+      "before_bad_rate": 0.09502424625764284,
+      "after_bad_rate": 0.059230032386078546,
+      "bad_rate_drop_abs": 0.0357942138715643,
+      "bad_rate_drop_pct": 0.37668505966902477,
+      "before_pass_rate": 0.9486,
+      "after_pass_rate": 0.87692,
+      "pass_rate_drop_abs": 0.07167999999999997,
+      "pass_rate_drop_pct": 0.07556398903647477
+    }
+  ]
+}
