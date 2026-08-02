@@ -1,7 +1,7 @@
 # rulelift
 
 `rulelift` 是一组彼此独立的风控规则分析子项目，面向规则开发、规则评估、策略调优和策略替换分析。  
-仓库当前包含 `10` 到 `17` 共 8 个子项目。每个子项目都可以单独运行，统一入口都是 `python run.py`，核心结果重点查看各自 `output/summary_report.xlsx`。
+仓库当前包含 `10` 到 `17` 共 8 个子项目。每个子项目都可以单独运行，统一入口都是 `python run.py`，核心结果重点查看各自 `output/summary_report.xlsx`（所有 csv / xlsx 结果会自动合并汇总到这一个文件里）。
 
 这份根目录 README 主要给业务同事看，帮助快速理解：
 
@@ -17,7 +17,8 @@
 - 每个子项目独立运行，不依赖其他子项目
 - 统一运行方式为 `python run.py`
 - 业务逻辑集中在各子项目 `src/*.py`
-- 表格结果统一汇总到各子项目自己的 `output/summary_report.xlsx`
+- 所有 csv 结果统一合并汇总到各子项目自己的 `output/summary_report.xlsx`（每个 csv 对应一个 sheet）
+- 运行结束后 csv 会被清理，`output/` 下只保留 `summary_report.xlsx`、图片和 `run_report.md` 等说明文件
 
 ## 项目地图
 
@@ -57,6 +58,15 @@
 - 哪些阈值规则的 lift 更高
 - 哪些规则命中率、坏账率、坏样本捕获更平衡
 
+**实际会得到的输出**
+
+- `01_variable_statistics.csv`：变量初筛统计（唯一值、空值率、众数占比）
+- `02_iv_summary.csv`：变量 IV 汇总
+- `03_bins_detail.csv`：变量分箱明细、WOE、bin IV
+- `04_rule_candidates_all.csv`：所有候选规则
+- `05_rule_candidates_selected.csv`：按配置阈值筛选后的规则
+- `figures/`：每个变量的分箱坏账率图
+
 **背后的方法论**
 
 - 先做变量基础统计
@@ -88,7 +98,15 @@
 
 - 哪些字段对最值得交叉分析
 - 哪些双变量组合能圈出更高风险样本
-- 哪些组合命中率太高，只是在描述“大多数人”
+- 哪些组合命中率太高，只是在描述”大多数人”
+
+**实际会得到的输出**
+
+- `03_info.txt`：数据概况
+- 各字段单变量坏账率、目标分布图
+- 固定交叉表、双变量交叉坏账率热力图
+- 自动交叉搜索的候选规则与推荐规则（Top N）
+- 自动搜索字段对的热力图
 
 **背后的方法论**
 
@@ -123,6 +141,14 @@
 - 决策树整体模型指标
 - 每条叶子规则的命中率、坏账率、lift
 - 不同树参数下的规则质量对比
+
+**实际会得到的输出**
+
+- 模型指标（AUC、准确率等）
+- 叶子规则明细与规则指标
+- `tree_grid_search_results.csv`：grid search 全部结果
+- `tree_grid_search_top_configs.csv`：grid search Top 配置
+- 规则 Markdown 汇总、数据画像和树结构图
 
 **背后的方法论**
 
@@ -159,6 +185,16 @@
 - 可读性更强的规则文本
 - 模型与规则的基础指标
 
+**实际会得到的输出**
+
+- `feature_summary.csv` / `data_describe.csv`：基础数据画像
+- `target_distribution.csv` + 图：目标分布
+- `category_encoding_mapping.csv`：类别变量编码映射
+- `model_metrics.csv`：模型指标
+- `rule_mining_results.csv`：挖掘出的规则
+- `decision_tree.dot` / `decision_tree.png`：树结构图
+- `run_config_and_environment.json`：运行配置与环境留档
+
 **背后的方法论**
 
 - 与 `12` 一样，核心仍然是决策树切分
@@ -190,6 +226,14 @@
 - 规则互相覆盖和纯命中分析
 - 命中 0 条、1 条、2 条以上规则的人群分布
 - 整套规则集的总体效果总结
+
+**实际会得到的输出**
+
+- 数据画像与目标分布
+- 挖掘出的规则集明细
+- 规则命中标记、互相覆盖矩阵
+- 纯命中分析（只被某条规则单独命中的部分）
+- 命中条数分布与规则集整体效果汇总
 
 **背后的方法论**
 
@@ -225,6 +269,13 @@
 - 调优前后命中率、通过率、坏账率的变化
 - 自动搜索得到的更优阈值候选
 
+**实际会得到的输出**
+
+- 变量分箱风险表现（`bins/`）
+- 规则命中与纯命中贡献
+- 调优前后效果对比
+- `07_grid_search_rule_candidates.csv`：阈值 grid search 候选规则
+
 **背后的方法论**
 
 - 先分析规则变量本身的分箱风险表现
@@ -257,6 +308,14 @@
 - 默认新增规则表现
 - 自动搜索得到的新增规则候选
 - 单变量新增和双变量新增的效果比较
+
+**实际会得到的输出**
+
+- 现有规则集表现
+- 单变量新增规则效果
+- 双变量新增规则效果
+- `07_grid_single_rule_candidates.csv` / 双变量 grid search 候选
+- 交叉热力图与运行摘要
 
 **背后的方法论**
 
@@ -291,6 +350,14 @@
 - 新策略和旧策略各自的人群分层表现
 - 替换后的风险估算结果
 - 不同 cutoff / 等级组合下的推荐方案
+
+**实际会得到的输出**
+
+- 新旧策略决策矩阵与分层表现
+- 替换风险估算表
+- 分箱坏账率图与替换效果图
+- `grid_search_results.csv` / `grid_search_top_configs.csv`：grid search 方案
+- `final_summary.json` / `analysis_report.txt`：最终结论
 
 **背后的方法论**
 
@@ -331,11 +398,19 @@ pip install -r requirements.txt
 python run.py
 ```
 
-如需指定输入输出：
+如需指定输入输出，各子项目均支持（默认值见各项目 README）：
 
 ```bash
 python run.py --input input/your_file.csv --output output
 ```
+
+部分子项目还有额外参数，例如：
+
+- `10`：`--target` 目标字段、`--lift` / `--hit-rate-min` / `--hit-rate-max` 规则筛选阈值
+- `13`：`--max-depth` 决策树最大深度
+- `17`：`--score-cutoff` 风险评分拒绝阈值、`--no-plots` 关闭图片输出
+
+运行完成后，`output/summary_report.xlsx` 就是汇总所有表格结果的核心文件。
 
 ## 如何选择项目
 
