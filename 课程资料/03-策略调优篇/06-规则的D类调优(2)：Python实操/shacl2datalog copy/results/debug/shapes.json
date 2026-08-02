@@ -1,0 +1,45 @@
+[
+  {
+    "uri": "http://example.org/WikidataPersonQuality",
+    "target_class": "http://example.org/Person",
+    "properties": 5,
+    "closed": false,
+    "constraints": [
+      {
+        "path": "http://example.org/name",
+        "constraints": [
+          "minCount: 1",
+          "maxCount: 1",
+          "datatype: http://www.w3.org/2001/XMLSchema#string"
+        ]
+      },
+      {
+        "path": "http://example.org/occupation",
+        "constraints": [
+          "minCount: 1",
+          "datatype: http://www.w3.org/2001/XMLSchema#string"
+        ]
+      },
+      {
+        "path": "http://example.org/birthDate",
+        "constraints": [
+          "maxCount: 1",
+          "datatype: http://www.w3.org/2001/XMLSchema#string"
+        ]
+      },
+      {
+        "path": "http://example.org/deathDate",
+        "constraints": [
+          "maxCount: 1",
+          "datatype: http://www.w3.org/2001/XMLSchema#string"
+        ]
+      },
+      {
+        "path": "http://example.org/nationality",
+        "constraints": [
+          "datatype: http://www.w3.org/2001/XMLSchema#string"
+        ]
+      }
+    ]
+  }
+]

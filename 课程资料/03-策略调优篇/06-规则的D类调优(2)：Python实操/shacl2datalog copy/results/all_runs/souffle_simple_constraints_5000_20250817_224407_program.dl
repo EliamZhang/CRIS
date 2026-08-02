@@ -1,0 +1,53 @@
+// ===== OPTIMIZATION DIRECTIVES =====
+.pragma "inline"
+.pragma "magic-transform" "*"
+
+// SHACL to Soufflé Datalog Conversion
+// Generated: 2025-08-17T22:43:36.210622
+// Generator: Enhanced SHACL to Datalog Converter
+
+// ===== DECLARATIONS =====
+.decl person(entity: symbol)
+.decl name(entity: symbol, value: symbol)
+.decl has_name(entity: symbol)
+.decl occupation(entity: symbol, value: symbol)
+.decl has_occupation(entity: symbol)
+.decl is_iri(entity: symbol)
+.decl is_literal(entity: symbol)
+.decl is_blank_node(entity: symbol)
+.decl has_language(value: symbol, lang: symbol)
+.decl violation(entity: symbol, constraint: symbol, message: symbol)
+
+// ===== FACTS =====
+
+// ===== RULES =====
+has_name(E) :- name(E, _).
+violation(E, "minCount", "Person must have a valid name") :-
+    person(E),
+    !has_name(E).
+violation(E, "minLength", "Person must have a valid name") :-
+    person(E),
+    name(E, V),
+    strlen(V) < 2.
+violation(E, "maxLength", "Person must have a valid name") :-
+    person(E),
+    name(E, V),
+    strlen(V) > 200.
+has_occupation(E) :- occupation(E, _).
+violation(E, "minCount", "Person must have at least one occupation") :-
+    person(E),
+    !has_occupation(E).
+violation(E, "minLength", "Person must have at least one occupation") :-
+    person(E),
+    occupation(E, V),
+    strlen(V) < 2.
+
+// ===== INPUT/OUTPUT =====
+.input has_language
+.input is_blank_node
+.input is_iri
+.input is_literal
+.input name
+.input occupation
+.input person
+.output violation

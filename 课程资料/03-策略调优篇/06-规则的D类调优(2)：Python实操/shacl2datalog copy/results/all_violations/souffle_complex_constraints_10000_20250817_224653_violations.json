@@ -1,0 +1,59 @@
+{
+  "run_id": "souffle_complex_constraints_10000_20250817_224653",
+  "system": "Souffl\u00e9",
+  "violations_count": 140,
+  "violations": [
+    {
+      "entity": "\"Q1417\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q1752\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q1817\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q555\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q558\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3102\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q720\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3547\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    }
+  ],
+  "output_dir": "results/all_runs/run_souffle_complex_constraints_10000_20250817_224653",
+  "memory_samples": 161
+}

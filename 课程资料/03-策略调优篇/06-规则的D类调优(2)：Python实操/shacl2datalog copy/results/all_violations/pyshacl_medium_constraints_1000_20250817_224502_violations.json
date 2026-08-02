@@ -1,0 +1,21 @@
+{
+  "run_id": "pyshacl_medium_constraints_1000_20250817_224502",
+  "system": "pySHACL",
+  "conforms": false,
+  "violations_count": 3,
+  "violations": [
+    {
+      "subject": "N7c96b6df508d4bdea8b87feb68309aca",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Ncb610f06b70a4af69c6a34233df7f4df",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N96d339f6f5cd4f9f89a053f48c81227c",
+      "message": "Birth date should be in date format if present"
+    }
+  ],
+  "results_text": "Validation Report\nConforms: False\nResults (3):\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1417>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1752>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Death date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:deathDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1817>\n\tResult Path: ex:deathDate\n\tMessage: Death date should be in date format if present\n"
+}

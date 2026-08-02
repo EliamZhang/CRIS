@@ -1,0 +1,4 @@
+shacl_file,shapes_count,properties_count,rules_count,declarations_count,conversion_success
+simple_constraints.ttl,1,2,7,10,True
+medium_constraints.ttl,1,5,20,16,True
+complex_constraints.ttl,2,7,24,16,True

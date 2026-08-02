@@ -1,0 +1,59 @@
+{
+  "run_id": "souffle_simple_constraints_5000_20250817_224407",
+  "system": "Souffl\u00e9",
+  "violations_count": 14,
+  "violations": [
+    {
+      "entity": "\"Q25148\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q31695\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q31704\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q31709\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q31738\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q25543\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q25642\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q4291\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q4288\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "entity": "\"Q9790\"",
+      "constraint": "minCount",
+      "message": "Person must have at least one occupation"
+    }
+  ],
+  "output_dir": "results/all_runs/run_souffle_simple_constraints_5000_20250817_224407",
+  "memory_samples": 163
+}

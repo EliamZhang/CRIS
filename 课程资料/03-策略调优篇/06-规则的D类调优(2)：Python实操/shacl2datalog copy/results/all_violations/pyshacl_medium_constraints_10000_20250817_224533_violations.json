@@ -1,0 +1,569 @@
+{
+  "run_id": "pyshacl_medium_constraints_10000_20250817_224533",
+  "system": "pySHACL",
+  "conforms": false,
+  "violations_count": 140,
+  "violations": [
+    {
+      "subject": "Na9fa66ffa82b4aae933bc2815e8c2293",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N10e0efad00e440548b0a92f3781b9f47",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N56e4163296384e909f63912798ca8c07",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N12e49c75dc3b4fc38f186b8302161baf",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N3f372983e7eb40f19da7adfe256b0eb6",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Na1277120eb0e4857a445b269cac27d24",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Na64de81f4a4743099d5da0b5e466499c",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N320f59318ed444b38703164e7c6266ec",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N7fbf732695fe470cb3bfd213993ba6ba",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N0ab7ca09bc294176ad3ef25177ba7c48",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nad03b7b8332543e8a66c150a0b38ccf2",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N08c5d03520b2478ea85ba25d7b3e516a",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N1de62d14db8f430581ba66468a3319c5",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N617468a545cf4bc3ae653490ea68cae1",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N3a3e185d480c4417b3d8a8edbbe70967",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N4849a6f8177148c3a1941fdbe1e1a295",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N870295a848244698a32ed5216c562ee8",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N915d8ac3500d446d87ebdc7dffdc95ba",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N97082dfce9a64f9cb4f5b2b51a893170",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nbc53b51c7b5c415eaa02d669eb538940",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Na938f0db9cda48138e85f9581a3f1568",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nef4cc6ad569347a3b6c1e82204025fed",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N63dd2db9debf40f291f07c032a731495",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Ne87835f2051f4bc7aa0780c682ce3f2b",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N3bb973db518a4c278e96bba144f3c79b",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nd2f2efcc1099494d9a34a445c3f171b0",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N288e25ae0a674ba9872af7ef76cd1af8",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N0e91c75ae8384cc4a047d7b17e6c6a6d",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N454bcfeb693b49e48b7c186cbbb7f28a",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N3352e218a8d346dab1ff2b3d720c54ef",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N954ef36adb284f28b6852eed5a6b35e6",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nd149b5ec030540b9bf6caa707cb60cae",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Na42a49ed9805444b9a7f7b67a8e51742",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N5eec5ce0a9134bac9c4634f2fb490f1f",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne912533b7e604b5f88da832364757316",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nd0558b635baf4aa28531bac0b59102fa",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N2866d41a0f6444d4921cbf7355b22400",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N9ca971c0c15240e5b0729f2b33e1770f",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nf952563fb1ca42f1b3afd5e8533c5bf5",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N9ee977e60cb0466d941b97ab96c4b572",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N4b0657b70c274469ab18197c40cf564b",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N4371e16f657f404e8313558fa561cbac",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nad3b17e7d18f4027a5fd7000853c7bee",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nb37f7831ef8c4a27871c1cb9703aa55f",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N47c97c3bde024571b364701556efa740",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N4b3b89f284464e43a1ab43fcbc498257",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N018164456a5d461785d58e66e04ff2a2",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N14b72ce574e24ef8adefc27d1e03bdef",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N694dd283dd634f42b5db44834adca718",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N3491497644fa4981926edebaff7a7a6e",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N57dfb50dab7a40afbd73219357c85fc3",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nd1d0e8b91b3a422684985e41b39bd9b2",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nde86715b14ac405d9db6871bb9d7730f",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N2546055b3c864f4eb7c11a199dd38dd3",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Ne8c28562d9304ae5abf3562a02744d65",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N6e52135c6bbd41e8b4d4e3719e57938c",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N355dbd9020054eff9e1bde830c9d1820",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N1fc7a15fcddf412bbb4da1c5f03be7be",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N18b74a579be4431c930153ab706a46f2",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nbd06f447315e4b698c3d35074f80d6c7",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Neca77985caab4e85ae646f1f69431b42",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N43e5b690b403479e8046e70edc62991a",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N726634bbc6bf43d8a896d44dea892209",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne43c6eed54c844a7ac3b0d8fc2dcdae1",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N7c092100d2c347d29993ee5acb391aff",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N99037072090a436280222e68be578952",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N5e3e6c5c49c449368d6b97e7e34e6f45",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N90266fd2b014473e9a8e3c6d572ec397",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N2b3192a706e64a528aa1ad35efd8dd2b",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N9cfd1c25deca47bea62d064c42593f9f",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N9481fcbd401f4a3c911b26e5a2a8cc2f",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N483de4569a2b43b4a2533ef7852e8435",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nc32b993b4d664596855840575e91e578",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nbb5fc0966e2c47e1bcadbc8811466446",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N5ebf3b8dc4f04ceba8346d61b55587b2",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N00609706ef984cc2a29b6274ed4405ea",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N47b603fd48c84772b0026618d8940463",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N3c95d55c830648a0a4739fbdb11f1e7f",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nf5b4bc46073a4e7aa93cec8166ce0880",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N1344bc368ef04cb4b4fb6da0c938e197",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N468b388bf9ff420ca49fef88a281f203",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N84875e8ec8b347e1afc125eb607d0755",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N8d7d9e5bfdc04e78ac60d071db30795c",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N3fa3b58a822e4a60bf2ef58b31a11ae8",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N11e9e316c25c44fe94c58a6e809a88ba",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N82996774e3dd4dc2af146a0618e505ac",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nd4c17d927e7a4226add7e62751e9be73",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N670c45c662134b53a859a5e13036cc11",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N21689270b19548e29e2a7e4d6b3b534d",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nac09e4a1aeee4f2bae93fc45d51c939a",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N11650b5829e44457ac1aa990b1cd3fde",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N09f7bb2f23a540b9be54375cadf12bd5",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nf454e2d452cd4fdb96cc2b93ed28ab51",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N0087fb9820e3411389153afeb468d521",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Ncd1234de6a9d4550bc2b2712b900f97f",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N2e197974ce8047248a67160a68860816",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N0881c06f5a9e4eddb75f60b379853dcd",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N43f2a4b9194c49888d72b00fe1f54b3a",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nc348fe4d44404366937befacd1fa5d5f",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N398ffb165c2d46ffb7e2fbfb511a7714",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N48ac2bcfed6a43359f6b8cbf4b7e489c",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N8818f8426eea42cc888d6c29c1e2261d",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nd3216b63a649478ab70c1ee0fa335c9c",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N983a90d1dab34b68bf6464a23840f763",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne594131996b94586ac232c5269f8c291",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N87ac303ba208438c81dd1c57bde93f78",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N966787eb0c6c4b228cf45fa1ada14659",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N814f25fe1023429f8081621de198bebb",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N11c58d82468543bfafeab97b6d4d8593",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nfd67c56941a2411c920d6153d50188f2",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N56fb358681b44b8d942a445140b5e176",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N3b494336839048b7bb528e039ac8f8df",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Na1a605a41f7c4b3493943cd2c7dcde3d",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Na01e318f5c8f44fab98637b10f9b75f5",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N9fb77cb987a146b4b5552ff67d088313",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nba22c029013348b89c287f920fc6afee",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nd8d0dbba35764e85b2286c340b3abbb6",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nf598f72f1b2746e28cf2d3536c5d516b",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Naad14d4615524f6e853d384b2a7972d3",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N1e271ab819ab486a99e1e433fc8b7ad7",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N00c63321e24b4a29863ebd06213c67c7",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N5f40628311754a948772a5bd3cfe2624",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N9c33e25a70f94998a9722753631ec727",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N3da17946559a4628924b3414552f91f8",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N18cd9f0565744eb392f94a18b29d4928",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N357e0da2e53c421c82166cbd29ab2d8f",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nab4e93fd469241b5ac0e70fc2b22897d",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Na57e224f1c37419bb1d2467da37bed23",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Ne256bd007ba44d4782f17175de93c4aa",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N3568b5d86e7a4648b0276f740808a75f",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nc78292173ec04e17a5807e28cc66aeb5",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nd6688eca88434772a750356cf97073f7",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N03104f89668a447485d9d786bd279461",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N0e826fb7a5f849628e0647b3ffe6d3e5",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N532fb90992174d6f97ed6c32ceaebc05",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nca9e4158415c427288cb22d94b0b6e33",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N22aa06df74ba47c784ca154f59855f44",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N49c664e6be4e4f198a575da63ed0ae01",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N387418756c9c4360aa21315cd15a6091",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nb1c5e6907ca14f6487a64849a038f52c",
+      "message": "Birth date should be in date format if present"
+    }
+  ],
+  "results_text": "Validation Report\nConforms: False\nResults (140):\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1417>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q32613>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q4318>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q5623>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1752>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q9546>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q26648>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q4381>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q18988>\n\tResult Path: ex:birthDate\n\t"
+}

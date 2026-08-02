@@ -1,0 +1,8 @@
+{
+  "test_case": "simple_constraints_1000",
+  "timestamp": "20250817_224354",
+  "souffle_violations": 0,
+  "pyshacl_violations": 0,
+  "difference": 0,
+  "match": true
+}

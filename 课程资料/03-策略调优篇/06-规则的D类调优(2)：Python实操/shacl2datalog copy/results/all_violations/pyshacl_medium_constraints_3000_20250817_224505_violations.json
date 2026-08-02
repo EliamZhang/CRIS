@@ -1,0 +1,57 @@
+{
+  "run_id": "pyshacl_medium_constraints_3000_20250817_224505",
+  "system": "pySHACL",
+  "conforms": false,
+  "violations_count": 12,
+  "violations": [
+    {
+      "subject": "N107161a034b9458188de59bcd1425f7a",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N7a3bf9b009f84bd090d2a461fb0b8d82",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nd1ca153d6b83439c86e52b21a5a6afdb",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N9c8edc0c634c4b70a8ba9fab6055e199",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne94f86f5ad4042d5b06c30aa7beb139e",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nccdc3d4c41504630ae7ddaf412eceacb",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N568b9252397c4afa8347a6f23bce5ba9",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N5bce5cbdbe3a4a34b9ba99b636a56635",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N68e1d6bee59a43bca68e40de37817c9f",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N761bd176f4c646b19922413d59582b09",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne15a51ee883b472d81918ad6416585f9",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N0f1b355647f04e8a919509b0ed1fa9ee",
+      "message": "Birth date should be in date format if present"
+    }
+  ],
+  "results_text": "Validation Report\nConforms: False\nResults (12):\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1417>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q25089>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q555>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1752>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q9546>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q3671>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q3345>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q558>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Death date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:deathDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q3345>\n\tResult Path: ex:deathDate\n\tMessa"
+}

@@ -1,0 +1,26 @@
+{
+  "shapes_count": 1,
+  "property_shapes_count": 0,
+  "total_properties": 5,
+  "prefixes_count": 30,
+  "constraint_types": {
+    "minCount": 2,
+    "maxCount": 3,
+    "datatype": 5,
+    "minLength": 5,
+    "maxLength": 4
+  },
+  "target_classes": 1,
+  "closed_shapes": 0,
+  "deactivated_shapes": 0,
+  "rules_count": 19,
+  "declarations_count": 16,
+  "facts_count": 0,
+  "inputs_count": 10,
+  "outputs_count": 1,
+  "helper_relations": 0,
+  "conversion_time": "2025-08-17T22:48:05.244256",
+  "input_file": "results/wikidata_realistic_constraints.ttl",
+  "output_file": "results/validation.dl",
+  "optimized": true
+}

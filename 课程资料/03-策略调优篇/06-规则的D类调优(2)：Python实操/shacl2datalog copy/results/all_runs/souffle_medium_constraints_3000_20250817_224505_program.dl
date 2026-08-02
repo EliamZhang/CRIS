@@ -1,0 +1,108 @@
+// ===== OPTIMIZATION DIRECTIVES =====
+.pragma "inline"
+.pragma "magic-transform" "*"
+
+// SHACL to Soufflé Datalog Conversion
+// Generated: 2025-08-17T22:43:45.548400
+// Generator: Enhanced SHACL to Datalog Converter
+
+// ===== DECLARATIONS =====
+.decl person(entity: symbol)
+.decl name(entity: symbol, value: symbol)
+.decl has_name(entity: symbol)
+.decl nationality(entity: symbol, value: symbol)
+.decl has_nationality(entity: symbol)
+.decl deathDate(entity: symbol, value: symbol)
+.decl has_deathDate(entity: symbol)
+.decl occupation(entity: symbol, value: symbol)
+.decl has_occupation(entity: symbol)
+.decl birthDate(entity: symbol, value: symbol)
+.decl has_birthDate(entity: symbol)
+.decl is_iri(entity: symbol)
+.decl is_literal(entity: symbol)
+.decl is_blank_node(entity: symbol)
+.decl has_language(value: symbol, lang: symbol)
+.decl violation(entity: symbol, constraint: symbol, message: symbol)
+
+// ===== FACTS =====
+
+// ===== RULES =====
+has_name(E) :- name(E, _).
+violation(E, "minCount", "Person must have exactly one valid name") :-
+    person(E),
+    !has_name(E).
+violation(E, "maxCount", "Person must have exactly one valid name") :-
+    person(E),
+    name(E, V1),
+    name(E, V2),
+    V1 != V2.
+violation(E, "minLength", "Person must have exactly one valid name") :-
+    person(E),
+    name(E, V),
+    strlen(V) < 2.
+violation(E, "maxLength", "Person must have exactly one valid name") :-
+    person(E),
+    name(E, V),
+    strlen(V) > 150.
+has_birthDate(E) :- birthDate(E, _).
+violation(E, "maxCount", "Birth date should be in date format if present") :-
+    person(E),
+    birthDate(E, V1),
+    birthDate(E, V2),
+    V1 != V2.
+violation(E, "minLength", "Birth date should be in date format if present") :-
+    person(E),
+    birthDate(E, V),
+    strlen(V) < 8.
+violation(E, "maxLength", "Birth date should be in date format if present") :-
+    person(E),
+    birthDate(E, V),
+    strlen(V) > 25.
+has_deathDate(E) :- deathDate(E, _).
+violation(E, "maxCount", "Death date should be in date format if present") :-
+    person(E),
+    deathDate(E, V1),
+    deathDate(E, V2),
+    V1 != V2.
+violation(E, "minLength", "Death date should be in date format if present") :-
+    person(E),
+    deathDate(E, V),
+    strlen(V) < 8.
+violation(E, "maxLength", "Death date should be in date format if present") :-
+    person(E),
+    deathDate(E, V),
+    strlen(V) > 25.
+has_occupation(E) :- occupation(E, _).
+violation(E, "minCount", "Person must have valid occupations") :-
+    person(E),
+    !has_occupation(E).
+violation(E, "minLength", "Person must have valid occupations") :-
+    person(E),
+    occupation(E, V),
+    strlen(V) < 2.
+violation(E, "maxLength", "Person must have valid occupations") :-
+    person(E),
+    occupation(E, V),
+    strlen(V) > 100.
+has_nationality(E) :- nationality(E, _).
+violation(E, "minLength", "Nationality must be valid if present") :-
+    person(E),
+    nationality(E, V),
+    strlen(V) < 2.
+violation(E, "maxLength", "Nationality must be valid if present") :-
+    person(E),
+    nationality(E, V),
+    strlen(V) > 100.
+
+// ===== INPUT/OUTPUT =====
+.input birthDate
+.input deathDate
+.input has_language
+.input is_blank_node
+.input is_iri
+.input is_literal
+.input name
+.input nationality
+.input occupation
+.input person
+.output violation

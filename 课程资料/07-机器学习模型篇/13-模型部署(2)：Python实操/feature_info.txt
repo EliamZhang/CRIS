@@ -1,0 +1,7 @@
+col
+ovd_order_days_6m_grade
+ovd_order_cnt_6m_grade
+repayment_ability_rank
+dev_stability_grade
+have_fang_prob_grade
+positive_biz_cnt_1y_grade

@@ -1,0 +1,59 @@
+{
+  "run_id": "souffle_medium_constraints_5000_20250817_224515",
+  "system": "Souffl\u00e9",
+  "violations_count": 57,
+  "violations": [
+    {
+      "entity": "\"Q1752\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q1417\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q1817\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q555\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q558\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3102\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3547\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3671\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    }
+  ],
+  "output_dir": "results/all_runs/run_souffle_medium_constraints_5000_20250817_224515",
+  "memory_samples": 176
+}

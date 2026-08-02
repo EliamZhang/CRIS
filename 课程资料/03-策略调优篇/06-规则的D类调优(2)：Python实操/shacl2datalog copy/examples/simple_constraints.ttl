@@ -1,0 +1,27 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# 简单的人物数据验证
+ex:PersonShape a sh:NodeShape ;
+    sh:targetClass ex:Person ;
+    sh:message "Basic person data validation" ;
+    
+    # 姓名是必需的
+    sh:property [
+        sh:path ex:name ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 2 ;
+        sh:maxLength 200 ;
+        sh:message "Person must have a valid name"
+    ] ;
+    
+    # 职业至少要有一个
+    sh:property [
+        sh:path ex:occupation ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 2 ;
+        sh:message "Person must have at least one occupation"
+    ] .

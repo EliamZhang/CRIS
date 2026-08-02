@@ -1,0 +1,707 @@
+{
+  "run_id": "souffle_medium_constraints_10000_20250817_224533",
+  "count": 140,
+  "details": [
+    {
+      "entity": "\"Q1417\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q1752\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q1817\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q555\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q558\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3102\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q720\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3547\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q3671\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9546\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q15999\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q15999\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q16371\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q16801\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q25726\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4276\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4291\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q4381\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9743\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9746\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9746\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9749\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9749\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9790\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q9801\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q16400\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q17131\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q17169\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4288\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q4313\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4318\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4318\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q9965\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q25948\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32133\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32133\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32191\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32313\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q10133\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q10133\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q25987\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32408\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q32408\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32408\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32520\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32596\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q32601\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4616\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4673\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32603\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q32603\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32605\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32613\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32617\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q32617\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32617\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32627\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q32625\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q32625\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4723\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32833\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32833\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32842\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4813\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4826\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4881\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q4924\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q10709\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q10721\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q18630\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q18715\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q18763\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q18806\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q26458\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q26477\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q26481\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q26648\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q26648\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q32808\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q33119\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q5252\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q10837\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q10869\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q10879\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q18771\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q18832\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q18988\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q26731\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q26780\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q33071\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q33371\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q33517\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q33619\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5220\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5220\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5271\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5269\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q19007\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q19031\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q19034\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q26917\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5260\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5260\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q26975\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q33696\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5382\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5391\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q11300\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q11356\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q11356\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q11512\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q19244\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q19280\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q19299\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q27363\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q34031\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q34100\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q34211\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5558\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5581\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5597\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5597\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q11515\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q19287\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q19291\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q19289\"",
+      "constraint": "maxLength",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q19489\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q19796\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q27508\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5623\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q5623\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q11595\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q11667\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q27695\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q27704\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q33004\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q33004\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "entity": "\"Q26789\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    }
+  ],
+  "timestamp": "2025-08-17T22:45:33.973927"
+}

@@ -1,0 +1,237 @@
+{
+  "run_id": "pyshacl_medium_constraints_5000_20250817_224515",
+  "system": "pySHACL",
+  "conforms": false,
+  "violations_count": 57,
+  "violations": [
+    {
+      "subject": "N200b6b1b6d9c49428eed41a668c949f2",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nb4b7007dc51a4c9495aa856c7874ceb7",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nbb8a576e43304857b9f6695e905d0bf9",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N62794003cf6a4b62beda4121c385e83c",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne1ed39dce24a47febb264d0fe10d54d9",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nd73b05c8e0bb441ea20a0b2579409a19",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Na12f022921a9411ca5388ba95a48eb97",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N99c834b19fa44e9ebf5794172a87bbdd",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N449a5243e91243dda40e6cf37fcb4e14",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N60ff6d2fdc9f4aa897b50a5091ee6827",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nfdc37a96412645bbb34a53b2c1d836b1",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N1801a86da7084f05ae12cb2f94646755",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N73887fb16e7a42abb339583bcba169df",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N985128e9412d4cc19317e58a3f65fd38",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N51a0a4dff81c48e6b28412e99b9d4659",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N5e781c61bfde422fbfa22ed1be1707b4",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nb9f14196c83d41f693511f86ea650b8e",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N299eccffbd24405fbbc718655aacc442",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nee7537ab56d4487690a530d5969dcdb2",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nd4a40d440e5c4dca999a69f54aa26559",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N5a8cfb33fb254c338d6976a4b141a407",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nd67de15694c94db4a1f6f86bda6cb204",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N450c47e413454a358e744da3f82c1e55",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N6a78366c2396465daf15aa40ea69f0dc",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Na4c0383b1fa44155a6f213addc9ec9dc",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N6365db57f5a4469fbae199e9660e05fe",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N8337ba12c7894e38bc8be9d1148d4827",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Naecce10fe0fe40f599ebbe958ec65306",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N07236f14879c450e88f20bf16015398e",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Naf656edc8c8d4dff8bb404e281223114",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N3ef0254e030c41b88deb69f53db78687",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nf13eb1d2be994128bd9c9c456a57df3c",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N19af6b35ad0e4f1d8343a6f15667c13a",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nb923425bf0f246fe8f9f02d34f06a838",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nba7f6c50e905415ab4ed6fd9876d5ee3",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N673a4dc12d1a4d40b78d2b88291d384f",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N0cdab0aab9854db18910d5c2e874b354",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N9aa550c2b9eb4485ac261ee068954919",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N46b4991107c74039b67d403149806459",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "Nfbe7aecc7e754ad7bdc759a38fbc9c54",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N1418cad06bea4c5782a87e141bed8aea",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne8ba9b73421f488b84f9ba5d57a450d0",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N47f096dbdff34a7abc675d536d900987",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Na33aefd662ff4250a296559779e571c7",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Ne6b7b7c94d834d2097daa9865b754b33",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N572bee1e8fb54af396bf99759eabc786",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N33dc3c61ba504d66a5f1d5d7f74b912d",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N115bd7a9737b4e278e6e47da2368a8e9",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Ne235eadb016d45ef996c42374641207c",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N5d482e0b2edc4eb79035660e96aad049",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N9796867eef86492d98f97b7c02a7c62b",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Nbbd23bd4be9f46aeaaca4603d5cf6c81",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N6b583938b88e4be1b27f19ddee7d066d",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "N807f40bc3cdd40468018475a5900d152",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N83066e497ab845b39758514be66c11cf",
+      "message": "Death date should be in date format if present"
+    },
+    {
+      "subject": "N088087d9a324459baf3cb88720ff6e16",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "subject": "Naf0b861f044f45b5b25b6ea619a31c2b",
+      "message": "Person must have valid occupations"
+    }
+  ],
+  "results_text": "Validation Report\nConforms: False\nResults (57):\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q4313>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q31703>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q31647>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1417>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q25679>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q25089>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q4318>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxLengthConstraintComponent (http://www.w3.org/ns/shacl#MaxLengthConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q25726>\n\tValue Node: Literal(\"http://www.wikidata.org/.well-known/genid/c2bb3a0e7a0610bb998e9219281ff3f3\")\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be in date format if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be in date format if present\") ; sh:minLength Literal(\"8\", datatype=xsd:integer) ; s"
+}

@@ -1,0 +1,8 @@
+{
+  "run_id": "souffle_simple_constraints_1000_20250817_224354",
+  "system": "Souffl\u00e9",
+  "violations_count": 0,
+  "violations": [],
+  "output_dir": "results/all_runs/run_souffle_simple_constraints_1000_20250817_224354",
+  "memory_samples": 175
+}

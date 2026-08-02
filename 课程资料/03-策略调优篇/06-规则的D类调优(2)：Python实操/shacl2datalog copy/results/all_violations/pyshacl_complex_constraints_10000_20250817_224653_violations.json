@@ -1,0 +1,569 @@
+{
+  "run_id": "pyshacl_complex_constraints_10000_20250817_224653",
+  "system": "pySHACL",
+  "conforms": false,
+  "violations_count": 140,
+  "violations": [
+    {
+      "subject": "Nefe946b45ef54e758b725d7d2fa8b903",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N288f74cc2842460ea81fe0f2968ccedc",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N576b8bc7f03047c38fa3af6bb69f326d",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N9c23d9034e8d4ab7ac7d4d354434def2",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N5b4c90075498477ab4aea690ce7979cd",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nb225b636791e407c8664f0a4bacfb8a8",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Na60f1c54c53e4c30b69bf3ff93b14e03",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N8dda8c6ebebc47018b9378c80f1a0b51",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nb3b6095d3d544332be24fb28b7836385",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N9710034bd5064c73a675e308e8283e55",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Ndf1a805a863a4b5bb8a06f4ec79b2043",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N139a314fa3d94ff69b3406d031250508",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N87e2c293f1a346a982c996f393c20fd3",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nd80d0fc146674001801c9993a888ca1e",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N41305925cb014f718897f51c43d66db8",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N294f8d255ee542ac85bd578714ceb493",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nfeec8a98ea9a4fe68220e468d4129b32",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N41f892c7aba64af78266e19ed1d05b78",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nb8395a2ff7fc4e818d92781345cc110e",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Na4dc5d3bccce4c689b1b613f388381a4",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nbf25816c94a14ea7b70b5eee15bd18ba",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N01eca084caa04686999bb009d7638468",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N7f2f9df864a34a6f8a440db9508478f3",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nc8cfc9c77cf04326b0b4105e160ff97b",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Ne306f612aaf1493881a63ada960d93e0",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N077b7dab5aa54ff28f15d955c87fe5a0",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N7bb6d95c341941a8b1b914fd778d14d2",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N76aa171bd70b404d962b8a678a43f50d",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nebfbaf7ba1344243aee04df9068d0a43",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nf7dbf07dc94c49a4a784f9f13f1fe9ef",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nb73170516dab48bf880c113089b4b999",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N0c080bf79155441bbb62412dc23089c5",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N407d7d1a88484a318c421f3849361291",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N335c5359cf9e4b1388dad4ee32dd46b0",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N3c827d12b7f749d5adc2fefe0c311bd0",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N7d65609526524d5da9d7c1748fdae579",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Ne6e689e7a21047e495add0afa25f28f6",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N91c56a8aec244bf3a657e2ea33d2cd41",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N30e805057b3c4b8ab511a3c14ef4768e",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nca90c9d799bd40c09377425d7b2ddbaf",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N1cc53ab7473942379877d5f0ccd2e48f",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N8e0dc71a01f4440d90578b6caf5d1daa",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nc733667219424a07be7532e83e11cc58",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N229f2cdc243248c1bf02729f4be6d873",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nb366b9f50f1c4fe2b036c3305f3c9835",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N472e990b33464fe8942ee53023252bca",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N6b199d170162428b817ab146f2df4b76",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N8810d3a555b04129b584e6356f16b307",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N14358cd742504463acc6ede7e000fb9f",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nc3fe56e1c5744695a2f22d10aef2aefd",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N65bb625598f0402fbfd7333711575194",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N427b8ee825bc41b5b4d0b7d692ccc5c7",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nb44d0515a1cc4837ae621d7b29aa02b5",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N306abbe3e25a4de4a1af76f975d4c5f1",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Na3f4e51283184fe0a3db3bc414ca2b12",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nfe235b391e8746cb9be783335cfea9e6",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nb8f90a87e43f4876a371f5cc7d2b0dee",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N1f4b96b2c71046edab2bd528bcc30645",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N4fe193647dc346ac9caf74afb463f2e0",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N1d1f74e662e94126a793960909a77c17",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N600a5ed3174b40e8843ecace0046c324",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N70f1c6a5b10c4b5d866ac702aa009f9a",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Ndafb595caf86401f97ab0cc6645c7d4b",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N4e0a207c3ecd417fb0f2eaadcbd99af7",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N9e18edf98a2b411dad5d904ac90d052c",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nb0282e15919945d78dc28c061f03491e",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N94ec6c3d80fc4fa8a8cb5ce8074b093d",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nf414f2062ac64569a4a22f4a3dbf9b55",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N9f65330bd8fe46d691ba070e754283e0",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N4f12bd29e96e4855b17cd2a383f5bd79",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N980671acc1d7428a93610e30bd4fd8e2",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N59f0aee1bc034f4fbf3609ff4f5539cc",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Ncdcda9ea42ad4aa3917fa8b483dbe094",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N606b50bb21b941659a9e6bfd41cd42fc",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N61b6ea4c732149bd9aca649f47b36327",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N8f672efa8dd34193b561f186faf67b60",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N267b9fe8bd1f459baab3e9e4ea7de704",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N0dd41a6d39e548d99c9266dd9283d11a",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N77909e6a2fcb4abc8ca2b6ffb45e0085",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N4e07adce03a84359b14aeb9e08b8920b",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N085afb0bbf9f4d1b843c1471766be255",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nbb6cca7c00144f6d9b582154e144cf04",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nbe552de9d47b4886bf423cdb4e6b8f72",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N8e43c778d3884223896bb89c746f3dc7",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nfe00b0c7c44f4a7f92246f701121a7b8",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N37f6b68f9b2e44eda839720ba0e66892",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N33c4d5fe3a5342ac98eb7adc971146b8",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N813e6ff778ce43af82314b855e5787ad",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N894c475f32904e44b0327ed7beb20951",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nd618c971713d4bff9e65ef2f8e6cf580",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N38f29b10160048dda980f3b79f794874",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N65e8906b429342159bc77a4218940e90",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Na301fb7af5b048bc80cd96854de3f086",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N3c4da1f82bb64f8fbc88ab4af7eec102",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nc8daa46933b248f3936094dcaad8a60d",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N721f2118200648df85fef789e66606e8",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N49c8c92af639423e96442ad05342b019",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N403a8eae6a7f4f73b9751f6e32503f61",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N5426ca404fc840378dc444753c356f22",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N7442db82ac0947f38590e693ab44d22e",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nbcffd228bb5c4a68b94a1491bff9803f",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nf5623c4e56924562b92ba03f2594751d",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N6cbb7550c725407a8defaccf96424dcc",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N514cce47aee04d1e85c1e32bb52cb26c",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N6656bb3956954144b5b1d4ffc8dc804d",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Ndab9ab3bed5d491198f9c27c3e61c4fa",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N34a3ef1ca1ea4a72b04c9bfaecc25068",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nd90f729b3df34c81a4e8a61814e4bb55",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nd80377a987a0495c95d6ab60d12059ca",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N23081661d22b4881b9a52bdfe315889f",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N05f1192c8aa24e2facda8a207496b27e",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N9e56eb295f8a45f3b6fab4ad9f2f6a32",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nd9e5ced0226841b1b1fc0e3c258642ac",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N54c1991cc31947d2b0c0af49b5f925d2",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N82f70c20c0ab4ba2a6e1137564d99f56",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nab49c41f2eeb40cf95653383dce9d039",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N996eabcb1ead40988a943d2ea77ea489",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N6d2ba9a6c743425ebe3e7e474da81f07",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N576ea124815843ea9ceae7d0e013e79d",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Naad60738588c4d31b8887aff19846231",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N5f6c1d871c2b4385bc237eb857cdc83f",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "N3db75bbe9c31447cafe675bd0c5e04c2",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N90c6fb7ca0724ddf88e0a8ab8b9284a9",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Ne8dce84846f8468aaf8852e7e682d89b",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N30f0e92cb5cb470982d31512b9bd589d",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N80fa6520e07f40de9392aa4fe630b63c",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N10f1d37410304ef393feda8cbb4a1ae8",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N794b463205044425a64d025e9c27c4ee",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Na42a89153d35492ea388b3ccf2be8206",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nc2678ba4561c491db6ebb8aa8e039da0",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nce5f58581c5b4a1d9538610b43ea3d90",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N367bcec1d2c4403ca58411a03561b7e2",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "Nec6588514c4e4207807f5f1d1e08e332",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nfd77df3b3221405ab4a3b2fa3a66f417",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "subject": "N94d8fe71740a40939328e483991669fe",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N4d7603b9d9ea4c879b9bf68a39c761b0",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N245bbd4b470043d5b40bdc4f2276a8d2",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Nee3977307a944bd69141f2c320d9dfeb",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "subject": "Na1464d4ce1a54431a13b4f642d9635c6",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N32c2816e59524a4c8f1b4308538869d2",
+      "message": "Birth date should be reasonable if present"
+    }
+  ],
+  "results_text": "Validation Report\nConforms: False\nResults (140):\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1417>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q32613>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q4318>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q5623>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1752>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q9546>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q26648>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q4381>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q18988>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Viola"
+}

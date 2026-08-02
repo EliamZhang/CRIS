@@ -1,0 +1,21 @@
+{
+  "run_id": "pyshacl_complex_constraints_1000_20250817_224617",
+  "system": "pySHACL",
+  "conforms": false,
+  "violations_count": 3,
+  "violations": [
+    {
+      "subject": "N4bda05d1ef0e497085bc719c58a7d112",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "N39e7a82e12ff41189e960d3317f1a0e7",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "subject": "Nc4fcfb2b204e4f1cbfe0854bfc7c9af8",
+      "message": "Death date should be reasonable if present"
+    }
+  ],
+  "results_text": "Validation Report\nConforms: False\nResults (3):\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1417>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Birth date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:birthDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1752>\n\tResult Path: ex:birthDate\n\tMessage: Birth date should be reasonable if present\nConstraint Violation in MaxCountConstraintComponent (http://www.w3.org/ns/shacl#MaxCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:maxCount Literal(\"1\", datatype=xsd:integer) ; sh:maxLength Literal(\"25\", datatype=xsd:integer) ; sh:message Literal(\"Death date should be reasonable if present\") ; sh:minLength Literal(\"4\", datatype=xsd:integer) ; sh:path ex:deathDate ]\n\tFocus Node: <http://www.wikidata.org/entity/Q1817>\n\tResult Path: ex:deathDate\n\tMessage: Death date should be reasonable if present\n"
+}

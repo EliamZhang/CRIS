@@ -1,0 +1,8 @@
+{
+  "run_id": "pyshacl_simple_constraints_1000_20250817_224354",
+  "system": "pySHACL",
+  "conforms": true,
+  "violations_count": 0,
+  "violations": [],
+  "results_text": "Validation Report\nConforms: True\n"
+}

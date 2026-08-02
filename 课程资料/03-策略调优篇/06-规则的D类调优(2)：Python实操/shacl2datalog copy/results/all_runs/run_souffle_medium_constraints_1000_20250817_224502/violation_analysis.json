@@ -1,0 +1,22 @@
+{
+  "run_id": "souffle_medium_constraints_1000_20250817_224502",
+  "count": 3,
+  "details": [
+    {
+      "entity": "\"Q1752\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q1417\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be in date format if present"
+    },
+    {
+      "entity": "\"Q1817\"",
+      "constraint": "maxCount",
+      "message": "Death date should be in date format if present"
+    }
+  ],
+  "timestamp": "2025-08-17T22:45:02.343107"
+}

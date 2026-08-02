@@ -1,0 +1,57 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# 真实的Wikidata人物质量约束
+ex:WikidataPersonQuality a sh:NodeShape ;
+    sh:targetClass ex:Person ;
+    sh:message "Wikidata person quality validation" ;
+    
+    # 姓名必须存在且合理
+    sh:property [
+        sh:path ex:name ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:maxLength 300 ;
+        sh:message "Person must have a valid name"
+    ] ;
+    
+    # 职业是必需的
+    sh:property [
+        sh:path ex:occupation ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:message "Person must have at least one occupation"
+    ] ;
+    
+    # 出生日期格式验证
+    sh:property [
+        sh:path ex:birthDate ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 4 ;
+        sh:maxLength 25 ;
+        sh:message "Birth date must be reasonable format"
+    ] ;
+    
+    # 死亡日期格式验证
+    sh:property [
+        sh:path ex:deathDate ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 4 ;
+        sh:maxLength 25 ;
+        sh:message "Death date must be reasonable format"
+    ] ;
+    
+    # 国籍验证
+    sh:property [
+        sh:path ex:nationality ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:maxLength 200 ;
+        sh:message "Nationality must be valid"
+    ] .

@@ -1,0 +1,292 @@
+{
+  "run_id": "souffle_complex_constraints_5000_20250817_224632",
+  "count": 57,
+  "details": [
+    {
+      "entity": "\"Q1752\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q1417\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q1817\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q555\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q558\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3102\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3547\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3671\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9546\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25089\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25148\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q25249\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q720\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q15999\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q15999\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25240\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31647\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31649\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31695\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q31703\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31703\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31704\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q31709\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q16371\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25672\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25529\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25543\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q25583\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q4291\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q4288\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q4381\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9743\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9746\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9746\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9749\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9749\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9790\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q9801\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q16400\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25679\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25726\"",
+      "constraint": "maxLength",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31721\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q31730\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31730\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q31745\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q4276\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q4313\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q4318\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q4318\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9965\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q10133\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q10133\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q16801\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q25642\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    },
+    {
+      "entity": "\"Q31738\"",
+      "constraint": "minCount",
+      "message": "Person must have valid occupations"
+    }
+  ],
+  "timestamp": "2025-08-17T22:46:33.008944"
+}

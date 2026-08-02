@@ -1,0 +1,65 @@
+{
+  "run_id": "pyshacl_simple_constraints_5000_20250817_224407",
+  "system": "pySHACL",
+  "conforms": false,
+  "violations_count": 14,
+  "violations": [
+    {
+      "subject": "N939ae5dfb0654763b5a79f32ad124241",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N371357360f8248ffabd04d586b956176",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N46f94d1315c6460695fbc8a964aa292c",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N5fb0e3e083514ed18a0213e76f083777",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "Ncbc72592caaa4536b4f82f148ce67f4b",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N2deafbe1574a4172acaf146708e2528f",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N3d9fe877fe0b452ab7fdad4319ca6927",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N0b00a2096da6463991a4fceadbb24a45",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N14e2515940f74b2a83f8bb6a1ee2cdf9",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N5e388f77a37d4f77919e5e25d92e91d0",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "Ne09ceaa32cb84692b7d57238f71e721a",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N85024fea77294595adb2bf9b0dba9bc7",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "Ncb5a21bb6f2b44f190d3074f7426d56b",
+      "message": "Person must have at least one occupation"
+    },
+    {
+      "subject": "N31c1a2e539e547f393dd6320c476c9c1",
+      "message": "Person must have at least one occupation"
+    }
+  ],
+  "results_text": "Validation Report\nConforms: False\nResults (14):\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q31738>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q31695>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q25543>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q9790>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q31721>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q25148>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q25642>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q9801>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q31704>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occupation\nConstraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):\n\tSeverity: sh:Violation\n\tSource Shape: [ sh:datatype xsd:string ; sh:message Literal(\"Person must have at least one occupation\") ; sh:minCount Literal(\"1\", datatype=xsd:integer) ; sh:minLength Literal(\"2\", datatype=xsd:integer) ; sh:path ex:occupation ]\n\tFocus Node: <http://www.wikidata.org/entity/Q16801>\n\tResult Path: ex:occupation\n\tMessage: Person must have at least one occup"
+}

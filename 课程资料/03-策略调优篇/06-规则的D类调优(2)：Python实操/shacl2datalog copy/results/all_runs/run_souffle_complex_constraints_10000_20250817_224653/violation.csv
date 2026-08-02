@@ -1,0 +1,140 @@
+"Q1417"	maxCount	Birth date should be reasonable if present
+"Q1752"	maxCount	Birth date should be reasonable if present
+"Q1817"	maxCount	Death date should be reasonable if present
+"Q555"	maxCount	Birth date should be reasonable if present
+"Q558"	maxCount	Birth date should be reasonable if present
+"Q3102"	maxCount	Death date should be reasonable if present
+"Q3345"	maxCount	Birth date should be reasonable if present
+"Q3345"	maxCount	Death date should be reasonable if present
+"Q720"	maxCount	Death date should be reasonable if present
+"Q3547"	maxCount	Death date should be reasonable if present
+"Q3671"	maxCount	Birth date should be reasonable if present
+"Q9546"	maxCount	Birth date should be reasonable if present
+"Q15999"	maxCount	Birth date should be reasonable if present
+"Q15999"	maxCount	Death date should be reasonable if present
+"Q16371"	maxCount	Death date should be reasonable if present
+"Q16801"	minCount	Person must have valid occupations
+"Q25726"	maxLength	Birth date should be reasonable if present
+"Q4276"	maxCount	Birth date should be reasonable if present
+"Q4291"	minCount	Person must have valid occupations
+"Q4381"	maxCount	Birth date should be reasonable if present
+"Q9743"	maxCount	Birth date should be reasonable if present
+"Q9746"	maxCount	Birth date should be reasonable if present
+"Q9746"	maxCount	Death date should be reasonable if present
+"Q9749"	maxCount	Birth date should be reasonable if present
+"Q9749"	maxCount	Death date should be reasonable if present
+"Q9790"	minCount	Person must have valid occupations
+"Q9801"	minCount	Person must have valid occupations
+"Q16400"	maxCount	Birth date should be reasonable if present
+"Q17131"	maxLength	Death date should be reasonable if present
+"Q17169"	maxCount	Death date should be reasonable if present
+"Q4288"	minCount	Person must have valid occupations
+"Q4313"	maxCount	Birth date should be reasonable if present
+"Q4318"	maxCount	Birth date should be reasonable if present
+"Q4318"	maxCount	Death date should be reasonable if present
+"Q9965"	maxCount	Death date should be reasonable if present
+"Q25948"	maxCount	Death date should be reasonable if present
+"Q32133"	maxCount	Birth date should be reasonable if present
+"Q32133"	maxCount	Death date should be reasonable if present
+"Q32191"	maxCount	Birth date should be reasonable if present
+"Q32313"	minCount	Person must have valid occupations
+"Q10133"	maxCount	Birth date should be reasonable if present
+"Q10133"	maxCount	Death date should be reasonable if present
+"Q25987"	maxCount	Birth date should be reasonable if present
+"Q32408"	maxLength	Birth date should be reasonable if present
+"Q32408"	maxLength	Death date should be reasonable if present
+"Q32408"	minCount	Person must have valid occupations
+"Q32520"	maxCount	Birth date should be reasonable if present
+"Q32596"	minCount	Person must have valid occupations
+"Q32601"	maxCount	Death date should be reasonable if present
+"Q4616"	maxCount	Death date should be reasonable if present
+"Q4673"	maxCount	Death date should be reasonable if present
+"Q32603"	maxLength	Birth date should be reasonable if present
+"Q32603"	minCount	Person must have valid occupations
+"Q32605"	maxLength	Birth date should be reasonable if present
+"Q32613"	maxCount	Birth date should be reasonable if present
+"Q32617"	maxLength	Birth date should be reasonable if present
+"Q32617"	maxLength	Death date should be reasonable if present
+"Q32617"	minCount	Person must have valid occupations
+"Q32627"	minCount	Person must have valid occupations
+"Q32625"	minCount	Person must have valid occupations
+"Q32625"	maxCount	Birth date should be reasonable if present
+"Q4723"	maxCount	Death date should be reasonable if present
+"Q32833"	maxCount	Birth date should be reasonable if present
+"Q32833"	maxCount	Death date should be reasonable if present
+"Q32842"	maxCount	Birth date should be reasonable if present
+"Q4813"	maxCount	Death date should be reasonable if present
+"Q4826"	maxCount	Birth date should be reasonable if present
+"Q4881"	maxLength	Death date should be reasonable if present
+"Q4924"	maxCount	Birth date should be reasonable if present
+"Q10709"	maxCount	Birth date should be reasonable if present
+"Q10721"	maxCount	Birth date should be reasonable if present
+"Q18630"	maxCount	Birth date should be reasonable if present
+"Q18715"	minCount	Person must have valid occupations
+"Q18763"	minCount	Person must have valid occupations
+"Q18806"	maxCount	Death date should be reasonable if present
+"Q26458"	minCount	Person must have valid occupations
+"Q26477"	minCount	Person must have valid occupations
+"Q26481"	minCount	Person must have valid occupations
+"Q26648"	maxCount	Birth date should be reasonable if present
+"Q26648"	maxCount	Death date should be reasonable if present
+"Q32808"	maxCount	Birth date should be reasonable if present
+"Q33119"	minCount	Person must have valid occupations
+"Q5252"	maxLength	Death date should be reasonable if present
+"Q10837"	maxCount	Birth date should be reasonable if present
+"Q10869"	maxCount	Birth date should be reasonable if present
+"Q10879"	maxCount	Birth date should be reasonable if present
+"Q18771"	maxLength	Birth date should be reasonable if present
+"Q18832"	maxCount	Birth date should be reasonable if present
+"Q18988"	maxCount	Birth date should be reasonable if present
+"Q26731"	minCount	Person must have valid occupations
+"Q26780"	maxCount	Birth date should be reasonable if present
+"Q33071"	maxCount	Birth date should be reasonable if present
+"Q33371"	minCount	Person must have valid occupations
+"Q33517"	maxCount	Birth date should be reasonable if present
+"Q33619"	maxCount	Birth date should be reasonable if present
+"Q5220"	maxCount	Birth date should be reasonable if present
+"Q5220"	maxCount	Death date should be reasonable if present
+"Q5271"	maxCount	Birth date should be reasonable if present
+"Q5269"	maxCount	Death date should be reasonable if present
+"Q19007"	minCount	Person must have valid occupations
+"Q19031"	maxCount	Birth date should be reasonable if present
+"Q19034"	maxCount	Death date should be reasonable if present
+"Q26917"	maxCount	Death date should be reasonable if present
+"Q5260"	maxCount	Birth date should be reasonable if present
+"Q5260"	maxCount	Death date should be reasonable if present
+"Q26975"	maxCount	Birth date should be reasonable if present
+"Q33696"	maxCount	Birth date should be reasonable if present
+"Q5382"	maxCount	Death date should be reasonable if present
+"Q5391"	maxLength	Birth date should be reasonable if present
+"Q11300"	maxCount	Death date should be reasonable if present
+"Q11356"	maxCount	Birth date should be reasonable if present
+"Q11356"	maxCount	Death date should be reasonable if present
+"Q11512"	minCount	Person must have valid occupations
+"Q19244"	minCount	Person must have valid occupations
+"Q19280"	maxLength	Death date should be reasonable if present
+"Q19299"	maxLength	Death date should be reasonable if present
+"Q27363"	maxCount	Death date should be reasonable if present
+"Q34031"	maxCount	Birth date should be reasonable if present
+"Q34100"	minCount	Person must have valid occupations
+"Q34211"	maxCount	Birth date should be reasonable if present
+"Q5558"	maxCount	Birth date should be reasonable if present
+"Q5581"	maxCount	Death date should be reasonable if present
+"Q5597"	maxCount	Birth date should be reasonable if present
+"Q5597"	maxCount	Death date should be reasonable if present
+"Q11515"	maxLength	Birth date should be reasonable if present
+"Q19287"	minCount	Person must have valid occupations
+"Q19291"	minCount	Person must have valid occupations
+"Q19289"	maxLength	Death date should be reasonable if present
+"Q19489"	maxLength	Birth date should be reasonable if present
+"Q19796"	maxCount	Death date should be reasonable if present
+"Q27508"	maxCount	Birth date should be reasonable if present
+"Q5623"	maxCount	Birth date should be reasonable if present
+"Q5623"	maxCount	Death date should be reasonable if present
+"Q11595"	maxCount	Death date should be reasonable if present
+"Q11667"	maxCount	Birth date should be reasonable if present
+"Q27695"	maxCount	Birth date should be reasonable if present
+"Q27704"	maxCount	Birth date should be reasonable if present
+"Q33004"	minCount	Person must have valid occupations
+"Q33004"	maxCount	Death date should be reasonable if present
+"Q26789"	minCount	Person must have valid occupations

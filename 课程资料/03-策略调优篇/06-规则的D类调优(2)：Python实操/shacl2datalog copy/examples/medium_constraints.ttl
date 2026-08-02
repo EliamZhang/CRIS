@@ -1,0 +1,58 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix ex: <http://example.org/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# 中等复杂度的人物数据验证
+ex:PersonShape a sh:NodeShape ;
+    sh:targetClass ex:Person ;
+    sh:message "Medium complexity person validation" ;
+    
+    # 姓名验证 - 合理范围
+    sh:property [
+        sh:path ex:name ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 2 ;
+        sh:maxLength 150 ;
+        sh:message "Person must have exactly one valid name"
+    ] ;
+    
+    # 出生日期验证 - 宽松格式检查
+    sh:property [
+        sh:path ex:birthDate ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 8 ;
+        sh:maxLength 25 ;
+        sh:message "Birth date should be in date format if present"
+    ] ;
+    
+    # 死亡日期验证 - 宽松格式检查
+    sh:property [
+        sh:path ex:deathDate ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 8 ;
+        sh:maxLength 25 ;
+        sh:message "Death date should be in date format if present"
+    ] ;
+    
+    # 职业验证
+    sh:property [
+        sh:path ex:occupation ;
+        sh:minCount 1 ;
+        sh:datatype xsd:string ;
+        sh:minLength 2 ;
+        sh:maxLength 100 ;
+        sh:message "Person must have valid occupations"
+    ] ;
+    
+    # 国籍验证
+    sh:property [
+        sh:path ex:nationality ;
+        sh:datatype xsd:string ;
+        sh:minLength 2 ;
+        sh:maxLength 100 ;
+        sh:message "Nationality must be valid if present"
+    ] .

@@ -1,0 +1,5594 @@
+@prefix ex: <http://example.org/> .
+
+<http://www.wikidata.org/entity/Q1001> a ex:Person ;
+    ex:birthDate "1869-10-02" ;
+    ex:deathDate "1948-01-30" ;
+    ex:name "Mahatma Gandhi" ;
+    ex:nationality "India" ;
+    ex:occupation "autobiographer",
+        "barrister",
+        "civil rights advocate",
+        "essayist",
+        "freedom fighter",
+        "humanitarian",
+        "journalist",
+        "jurist",
+        "memoirist",
+        "newspaper editor",
+        "peace activist",
+        "philosopher",
+        "political writer",
+        "politician",
+        "revolutionary",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1023> a ex:Person ;
+    ex:birthDate "1976-01-11" ;
+    ex:name "Roman Camenzind" ;
+    ex:nationality "Switzerland" ;
+    ex:occupation "record producer",
+        "singer",
+        "songwriter" .
+
+<http://www.wikidata.org/entity/Q1031> a ex:Person ;
+    ex:birthDate "1800-12-03" ;
+    ex:deathDate "1849-02-08" ;
+    ex:name "France Prešeren" ;
+    ex:nationality "Austrian Empire",
+        "Habsburg monarchy",
+        "Illyrian Provinces" ;
+    ex:occupation "lawyer",
+        "poet",
+        "poet lawyer" .
+
+<http://www.wikidata.org/entity/Q1035> a ex:Person ;
+    ex:birthDate "1809-02-12" ;
+    ex:deathDate "1882-04-19" ;
+    ex:name "Charles Darwin" ;
+    ex:nationality "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "botanist",
+        "ethologist",
+        "explorer",
+        "geologist",
+        "naturalist",
+        "philosopher",
+        "travel writer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1043> a ex:Person ;
+    ex:birthDate "1707-05-23" ;
+    ex:deathDate "1778-01-10" ;
+    ex:name "Carl Linnaeus" ;
+    ex:nationality "Sweden" ;
+    ex:occupation "arachnologist",
+        "autobiographer",
+        "biologist",
+        "botanist",
+        "bryologist",
+        "entomologist",
+        "geologist",
+        "mineralogist",
+        "mycologist",
+        "naturalist",
+        "ornithologist",
+        "physician",
+        "professor",
+        "pteridologist",
+        "taxonomist",
+        "zoologist" .
+
+<http://www.wikidata.org/entity/Q1047> a ex:Person ;
+    ex:birthDate "1889-11-14" ;
+    ex:deathDate "1964-05-27" ;
+    ex:name "Jawaharlal Nehru" ;
+    ex:nationality "British Raj",
+        "Dominion of India",
+        "India" ;
+    ex:occupation "autobiographer",
+        "barrister",
+        "freedom fighter",
+        "politician",
+        "trade unionist",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1051> a ex:Person ;
+    ex:birthDate "1868-12-09" ;
+    ex:deathDate "1947-07-27" ;
+    ex:name "Ivan Regen" ;
+    ex:nationality "Cisleithania" ;
+    ex:occupation "biologist",
+        "entomologist" .
+
+<http://www.wikidata.org/entity/Q1056> a ex:Person ;
+    ex:birthDate "1896-06-06" ;
+    ex:deathDate "1940-06-28" ;
+    ex:name "Italo Balbo" ;
+    ex:nationality "Kingdom of Italy" ;
+    ex:occupation "aircraft pilot",
+        "military aviator",
+        "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1058> a ex:Person ;
+    ex:birthDate "1950-09-17" ;
+    ex:name "Narendra Modi" ;
+    ex:nationality "India" ;
+    ex:occupation "bibliographer",
+        "politician",
+        "social worker",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1064> a ex:Person ;
+    ex:birthDate "1785-03-07" ;
+    ex:deathDate "1873-05-22" ;
+    ex:name "Alessandro Manzoni" ;
+    ex:nationality "Duchy of Milan",
+        "Kingdom of Italy",
+        "Kingdom of Sardinia" ;
+    ex:occupation "novelist",
+        "playwright",
+        "poet",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1067> a ex:Person ;
+    ex:birthDate "1265-01-01" ;
+    ex:deathDate "1321-09-22" ;
+    ex:name "Dante Alighieri" ;
+    ex:nationality "Republic of Florence" ;
+    ex:occupation "intellectual",
+        "linguist",
+        "philosopher",
+        "poet",
+        "political theorist",
+        "politician",
+        "prose writer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1081> a ex:Person ;
+    ex:birthDate "2000-01-01" ;
+    ex:name "Julio Bashmore" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "disc jockey",
+        "musician" .
+
+<http://www.wikidata.org/entity/Q1124> a ex:Person ;
+    ex:birthDate "1946-08-19" ;
+    ex:name "Bill Clinton" ;
+    ex:nationality "United States" ;
+    ex:occupation "autobiographer",
+        "diplomat",
+        "governor",
+        "jurist",
+        "lawyer",
+        "politician",
+        "saxophonist",
+        "statesperson",
+        "teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1145> a ex:Person ;
+    ex:birthDate "1683-09-25" ;
+    ex:deathDate "1764-09-12" ;
+    ex:name "Jean-Philippe Rameau" ;
+    ex:nationality "Kingdom of France" ;
+    ex:occupation "choreographer",
+        "composer",
+        "harpsichordist",
+        "music theorist",
+        "musicologist",
+        "organist",
+        "theorist" .
+
+<http://www.wikidata.org/entity/Q1149> a ex:Person ;
+    ex:birthDate "1917-11-19" ;
+    ex:deathDate "1984-10-31" ;
+    ex:name "Indira Gandhi" ;
+    ex:nationality "British Raj",
+        "Dominion of India",
+        "India" ;
+    ex:occupation "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1151> a ex:Person ;
+    ex:birthDate "1803-12-11" ;
+    ex:deathDate "1869-03-08" ;
+    ex:name "Hector Berlioz" ;
+    ex:nationality "France" ;
+    ex:occupation "autobiographer",
+        "composer",
+        "conductor",
+        "journalist",
+        "librarian",
+        "librettist",
+        "music critic",
+        "virtuoso",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1178> a ex:Person ;
+    ex:birthDate "1875-03-07" ;
+    ex:deathDate "1937-12-28" ;
+    ex:name "Maurice Ravel" ;
+    ex:nationality "France" ;
+    ex:occupation "composer",
+        "conductor",
+        "pianist" .
+
+<http://www.wikidata.org/entity/Q1189> a ex:Person ;
+    ex:birthDate "1986-08-21" ;
+    ex:name "Usain Bolt" ;
+    ex:nationality "Jamaica" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1192> a ex:Person ;
+    ex:birthDate "1632-11-28" ;
+    ex:deathDate "1687-03-22" ;
+    ex:name "Jean-Baptiste Lully" ;
+    ex:nationality "Grand Duchy of Tuscany",
+        "Kingdom of France" ;
+    ex:occupation "ballet dancer",
+        "choreographer",
+        "composer",
+        "conductor",
+        "dancer",
+        "music educator",
+        "pedagogue",
+        "teacher",
+        "violinist" .
+
+<http://www.wikidata.org/entity/Q1203> a ex:Person ;
+    ex:birthDate "1940-10-09" ;
+    ex:deathDate "1980-12-08" ;
+    ex:name "John Lennon" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "actor",
+        "composer",
+        "film actor",
+        "film director",
+        "film producer",
+        "guitarist",
+        "painter",
+        "peace activist",
+        "pianist",
+        "poet",
+        "political activist",
+        "prose writer",
+        "public figure",
+        "record producer",
+        "recording artist",
+        "singer",
+        "singer-songwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1217> a ex:Person ;
+    ex:birthDate "1822-01-15" ;
+    ex:deathDate "1910-07-07" ;
+    ex:name "Hubert Salentin" ;
+    ex:nationality "Kingdom of Prussia" ;
+    ex:occupation "blacksmith",
+        "painter" .
+
+<http://www.wikidata.org/entity/Q1220> a ex:Person ;
+    ex:birthDate "1925-06-29" ;
+    ex:deathDate "2023-09-22" ;
+    ex:name "Giorgio Napolitano" ;
+    ex:nationality "Italy" ;
+    ex:occupation "journalist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1224> a ex:Person ;
+    ex:birthDate "1920-12-09" ;
+    ex:deathDate "2016-09-16" ;
+    ex:name "Carlo Azeglio Ciampi" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "banker",
+        "economist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1225> a ex:Person ;
+    ex:birthDate "1949-09-23" ;
+    ex:name "Bruce Springsteen" ;
+    ex:nationality "United States" ;
+    ex:occupation "composer",
+        "film actor",
+        "film director",
+        "guitarist",
+        "pianist",
+        "record producer",
+        "recording artist",
+        "singer",
+        "songwriter",
+        "television actor" .
+
+<http://www.wikidata.org/entity/Q1228> a ex:Person ;
+    ex:birthDate "1918-09-09" ;
+    ex:deathDate "2012-01-29" ;
+    ex:name "Oscar Luigi Scalfaro" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1230> a ex:Person ;
+    ex:birthDate "1928-07-26" ;
+    ex:deathDate "2010-08-17" ;
+    ex:name "Francesco Cossiga" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "jurist",
+        "politician",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q1233> a ex:Person ;
+    ex:birthDate "1896-09-25" ;
+    ex:deathDate "1990-02-24" ;
+    ex:name "Sandro Pertini" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "journalist",
+        "partisan",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1235> a ex:Person ;
+    ex:birthDate "1908-11-03" ;
+    ex:deathDate "2001-11-09" ;
+    ex:name "Giovanni Leone" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1238> a ex:Person ;
+    ex:birthDate "1898-09-19" ;
+    ex:deathDate "1988-06-11" ;
+    ex:name "Giuseppe Saragat" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "diplomat",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1240> a ex:Person ;
+    ex:birthDate "1891-02-02" ;
+    ex:deathDate "1972-12-01" ;
+    ex:name "Antonio Segni" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "President of the Republic",
+        "diplomat",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1241> a ex:Person ;
+    ex:birthDate "1887-09-10" ;
+    ex:deathDate "1978-10-17" ;
+    ex:name "Giovanni Gronchi" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1242> a ex:Person ;
+    ex:birthDate "1874-03-24" ;
+    ex:deathDate "1961-10-30" ;
+    ex:name "Luigi Einaudi" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "banker",
+        "economist",
+        "journalist",
+        "lawyer",
+        "politician",
+        "professor" .
+
+<http://www.wikidata.org/entity/Q1245> a ex:Person ;
+    ex:birthDate "1877-11-09" ;
+    ex:deathDate "1959-10-01" ;
+    ex:name "Enrico de Nicola" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "journalist",
+        "judge",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1253> a ex:Person ;
+    ex:birthDate "1944-06-13" ;
+    ex:name "Ban Ki-moon" ;
+    ex:nationality "South Korea" ;
+    ex:occupation "diplomat",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1254> a ex:Person ;
+    ex:birthDate "1938-04-08" ;
+    ex:deathDate "2018-08-18" ;
+    ex:name "Kofi Annan" ;
+    ex:nationality "Ghana" ;
+    ex:occupation "diplomat",
+        "economist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1257> a ex:Person ;
+    ex:birthDate "1922-11-14" ;
+    ex:deathDate "2016-02-16" ;
+    ex:name "Boutros Boutros-Ghali" ;
+    ex:nationality "Egypt" ;
+    ex:occupation "diplomat",
+        "jurist",
+        "politician",
+        "university teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1259> a ex:Person ;
+    ex:birthDate "1920-01-19" ;
+    ex:deathDate "2020-03-04" ;
+    ex:name "Javier Pérez de Cuéllar" ;
+    ex:nationality "Peru" ;
+    ex:occupation "diplomat",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1260> a ex:Person ;
+    ex:birthDate "1918-12-21" ;
+    ex:deathDate "2007-06-14" ;
+    ex:name "Kurt Waldheim" ;
+    ex:nationality "Austria",
+        "Nazi Germany" ;
+    ex:occupation "autobiographer",
+        "diplomat",
+        "lawyer",
+        "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1264> a ex:Person ;
+    ex:birthDate "1909-01-22" ;
+    ex:deathDate "1974-11-25" ;
+    ex:name "U Thant" ;
+    ex:nationality "Myanmar" ;
+    ex:occupation "diplomat",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1267> a ex:Person ;
+    ex:birthDate "1905-07-29" ;
+    ex:deathDate "1961-09-18" ;
+    ex:name "Dag Hammarskjöld" ;
+    ex:nationality "Sweden" ;
+    ex:occupation "diplomat",
+        "economist",
+        "philosopher",
+        "poet",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1268> a ex:Person ;
+    ex:birthDate "1810-03-01" ;
+    ex:deathDate "1849-10-17" ;
+    ex:name "Frédéric Chopin" ;
+    ex:nationality "Congress Poland",
+        "Duchy of Warsaw",
+        "France",
+        "French Second Republic",
+        "Russian Empire" ;
+    ex:occupation "composer",
+        "music educator",
+        "musician",
+        "pedagogue",
+        "pianist",
+        "virtuoso" .
+
+<http://www.wikidata.org/entity/Q1271> a ex:Person ;
+    ex:birthDate "1896-07-16" ;
+    ex:deathDate "1968-12-30" ;
+    ex:name "Trygve Lie" ;
+    ex:nationality "Norway" ;
+    ex:occupation "diplomat",
+        "jurist",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1275> a ex:Person ;
+    ex:birthDate "1900-04-25" ;
+    ex:deathDate "1996-10-24" ;
+    ex:name "Gladwyn Jebb" ;
+    ex:nationality "United Kingdom",
+        "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "diplomat",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1276> a ex:Person ;
+    ex:birthDate "1934-09-21" ;
+    ex:deathDate "2016-11-07" ;
+    ex:name "Leonard Cohen" ;
+    ex:nationality "Canada" ;
+    ex:occupation "author",
+        "draftsperson",
+        "film actor",
+        "lyricist",
+        "musician",
+        "novelist",
+        "pianist",
+        "poet",
+        "record producer",
+        "screenwriter",
+        "singer",
+        "singer-songwriter",
+        "street artist",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1290> a ex:Person ;
+    ex:birthDate "1623-06-19" ;
+    ex:deathDate "1662-08-19" ;
+    ex:name "Blaise Pascal" ;
+    ex:nationality "Kingdom of France" ;
+    ex:occupation "French moralist",
+        "mathematician",
+        "philosopher",
+        "physicist",
+        "statistician",
+        "theologian",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1294> a ex:Person ;
+    ex:birthDate "1835-06-09" ;
+    ex:deathDate "1919-09-20" ;
+    ex:name "Ramón Barros Luco" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1298> a ex:Person ;
+    ex:birthDate "1849-06-29" ;
+    ex:deathDate "1910-08-16" ;
+    ex:name "Pedro Montt" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1300> a ex:Person ;
+    ex:birthDate "1854-05-28" ;
+    ex:deathDate "1916-12-08" ;
+    ex:name "Germán Riesco" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1316> a ex:Person ;
+    ex:birthDate "1937-04-28" ;
+    ex:deathDate "2006-12-30" ;
+    ex:name "Saddam Hussein" ;
+    ex:nationality "Ba'athist Iraq" ;
+    ex:occupation "military personnel",
+        "novelist",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1317> a ex:Person ;
+    ex:birthDate "1957-03-10" ;
+    ex:deathDate "2011-05-02" ;
+    ex:name "Osama bin Laden" ;
+    ex:nationality "Saudi Arabia",
+        "statelessness" ;
+    ex:occupation "businessperson",
+        "civil engineer",
+        "jihadist",
+        "terrorist" .
+
+<http://www.wikidata.org/entity/Q1318> a ex:Person ;
+    ex:birthDate "1847-04-12" ;
+    ex:deathDate "1902-02-01" ;
+    ex:name "Aníbal Zañartu" ;
+    ex:nationality "Chile" ;
+    ex:occupation "businessperson",
+        "diplomat",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1319> a ex:Person ;
+    ex:birthDate "1850-11-16" ;
+    ex:deathDate "1901-07-12" ;
+    ex:name "Federico Errázuriz Echaurren" ;
+    ex:nationality "Chile" ;
+    ex:occupation "President of Chile",
+        "farmer",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1320> a ex:Person ;
+    ex:birthDate "1845-04-26" ;
+    ex:deathDate "1922-10-08" ;
+    ex:name "Jorge Montt" ;
+    ex:nationality "Chile" ;
+    ex:occupation "military personnel",
+        "politician",
+        "sailor" .
+
+<http://www.wikidata.org/entity/Q1322> a ex:Person ;
+    ex:birthDate "1840-07-19" ;
+    ex:deathDate "1891-09-18" ;
+    ex:name "José Manuel Balmaceda" ;
+    ex:nationality "Chile" ;
+    ex:occupation "diplomat",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1323> a ex:Person ;
+    ex:birthDate "1825-08-04" ;
+    ex:deathDate "1889-07-18" ;
+    ex:name "Domingo Santa María" ;
+    ex:nationality "Chile" ;
+    ex:occupation "diplomat",
+        "historian",
+        "judge",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1324> a ex:Person ;
+    ex:birthDate "1825-03-15" ;
+    ex:deathDate "1884-06-09" ;
+    ex:name "Aníbal Pinto" ;
+    ex:nationality "Chile" ;
+    ex:occupation "diplomat",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1325> a ex:Person ;
+    ex:birthDate "1899-05-08" ;
+    ex:deathDate "1992-03-23" ;
+    ex:name "Friedrich Hayek" ;
+    ex:nationality "Austria",
+        "United Kingdom" ;
+    ex:occupation "economist",
+        "historian",
+        "philosopher",
+        "political scientist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q1326> a ex:Person ;
+    ex:birthDate "1825-04-25" ;
+    ex:deathDate "1877-07-20" ;
+    ex:name "Federico Errázuriz Zañartu" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1327> a ex:Person ;
+    ex:birthDate "1801-05-06" ;
+    ex:deathDate "1889-07-01" ;
+    ex:name "José Joaquín Pérez" ;
+    ex:nationality "Chile" ;
+    ex:occupation "diplomat",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1328> a ex:Person ;
+    ex:birthDate "1809-09-04" ;
+    ex:deathDate "1880-09-21" ;
+    ex:name "Manuel Montt" ;
+    ex:nationality "Chile" ;
+    ex:occupation "diplomat",
+        "judge",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1329> a ex:Person ;
+    ex:birthDate "1799-12-25" ;
+    ex:deathDate "1866-10-18" ;
+    ex:name "Manuel Bulnes" ;
+    ex:nationality "Chile" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1330> a ex:Person ;
+    ex:birthDate "1786-08-20" ;
+    ex:deathDate "1854-11-22" ;
+    ex:name "José Joaquín Prieto" ;
+    ex:nationality "Chile" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1331> a ex:Person ;
+    ex:birthDate "1790-04-21" ;
+    ex:deathDate "1876-09-05" ;
+    ex:name "Manuel Blanco Encalada" ;
+    ex:nationality "Argentina" ;
+    ex:occupation "diplomat",
+        "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1332> a ex:Person ;
+    ex:birthDate "1787-11-29" ;
+    ex:deathDate "1851-12-09" ;
+    ex:name "Ramón Freire" ;
+    ex:nationality "Chile" ;
+    ex:occupation "military personnel",
+        "politician",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q1333> a ex:Person ;
+    ex:birthDate "1785-07-23" ;
+    ex:deathDate "1858-07-18" ;
+    ex:name "Francisco Antonio Pinto" ;
+    ex:nationality "Chile" ;
+    ex:occupation "diplomat",
+        "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1339> a ex:Person ;
+    ex:birthDate "1685-03-31" ;
+    ex:deathDate "1750-07-28" ;
+    ex:name "Johann Sebastian Bach" ;
+    ex:nationality "Holy Roman Empire",
+        "Saxe-Eisenach" ;
+    ex:occupation "choir director",
+        "composer",
+        "concertmaster",
+        "conductor",
+        "harpsichordist",
+        "music educator",
+        "musicologist",
+        "organist",
+        "school teacher",
+        "violinist",
+        "virtuoso" .
+
+<http://www.wikidata.org/entity/Q1340> a ex:Person ;
+    ex:birthDate "1678-03-04" ;
+    ex:deathDate "1741-07-28" ;
+    ex:name "Antonio Vivaldi" ;
+    ex:nationality "Republic of Venice" ;
+    ex:occupation "composer" .
+
+<http://www.wikidata.org/entity/Q1379> a ex:Person ;
+    ex:birthDate "1938-07-27" ;
+    ex:deathDate "2008-03-04" ;
+    ex:name "Gary Gygax" ;
+    ex:nationality "United States" ;
+    ex:occupation "businessperson",
+        "game designer",
+        "novelist",
+        "publisher",
+        "role-playing game designer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1381> a ex:Person ;
+    ex:birthDate "1947-10-01" ;
+    ex:deathDate "2009-04-07" ;
+    ex:name "Dave Arneson" ;
+    ex:nationality "United States" ;
+    ex:occupation "game designer",
+        "role-playing game designer" .
+
+<http://www.wikidata.org/entity/Q1394> a ex:Person ;
+    ex:birthDate "1870-04-22" ;
+    ex:deathDate "1924-01-21" ;
+    ex:name "Vladimir Lenin" ;
+    ex:nationality "Soviet Union" ;
+    ex:occupation "politician",
+        "revolutionary" .
+
+<http://www.wikidata.org/entity/Q1395> a ex:Person ;
+    ex:birthDate "1967-01-14" ;
+    ex:name "Leo Ortolani" ;
+    ex:nationality "Italy" ;
+    ex:occupation "comics artist",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q1398> a ex:Person ;
+    ex:birthDate "-0069-10-13" ;
+    ex:deathDate "-0018-09-19" ;
+    ex:name "Virgil" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1399> a ex:Person ;
+    ex:birthDate "1469-05-12" ;
+    ex:deathDate "1527-07-01" ;
+    ex:name "Niccolò Machiavelli" ;
+    ex:nationality "Republic of Florence" ;
+    ex:occupation "diplomat",
+        "historian",
+        "military theorist",
+        "philosopher",
+        "playwright",
+        "poet",
+        "political theorist",
+        "politician",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1401> a ex:Person ;
+    ex:birthDate "1304-07-28" ;
+    ex:deathDate "1374-07-27" ;
+    ex:name "Petrarch" ;
+    ex:nationality "Republic of Florence" ;
+    ex:occupation "Catholic cleric",
+        "autobiographer",
+        "humanist",
+        "lyricist",
+        "mountaineer",
+        "philologist",
+        "philosopher",
+        "poet",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1402> a ex:Person ;
+    ex:birthDate "1313-01-01" ;
+    ex:deathDate "1375-12-29" ;
+    ex:name "Giovanni Boccaccio" ;
+    ex:nationality "Republic of Florence" ;
+    ex:occupation "biographer",
+        "diplomat",
+        "mythographer",
+        "poet",
+        "short story writer",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1403> a ex:Person ;
+    ex:birthDate "1867-06-28" ;
+    ex:deathDate "1936-12-10" ;
+    ex:name "Luigi Pirandello" ;
+    ex:nationality "Kingdom of Italy" ;
+    ex:occupation "director",
+        "novelist",
+        "playwright",
+        "poet",
+        "screenwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1405> a ex:Person ;
+    ex:birthDate "-0062-09-21" ;
+    ex:deathDate "0014-08-17" ;
+    ex:name "Augustus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "Ancient Roman politician",
+        "ancient Roman military personnel",
+        "ruler" .
+
+<http://www.wikidata.org/entity/Q1407> a ex:Person ;
+    ex:birthDate "-0041-11-14" ;
+    ex:deathDate "0037-03-14" ;
+    ex:name "Tiberius" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q1409> a ex:Person ;
+    ex:birthDate "0012-08-29" ;
+    ex:deathDate "0041-01-22" ;
+    ex:name "Caligula" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1411> a ex:Person ;
+    ex:birthDate "-0009-07-30" ;
+    ex:deathDate "0054-10-11" ;
+    ex:name "Claudius" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "historian",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1413> a ex:Person ;
+    ex:birthDate "0037-12-13" ;
+    ex:deathDate "0068-06-07" ;
+    ex:name "Nero" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "musician",
+        "poet",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1414> a ex:Person ;
+    ex:birthDate "-0002-12-22" ;
+    ex:deathDate "0069-01-13" ;
+    ex:name "Galba" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1416> a ex:Person ;
+    ex:birthDate "0032-04-26" ;
+    ex:deathDate "0069-04-14" ;
+    ex:name "Otho" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "Ancient Roman politician",
+        "ancient Roman military personnel" .
+
+<http://www.wikidata.org/entity/Q1417> a ex:Person ;
+    ex:birthDate "0015-09-05",
+        "0015-09-22" ;
+    ex:deathDate "0069-12-20" ;
+    ex:name "Vitellius" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1419> a ex:Person ;
+    ex:birthDate "0009-11-15" ;
+    ex:deathDate "0079-06-21" ;
+    ex:name "Vespasian" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1421> a ex:Person ;
+    ex:birthDate "0039-12-28" ;
+    ex:deathDate "0081-09-11" ;
+    ex:name "Titus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1423> a ex:Person ;
+    ex:birthDate "0051-10-22" ;
+    ex:deathDate "0096-09-16" ;
+    ex:name "Domitian" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1424> a ex:Person ;
+    ex:birthDate "0030-11-06" ;
+    ex:deathDate "0098-01-25" ;
+    ex:name "Nerva" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1425> a ex:Person ;
+    ex:birthDate "0053-09-16" ;
+    ex:deathDate "0117-08-01" ;
+    ex:name "Trajan" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military officer",
+        "politician",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q1426> a ex:Person ;
+    ex:birthDate "1981-08-08" ;
+    ex:name "Roger Federer" ;
+    ex:nationality "Switzerland" ;
+    ex:occupation "tennis player" .
+
+<http://www.wikidata.org/entity/Q1427> a ex:Person ;
+    ex:birthDate "0076-01-22" ;
+    ex:deathDate "0138-07-09" ;
+    ex:name "Hadrian" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "poet",
+        "politician",
+        "sovereign" .
+
+<http://www.wikidata.org/entity/Q1429> a ex:Person ;
+    ex:birthDate "0086-09-17" ;
+    ex:deathDate "0161-03-06" ;
+    ex:name "Antoninus Pius" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1430> a ex:Person ;
+    ex:birthDate "0121-04-25" ;
+    ex:deathDate "0180-03-16" ;
+    ex:name "Marcus Aurelius" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "monarch",
+        "philosopher",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1433> a ex:Person ;
+    ex:birthDate "0130-12-14" ;
+    ex:deathDate "0169-01-01" ;
+    ex:name "Lucius Verus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1434> a ex:Person ;
+    ex:birthDate "0161-08-30" ;
+    ex:deathDate "0192-12-30" ;
+    ex:name "Commodus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "ruler" .
+
+<http://www.wikidata.org/entity/Q1436> a ex:Person ;
+    ex:birthDate "0126-07-31" ;
+    ex:deathDate "0193-03-27" ;
+    ex:name "Pertinax" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q1440> a ex:Person ;
+    ex:birthDate "0133-01-01" ;
+    ex:deathDate "0193-05-31" ;
+    ex:name "Didius Julianus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1442> a ex:Person ;
+    ex:birthDate "0146-04-10" ;
+    ex:deathDate "0211-02-04" ;
+    ex:name "Septimius Severus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "emperor",
+        "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1446> a ex:Person ;
+    ex:birthDate "0188-04-03" ;
+    ex:deathDate "0217-04-08" ;
+    ex:name "Caracalla" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "monarch",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1450> a ex:Person ;
+    ex:birthDate "1985-10-08" ;
+    ex:name "Bruno Mars" ;
+    ex:nationality "United States" ;
+    ex:occupation "dancer",
+        "multi-instrumentalist",
+        "music video director",
+        "musician",
+        "record producer",
+        "singer",
+        "songwriter" .
+
+<http://www.wikidata.org/entity/Q1453> a ex:Person ;
+    ex:birthDate "1989-06-10" ;
+    ex:name "Alexandra Stan" ;
+    ex:nationality "Romania" ;
+    ex:occupation "composer",
+        "model",
+        "singer",
+        "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q1463> a ex:Person ;
+    ex:birthDate "1917-09-11" ;
+    ex:deathDate "1989-09-28" ;
+    ex:name "Ferdinand Marcos" ;
+    ex:nationality "Philippines" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1464> a ex:Person ;
+    ex:birthDate "1960-02-08" ;
+    ex:deathDate "2021-06-24" ;
+    ex:name "Benigno Aquino III" ;
+    ex:nationality "Philippines" ;
+    ex:occupation "economist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1470> a ex:Person ;
+    ex:birthDate "1898-06-17" ;
+    ex:deathDate "1972-03-27" ;
+    ex:name "M. C. Escher" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "ceramics designer",
+        "designer",
+        "draftsperson",
+        "graphic artist",
+        "illustrator",
+        "lithographer",
+        "muralist",
+        "painter",
+        "photographer",
+        "postage stamp designer",
+        "printmaker",
+        "sculptor",
+        "visual artist",
+        "wood engraver" .
+
+<http://www.wikidata.org/entity/Q1480> a ex:Person ;
+    ex:birthDate "1933-01-25" ;
+    ex:deathDate "2009-08-01" ;
+    ex:name "Corazon Aquino" ;
+    ex:nationality "Philippines" ;
+    ex:occupation "human rights activist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1488> a ex:Person ;
+    ex:birthDate "1909-03-31" ;
+    ex:deathDate "1945-02-06" ;
+    ex:name "Robert Brasillach" ;
+    ex:nationality "France" ;
+    ex:occupation "film critic",
+        "journalist",
+        "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1496> a ex:Person ;
+    ex:birthDate "1480-01-01" ;
+    ex:deathDate "1521-05-07" ;
+    ex:name "Ferdinand Magellan" ;
+    ex:nationality "Kingdom of Portugal" ;
+    ex:occupation "explorer",
+        "sailor",
+        "seafarer" .
+
+<http://www.wikidata.org/entity/Q1500> a ex:Person ;
+    ex:birthDate "1861-06-19" ;
+    ex:deathDate "1896-12-30" ;
+    ex:name "José Rizal" ;
+    ex:nationality "Captaincy General of the Philippines" ;
+    ex:occupation "ophthalmologist" .
+
+<http://www.wikidata.org/entity/Q1503> a ex:Person ;
+    ex:birthDate "1878-08-19" ;
+    ex:deathDate "1944-08-01" ;
+    ex:name "Manuel L. Quezon" ;
+    ex:nationality "Philippines" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1511> a ex:Person ;
+    ex:birthDate "1813-05-22" ;
+    ex:deathDate "1883-02-13" ;
+    ex:name "Richard Wagner" ;
+    ex:nationality "Kingdom of Saxony" ;
+    ex:occupation "autobiographer",
+        "composer",
+        "conductor",
+        "diarist",
+        "essayist",
+        "librettist",
+        "music critic",
+        "pianist",
+        "poet",
+        "theatrical director",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1512> a ex:Person ;
+    ex:birthDate "1850-11-13" ;
+    ex:deathDate "1894-12-03" ;
+    ex:name "Robert Louis Stevenson" ;
+    ex:nationality "United Kingdom",
+        "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "children's writer",
+        "essayist",
+        "novelist",
+        "poet",
+        "short story writer",
+        "songwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1523> a ex:Person ;
+    ex:birthDate "-1302-01-01" ;
+    ex:deathDate "-1212-01-01" ;
+    ex:name "Ramesses II" ;
+    ex:nationality "Ancient Egypt" ;
+    ex:occupation "statesperson" .
+
+<http://www.wikidata.org/entity/Q1526> a ex:Person ;
+    ex:birthDate "-1300-01-01" ;
+    ex:deathDate "-1289-01-01" ;
+    ex:name "Ramesses I" ;
+    ex:nationality "Ancient Egypt" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q1528> a ex:Person ;
+    ex:birthDate "-1216-01-01" ;
+    ex:deathDate "-1154-01-01" ;
+    ex:name "Ramesses III" ;
+    ex:nationality "Ancient Egypt" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q1532> a ex:Person ;
+    ex:birthDate "-1200-01-01" ;
+    ex:deathDate "-1155-01-01" ;
+    ex:name "Ramesses IV" ;
+    ex:nationality "Ancient Egypt" ;
+    ex:occupation "statesperson" .
+
+<http://www.wikidata.org/entity/Q1541> a ex:Person ;
+    ex:birthDate "-0106-12-31" ;
+    ex:deathDate "-0042-12-05" ;
+    ex:name "Cicero" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "Ancient Roman politician",
+        "Ancient Roman priest",
+        "ancient Roman military personnel",
+        "jurist",
+        "lawyer",
+        "orator",
+        "philosopher",
+        "poet",
+        "political theorist",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1544> a ex:Person ;
+    ex:birthDate "1869-08-13" ;
+    ex:deathDate "1948-01-19" ;
+    ex:name "Tony Garnier" ;
+    ex:nationality "France" ;
+    ex:occupation "architect",
+        "painter",
+        "urban planner" .
+
+<http://www.wikidata.org/entity/Q1545> a ex:Person ;
+    ex:birthDate "1953-06-22" ;
+    ex:name "Cyndi Lauper" ;
+    ex:nationality "United States" ;
+    ex:occupation "composer",
+        "film actor",
+        "recording artist",
+        "singer",
+        "singer-songwriter",
+        "stage actor",
+        "television actor",
+        "voice actor" .
+
+<http://www.wikidata.org/entity/Q157> a ex:Person ;
+    ex:birthDate "1954-08-12" ;
+    ex:name "François Hollande" ;
+    ex:nationality "France" ;
+    ex:occupation "statesperson" .
+
+<http://www.wikidata.org/entity/Q15802> a ex:Person ;
+    ex:birthDate "1953-05-25" ;
+    ex:name "Daniel Passarella" ;
+    ex:nationality "Argentina" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q15803> a ex:Person ;
+    ex:birthDate "1835-10-27" ;
+    ex:deathDate "1869-10-18" ;
+    ex:name "Simon Jenko" ;
+    ex:nationality "Austrian Empire" ;
+    ex:occupation "poet",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q15806> a ex:Person ;
+    ex:birthDate "1876-01-19" ;
+    ex:deathDate "1899-04-26" ;
+    ex:name "Dragotin Kette" ;
+    ex:nationality "Cisleithania" ;
+    ex:occupation "children's writer",
+        "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q15809> a ex:Person ;
+    ex:birthDate "1876-05-10" ;
+    ex:deathDate "1918-12-11" ;
+    ex:name "Ivan Cankar" ;
+    ex:nationality "Austria–Hungary" ;
+    ex:occupation "essayist",
+        "novelist",
+        "playwright",
+        "poet",
+        "politician",
+        "prose writer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q15849> a ex:Person ;
+    ex:birthDate "1956-03-23" ;
+    ex:name "José Manuel Durão Barroso" ;
+    ex:nationality "Portugal" ;
+    ex:occupation "economist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1585> a ex:Person ;
+    ex:birthDate "1789-03-16" ;
+    ex:deathDate "1854-07-06" ;
+    ex:name "Georg Simon Ohm" ;
+    ex:nationality "Kingdom of Bavaria" ;
+    ex:occupation "mathematician",
+        "physicist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q15852> a ex:Person ;
+    ex:birthDate "1933-05-21" ;
+    ex:deathDate "2012-11-07" ;
+    ex:name "Aleksandr Berkutov" ;
+    ex:nationality "Russia",
+        "Soviet Union" ;
+    ex:occupation "rower",
+        "rowing coach" .
+
+<http://www.wikidata.org/entity/Q15859> a ex:Person ;
+    ex:birthDate "1769-01-01" ;
+    ex:deathDate "1794-01-01" ;
+    ex:name "Lotf Ali Khan" ;
+    ex:nationality "Iran" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q15866> a ex:Person ;
+    ex:birthDate "1906-11-15" ;
+    ex:deathDate "1990-10-01" ;
+    ex:name "Curtis LeMay" ;
+    ex:nationality "United States" ;
+    ex:occupation "air force officer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q15869> a ex:Person ;
+    ex:birthDate "1946-09-05" ;
+    ex:deathDate "1991-11-24" ;
+    ex:name "Freddie Mercury" ;
+    ex:nationality "Sultanate of Zanzibar",
+        "United Kingdom" ;
+    ex:occupation "composer",
+        "graphic designer",
+        "guitarist",
+        "manufacturer",
+        "painter",
+        "pianist",
+        "poet",
+        "record producer",
+        "rock musician",
+        "singer",
+        "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q1589> a ex:Person ;
+    ex:birthDate "1737-09-09" ;
+    ex:deathDate "1798-12-04" ;
+    ex:name "Luigi Galvani" ;
+    ex:nationality "Papal States" ;
+    ex:occupation "anatomist",
+        "inventor",
+        "physician",
+        "physicist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q15953> a ex:Person ;
+    ex:birthDate "1849-11-22" ;
+    ex:deathDate "1923-06-29" ;
+    ex:name "Fritz Mauthner" ;
+    ex:nationality "Austria",
+        "Cisleithania",
+        "Germany" ;
+    ex:occupation "critic",
+        "editing staff",
+        "editor",
+        "journalist",
+        "literary critic",
+        "philosopher",
+        "playwright",
+        "theatre critic",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q15956> a ex:Person ;
+    ex:birthDate "1851-08-19" ;
+    ex:deathDate "1917-06-29" ;
+    ex:name "Frans Schollaert" ;
+    ex:nationality "Belgium" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q15969> a ex:Person ;
+    ex:birthDate "1912-10-31" ;
+    ex:deathDate "1978-10-17" ;
+    ex:name "Jean Améry" ;
+    ex:nationality "Austria",
+        "Cisleithania" ;
+    ex:occupation "philosopher" .
+
+<http://www.wikidata.org/entity/Q15975> a ex:Person ;
+    ex:birthDate "1689-01-18" ;
+    ex:deathDate "1755-02-10" ;
+    ex:name "Montesquieu" ;
+    ex:nationality "Kingdom of France" ;
+    ex:occupation "author",
+        "encyclopédistes",
+        "historian",
+        "judge",
+        "jurist",
+        "lawyer",
+        "novelist",
+        "philosopher",
+        "politician",
+        "sociologist",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q15981> a ex:Person ;
+    ex:birthDate "1886-06-29" ;
+    ex:deathDate "1963-09-04" ;
+    ex:name "Robert Schuman" ;
+    ex:nationality "France",
+        "Germany" ;
+    ex:occupation "diplomat",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q15993> a ex:Person ;
+    ex:birthDate "1964-05-12" ;
+    ex:name "Bart Somers" ;
+    ex:nationality "Belgium" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1604> a ex:Person ;
+    ex:birthDate "1984-06-15" ;
+    ex:name "Tim Lincecum" ;
+    ex:nationality "United States" ;
+    ex:occupation "baseball player" .
+
+<http://www.wikidata.org/entity/Q1615> a ex:Person ;
+    ex:birthDate "1930-08-05" ;
+    ex:deathDate "2012-08-25" ;
+    ex:name "Neil Armstrong" ;
+    ex:nationality "United States" ;
+    ex:occupation "United States Naval Aviator",
+        "astronaut",
+        "military flight engineer",
+        "test pilot",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q1618> a ex:Person ;
+    ex:birthDate "1902-02-04" ;
+    ex:deathDate "1974-08-26" ;
+    ex:name "Charles Lindbergh" ;
+    ex:nationality "United States" ;
+    ex:occupation "air force officer",
+        "aircraft pilot",
+        "autobiographer",
+        "aviation writer",
+        "diarist",
+        "engineer",
+        "fighter pilot",
+        "inventor",
+        "peace activist" .
+
+<http://www.wikidata.org/entity/Q1625> a ex:Person ;
+    ex:birthDate "1870-11-21" ;
+    ex:deathDate "1964-03-18" ;
+    ex:name "Sigfrid Edström" ;
+    ex:nationality "Sweden" ;
+    ex:occupation "athletics competitor",
+        "businessperson",
+        "engineer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1628> a ex:Person ;
+    ex:birthDate "1905-02-09" ;
+    ex:deathDate "1981-10-22" ;
+    ex:name "David Cecil, 6th Marquess of Exeter" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "athletics competitor",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1631> a ex:Person ;
+    ex:birthDate "1915-12-19" ;
+    ex:deathDate "1963-10-10" ;
+    ex:name "Édith Piaf" ;
+    ex:nationality "France" ;
+    ex:occupation "actor",
+        "chansonnier",
+        "recording artist",
+        "singer",
+        "songwriter",
+        "street artist" .
+
+<http://www.wikidata.org/entity/Q1634> a ex:Person ;
+    ex:birthDate "1902-10-12" ;
+    ex:deathDate "1985-05-09" ;
+    ex:name "Adriaan Paulen" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "association football player",
+        "engineer",
+        "middle-distance runner",
+        "resistance fighter",
+        "sports executive" .
+
+<http://www.wikidata.org/entity/Q1638> a ex:Person ;
+    ex:birthDate "1923-07-14" ;
+    ex:deathDate "1999-11-07" ;
+    ex:name "Primo Nebiolo" ;
+    ex:nationality "Italy" ;
+    ex:occupation "sports official" .
+
+<http://www.wikidata.org/entity/Q1639> a ex:Person ;
+    ex:birthDate "1933-06-07" ;
+    ex:deathDate "2021-12-03" ;
+    ex:name "Lamine Diack" ;
+    ex:nationality "Senegal" ;
+    ex:occupation "athletics competitor",
+        "politician",
+        "sports executive" .
+
+<http://www.wikidata.org/entity/Q1646> a ex:Person ;
+    ex:birthDate "1935-06-21" ;
+    ex:deathDate "2004-09-24" ;
+    ex:name "Françoise Sagan" ;
+    ex:nationality "France" ;
+    ex:occupation "biographer",
+        "film director",
+        "novelist",
+        "playwright",
+        "poet",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q1651> a ex:Person ;
+    ex:birthDate "1989-12-26" ;
+    ex:name "Yohan Blake" ;
+    ex:nationality "Jamaica" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1652> a ex:Person ;
+    ex:birthDate "1982-02-10" ;
+    ex:name "Justin Gatlin" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1654> a ex:Person ;
+    ex:birthDate "1989-10-31" ;
+    ex:name "Warren Weir" ;
+    ex:nationality "Jamaica" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1655> a ex:Person ;
+    ex:birthDate "1992-09-01" ;
+    ex:name "Kirani James" ;
+    ex:nationality "Grenada" ;
+    ex:occupation "athletics competitor",
+        "diplomat" .
+
+<http://www.wikidata.org/entity/Q1656> a ex:Person ;
+    ex:birthDate "1992-11-12" ;
+    ex:name "Luguelín Santos" ;
+    ex:nationality "Dominican Republic" ;
+    ex:occupation "athletics competitor",
+        "sprinter" .
+
+<http://www.wikidata.org/entity/Q1657> a ex:Person ;
+    ex:birthDate "1988-11-25" ;
+    ex:name "Lalonde Gordon" ;
+    ex:nationality "Trinidad and Tobago" ;
+    ex:occupation "athletics competitor",
+        "sprinter" .
+
+<http://www.wikidata.org/entity/Q1659> a ex:Person ;
+    ex:birthDate "1988-12-17" ;
+    ex:name "David Rudisha" ;
+    ex:nationality "Kenya" ;
+    ex:occupation "athletics competitor",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1660> a ex:Person ;
+    ex:birthDate "1994-03-15" ;
+    ex:name "Nijel Amos" ;
+    ex:nationality "Botswana" ;
+    ex:occupation "athletics competitor",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1662> a ex:Person ;
+    ex:birthDate "1994-11-20" ;
+    ex:name "Timothy Kitum" ;
+    ex:nationality "Kenya" ;
+    ex:occupation "athletics competitor",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1665> a ex:Person ;
+    ex:birthDate "1988-04-29" ;
+    ex:name "Taoufik Makhloufi" ;
+    ex:nationality "Algeria" ;
+    ex:occupation "athletics competitor",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1666> a ex:Person ;
+    ex:birthDate "1929-04-08" ;
+    ex:deathDate "1978-10-09" ;
+    ex:name "Jacques Brel" ;
+    ex:nationality "Belgium" ;
+    ex:occupation "actor",
+        "chansonnier",
+        "composer",
+        "film actor",
+        "film director",
+        "guitarist",
+        "poet",
+        "screenwriter",
+        "singer",
+        "singer-songwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1668> a ex:Person ;
+    ex:birthDate "1984-09-12" ;
+    ex:name "Leonel Manzano" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1669> a ex:Person ;
+    ex:birthDate "1987-03-25" ;
+    ex:name "Abdalaati Iguider" ;
+    ex:nationality "Morocco" ;
+    ex:occupation "athletics competitor",
+        "long-distance runner",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1671> a ex:Person ;
+    ex:birthDate "1983-03-23" ;
+    ex:name "Mo Farah" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "athletics competitor",
+        "autobiographer",
+        "children's writer",
+        "long-distance runner",
+        "marathon runner",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1672> a ex:Person ;
+    ex:birthDate "1989-11-24" ;
+    ex:name "Dejen Gebremeskel" ;
+    ex:nationality "Ethiopia" ;
+    ex:occupation "athletics competitor",
+        "long-distance runner" .
+
+<http://www.wikidata.org/entity/Q1674> a ex:Person ;
+    ex:birthDate "1987-02-28" ;
+    ex:name "Tariku Bekele" ;
+    ex:nationality "Ethiopia" ;
+    ex:occupation "athletics competitor",
+        "long-distance runner" .
+
+<http://www.wikidata.org/entity/Q1677> a ex:Person ;
+    ex:birthDate "1982-05-25" ;
+    ex:name "Ezekiel Kemboi" ;
+    ex:nationality "Kenya" ;
+    ex:occupation "athletics competitor",
+        "steeplechase runner" .
+
+<http://www.wikidata.org/entity/Q1679> a ex:Person ;
+    ex:birthDate "1985-03-15" ;
+    ex:name "Mahiedine Mekhissi-Benabbad" ;
+    ex:nationality "France" ;
+    ex:occupation "athletics competitor",
+        "middle-distance runner" .
+
+<http://www.wikidata.org/entity/Q1681> a ex:Person ;
+    ex:birthDate "1988-10-02" ;
+    ex:name "Abel Mutai" ;
+    ex:nationality "Kenya" ;
+    ex:occupation "athletics competitor",
+        "long-distance runner" .
+
+<http://www.wikidata.org/entity/Q1683> a ex:Person ;
+    ex:birthDate "1985-07-24" ;
+    ex:name "Aries Merritt" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor",
+        "hurdler" .
+
+<http://www.wikidata.org/entity/Q1685> a ex:Person ;
+    ex:birthDate "1981-01-20" ;
+    ex:name "Jason Richardson" ;
+    ex:nationality "United States" ;
+    ex:occupation "basketball player" .
+
+<http://www.wikidata.org/entity/Q1687> a ex:Person ;
+    ex:birthDate "1990-06-17" ;
+    ex:name "Hansle Parchment" ;
+    ex:nationality "Jamaica" ;
+    ex:occupation "athletics competitor",
+        "hurdler" .
+
+<http://www.wikidata.org/entity/Q1689> a ex:Person ;
+    ex:birthDate "1977-08-30" ;
+    ex:name "Félix Sánchez" ;
+    ex:nationality "Dominican Republic",
+        "United States" ;
+    ex:occupation "athletics competitor",
+        "hurdler" .
+
+<http://www.wikidata.org/entity/Q1691> a ex:Person ;
+    ex:birthDate "1984-07-25" ;
+    ex:name "Javier Culson" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1698> a ex:Person ;
+    ex:birthDate "1928-04-02" ;
+    ex:deathDate "1991-03-02" ;
+    ex:name "Serge Gainsbourg" ;
+    ex:nationality "France" ;
+    ex:occupation "actor",
+        "composer",
+        "film actor",
+        "film director",
+        "film score composer",
+        "jazz musician",
+        "musician",
+        "painter",
+        "pianist",
+        "poet",
+        "screenwriter",
+        "singer",
+        "singer-songwriter",
+        "songwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1699> a ex:Person ;
+    ex:birthDate "1985-10-11" ;
+    ex:name "Nesta Carter" ;
+    ex:nationality "Jamaica" ;
+    ex:occupation "athletics competitor",
+        "sprinter" .
+
+<http://www.wikidata.org/entity/Q1702> a ex:Person ;
+    ex:birthDate "1989-02-27" ;
+    ex:name "Stephen Kiprotich" ;
+    ex:nationality "Uganda" ;
+    ex:occupation "athletics competitor",
+        "long-distance runner",
+        "marathon runner" .
+
+<http://www.wikidata.org/entity/Q1704> a ex:Person ;
+    ex:birthDate "1982-06-04" ;
+    ex:name "Abel Kirui" ;
+    ex:nationality "Kenya" ;
+    ex:occupation "athletics competitor",
+        "long-distance runner",
+        "marathon runner" .
+
+<http://www.wikidata.org/entity/Q1705> a ex:Person ;
+    ex:birthDate "1982-03-15" ;
+    ex:name "Wilson Kipsang Kiprotich" ;
+    ex:nationality "Kenya" ;
+    ex:occupation "athletics competitor",
+        "long-distance runner",
+        "marathon runner" .
+
+<http://www.wikidata.org/entity/Q1708> a ex:Person ;
+    ex:birthDate "1992-08-05" ;
+    ex:name "Chen Ding" ;
+    ex:nationality "People's Republic of China" ;
+    ex:occupation "athletics competitor",
+        "racewalker" .
+
+<http://www.wikidata.org/entity/Q1712> a ex:Person ;
+    ex:birthDate "1991-06-14" ;
+    ex:name "Erick Barrondo" ;
+    ex:nationality "Guatemala" ;
+    ex:occupation "athletics competitor",
+        "racewalker" .
+
+<http://www.wikidata.org/entity/Q1716> a ex:Person ;
+    ex:birthDate "1952-05-11" ;
+    ex:name "Renaud" ;
+    ex:nationality "France" ;
+    ex:occupation "composer",
+        "film actor",
+        "film score composer",
+        "lyricist",
+        "recording artist",
+        "singer",
+        "singer-songwriter",
+        "songwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1717> a ex:Person ;
+    ex:birthDate "1980-01-16" ;
+    ex:name "Sergey Kirdyapkin" ;
+    ex:nationality "Russia" ;
+    ex:occupation "athletics competitor",
+        "racewalker" .
+
+<http://www.wikidata.org/entity/Q1728> a ex:Person ;
+    ex:birthDate "1984-10-17" ;
+    ex:name "Jared Tallent" ;
+    ex:nationality "Australia" ;
+    ex:occupation "athletics competitor",
+        "racewalker" .
+
+<http://www.wikidata.org/entity/Q1732> a ex:Person ;
+    ex:birthDate "1986-03-29" ;
+    ex:name "Ivan Ukhov" ;
+    ex:nationality "Russia" ;
+    ex:occupation "athletics competitor",
+        "high jumper" .
+
+<http://www.wikidata.org/entity/Q1736> a ex:Person ;
+    ex:birthDate "1991-02-03" ;
+    ex:name "Erik Kynard" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor",
+        "high jumper" .
+
+<http://www.wikidata.org/entity/Q1738> a ex:Person ;
+    ex:birthDate "1987-10-03" ;
+    ex:name "Robert Grabarz" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1739> a ex:Person ;
+    ex:birthDate "1991-06-24" ;
+    ex:name "Mutaz Essa Barshim" ;
+    ex:nationality "Qatar" ;
+    ex:occupation "athletics competitor",
+        "high jumper" .
+
+<http://www.wikidata.org/entity/Q1742> a ex:Person ;
+    ex:birthDate "1986-09-18" ;
+    ex:name "Renaud Lavillenie" ;
+    ex:nationality "France" ;
+    ex:occupation "motorcycle racer",
+        "pole vaulter" .
+
+<http://www.wikidata.org/entity/Q1743> a ex:Person ;
+    ex:birthDate "1977-10-16" ;
+    ex:name "Björn Otto" ;
+    ex:nationality "Germany" ;
+    ex:occupation "athletics competitor",
+        "pole vaulter" .
+
+<http://www.wikidata.org/entity/Q1744> a ex:Person ;
+    ex:birthDate "1958-08-16" ;
+    ex:name "Madonna" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "singer",
+        "songwriter" .
+
+<http://www.wikidata.org/entity/Q1745> a ex:Person ;
+    ex:birthDate "1986-11-17" ;
+    ex:name "Greg Rutherford" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "athletics competitor",
+        "long jumper",
+        "sprinter" .
+
+<http://www.wikidata.org/entity/Q1747> a ex:Person ;
+    ex:birthDate "1988-03-25" ;
+    ex:name "Mitchell Watt" ;
+    ex:nationality "Australia" ;
+    ex:occupation "athletics competitor",
+        "long jumper" .
+
+<http://www.wikidata.org/entity/Q1750> a ex:Person ;
+    ex:birthDate "1991-06-13" ;
+    ex:name "Will Claye" ;
+    ex:nationality "Sierra Leone",
+        "United States" ;
+    ex:occupation "athletics competitor",
+        "long jumper",
+        "triple jumper" .
+
+<http://www.wikidata.org/entity/Q1751> a ex:Person ;
+    ex:birthDate "1990-06-18" ;
+    ex:name "Christian Taylor" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor",
+        "sprinter" .
+
+<http://www.wikidata.org/entity/Q1752> a ex:Person ;
+    ex:birthDate "0164-01-01",
+        "0165-01-01" ;
+    ex:deathDate "0218-01-01" ;
+    ex:name "Macrinus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1753> a ex:Person ;
+    ex:birthDate "1976-08-14" ;
+    ex:name "Fabrizio Donato" ;
+    ex:nationality "Italy" ;
+    ex:occupation "athletics competitor",
+        "long jumper",
+        "triple jumper" .
+
+<http://www.wikidata.org/entity/Q1755> a ex:Person ;
+    ex:birthDate "1981-08-30" ;
+    ex:name "Tomasz Majewski" ;
+    ex:nationality "Poland" ;
+    ex:occupation "athletics competitor",
+        "shot putter" .
+
+<http://www.wikidata.org/entity/Q1758> a ex:Person ;
+    ex:birthDate "1990-07-27" ;
+    ex:name "David Storl" ;
+    ex:nationality "Germany" ;
+    ex:occupation "athletics competitor",
+        "shot putter" .
+
+<http://www.wikidata.org/entity/Q1760> a ex:Person ;
+    ex:birthDate "1977-10-08" ;
+    ex:name "Reese Hoffa" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor",
+        "shot putter" .
+
+<http://www.wikidata.org/entity/Q1762> a ex:Person ;
+    ex:birthDate "0203-03-20" ;
+    ex:deathDate "0222-03-11" ;
+    ex:name "Elagabalus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1766> a ex:Person ;
+    ex:birthDate "1984-10-18" ;
+    ex:name "Robert Harting" ;
+    ex:nationality "German Democratic Republic",
+        "Germany" ;
+    ex:occupation "discus thrower" .
+
+<http://www.wikidata.org/entity/Q1768> a ex:Person ;
+    ex:birthDate "1917-04-25" ;
+    ex:deathDate "1996-06-15" ;
+    ex:name "Ella Fitzgerald" ;
+    ex:nationality "United States" ;
+    ex:occupation "bandleader",
+        "composer",
+        "conductor",
+        "film actor",
+        "jazz musician",
+        "recording artist",
+        "singer",
+        "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q1769> a ex:Person ;
+    ex:birthDate "0208-10-01" ;
+    ex:deathDate "0235-03-19" ;
+    ex:name "Severus Alexander" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1771> a ex:Person ;
+    ex:birthDate "1985-01-20" ;
+    ex:name "Ehsan Hadadi" ;
+    ex:nationality "Iran" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1775> a ex:Person ;
+    ex:birthDate "1922-12-22" ;
+    ex:deathDate "1999-04-10" ;
+    ex:name "Brownie Mary" ;
+    ex:nationality "United States" ;
+    ex:occupation "HIV/AIDS activist",
+        "health activist" .
+
+<http://www.wikidata.org/entity/Q1776> a ex:Person ;
+    ex:birthDate "1979-05-06" ;
+    ex:name "Gerd Kanter" ;
+    ex:nationality "Estonia" ;
+    ex:occupation "athletics competitor",
+        "coach" .
+
+<http://www.wikidata.org/entity/Q1777> a ex:Person ;
+    ex:birthDate "0173-01-01" ;
+    ex:deathDate "0238-05-10" ;
+    ex:name "Maximinus Thrax" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q1778> a ex:Person ;
+    ex:birthDate "1982-02-18" ;
+    ex:name "Krisztián Pars" ;
+    ex:nationality "Hungary" ;
+    ex:occupation "athletics competitor",
+        "hammer thrower" .
+
+<http://www.wikidata.org/entity/Q1779> a ex:Person ;
+    ex:birthDate "1901-08-04" ;
+    ex:deathDate "1971-07-06" ;
+    ex:name "Louis Armstrong" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "bandleader",
+        "conductor",
+        "film actor",
+        "film score composer",
+        "jazz musician",
+        "orchestra leader",
+        "radio personality",
+        "recording artist",
+        "singer",
+        "songwriter",
+        "street artist",
+        "trumpeter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1782> a ex:Person ;
+    ex:birthDate "0159-01-01" ;
+    ex:deathDate "0238-04-12" ;
+    ex:name "Gordian I" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel" .
+
+<http://www.wikidata.org/entity/Q1783> a ex:Person ;
+    ex:birthDate "1979-09-30" ;
+    ex:name "Primož Kozmus" ;
+    ex:nationality "Slovenia" ;
+    ex:occupation "athletics competitor",
+        "hammer thrower" .
+
+<http://www.wikidata.org/entity/Q1784> a ex:Person ;
+    ex:birthDate "1974-10-08" ;
+    ex:name "Koji Murofushi" ;
+    ex:nationality "Japan" ;
+    ex:occupation "athletics competitor",
+        "hammer thrower",
+        "professor" .
+
+<http://www.wikidata.org/entity/Q1785> a ex:Person ;
+    ex:birthDate "1924-05-22" ;
+    ex:deathDate "2018-10-01" ;
+    ex:name "Charles Aznavour" ;
+    ex:nationality "Armenia",
+        "France" ;
+    ex:occupation "actor",
+        "chansonnier",
+        "composer",
+        "diplomat",
+        "film actor",
+        "film director",
+        "lyricist",
+        "poet",
+        "recording artist",
+        "screenwriter",
+        "singer",
+        "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q1786> a ex:Person ;
+    ex:birthDate "1428-01-01" ;
+    ex:deathDate "1502-03-12" ;
+    ex:name "Jan I Carondelet" ;
+    ex:nationality "Burgundian Netherlands" ;
+    ex:occupation "diplomat",
+        "magistrate",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q1787> a ex:Person ;
+    ex:birthDate "1993-04-02" ;
+    ex:name "Keshorn Walcott" ;
+    ex:nationality "Trinidad and Tobago" ;
+    ex:occupation "athletics competitor",
+        "javelin thrower" .
+
+<http://www.wikidata.org/entity/Q1788> a ex:Person ;
+    ex:birthDate "1467-01-01" ;
+    ex:deathDate "1518-06-10" ;
+    ex:name "Claude I Carondelet" ;
+    ex:nationality "France" ;
+    ex:occupation "aristocrat" .
+
+<http://www.wikidata.org/entity/Q1789> a ex:Person ;
+    ex:birthDate "1988-01-21" ;
+    ex:name "Ashton Eaton" ;
+    ex:nationality "United States" ;
+    ex:occupation "combined track and field event athlete" .
+
+<http://www.wikidata.org/entity/Q1790> a ex:Person ;
+    ex:birthDate "1960-11-18" ;
+    ex:name "Kim Wilde" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "gardener",
+        "radio personality",
+        "singer",
+        "songwriter" .
+
+<http://www.wikidata.org/entity/Q1791> a ex:Person ;
+    ex:birthDate "1469-01-01" ;
+    ex:deathDate "1544-02-17" ;
+    ex:name "Jan II Carondelet" ;
+    ex:nationality "Burgundian Netherlands" ;
+    ex:occupation "judge",
+        "jurist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1793> a ex:Person ;
+    ex:birthDate "1984-02-07" ;
+    ex:name "Trey Hardee" ;
+    ex:nationality "United States" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1796> a ex:Person ;
+    ex:birthDate "1987-09-01" ;
+    ex:name "Leonel Suárez" ;
+    ex:nationality "Cuba" ;
+    ex:occupation "athletics competitor" .
+
+<http://www.wikidata.org/entity/Q1797> a ex:Person ;
+    ex:birthDate "0170-01-01" ;
+    ex:deathDate "0238-07-29" ;
+    ex:name "Pupienus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1798> a ex:Person ;
+    ex:birthDate "1473-01-01" ;
+    ex:deathDate "1528-07-07" ;
+    ex:name "Ferry Carondelet" ;
+    ex:nationality "Habsburg Netherlands" ;
+    ex:occupation "diplomat",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1802> a ex:Person ;
+    ex:birthDate "1952-02-05" ;
+    ex:deathDate "1986-01-14" ;
+    ex:name "Daniel Balavoine" ;
+    ex:nationality "France" ;
+    ex:occupation "film actor",
+        "guitarist",
+        "pianist",
+        "recording artist",
+        "singer",
+        "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q1803> a ex:Person ;
+    ex:birthDate "0190-01-01" ;
+    ex:deathDate "0238-04-12" ;
+    ex:name "Gordian II" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q1804> a ex:Person ;
+    ex:birthDate "1930-06-09" ;
+    ex:deathDate "1997-11-24" ;
+    ex:name "Barbara" ;
+    ex:nationality "France" ;
+    ex:occupation "composer",
+        "film actor",
+        "poet",
+        "recording artist",
+        "singer",
+        "singer-songwriter",
+        "television actor" .
+
+<http://www.wikidata.org/entity/Q1805> a ex:Person ;
+    ex:birthDate "0178-01-01" ;
+    ex:deathDate "0238-07-29" ;
+    ex:name "Balbinus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q181> a ex:Person ;
+    ex:birthDate "1966-08-07" ;
+    ex:name "Jimmy Wales" ;
+    ex:nationality "United Kingdom",
+        "United States" ;
+    ex:occupation "Wikimedian",
+        "blogger",
+        "businessperson",
+        "computer scientist",
+        "entrepreneur",
+        "merchant",
+        "orator",
+        "researcher" .
+
+<http://www.wikidata.org/entity/Q1812> a ex:Person ;
+    ex:birthDate "0225-01-20" ;
+    ex:deathDate "0244-02-11" ;
+    ex:name "Gordian III" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1817> a ex:Person ;
+    ex:birthDate "0204-01-01" ;
+    ex:deathDate "0249-01-01",
+        "0249-09-01",
+        "0249-10-01" ;
+    ex:name "Philip the Arab" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1830> a ex:Person ;
+    ex:birthDate "0201-01-01" ;
+    ex:deathDate "0251-07-01" ;
+    ex:name "Decius" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1835> a ex:Person ;
+    ex:birthDate "1972-06-23" ;
+    ex:name "Zinedine Zidane" ;
+    ex:nationality "France" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q1839> a ex:Person ;
+    ex:birthDate "1965-11-19" ;
+    ex:name "Laurent Blanc" ;
+    ex:nationality "France" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q185> a ex:Person ;
+    ex:birthDate "1968-07-16" ;
+    ex:name "Larry Sanger" ;
+    ex:nationality "United States" ;
+    ex:occupation "blogger",
+        "businessperson",
+        "computer scientist",
+        "philosopher" .
+
+<http://www.wikidata.org/entity/Q186> a ex:Person ;
+    ex:birthDate "1974-05-23" ;
+    ex:name "Ken Jennings" ;
+    ex:nationality "United States" ;
+    ex:occupation "blogger",
+        "computer scientist",
+        "game show contestant",
+        "game show host",
+        "mind gamer",
+        "non-fiction writer",
+        "podcaster",
+        "software engineer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1868> a ex:Person ;
+    ex:birthDate "1868-08-23" ;
+    ex:deathDate "1944-12-10" ;
+    ex:name "Paul Otlet" ;
+    ex:nationality "Belgium" ;
+    ex:occupation "bibliographer",
+        "information scientist",
+        "inventor",
+        "jurist",
+        "lawyer",
+        "librarian",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1878> a ex:Person ;
+    ex:birthDate "1967-09-14" ;
+    ex:name "Michael Schmidt-Salomon" ;
+    ex:nationality "Germany" ;
+    ex:occupation "children's writer",
+        "journalist",
+        "philosopher",
+        "university teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q1879> a ex:Person ;
+    ex:birthDate "1969-07-11" ;
+    ex:name "Corentin Martins" ;
+    ex:nationality "France",
+        "Portugal" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q1883> a ex:Person ;
+    ex:birthDate "1971-11-09" ;
+    ex:name "Sabri Lamouchi" ;
+    ex:nationality "France",
+        "Tunisia" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q1885> a ex:Person ;
+    ex:birthDate "1993-11-07" ;
+    ex:name "Jürgen Locadia" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1894> a ex:Person ;
+    ex:birthDate "1994-02-13" ;
+    ex:name "Memphis Depay" ;
+    ex:nationality "Ghana",
+        "Kingdom of the Netherlands" ;
+    ex:occupation "association football player",
+        "rapper" .
+
+<http://www.wikidata.org/entity/Q1907> a ex:Person ;
+    ex:birthDate "1986-12-26" ;
+    ex:name "Hugo Lloris" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1908> a ex:Person ;
+    ex:birthDate "1985-07-28" ;
+    ex:name "Mathieu Debuchy" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1909> a ex:Person ;
+    ex:birthDate "1985-12-27" ;
+    ex:name "Adil Rami" ;
+    ex:nationality "France",
+        "Morocco" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1910> a ex:Person ;
+    ex:birthDate "1986-01-14" ;
+    ex:name "Yohan Cabaye" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1911> a ex:Person ;
+    ex:birthDate "1986-09-30" ;
+    ex:name "Olivier Giroud" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1912> a ex:Person ;
+    ex:birthDate "1987-12-19" ;
+    ex:name "Karim Benzema" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1913> a ex:Person ;
+    ex:birthDate "1980-06-13" ;
+    ex:name "Florent Malouda" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1915> a ex:Person ;
+    ex:birthDate "1985-09-10" ;
+    ex:name "Laurent Koscielny" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1916> a ex:Person ;
+    ex:birthDate "1981-05-15" ;
+    ex:name "Patrice Evra" ;
+    ex:nationality "France",
+        "Senegal" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1917> a ex:Person ;
+    ex:birthDate "1982-03-30" ;
+    ex:name "Philippe Mexès" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1918> a ex:Person ;
+    ex:birthDate "1983-04-07" ;
+    ex:name "Franck Ribéry" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1919> a ex:Person ;
+    ex:birthDate "1984-09-28" ;
+    ex:name "Mathieu Valbuena" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q192> a ex:Person ;
+    ex:birthDate "1966-10-09" ;
+    ex:name "David Cameron" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q1920> a ex:Person ;
+    ex:birthDate "1987-06-26" ;
+    ex:name "Samir Nasri" ;
+    ex:nationality "Algeria",
+        "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1921> a ex:Person ;
+    ex:birthDate "1987-04-09" ;
+    ex:name "Blaise Matuidi" ;
+    ex:nationality "Angola",
+        "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1922> a ex:Person ;
+    ex:birthDate "1979-11-10" ;
+    ex:name "Anthony Réveillère" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1923> a ex:Person ;
+    ex:birthDate "1987-05-07" ;
+    ex:name "Jérémy Ménez" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1924> a ex:Person ;
+    ex:birthDate "1985-03-28" ;
+    ex:name "Steve Mandanda" ;
+    ex:nationality "Democratic Republic of the Congo",
+        "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1925> a ex:Person ;
+    ex:birthDate "1990-06-29" ;
+    ex:name "Yann M'Vila" ;
+    ex:nationality "France",
+        "Republic of the Congo" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1926> a ex:Person ;
+    ex:birthDate "1981-07-15" ;
+    ex:name "Alou Diarra" ;
+    ex:nationality "France" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q1927> a ex:Person ;
+    ex:birthDate "1988-01-10" ;
+    ex:name "Marvin Martin" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1928> a ex:Person ;
+    ex:birthDate "1987-03-07" ;
+    ex:name "Hatem Ben Arfa" ;
+    ex:nationality "France",
+        "Tunisia" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1929> a ex:Person ;
+    ex:birthDate "1985-07-26" ;
+    ex:name "Gaël Clichy" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1931> a ex:Person ;
+    ex:birthDate "1981-12-30" ;
+    ex:name "Cédric Carrasso" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1933> a ex:Person ;
+    ex:birthDate "1981-04-25" ;
+    ex:name "Anja Pärson" ;
+    ex:nationality "Sweden" ;
+    ex:occupation "alpine skier",
+        "athlete" .
+
+<http://www.wikidata.org/entity/Q1934> a ex:Person ;
+    ex:birthDate "1979-07-27" ;
+    ex:name "Sidney Govou" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1935> a ex:Person ;
+    ex:birthDate "1979-09-11" ;
+    ex:name "Eric Abidal" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1936> a ex:Person ;
+    ex:birthDate "1981-08-12" ;
+    ex:name "Djibril Cissé" ;
+    ex:nationality "France",
+        "Ivory Coast" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1937> a ex:Person ;
+    ex:birthDate "1977-08-17" ;
+    ex:name "William Gallas" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1938> a ex:Person ;
+    ex:birthDate "1983-02-14" ;
+    ex:name "Bacary Sagna" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1939> a ex:Person ;
+    ex:birthDate "1979-03-14" ;
+    ex:name "Nicolas Anelka" ;
+    ex:nationality "France" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q1940> a ex:Person ;
+    ex:birthDate "1985-12-05" ;
+    ex:name "André-Pierre Gignac" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1942> a ex:Person ;
+    ex:birthDate "1980-08-11" ;
+    ex:name "Sébastien Squillaci" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1943> a ex:Person ;
+    ex:birthDate "1986-05-11" ;
+    ex:name "Abou Diaby" ;
+    ex:nationality "France",
+        "Ivory Coast" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1944> a ex:Person ;
+    ex:birthDate "1983-09-10" ;
+    ex:name "Jérémy Toulalan" ;
+    ex:nationality "France" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q1945> a ex:Person ;
+    ex:birthDate "1978-02-28" ;
+    ex:name "Benjamin Raich" ;
+    ex:nationality "Austria" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q1950> a ex:Person ;
+    ex:birthDate "1966-12-19" ;
+    ex:name "Alberto Tomba" ;
+    ex:nationality "Italy" ;
+    ex:occupation "actor",
+        "alpine skier" .
+
+<http://www.wikidata.org/entity/Q1955> a ex:Person ;
+    ex:birthDate "1951-02-28" ;
+    ex:name "Gustav Thöni" ;
+    ex:nationality "Italy" ;
+    ex:occupation "actor",
+        "alpine skier" .
+
+<http://www.wikidata.org/entity/Q1956> a ex:Person ;
+    ex:birthDate "1972-12-07" ;
+    ex:name "Hermann Maier" ;
+    ex:nationality "Austria" ;
+    ex:occupation "alpine skier",
+        "ski teacher" .
+
+<http://www.wikidata.org/entity/Q1958> a ex:Person ;
+    ex:birthDate "1964-11-26" ;
+    ex:name "Vreni Schneider" ;
+    ex:nationality "Switzerland" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q1962> a ex:Person ;
+    ex:birthDate "1962-03-06" ;
+    ex:name "Erika Hess" ;
+    ex:nationality "Switzerland" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q1984> a ex:Person ;
+    ex:birthDate "1963-05-27" ;
+    ex:name "Maria Walliser" ;
+    ex:nationality "Switzerland" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q1991> a ex:Person ;
+    ex:birthDate "1966-04-07" ;
+    ex:name "Michela Figini" ;
+    ex:nationality "Switzerland" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q1993> a ex:Person ;
+    ex:birthDate "1974-11-08" ;
+    ex:name "Masashi Kishimoto" ;
+    ex:nationality "Japan" ;
+    ex:occupation "artist",
+        "illustrator",
+        "mangaka",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q2001> a ex:Person ;
+    ex:birthDate "1928-07-26" ;
+    ex:deathDate "1999-03-07" ;
+    ex:name "Stanley Kubrick" ;
+    ex:nationality "United Kingdom",
+        "United States" ;
+    ex:occupation "camera operator",
+        "cinematographer",
+        "director",
+        "executive producer",
+        "film director",
+        "film editor",
+        "film producer",
+        "film screenwriter",
+        "photographer",
+        "producer",
+        "scenographer",
+        "screenwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2006> a ex:Person ;
+    ex:birthDate "1970-06-04" ;
+    ex:name "Deborah Compagnoni" ;
+    ex:nationality "Italy" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q2010> a ex:Person ;
+    ex:birthDate "1975-01-01" ;
+    ex:name "Eiichiro Oda" ;
+    ex:nationality "Japan" ;
+    ex:occupation "caricaturist",
+        "comics creator",
+        "executive producer",
+        "illustrator",
+        "mangaka",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q2022> a ex:Person ;
+    ex:birthDate "1908-09-09" ;
+    ex:deathDate "1950-08-27" ;
+    ex:name "Cesare Pavese" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "biographer",
+        "journalist",
+        "linguist",
+        "literary critic",
+        "literary editor",
+        "poet",
+        "screenwriter",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2031> a ex:Person ;
+    ex:birthDate "1963-07-18" ;
+    ex:name "Marc Girardelli" ;
+    ex:nationality "Austria",
+        "Luxembourg" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q2038> a ex:Person ;
+    ex:birthDate "1916-10-26" ;
+    ex:deathDate "1996-01-08" ;
+    ex:name "François Mitterrand" ;
+    ex:nationality "France" ;
+    ex:occupation "journalist",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2039> a ex:Person ;
+    ex:birthDate "-0058-01-01" ;
+    ex:deathDate "0017-01-01" ;
+    ex:name "Titus Livius" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "historian",
+        "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2040> a ex:Person ;
+    ex:birthDate "1906-10-30" ;
+    ex:deathDate "1966-06-30" ;
+    ex:name "Giuseppe Farina" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "Formula One driver",
+        "racing automobile driver" .
+
+<http://www.wikidata.org/entity/Q2042> a ex:Person ;
+    ex:birthDate "1890-11-22" ;
+    ex:deathDate "1970-11-09" ;
+    ex:name "Charles de Gaulle" ;
+    ex:nationality "France" ;
+    ex:occupation "memoirist",
+        "military officer",
+        "military theorist",
+        "politician",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q2054> a ex:Person ;
+    ex:birthDate "-0004-01-01" ;
+    ex:deathDate "0065-04-10" ;
+    ex:name "Seneca" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "aphorist",
+        "philosopher",
+        "playwright",
+        "poet",
+        "politician",
+        "statesperson",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q206> a ex:Person ;
+    ex:birthDate "1959-04-30" ;
+    ex:name "Stephen Harper" ;
+    ex:nationality "Canada" ;
+    ex:occupation "economist",
+        "lecturer",
+        "pianist",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2069> a ex:Person ;
+    ex:birthDate "1911-06-24" ;
+    ex:deathDate "1995-07-17" ;
+    ex:name "Juan Manuel Fangio" ;
+    ex:nationality "Argentina" ;
+    ex:occupation "Formula One driver",
+        "entrepreneur",
+        "racing automobile driver" .
+
+<http://www.wikidata.org/entity/Q207> a ex:Person ;
+    ex:birthDate "1946-07-06" ;
+    ex:name "George W. Bush" ;
+    ex:nationality "United States" ;
+    ex:occupation "autobiographer",
+        "businessperson",
+        "financier",
+        "military officer",
+        "motivational speaker",
+        "painter",
+        "politician",
+        "rugby union player",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q2071> a ex:Person ;
+    ex:birthDate "1946-01-20" ;
+    ex:deathDate "2025-01-16" ;
+    ex:name "David Lynch" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "animator",
+        "cinematographer",
+        "composer",
+        "director",
+        "film actor",
+        "film director",
+        "film editor",
+        "film producer",
+        "film screenwriter",
+        "lyricist",
+        "musician",
+        "painter",
+        "photographer",
+        "screenwriter",
+        "songwriter",
+        "television actor",
+        "visual artist",
+        "voice actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2072> a ex:Person ;
+    ex:birthDate "1989-03-02" ;
+    ex:name "Marcel Hirscher" ;
+    ex:nationality "Austria" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q2086> a ex:Person ;
+    ex:birthDate "1918-07-13" ;
+    ex:deathDate "1955-05-26" ;
+    ex:name "Alberto Ascari" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "Formula One driver",
+        "motorcycle racer" .
+
+<http://www.wikidata.org/entity/Q2097> a ex:Person ;
+    ex:birthDate "1971-09-02" ;
+    ex:name "Kjetil André Aamodt" ;
+    ex:nationality "Norway" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q2098> a ex:Person ;
+    ex:birthDate "0040-03-01" ;
+    ex:deathDate "0104-01-01" ;
+    ex:name "Martial" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2104> a ex:Person ;
+    ex:birthDate "1929-04-10" ;
+    ex:deathDate "1959-01-22" ;
+    ex:name "Mike Hawthorn" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "Formula One driver" .
+
+<http://www.wikidata.org/entity/Q2105> a ex:Person ;
+    ex:birthDate "1932-11-29" ;
+    ex:deathDate "2019-09-26" ;
+    ex:name "Jacques Chirac" ;
+    ex:nationality "France" ;
+    ex:occupation "official",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2116> a ex:Person ;
+    ex:birthDate "1854-09-06" ;
+    ex:deathDate "1923-08-29" ;
+    ex:name "Hans Schmidt" ;
+    ex:nationality "Germany",
+        "Russian Empire" ;
+    ex:occupation "composer",
+        "pianist" .
+
+<http://www.wikidata.org/entity/Q2124> a ex:Person ;
+    ex:birthDate "1926-02-02" ;
+    ex:deathDate "2020-12-02" ;
+    ex:name "Valéry Giscard d'Estaing" ;
+    ex:nationality "France" ;
+    ex:occupation "statesperson" .
+
+<http://www.wikidata.org/entity/Q2125> a ex:Person ;
+    ex:birthDate "1926-04-02" ;
+    ex:deathDate "2014-05-19" ;
+    ex:name "Jack Brabham" ;
+    ex:nationality "Australia" ;
+    ex:occupation "Formula One driver",
+        "sporting director" .
+
+<http://www.wikidata.org/entity/Q2129> a ex:Person ;
+    ex:birthDate "1977-10-12" ;
+    ex:name "Bode Miller" ;
+    ex:nationality "United States" ;
+    ex:occupation "alpine skier",
+        "autobiographer" .
+
+<http://www.wikidata.org/entity/Q2147> a ex:Person ;
+    ex:birthDate "1936-08-25" ;
+    ex:deathDate "2009-12-19" ;
+    ex:name "Giridharilal Kedia" ;
+    ex:nationality "British Raj",
+        "Dominion of India",
+        "India" ;
+    ex:occupation "politician",
+        "social worker" .
+
+<http://www.wikidata.org/entity/Q2153> a ex:Person ;
+    ex:birthDate "1897-01-23" ;
+    ex:deathDate "1945-08-18" ;
+    ex:name "Subhas Chandra Bose" ;
+    ex:nationality "British Raj" ;
+    ex:occupation "freedom fighter",
+        "politician",
+        "revolutionary",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2161> a ex:Person ;
+    ex:birthDate "0055-01-01" ;
+    ex:deathDate "0120-01-01" ;
+    ex:name "Tacitus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "annalist",
+        "biographer",
+        "historian",
+        "jurist",
+        "military personnel",
+        "poet",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2172> a ex:Person ;
+    ex:birthDate "1971-09-18" ;
+    ex:name "Lance Armstrong" ;
+    ex:nationality "United States" ;
+    ex:occupation "autobiographer",
+        "podcaster",
+        "sport cyclist",
+        "triathlete" .
+
+<http://www.wikidata.org/entity/Q2185> a ex:Person ;
+    ex:birthDate "1911-07-05" ;
+    ex:deathDate "1974-04-02" ;
+    ex:name "Georges Pompidou" ;
+    ex:nationality "France" ;
+    ex:occupation "banker",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2190> a ex:Person ;
+    ex:birthDate "1944-10-28" ;
+    ex:deathDate "1986-06-19" ;
+    ex:name "Coluche" ;
+    ex:nationality "France" ;
+    ex:occupation "actor",
+        "comedian",
+        "composer",
+        "film actor",
+        "film director",
+        "politician",
+        "radio personality",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q2196> a ex:Person ;
+    ex:birthDate "1939-05-09" ;
+    ex:deathDate "1988-04-18" ;
+    ex:name "Pierre Desproges" ;
+    ex:nationality "France" ;
+    ex:occupation "comedian",
+        "journalist",
+        "opinion journalist",
+        "radio personality" .
+
+<http://www.wikidata.org/entity/Q2252> a ex:Person ;
+    ex:birthDate "1930-01-20" ;
+    ex:name "Buzz Aldrin" ;
+    ex:nationality "United States" ;
+    ex:occupation "air force officer",
+        "astronaut",
+        "autobiographer",
+        "businessperson",
+        "engineer",
+        "fighter pilot",
+        "science fiction writer" .
+
+<http://www.wikidata.org/entity/Q2253> a ex:Person ;
+    ex:birthDate "-0234-01-01" ;
+    ex:deathDate "-0182-01-01" ;
+    ex:name "Scipio Africanus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "Ancient Roman politician",
+        "ancient Roman military personnel",
+        "genealogist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2259> a ex:Person ;
+    ex:birthDate "-0038-10-28" ;
+    ex:deathDate "0014-01-01" ;
+    ex:name "Julia the Elder" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "aristocrat" .
+
+<http://www.wikidata.org/entity/Q2263> a ex:Person ;
+    ex:birthDate "1956-07-09" ;
+    ex:name "Tom Hanks" ;
+    ex:nationality "Greece",
+        "United States" ;
+    ex:occupation "actor",
+        "character actor",
+        "comedian",
+        "composer",
+        "director",
+        "executive producer",
+        "film actor",
+        "film director",
+        "film producer",
+        "film screenwriter",
+        "narrator",
+        "producer",
+        "screenwriter",
+        "short story writer",
+        "stage actor",
+        "television actor",
+        "television director",
+        "television presenter",
+        "television producer",
+        "voice actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2274> a ex:Person ;
+    ex:birthDate "1929-12-23" ;
+    ex:deathDate "1988-05-13" ;
+    ex:name "Chet Baker" ;
+    ex:nationality "United States" ;
+    ex:occupation "composer",
+        "jazz musician",
+        "singer",
+        "trumpeter" .
+
+<http://www.wikidata.org/entity/Q2291> a ex:Person ;
+    ex:birthDate "1898-02-15" ;
+    ex:deathDate "1967-04-15" ;
+    ex:name "Totò" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "actor",
+        "comedian",
+        "composer",
+        "film actor",
+        "lyricist",
+        "playwright",
+        "poet",
+        "screenwriter",
+        "singer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q23> a ex:Person ;
+    ex:birthDate "1732-02-22" ;
+    ex:deathDate "1799-12-14" ;
+    ex:name "George Washington" ;
+    ex:nationality "Kingdom of Great Britain",
+        "United States" ;
+    ex:occupation "army officer",
+        "cartographer",
+        "engineer",
+        "farmer",
+        "geometer",
+        "politician",
+        "revolutionary",
+        "statesperson",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2307> a ex:Person ;
+    ex:birthDate "-0184-01-01" ;
+    ex:deathDate "-0128-01-01" ;
+    ex:name "Scipio Aemilianus" ;
+    ex:nationality "Ancient Rome" ;
+    ex:occupation "Ancient Roman politician",
+        "ancient Roman military personnel" .
+
+<http://www.wikidata.org/entity/Q2327> a ex:Person ;
+    ex:birthDate "1989-10-26" ;
+    ex:name "Emil Sayfutdinov" ;
+    ex:nationality "Poland",
+        "Russia" ;
+    ex:occupation "speedway rider" .
+
+<http://www.wikidata.org/entity/Q2330> a ex:Person ;
+    ex:birthDate "1977-04-02" ;
+    ex:name "Nicki Pedersen" ;
+    ex:nationality "Kingdom of Denmark" ;
+    ex:occupation "speedway rider" .
+
+<http://www.wikidata.org/entity/Q2339> a ex:Person ;
+    ex:birthDate "1983-08-06" ;
+    ex:name "Robin van Persie" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q2492> a ex:Person ;
+    ex:birthDate "1876-01-05" ;
+    ex:deathDate "1967-04-19" ;
+    ex:name "Konrad Adenauer" ;
+    ex:nationality "Germany",
+        "Kingdom of Prussia" ;
+    ex:occupation "Chancellor of Germany",
+        "art collector",
+        "assessor",
+        "autobiographer",
+        "judge",
+        "lawyer",
+        "politician",
+        "resistance fighter" .
+
+<http://www.wikidata.org/entity/Q2494> a ex:Person ;
+    ex:birthDate "1927-04-16" ;
+    ex:deathDate "2022-12-31" ;
+    ex:name "Benedict XVI" ;
+    ex:nationality "Germany",
+        "Italy",
+        "Vatican City" ;
+    ex:occupation "Catholic theologian",
+        "Latin Catholic bishop",
+        "Latin Catholic priest",
+        "archbishop",
+        "philosopher",
+        "religious writer",
+        "theologian",
+        "transitional deacon",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q2496> a ex:Person ;
+    ex:birthDate "1897-02-04" ;
+    ex:deathDate "1977-05-05" ;
+    ex:name "Ludwig Erhard" ;
+    ex:nationality "Germany" ;
+    ex:occupation "economist",
+        "politician",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q25065> a ex:Person ;
+    ex:birthDate "1962-07-19" ;
+    ex:deathDate "2001-08-21" ;
+    ex:name "John Kerins" ;
+    ex:nationality "Ireland" ;
+    ex:occupation "Gaelic football player",
+        "hurler" .
+
+<http://www.wikidata.org/entity/Q25070> a ex:Person ;
+    ex:birthDate "1187-01-01" ;
+    ex:deathDate "1259-01-01" ;
+    ex:name "Henry of Latvia" ;
+    ex:occupation "Latin Catholic priest",
+        "historian",
+        "philosopher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q25078> a ex:Person ;
+    ex:birthDate "1940-11-22" ;
+    ex:name "Terry Gilliam" ;
+    ex:nationality "United Kingdom",
+        "United States" ;
+    ex:occupation "actor",
+        "animator",
+        "comedian",
+        "comics artist",
+        "director",
+        "film actor",
+        "film director",
+        "film producer",
+        "screenwriter",
+        "television actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q25080> a ex:Person ;
+    ex:birthDate "1947-07-10" ;
+    ex:deathDate "2012-11-11" ;
+    ex:name "Ilya Oleynikov" ;
+    ex:nationality "Russia" ;
+    ex:occupation "actor",
+        "comedian",
+        "composer",
+        "film actor",
+        "film screenwriter",
+        "humorist",
+        "impressionist",
+        "presenter",
+        "puppeteer",
+        "screenwriter",
+        "singer",
+        "television actor",
+        "television director",
+        "television presenter" .
+
+<http://www.wikidata.org/entity/Q25081> a ex:Person ;
+    ex:birthDate "1989-01-16" ;
+    ex:name "Pavel Mochalin" ;
+    ex:nationality "Russia" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q25088> a ex:Person ;
+    ex:birthDate "0811-04-12" ;
+    ex:deathDate "0835-11-29" ;
+    ex:name "Muhammad al-Jawad" ;
+    ex:nationality "Abbasid Caliphate" ;
+    ex:occupation "imam",
+        "religious leader",
+        "theologian" .
+
+<http://www.wikidata.org/entity/Q25089> a ex:Person ;
+    ex:birthDate "1935-11-30",
+        "1935-12-01" ;
+    ex:name "Woody Allen" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "character actor",
+        "clarinetist",
+        "comedian",
+        "composer",
+        "director",
+        "film actor",
+        "film director",
+        "film producer",
+        "film score composer",
+        "film screenwriter",
+        "journalist",
+        "playwright",
+        "producer",
+        "screenwriter",
+        "singer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q25098> a ex:Person ;
+    ex:birthDate "0650-01-01" ;
+    ex:deathDate "0742-02-14" ;
+    ex:name "Pope Theodosius II of Alexandria" ;
+    ex:nationality "Egypt" ;
+    ex:occupation "Eastern Orthodox priest" .
+
+<http://www.wikidata.org/entity/Q25100> a ex:Person ;
+    ex:birthDate "1953-08-19" ;
+    ex:name "Nanni Moretti" ;
+    ex:nationality "Italy" ;
+    ex:occupation "actor",
+        "director",
+        "film actor",
+        "film director",
+        "film editor",
+        "film producer",
+        "screenwriter",
+        "water polo player" .
+
+<http://www.wikidata.org/entity/Q25105> a ex:Person ;
+    ex:birthDate "0770-04-16" ;
+    ex:deathDate "0818-09-09" ;
+    ex:name "Ali al-Ridha" ;
+    ex:nationality "Abbasid Caliphate" ;
+    ex:occupation "imam" .
+
+<http://www.wikidata.org/entity/Q25106> a ex:Person ;
+    ex:birthDate "1940-02-18" ;
+    ex:deathDate "1999-01-11" ;
+    ex:name "Fabrizio De André" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "composer",
+        "poet",
+        "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q2512> a ex:Person ;
+    ex:birthDate "1904-04-06" ;
+    ex:deathDate "1988-03-09" ;
+    ex:name "Kurt Georg Kiesinger" ;
+    ex:nationality "Germany" ;
+    ex:occupation "judge",
+        "jurist",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q25120> a ex:Person ;
+    ex:birthDate "1922-03-05" ;
+    ex:deathDate "1975-11-02" ;
+    ex:name "Pier Paolo Pasolini" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "activist",
+        "actor",
+        "director",
+        "film actor",
+        "film critic",
+        "film director",
+        "journalist",
+        "novelist",
+        "playwright",
+        "poet",
+        "prose writer",
+        "screenwriter",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2514> a ex:Person ;
+    ex:birthDate "1913-12-18" ;
+    ex:deathDate "1992-10-08" ;
+    ex:name "Willy Brandt" ;
+    ex:nationality "German Empire",
+        "Germany",
+        "Norway",
+        "Spain",
+        "Sweden" ;
+    ex:occupation "Chancellor of Germany",
+        "autobiographer",
+        "chancellor",
+        "foreign minister",
+        "journalist",
+        "mayor",
+        "non-fiction writer",
+        "politician",
+        "social democrat" .
+
+<http://www.wikidata.org/entity/Q2516> a ex:Person ;
+    ex:birthDate "1918-12-23" ;
+    ex:deathDate "2015-11-10" ;
+    ex:name "Helmut Schmidt" ;
+    ex:nationality "Germany" ;
+    ex:occupation "civil servant",
+        "economist",
+        "minister",
+        "non-fiction writer",
+        "politician",
+        "publisher",
+        "statesperson",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2518> a ex:Person ;
+    ex:birthDate "1930-04-03" ;
+    ex:deathDate "2017-06-16" ;
+    ex:name "Helmut Kohl" ;
+    ex:nationality "Germany",
+        "Nazi Germany",
+        "Weimar Republic",
+        "West Germany" ;
+    ex:occupation "Chancellor of Germany",
+        "historian",
+        "political scientist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q25186> a ex:Person ;
+    ex:birthDate "1952-07-24" ;
+    ex:name "Gus Van Sant" ;
+    ex:nationality "United States" ;
+    ex:occupation "photographer",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q25190> a ex:Person ;
+    ex:birthDate "1512-01-01" ;
+    ex:deathDate "1563-01-01" ;
+    ex:name "Jean Poldo d'Albenas" ;
+    ex:nationality "France" ;
+    ex:occupation "magistrate",
+        "politician",
+        "translator" .
+
+<http://www.wikidata.org/entity/Q25191> a ex:Person ;
+    ex:birthDate "1970-07-30" ;
+    ex:name "Christopher Nolan" ;
+    ex:nationality "United Kingdom",
+        "United States" ;
+    ex:occupation "actor",
+        "camera operator",
+        "cinematographer",
+        "director",
+        "executive producer",
+        "film actor",
+        "film director",
+        "film editor",
+        "film producer",
+        "film screenwriter",
+        "producer",
+        "screenwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2530> a ex:Person ;
+    ex:birthDate "1944-04-07" ;
+    ex:name "Gerhard Schröder" ;
+    ex:nationality "Germany" ;
+    ex:occupation "Chancellor of Germany",
+        "consultant",
+        "lawyer",
+        "lobbyist",
+        "non-fiction writer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2538> a ex:Person ;
+    ex:birthDate "1940-01-24" ;
+    ex:name "Joachim Gauck" ;
+    ex:nationality "Germany" ;
+    ex:occupation "journalist",
+        "non-fiction writer",
+        "pastor",
+        "politician",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q254> a ex:Person ;
+    ex:birthDate "1756-01-27" ;
+    ex:deathDate "1791-12-05" ;
+    ex:name "Wolfgang Amadeus Mozart" ;
+    ex:nationality "Prince-Archbishopric of Salzburg" ;
+    ex:occupation "composer",
+        "music educator",
+        "musician",
+        "organist",
+        "pianist",
+        "violinist" .
+
+<http://www.wikidata.org/entity/Q2540> a ex:Person ;
+    ex:birthDate "1959-06-19" ;
+    ex:name "Christian Wulff" ;
+    ex:nationality "Germany" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2542> a ex:Person ;
+    ex:birthDate "1943-02-22" ;
+    ex:deathDate "2025-02-01" ;
+    ex:name "Horst Köhler" ;
+    ex:nationality "Germany",
+        "Poland" ;
+    ex:occupation "economist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2543> a ex:Person ;
+    ex:birthDate "1969-12-24" ;
+    ex:name "Mark Millar" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "comics writer",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q255> a ex:Person ;
+    ex:birthDate "1770-12-16" ;
+    ex:deathDate "1827-03-26" ;
+    ex:name "Ludwig van Beethoven" ;
+    ex:nationality "Austrian Empire",
+        "Electorate of Cologne" ;
+    ex:occupation "composer" .
+
+<http://www.wikidata.org/entity/Q2551> a ex:Person ;
+    ex:birthDate "1931-01-16" ;
+    ex:deathDate "2006-01-27" ;
+    ex:name "Johannes Rau" ;
+    ex:nationality "Germany" ;
+    ex:occupation "bookseller",
+        "journalist",
+        "philatelist",
+        "politician",
+        "publisher" .
+
+<http://www.wikidata.org/entity/Q2563> a ex:Person ;
+    ex:birthDate "1934-04-05" ;
+    ex:deathDate "2017-01-10" ;
+    ex:name "Roman Herzog" ;
+    ex:nationality "Germany" ;
+    ex:occupation "judge",
+        "jurist",
+        "politician",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q2566> a ex:Person ;
+    ex:birthDate "1769-10-06" ;
+    ex:deathDate "1812-10-13" ;
+    ex:name "Isaac Brock" ;
+    ex:nationality "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "military officer" .
+
+<http://www.wikidata.org/entity/Q2567> a ex:Person ;
+    ex:birthDate "1920-04-15" ;
+    ex:deathDate "2015-01-31" ;
+    ex:name "Richard von Weizsäcker" ;
+    ex:nationality "Germany" ;
+    ex:occupation "lawyer",
+        "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2569> a ex:Person ;
+    ex:birthDate "1914-12-14" ;
+    ex:deathDate "1992-05-30" ;
+    ex:name "Karl Carstens" ;
+    ex:nationality "Germany" ;
+    ex:occupation "diplomat",
+        "jurist",
+        "law clerk",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2570> a ex:Person ;
+    ex:birthDate "1956-08-17" ;
+    ex:name "John Romita Jr." ;
+    ex:nationality "United States" ;
+    ex:occupation "comics artist" .
+
+<http://www.wikidata.org/entity/Q2571> a ex:Person ;
+    ex:birthDate "1919-07-08" ;
+    ex:deathDate "2016-08-24" ;
+    ex:name "Walter Scheel" ;
+    ex:nationality "Germany" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q2573> a ex:Person ;
+    ex:birthDate "1899-07-23" ;
+    ex:deathDate "1976-07-07" ;
+    ex:name "Gustav Heinemann" ;
+    ex:nationality "Germany" ;
+    ex:occupation "lawyer",
+        "politician",
+        "theologian" .
+
+<http://www.wikidata.org/entity/Q2582> a ex:Person ;
+    ex:birthDate "1894-10-14" ;
+    ex:deathDate "1972-04-06" ;
+    ex:name "Heinrich Lübke" ;
+    ex:nationality "Germany" ;
+    ex:occupation "engineer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2593> a ex:Person ;
+    ex:birthDate "1971-03-07" ;
+    ex:name "Matthew Vaughn" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "film actor",
+        "film director",
+        "film producer",
+        "producer",
+        "screenwriter" .
+
+<http://www.wikidata.org/entity/Q2594> a ex:Person ;
+    ex:birthDate "1884-01-31" ;
+    ex:deathDate "1963-12-12" ;
+    ex:name "Theodor Heuss" ;
+    ex:nationality "Germany" ;
+    ex:occupation "journalist",
+        "politician",
+        "university teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2597> a ex:Person ;
+    ex:birthDate "1987-08-30" ;
+    ex:name "Johanna Braddy" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "film actor",
+        "television actor",
+        "voice actor" .
+
+<http://www.wikidata.org/entity/Q2599> a ex:Person ;
+    ex:birthDate "1942-06-18" ;
+    ex:name "Paul McCartney" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "actor",
+        "bass guitarist",
+        "composer",
+        "drummer",
+        "film actor",
+        "film director",
+        "film producer",
+        "film score composer",
+        "guitarist",
+        "lyricist",
+        "musician",
+        "painter",
+        "pianist",
+        "recording artist",
+        "screenwriter",
+        "singer",
+        "singer-songwriter",
+        "television actor",
+        "television director" .
+
+<http://www.wikidata.org/entity/Q260> a ex:Person ;
+    ex:birthDate "1790-12-23" ;
+    ex:deathDate "1832-03-04" ;
+    ex:name "Jean-François Champollion" ;
+    ex:nationality "France" ;
+    ex:occupation "Egyptologist" .
+
+<http://www.wikidata.org/entity/Q2601> a ex:Person ;
+    ex:birthDate "1928-05-08" ;
+    ex:deathDate "2011-10-17" ;
+    ex:name "Manfred Gerlach" ;
+    ex:nationality "German Democratic Republic",
+        "Germany" ;
+    ex:occupation "jurist",
+        "politician",
+        "resistance fighter" .
+
+<http://www.wikidata.org/entity/Q2602> a ex:Person ;
+    ex:birthDate "1937-03-19" ;
+    ex:name "Egon Krenz" ;
+    ex:nationality "German Democratic Republic",
+        "Germany" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q2604> a ex:Person ;
+    ex:birthDate "1876-03-02" ;
+    ex:deathDate "1958-10-09" ;
+    ex:name "Pius XII" ;
+    ex:nationality "Italy",
+        "Kingdom of Italy" ;
+    ex:occupation "Catholic bishop",
+        "Latin Catholic priest" .
+
+<http://www.wikidata.org/entity/Q2607> a ex:Person ;
+    ex:birthDate "1912-08-25" ;
+    ex:deathDate "1994-05-29" ;
+    ex:name "Erich Honecker" ;
+    ex:nationality "German Democratic Republic",
+        "Germany",
+        "Territory of the Saar basin" ;
+    ex:occupation "autobiographer",
+        "politician",
+        "resistance fighter" .
+
+<http://www.wikidata.org/entity/Q2610> a ex:Person ;
+    ex:birthDate "1914-07-09" ;
+    ex:deathDate "1999-04-13" ;
+    ex:name "Willi Stoph" ;
+    ex:nationality "German Democratic Republic" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q2628> a ex:Person ;
+    ex:birthDate "1893-06-30" ;
+    ex:deathDate "1973-08-01" ;
+    ex:name "Walter Ulbricht" ;
+    ex:nationality "German Democratic Republic" ;
+    ex:occupation "politician",
+        "resistance fighter" .
+
+<http://www.wikidata.org/entity/Q2643> a ex:Person ;
+    ex:birthDate "1943-02-25" ;
+    ex:deathDate "2001-11-29" ;
+    ex:name "George Harrison" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "actor",
+        "autobiographer",
+        "bass guitarist",
+        "composer",
+        "film actor",
+        "film director",
+        "film producer",
+        "film score composer",
+        "guitarist",
+        "horticulturist",
+        "multi-instrumentalist",
+        "musician",
+        "poet",
+        "record producer",
+        "recording artist",
+        "singer",
+        "singer-songwriter",
+        "songwriter",
+        "television actor" .
+
+<http://www.wikidata.org/entity/Q2646> a ex:Person ;
+    ex:birthDate "1871-02-04" ;
+    ex:deathDate "1925-02-28" ;
+    ex:name "Friedrich Ebert" ;
+    ex:nationality "Germany",
+        "Grand Duchy of Baden" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q2655> a ex:Person ;
+    ex:birthDate "1786-04-16" ;
+    ex:deathDate "1847-06-11" ;
+    ex:name "John Franklin" ;
+    ex:nationality "Kingdom of Great Britain",
+        "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "botanist",
+        "explorer",
+        "naval officer" .
+
+<http://www.wikidata.org/entity/Q2667> a ex:Person ;
+    ex:birthDate "1847-10-02" ;
+    ex:deathDate "1934-08-02" ;
+    ex:name "Paul von Hindenburg" ;
+    ex:nationality "Germany",
+        "Kingdom of Prussia" ;
+    ex:occupation "military personnel",
+        "politician",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q2673> a ex:Person ;
+    ex:birthDate "1940-03-10" ;
+    ex:name "Chuck Norris" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "film actor",
+        "film producer",
+        "karateka",
+        "screenwriter",
+        "stunt performer",
+        "taekwondo athlete",
+        "television actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2677> a ex:Person ;
+    ex:birthDate "1859-01-27" ;
+    ex:deathDate "1941-06-04" ;
+    ex:name "Wilhelm II" ;
+    ex:nationality "German Empire",
+        "Germany",
+        "Kingdom of Prussia" ;
+    ex:occupation "art collector",
+        "author",
+        "painter",
+        "ruler",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q2680> a ex:Person ;
+    ex:birthDate "1955-03-19" ;
+    ex:name "Bruce Willis" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "executive producer",
+        "film actor",
+        "film producer",
+        "screenwriter",
+        "singer",
+        "television actor",
+        "voice actor" .
+
+<http://www.wikidata.org/entity/Q2685> a ex:Person ;
+    ex:birthDate "1947-07-30" ;
+    ex:name "Arnold Schwarzenegger" ;
+    ex:nationality "Austria",
+        "United States" ;
+    ex:occupation "actor",
+        "autobiographer",
+        "bodybuilder",
+        "businessperson",
+        "entrepreneur",
+        "film actor",
+        "film director",
+        "film producer",
+        "politician",
+        "powerlifter",
+        "television actor",
+        "television director" .
+
+<http://www.wikidata.org/entity/Q2709> a ex:Person ;
+    ex:birthDate "1988-03-14" ;
+    ex:name "Sasha Grey" ;
+    ex:nationality "Puente Alto" ;
+    ex:occupation "actor",
+        "disc jockey",
+        "erotic photography model",
+        "fetish model",
+        "film actor",
+        "model",
+        "online streamer",
+        "photographer",
+        "pornographic actor",
+        "pornographic film director",
+        "singer",
+        "television actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q272> a ex:Person ;
+    ex:birthDate "1888-03-13" ;
+    ex:deathDate "1976-07-23" ;
+    ex:name "Paul Morand" ;
+    ex:nationality "France" ;
+    ex:occupation "diplomat",
+        "novelist",
+        "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2732> a ex:Person ;
+    ex:birthDate "1956-12-22" ;
+    ex:name "Norma Stitz" ;
+    ex:nationality "United States" ;
+    ex:occupation "fetish model",
+        "pornographic actor" .
+
+<http://www.wikidata.org/entity/Q2737> a ex:Person ;
+    ex:birthDate "1914-07-31" ;
+    ex:deathDate "1983-01-27" ;
+    ex:name "Louis de Funès" ;
+    ex:nationality "France" ;
+    ex:occupation "actor",
+        "comedian",
+        "dub actor",
+        "film actor",
+        "film director",
+        "film producer",
+        "pianist",
+        "screenwriter",
+        "stage actor",
+        "television actor" .
+
+<http://www.wikidata.org/entity/Q2750> a ex:Person ;
+    ex:birthDate "1917-07-27" ;
+    ex:deathDate "1970-09-23" ;
+    ex:name "Bourvil" ;
+    ex:nationality "France" ;
+    ex:occupation "chansonnier",
+        "comedian",
+        "film actor",
+        "screenwriter",
+        "singer",
+        "stage actor" .
+
+<http://www.wikidata.org/entity/Q2754> a ex:Person ;
+    ex:birthDate "1883-04-30" ;
+    ex:deathDate "1923-01-03" ;
+    ex:name "Jaroslav Hašek" ;
+    ex:nationality "Cisleithania",
+        "Czechoslovakia",
+        "Kingdom of Bohemia" ;
+    ex:occupation "author",
+        "humorist",
+        "journalist",
+        "novelist",
+        "opinion journalist",
+        "satirist",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2757> a ex:Person ;
+    ex:birthDate "1949-06-18" ;
+    ex:deathDate "2010-04-10" ;
+    ex:name "Lech Kaczyński" ;
+    ex:nationality "Poland",
+        "Polish People's Republic" ;
+    ex:occupation "dissident",
+        "film actor",
+        "jurist",
+        "lawyer",
+        "lecturer",
+        "legal scholar",
+        "politician",
+        "trade unionist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q2767> a ex:Person ;
+    ex:birthDate "1736-07-06" ;
+    ex:deathDate "1802-07-06" ;
+    ex:name "Daniel Morgan" ;
+    ex:nationality "Kingdom of Great Britain",
+        "United Kingdom of Great Britain and Ireland",
+        "United States" ;
+    ex:occupation "military officer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q2791> a ex:Person ;
+    ex:birthDate "1829-06-16" ;
+    ex:deathDate "1909-02-17" ;
+    ex:name "Gerónimo" ;
+    ex:nationality "Mexico",
+        "United States" ;
+    ex:occupation "military leader" .
+
+<http://www.wikidata.org/entity/Q2866> a ex:Person ;
+    ex:birthDate "1954-08-30" ;
+    ex:name "Alexander Lukashenko" ;
+    ex:nationality "Belarus" ;
+    ex:occupation "director",
+        "economist",
+        "political commissar",
+        "politician",
+        "teacher" .
+
+<http://www.wikidata.org/entity/Q2908> a ex:Person ;
+    ex:birthDate "1900-06-29" ;
+    ex:deathDate "1944-07-31" ;
+    ex:name "Antoine de Saint-Exupéry" ;
+    ex:nationality "France" ;
+    ex:occupation "aircraft pilot",
+        "children's writer",
+        "illustrator",
+        "inventor",
+        "journalist",
+        "novelist",
+        "philosopher",
+        "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q296> a ex:Person ;
+    ex:birthDate "1840-11-14" ;
+    ex:deathDate "1926-12-05" ;
+    ex:name "Claude Monet" ;
+    ex:nationality "France" ;
+    ex:occupation "graphic artist",
+        "painter" .
+
+<http://www.wikidata.org/entity/Q297> a ex:Person ;
+    ex:birthDate "1599-06-06" ;
+    ex:deathDate "1660-08-06" ;
+    ex:name "Diego Velázquez" ;
+    ex:nationality "Spain" ;
+    ex:occupation "artist",
+        "painter",
+        "visual artist" .
+
+<http://www.wikidata.org/entity/Q2972> a ex:Person ;
+    ex:birthDate "1764-06-19" ;
+    ex:deathDate "1848-11-23" ;
+    ex:name "John Barrow" ;
+    ex:nationality "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "botanist",
+        "cartographer",
+        "explorer",
+        "geographer",
+        "historian",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q2998> a ex:Person ;
+    ex:birthDate "1903-07-01" ;
+    ex:deathDate "1941-01-05" ;
+    ex:name "Amy Johnson" ;
+    ex:nationality "United Kingdom",
+        "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "aircraft pilot" .
+
+<http://www.wikidata.org/entity/Q3008> a ex:Person ;
+    ex:birthDate "1953-05-15" ;
+    ex:name "Mike Oldfield" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "aircraft pilot",
+        "composer",
+        "game designer",
+        "guitarist",
+        "musician",
+        "record producer",
+        "singer",
+        "songwriter" .
+
+<http://www.wikidata.org/entity/Q301> a ex:Person ;
+    ex:birthDate "1541-10-01" ;
+    ex:deathDate "1614-04-07" ;
+    ex:name "El Greco" ;
+    ex:nationality "Crown of Castile",
+        "Republic of Venice" ;
+    ex:occupation "architect",
+        "architectural draftsperson",
+        "painter",
+        "sculptor" .
+
+<http://www.wikidata.org/entity/Q302> a ex:Person ;
+    ex:birthDate "-0004-01-01" ;
+    ex:deathDate "0033-04-01" ;
+    ex:name "Jesus Christ" ;
+    ex:nationality "Herodian Kingdom of Judea" ;
+    ex:occupation "Messiah",
+        "carpenter",
+        "father of faith",
+        "healer",
+        "pastor",
+        "preacher",
+        "prophet",
+        "rabbi",
+        "religious leader",
+        "teacher",
+        "tektōn",
+        "thaumaturge" .
+
+<http://www.wikidata.org/entity/Q303> a ex:Person ;
+    ex:birthDate "1935-01-08" ;
+    ex:deathDate "1977-08-16" ;
+    ex:name "Elvis Presley" ;
+    ex:nationality "United States" ;
+    ex:occupation "activist",
+        "actor",
+        "composer",
+        "film actor",
+        "military officer",
+        "military personnel",
+        "philanthropist",
+        "singer" .
+
+<http://www.wikidata.org/entity/Q3034> a ex:Person ;
+    ex:birthDate "1802-12-02" ;
+    ex:deathDate "1874-05-23" ;
+    ex:name "Willoughby Newton" ;
+    ex:nationality "United States" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3036> a ex:Person ;
+    ex:birthDate "1955-01-01" ;
+    ex:name "Mack Wilberg" ;
+    ex:nationality "United States" ;
+    ex:occupation "choir director",
+        "composer",
+        "conductor",
+        "music educator",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q3044> a ex:Person ;
+    ex:birthDate "0740-01-01" ;
+    ex:deathDate "0814-02-01" ;
+    ex:name "Charlemagne" ;
+    ex:nationality "Francia" ;
+    ex:occupation "monarch",
+        "sovereign" .
+
+<http://www.wikidata.org/entity/Q3048> a ex:Person ;
+    ex:birthDate "1868-04-20" ;
+    ex:deathDate "1952-11-16" ;
+    ex:name "Charles Maurras" ;
+    ex:nationality "France" ;
+    ex:occupation "composer",
+        "journalist",
+        "philosopher",
+        "poet",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q306> a ex:Person ;
+    ex:birthDate "1949-12-01" ;
+    ex:deathDate "2024-02-06" ;
+    ex:name "Sebastián Piñera" ;
+    ex:nationality "Chile" ;
+    ex:occupation "businessperson",
+        "consultant",
+        "economist",
+        "engineer",
+        "entrepreneur",
+        "investor",
+        "politician",
+        "sports executive" .
+
+<http://www.wikidata.org/entity/Q307> a ex:Person ;
+    ex:birthDate "1564-02-25" ;
+    ex:deathDate "1642-01-08" ;
+    ex:name "Galileo Galilei" ;
+    ex:nationality "Duchy of Florence",
+        "Grand Duchy of Tuscany" ;
+    ex:occupation "astrologer",
+        "astronomer",
+        "engineer",
+        "inventor",
+        "mathematician",
+        "philosopher",
+        "physicist",
+        "politician",
+        "scientist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q3090> a ex:Person ;
+    ex:birthDate "1945-04-04" ;
+    ex:name "Guy Teissier" ;
+    ex:nationality "France" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q3095> a ex:Person ;
+    ex:birthDate "1927-07-15" ;
+    ex:deathDate "2018-06-10" ;
+    ex:name "Livia Ana Tătaru" ;
+    ex:nationality "Romania" ;
+    ex:occupation "linguist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q3098> a ex:Person ;
+    ex:birthDate "1600-01-01" ;
+    ex:deathDate "1718-06-04" ;
+    ex:name "Georg Henrik Lybecker" ;
+    ex:nationality "Sweden" ;
+    ex:occupation "military personnel",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q3099> a ex:Person ;
+    ex:birthDate "1635-01-01" ;
+    ex:deathDate "1692-01-01" ;
+    ex:name "Francis van Bossuit" ;
+    ex:nationality "Dutch Republic",
+        "Habsburg Netherlands" ;
+    ex:occupation "sculptor" .
+
+<http://www.wikidata.org/entity/Q3101> a ex:Person ;
+    ex:birthDate "1945-05-12" ;
+    ex:deathDate "2012-08-17" ;
+    ex:name "Patrick Ricard" ;
+    ex:nationality "France" ;
+    ex:occupation "business executive" .
+
+<http://www.wikidata.org/entity/Q3102> a ex:Person ;
+    ex:birthDate "1725-01-01" ;
+    ex:deathDate "1754-01-01",
+        "1759-01-01" ;
+    ex:name "Francis Coventry" ;
+    ex:nationality "Kingdom of Great Britain" ;
+    ex:occupation "novelist",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q3112> a ex:Person ;
+    ex:birthDate "1927-04-20" ;
+    ex:deathDate "2008-08-28" ;
+    ex:name "Phil Hill" ;
+    ex:nationality "United States" ;
+    ex:occupation "Formula One driver",
+        "racing automobile driver" .
+
+<http://www.wikidata.org/entity/Q3121> a ex:Person ;
+    ex:birthDate "1937-09-20" ;
+    ex:name "Geoffrey Dear" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "police officer" .
+
+<http://www.wikidata.org/entity/Q3128> a ex:Person ;
+    ex:birthDate "1929-02-15" ;
+    ex:deathDate "1975-11-29" ;
+    ex:name "Graham Hill" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "Formula One driver",
+        "author",
+        "engineer",
+        "racing automobile driver",
+        "sailor" .
+
+<http://www.wikidata.org/entity/Q3137> a ex:Person ;
+    ex:birthDate "1936-03-04" ;
+    ex:deathDate "1968-04-07" ;
+    ex:name "Jim Clark" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "Formula One driver",
+        "farmer",
+        "film actor" .
+
+<http://www.wikidata.org/entity/Q3153> a ex:Person ;
+    ex:birthDate "1934-02-11" ;
+    ex:deathDate "2017-03-10" ;
+    ex:name "John Surtees" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "Formula One driver",
+        "merchant",
+        "motorcycle racer",
+        "sporting director" .
+
+<http://www.wikidata.org/entity/Q3165> a ex:Person ;
+    ex:birthDate "1851-01-01" ;
+    ex:deathDate "1927-01-01" ;
+    ex:name "Conrad Wahn" ;
+    ex:nationality "Germany" ;
+    ex:occupation "architect" .
+
+<http://www.wikidata.org/entity/Q3166> a ex:Person ;
+    ex:birthDate "1936-06-18" ;
+    ex:deathDate "1992-10-04" ;
+    ex:name "Denny Hulme" ;
+    ex:nationality "New Zealand" ;
+    ex:occupation "Formula One driver",
+        "racing automobile driver" .
+
+<http://www.wikidata.org/entity/Q3188> a ex:Person ;
+    ex:birthDate "1939-06-11" ;
+    ex:name "Jackie Stewart" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "Formula One driver",
+        "entrepreneur",
+        "manager",
+        "racing automobile driver",
+        "sport shooter" .
+
+<http://www.wikidata.org/entity/Q3195> a ex:Person ;
+    ex:birthDate "1978-02-28" ;
+    ex:name "Geoffrey Arend" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "film actor",
+        "film director",
+        "film screenwriter",
+        "stage actor",
+        "television actor",
+        "television director",
+        "video game actor",
+        "voice actor" .
+
+<http://www.wikidata.org/entity/Q3197> a ex:Person ;
+    ex:birthDate "1791-10-07" ;
+    ex:deathDate "1874-11-24" ;
+    ex:name "Friedrich Wilhelm Grund" ;
+    ex:nationality "Germany" ;
+    ex:occupation "composer",
+        "conductor",
+        "teacher" .
+
+<http://www.wikidata.org/entity/Q320> a ex:Person ;
+    ex:birthDate "1951-09-29" ;
+    ex:name "Michelle Bachelet" ;
+    ex:nationality "Chile" ;
+    ex:occupation "epidemiologist",
+        "pediatrician",
+        "politician",
+        "surgeon" .
+
+<http://www.wikidata.org/entity/Q3205> a ex:Person ;
+    ex:birthDate "1824-08-14" ;
+    ex:deathDate "1888-09-05" ;
+    ex:name "William Terry" ;
+    ex:nationality "United States" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3234> a ex:Person ;
+    ex:birthDate "1942-04-18" ;
+    ex:deathDate "1970-09-05" ;
+    ex:name "Jochen Rindt" ;
+    ex:nationality "Germany" ;
+    ex:occupation "Formula One driver",
+        "racing automobile driver" .
+
+<http://www.wikidata.org/entity/Q3239> a ex:Person ;
+    ex:birthDate "1812-02-18" ;
+    ex:deathDate "1879-03-30" ;
+    ex:name "James K. Gibson" ;
+    ex:nationality "United States" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q3247> a ex:Person ;
+    ex:birthDate "1932-12-25" ;
+    ex:deathDate "2015-03-25" ;
+    ex:name "Allen Sheppard" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "author",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3250> a ex:Person ;
+    ex:birthDate "1993-01-20" ;
+    ex:name "Tom Biss" ;
+    ex:nationality "New Zealand" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q3251> a ex:Person ;
+    ex:birthDate "1848-12-26" ;
+    ex:deathDate "1900-07-29" ;
+    ex:name "Elisha E. Meredith" ;
+    ex:nationality "United States" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3253> a ex:Person ;
+    ex:birthDate "1801-09-13" ;
+    ex:deathDate "1867-02-22" ;
+    ex:name "Henry P. Alexander" ;
+    ex:nationality "United States" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q326> a ex:Person ;
+    ex:birthDate "1942-06-24" ;
+    ex:name "Eduardo Frei Ruiz-Tagle" ;
+    ex:nationality "Chile",
+        "Switzerland" ;
+    ex:occupation "civil engineer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3260> a ex:Person ;
+    ex:birthDate "1904-05-31" ;
+    ex:deathDate "1959-09-04" ;
+    ex:name "Hubert Clifford" ;
+    ex:nationality "United Kingdom",
+        "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "author",
+        "composer",
+        "conductor",
+        "film score composer" .
+
+<http://www.wikidata.org/entity/Q3271> a ex:Person ;
+    ex:birthDate "1962-03-05" ;
+    ex:name "Todd Russell Platts" ;
+    ex:nationality "United States" ;
+    ex:occupation "judge",
+        "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3275> a ex:Person ;
+    ex:birthDate "1966-08-07" ;
+    ex:deathDate "2011-05-09" ;
+    ex:name "David Cairns" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "Latin Catholic priest",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3281> a ex:Person ;
+    ex:birthDate "1939-11-24" ;
+    ex:deathDate "2022-07-26" ;
+    ex:name "Marit Paulsen" ;
+    ex:nationality "Sweden" ;
+    ex:occupation "film director",
+        "politician",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q3285> a ex:Person ;
+    ex:birthDate "1920-10-09" ;
+    ex:deathDate "2021-01-08" ;
+    ex:name "Michael Shaw" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q3288> a ex:Person ;
+    ex:birthDate "1828-09-02" ;
+    ex:deathDate "1864-10-07" ;
+    ex:name "John Gregg" ;
+    ex:nationality "Confederate States of America",
+        "United States" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q329> a ex:Person ;
+    ex:birthDate "1955-01-28" ;
+    ex:name "Nicolas Sarkozy" ;
+    ex:nationality "France" ;
+    ex:occupation "jurist",
+        "lawyer",
+        "politician",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q3291> a ex:Person ;
+    ex:birthDate "1973-06-12" ;
+    ex:name "Leonid Razvozzhayev" ;
+    ex:nationality "Russia" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q3295> a ex:Person ;
+    ex:birthDate "1960-08-23" ;
+    ex:name "Gilles-Éric Séralini" ;
+    ex:nationality "France" ;
+    ex:occupation "molecular biologist",
+        "professor" .
+
+<http://www.wikidata.org/entity/Q3300> a ex:Person ;
+    ex:birthDate "1911-12-26" ;
+    ex:deathDate "2004-11-14" ;
+    ex:name "Ernst Tiburzy" ;
+    ex:nationality "Germany" ;
+    ex:occupation "military personnel",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q3301> a ex:Person ;
+    ex:birthDate "0688-08-26" ;
+    ex:deathDate "0741-10-26" ;
+    ex:name "Charles Martel" ;
+    ex:nationality "Francia" ;
+    ex:occupation "military leader",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q331> a ex:Person ;
+    ex:birthDate "1938-03-02" ;
+    ex:name "Ricardo Lagos" ;
+    ex:nationality "Chile" ;
+    ex:occupation "diplomat",
+        "economist",
+        "lawyer",
+        "politician",
+        "professor" .
+
+<http://www.wikidata.org/entity/Q3319> a ex:Person ;
+    ex:birthDate "1946-10-06" ;
+    ex:name "Yukiko Kobayashi" ;
+    ex:nationality "Japan" ;
+    ex:occupation "actor",
+        "film actor" .
+
+<http://www.wikidata.org/entity/Q3321> a ex:Person ;
+    ex:birthDate "1550-01-01" ;
+    ex:deathDate "1611-01-01" ;
+    ex:name "Simon Lohet" ;
+    ex:nationality "Prince-Bishopric of Liège" ;
+    ex:occupation "composer",
+        "organist" .
+
+<http://www.wikidata.org/entity/Q3324> a ex:Person ;
+    ex:birthDate "1933-07-04" ;
+    ex:deathDate "1993-11-13" ;
+    ex:name "Rufus R. Jones" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "professional wrestler" .
+
+<http://www.wikidata.org/entity/Q3335> a ex:Person ;
+    ex:birthDate "1903-06-25" ;
+    ex:deathDate "1950-01-21" ;
+    ex:name "George Orwell" ;
+    ex:nationality "United Kingdom",
+        "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "writer" .
+
+<http://www.wikidata.org/entity/Q3340> a ex:Person ;
+    ex:birthDate "-0141-02-18" ;
+    ex:deathDate "-0080-12-01" ;
+    ex:name "Ptolemy IX Lathyros" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q3345> a ex:Person ;
+    ex:birthDate "-0138-01-01",
+        "-0139-01-01" ;
+    ex:deathDate "-0086-01-01",
+        "-0087-01-01" ;
+    ex:name "Ptolemy X Alexander I" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q335> a ex:Person ;
+    ex:birthDate "1918-11-26" ;
+    ex:deathDate "2016-04-19" ;
+    ex:name "Patricio Aylwin" ;
+    ex:nationality "Chile" ;
+    ex:occupation "jurist",
+        "lawyer",
+        "politician",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q3350> a ex:Person ;
+    ex:birthDate "-0181-01-01" ;
+    ex:deathDate "-0115-01-01" ;
+    ex:name "Ptolemy VIII Physcon" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q3355> a ex:Person ;
+    ex:birthDate "1897-07-24" ;
+    ex:deathDate "1939-01-05" ;
+    ex:name "Amelia Earhart" ;
+    ex:nationality "United States" ;
+    ex:occupation "aircraft pilot",
+        "aviation writer",
+        "journalist",
+        "memoirist",
+        "travel writer",
+        "women's rights activist" .
+
+<http://www.wikidata.org/entity/Q3356> a ex:Person ;
+    ex:birthDate "-0214-01-01" ;
+    ex:deathDate "-0163-01-01" ;
+    ex:name "Antiochus IV Epiphanes" ;
+    ex:nationality "Seleucid Empire" ;
+    ex:occupation "aristocrat" .
+
+<http://www.wikidata.org/entity/Q3362> a ex:Person ;
+    ex:birthDate "-0216-01-01" ;
+    ex:deathDate "-0174-01-01" ;
+    ex:name "Seleucus IV Philopator" ;
+    ex:nationality "Seleucid Empire" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q3365> a ex:Person ;
+    ex:birthDate "-0241-01-01" ;
+    ex:deathDate "-0186-01-01" ;
+    ex:name "Antiochus III the Great" ;
+    ex:nationality "Seleucid Empire" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q3371> a ex:Person ;
+    ex:birthDate "-0242-01-01" ;
+    ex:deathDate "-0222-01-01" ;
+    ex:name "Seleucus III Ceraunus" ;
+    ex:nationality "Seleucid Empire" ;
+    ex:occupation "sovereign" .
+
+<http://www.wikidata.org/entity/Q3378> a ex:Person ;
+    ex:birthDate "1972-09-10" ;
+    ex:name "Steffen Wöller" ;
+    ex:nationality "Germany" ;
+    ex:occupation "coach",
+        "luger" .
+
+<http://www.wikidata.org/entity/Q346> a ex:Person ;
+    ex:birthDate "1214-05-02" ;
+    ex:deathDate "1270-09-01" ;
+    ex:name "Louis IX of France" ;
+    ex:nationality "France" ;
+    ex:occupation "Miles Christianus",
+        "monarch",
+        "ruler" .
+
+<http://www.wikidata.org/entity/Q352> a ex:Person ;
+    ex:birthDate "1889-04-20" ;
+    ex:deathDate "1945-04-30" ;
+    ex:name "Adolf Hitler" ;
+    ex:nationality "Austria",
+        "Cisleithania",
+        "German Reich",
+        "Nazi Germany" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q353> a ex:Person ;
+    ex:birthDate "1188-03-11" ;
+    ex:deathDate "1252-12-04" ;
+    ex:name "Blanche of Castile" ;
+    ex:nationality "Kingdom of Castile" ;
+    ex:occupation "composer",
+        "regent" .
+
+<http://www.wikidata.org/entity/Q354> a ex:Person ;
+    ex:birthDate "1921-02-14" ;
+    ex:deathDate "1984-04-28" ;
+    ex:name "Piet Kraak" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q3547> a ex:Person ;
+    ex:birthDate "1741-10-04" ;
+    ex:deathDate "1825-09-04",
+        "1825-09-16" ;
+    ex:name "Franciszek Karpiński" ;
+    ex:nationality "Polish–Lithuanian Commonwealth",
+        "Russian Empire" ;
+    ex:occupation "librarian",
+        "playwright",
+        "poet",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q360> a ex:Person ;
+    ex:birthDate "1971-07-03" ;
+    ex:name "Julian Assange" ;
+    ex:nationality "Australia" ;
+    ex:occupation "Internet activist",
+        "businessperson",
+        "computer scientist",
+        "hacker",
+        "journalist",
+        "presenter",
+        "programmer",
+        "publisher",
+        "television director",
+        "television presenter",
+        "television producer",
+        "whistleblower",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q3603> a ex:Person ;
+    ex:birthDate "1930-10-24" ;
+    ex:deathDate "2021-10-18" ;
+    ex:name "Jack Angel" ;
+    ex:nationality "United States" ;
+    ex:occupation "disc jockey",
+        "film actor",
+        "radio personality",
+        "stage actor",
+        "voice actor" .
+
+<http://www.wikidata.org/entity/Q3606> a ex:Person ;
+    ex:birthDate "1983-11-19" ;
+    ex:name "Emil Rilke" ;
+    ex:nationality "Czech Republic" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q3647> a ex:Person ;
+    ex:birthDate "1941-06-13" ;
+    ex:deathDate "2022-09-22" ;
+    ex:name "Mohamed Sheikh" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "entrepreneur",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q3648> a ex:Person ;
+    ex:birthDate "1912-03-29" ;
+    ex:deathDate "1995-01-01" ;
+    ex:name "Aleksandr Kanaki" ;
+    ex:nationality "Russian Empire",
+        "Soviet Union",
+        "Ukraine" ;
+    ex:occupation "hammer thrower" .
+
+<http://www.wikidata.org/entity/Q3671> a ex:Person ;
+    ex:birthDate "1968-12-01",
+        "1968-12-06" ;
+    ex:name "Justin Chadwick" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "actor",
+        "film actor",
+        "film director",
+        "television actor",
+        "television director" .
+
+<http://www.wikidata.org/entity/Q3677> a ex:Person ;
+    ex:birthDate "1974-08-01" ;
+    ex:name "Dennis Lawrence" ;
+    ex:nationality "Trinidad and Tobago" ;
+    ex:occupation "association football manager",
+        "association football player" .
+
+<http://www.wikidata.org/entity/Q368> a ex:Person ;
+    ex:birthDate "1915-11-25" ;
+    ex:deathDate "2006-12-10" ;
+    ex:name "Augusto Pinochet" ;
+    ex:nationality "Chile" ;
+    ex:occupation "military personnel",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q377> a ex:Person ;
+    ex:birthDate "1882-07-07" ;
+    ex:deathDate "1942-06-28" ;
+    ex:name "Yanka Kupala" ;
+    ex:nationality "Belarusian People's Republic",
+        "Byelorussian Soviet Socialist Republic",
+        "Russian Empire",
+        "Soviet Union" ;
+    ex:occupation "journalist",
+        "opinion journalist",
+        "playwright",
+        "poet",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q379> a ex:Person ;
+    ex:birthDate "1904-06-02" ;
+    ex:deathDate "1996-07-20" ;
+    ex:name "František Plánička" ;
+    ex:nationality "Czech Republic",
+        "Czechoslovakia" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q3824> a ex:Person ;
+    ex:birthDate "1759-08-24" ;
+    ex:deathDate "1849-11-16" ;
+    ex:name "Etienne-Barthélémy Garnier" ;
+    ex:nationality "France" ;
+    ex:occupation "painter" .
+
+<http://www.wikidata.org/entity/Q3835> a ex:Person ;
+    ex:birthDate "1949-12-15" ;
+    ex:name "Ton Sijbrands" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "columnist",
+        "draughts player" .
+
+<http://www.wikidata.org/entity/Q3867> a ex:Person ;
+    ex:birthDate "1924-10-24" ;
+    ex:deathDate "2003-04-27" ;
+    ex:name "Piet Roozenburg" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "draughts player" .
+
+<http://www.wikidata.org/entity/Q400> a ex:Person ;
+    ex:birthDate "1974-04-09" ;
+    ex:name "Jenna Jameson" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "autobiographer",
+        "businessperson",
+        "entrepreneur",
+        "erotic photography model",
+        "film actor",
+        "film director",
+        "film producer",
+        "model",
+        "pornographic actor",
+        "reality television participant",
+        "stripper",
+        "voice actor",
+        "webcam model" .
+
+<http://www.wikidata.org/entity/Q407> a ex:Person ;
+    ex:birthDate "1949-01-10" ;
+    ex:deathDate "2002-04-22" ;
+    ex:name "Linda Lovelace" ;
+    ex:nationality "United States" ;
+    ex:occupation "autobiographer",
+        "film actor",
+        "pornographic actor",
+        "prostitute",
+        "women's rights activist" .
+
+<http://www.wikidata.org/entity/Q409> a ex:Person ;
+    ex:birthDate "1945-02-06" ;
+    ex:deathDate "1981-05-11" ;
+    ex:name "Bob Marley" ;
+    ex:nationality "Jamaica" ;
+    ex:occupation "composer",
+        "guitarist",
+        "singer",
+        "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q410> a ex:Person ;
+    ex:birthDate "1934-11-09" ;
+    ex:deathDate "1996-12-20" ;
+    ex:name "Carl Sagan" ;
+    ex:nationality "United States" ;
+    ex:occupation "astronomer",
+        "astrophysicist",
+        "cosmologist",
+        "naturalist",
+        "non-fiction writer",
+        "novelist",
+        "physicist",
+        "planetary scientist",
+        "science communicator",
+        "science fiction writer",
+        "science writer",
+        "screenwriter",
+        "space scientist",
+        "television presenter",
+        "university teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q42> a ex:Person ;
+    ex:birthDate "1952-03-11" ;
+    ex:deathDate "2001-05-11" ;
+    ex:name "Douglas Adams" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "children's writer",
+        "comedian",
+        "musician",
+        "novelist",
+        "playwright",
+        "science fiction writer",
+        "screenwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q440> a ex:Person ;
+    ex:birthDate "1908-06-26" ;
+    ex:deathDate "1973-09-11" ;
+    ex:name "Salvador Allende" ;
+    ex:nationality "Chile" ;
+    ex:occupation "President of Chile",
+        "physician",
+        "politician",
+        "surgeon" .
+
+<http://www.wikidata.org/entity/Q444> a ex:Person ;
+    ex:birthDate "1943-09-29" ;
+    ex:name "Lech Wałęsa" ;
+    ex:nationality "Poland" ;
+    ex:occupation "activist",
+        "anti-communist",
+        "dissident",
+        "electrician",
+        "political activist",
+        "politician",
+        "trade unionist" .
+
+<http://www.wikidata.org/entity/Q448> a ex:Person ;
+    ex:birthDate "1713-10-05" ;
+    ex:deathDate "1784-07-31" ;
+    ex:name "Denis Diderot" ;
+    ex:nationality "Kingdom of France" ;
+    ex:occupation "art critic",
+        "art theorist",
+        "correspondent",
+        "encyclopédistes",
+        "essayist",
+        "historian",
+        "lexicographer",
+        "literary critic",
+        "literary theorist",
+        "novelist",
+        "philosopher",
+        "playwright",
+        "political scientist",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q449> a ex:Person ;
+    ex:birthDate "1921-10-22" ;
+    ex:deathDate "1981-10-29" ;
+    ex:name "Georges Brassens" ;
+    ex:nationality "France" ;
+    ex:occupation "singer-songwriter" .
+
+<http://www.wikidata.org/entity/Q464> a ex:Person ;
+    ex:birthDate "1821-10-24" ;
+    ex:deathDate "1896-08-13" ;
+    ex:name "Philipp Ludwig von Seidel" ;
+    ex:nationality "Kingdom of Bavaria" ;
+    ex:occupation "astronomer",
+        "mathematician",
+        "optician",
+        "scientist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q475> a ex:Person ;
+    ex:birthDate "1911-01-16" ;
+    ex:deathDate "1982-01-22" ;
+    ex:name "Eduardo Frei Montalva" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q489> a ex:Person ;
+    ex:birthDate "1956-01-20" ;
+    ex:name "Bill Maher" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "comedian",
+        "film producer",
+        "journalist",
+        "screenwriter",
+        "television presenter",
+        "television producer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q498> a ex:Person ;
+    ex:birthDate "1700-04-06" ;
+    ex:deathDate "1755-05-27" ;
+    ex:name "Ulrich Frédéric Woldemar, Comte de Lowendal" ;
+    ex:nationality "Electorate of Saxony",
+        "Kingdom of Denmark",
+        "Kingdom of France",
+        "Russian Empire" ;
+    ex:occupation "marshal",
+        "military personnel",
+        "politician",
+        "soldier" .
+
+<http://www.wikidata.org/entity/Q501> a ex:Person ;
+    ex:birthDate "1821-04-09" ;
+    ex:deathDate "1867-08-31" ;
+    ex:name "Charles Baudelaire" ;
+    ex:nationality "France" ;
+    ex:occupation "art critic",
+        "critic",
+        "essayist",
+        "journalist",
+        "literary critic",
+        "poet",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q502> a ex:Person ;
+    ex:birthDate "1783-01-23" ;
+    ex:deathDate "1842-03-23" ;
+    ex:name "Stendhal" ;
+    ex:nationality "France" ;
+    ex:occupation "art historian",
+        "autobiographer",
+        "biographer",
+        "diarist",
+        "diplomat",
+        "novelist",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q504> a ex:Person ;
+    ex:birthDate "1840-04-02" ;
+    ex:deathDate "1902-09-29" ;
+    ex:name "Émile Zola" ;
+    ex:nationality "France" ;
+    ex:occupation "art critic",
+        "essayist",
+        "journalist",
+        "librettist",
+        "literary critic",
+        "novelist",
+        "photographer",
+        "playwright",
+        "poet",
+        "political reporter",
+        "short story writer",
+        "theatre critic",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q512> a ex:Person ;
+    ex:birthDate "1938-01-25" ;
+    ex:deathDate "1980-07-25" ;
+    ex:name "Vladimir Vysotsky" ;
+    ex:nationality "Soviet Union" ;
+    ex:occupation "actor",
+        "composer",
+        "film actor",
+        "guitarist",
+        "lyricist",
+        "poet",
+        "prose writer",
+        "screenwriter",
+        "singer",
+        "singer-songwriter",
+        "songwriter",
+        "stage actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q517> a ex:Person ;
+    ex:birthDate "1769-08-15" ;
+    ex:deathDate "1821-05-05" ;
+    ex:name "Napoleon" ;
+    ex:nationality "France" ;
+    ex:occupation "army officer",
+        "art collector",
+        "emperor",
+        "militant",
+        "military leader",
+        "military officer",
+        "monarch",
+        "politician",
+        "sovereign",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q529> a ex:Person ;
+    ex:birthDate "1822-12-27" ;
+    ex:deathDate "1895-09-28" ;
+    ex:name "Louis Pasteur" ;
+    ex:nationality "France" ;
+    ex:occupation "agronomist",
+        "artist",
+        "biochemist",
+        "biologist",
+        "botanist",
+        "chemist",
+        "lithographer",
+        "microbiologist",
+        "naturalist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q530> a ex:Person ;
+    ex:birthDate "1956-03-18" ;
+    ex:name "Ingemar Stenmark" ;
+    ex:nationality "Sweden" ;
+    ex:occupation "alpine skier" .
+
+<http://www.wikidata.org/entity/Q535> a ex:Person ;
+    ex:birthDate "1802-02-26" ;
+    ex:deathDate "1885-05-22" ;
+    ex:name "Victor Hugo" ;
+    ex:nationality "France" ;
+    ex:occupation "art historian",
+        "author",
+        "draftsperson",
+        "essayist",
+        "graphic artist",
+        "illustrator",
+        "librettist",
+        "novelist",
+        "opinion journalist",
+        "playwright",
+        "poet",
+        "politician",
+        "travel writer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q539> a ex:Person ;
+    ex:birthDate "1807-07-04" ;
+    ex:deathDate "1882-06-02" ;
+    ex:name "Giuseppe Garibaldi" ;
+    ex:nationality "France",
+        "Kingdom of Italy",
+        "Kingdom of Sardinia",
+        "Peru",
+        "Riograndense Republic" ;
+    ex:occupation "autobiographer",
+        "mercenary",
+        "military personnel",
+        "politician",
+        "resistance fighter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q555> a ex:Person ;
+    ex:birthDate "1973-01-01",
+        "1973-04-01" ;
+    ex:name "Rachel Maddow" ;
+    ex:nationality "United States" ;
+    ex:occupation "journalist" .
+
+<http://www.wikidata.org/entity/Q558> a ex:Person ;
+    ex:birthDate "1968-07-05",
+        "1969-01-01" ;
+    ex:name "Hedi Slimane" ;
+    ex:nationality "France" ;
+    ex:occupation "dressmaker",
+        "fashion designer",
+        "photographer" .
+
+<http://www.wikidata.org/entity/Q559> a ex:Person ;
+    ex:birthDate "1712-03-27" ;
+    ex:deathDate "1779-01-03" ;
+    ex:name "Claude Bourgelat" ;
+    ex:nationality "Kingdom of France" ;
+    ex:occupation "encyclopédistes",
+        "non-fiction writer",
+        "veterinarian" .
+
+<http://www.wikidata.org/entity/Q562> a ex:Person ;
+    ex:birthDate "1719-08-23" ;
+    ex:deathDate "1786-01-06" ;
+    ex:name "Pierre Poivre" ;
+    ex:nationality "Kingdom of France" ;
+    ex:occupation "agronomist",
+        "botanist",
+        "colonial administrator",
+        "diplomat",
+        "explorer",
+        "gardener",
+        "horticulturist",
+        "missionary",
+        "zoological collector" .
+
+<http://www.wikidata.org/entity/Q563> a ex:Person ;
+    ex:birthDate "1939-06-24" ;
+    ex:name "Brigitte Fontaine" ;
+    ex:nationality "France" ;
+    ex:occupation "actor",
+        "film actor",
+        "film director",
+        "lyricist",
+        "novelist",
+        "playwright",
+        "poet",
+        "recording artist",
+        "short story writer",
+        "singer",
+        "singer-songwriter",
+        "stage actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q567> a ex:Person ;
+    ex:birthDate "1954-07-17" ;
+    ex:name "Angela Merkel" ;
+    ex:nationality "Germany" ;
+    ex:occupation "physicist",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q576> a ex:Person ;
+    ex:birthDate "1896-05-19" ;
+    ex:deathDate "1986-08-31" ;
+    ex:name "Jorge Alessandri" ;
+    ex:nationality "Chile" ;
+    ex:occupation "civil engineer",
+        "engineer",
+        "entrepreneur",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q579> a ex:Person ;
+    ex:birthDate "1877-11-03" ;
+    ex:deathDate "1960-04-28" ;
+    ex:name "Carlos Ibáñez del Campo" ;
+    ex:nationality "Chile" ;
+    ex:occupation "military officer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q600> a ex:Person ;
+    ex:birthDate "1973-10-22" ;
+    ex:name "Ichiro Suzuki" ;
+    ex:nationality "Japan" ;
+    ex:occupation "baseball player",
+        "professional baseball player" .
+
+<http://www.wikidata.org/entity/Q603> a ex:Person ;
+    ex:birthDate "1961-01-05" ;
+    ex:name "Frédéric Taddeï" ;
+    ex:nationality "France" ;
+    ex:occupation "journalist",
+        "radio personality",
+        "television presenter" .
+
+<http://www.wikidata.org/entity/Q605> a ex:Person ;
+    ex:birthDate "1984-05-09" ;
+    ex:name "Ezra Klein" ;
+    ex:nationality "United States" ;
+    ex:occupation "blogger",
+        "columnist",
+        "journalist",
+        "podcaster",
+        "political pundit",
+        "television producer",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q607> a ex:Person ;
+    ex:birthDate "1942-02-14" ;
+    ex:name "Michael Bloomberg" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "aircraft pilot",
+        "bank manager",
+        "businessperson",
+        "politician",
+        "trader",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q609> a ex:Person ;
+    ex:birthDate "1656-01-01" ;
+    ex:deathDate "1680-04-17" ;
+    ex:name "Kateri Tekakwitha" ;
+    ex:occupation "religious sister" .
+
+<http://www.wikidata.org/entity/Q615> a ex:Person ;
+    ex:birthDate "1987-06-24" ;
+    ex:name "Lionel Messi" ;
+    ex:nationality "Argentina",
+        "Italy",
+        "Spain" ;
+    ex:occupation "association football player" .
+
+<http://www.wikidata.org/entity/Q619> a ex:Person ;
+    ex:birthDate "1473-02-28" ;
+    ex:deathDate "1543-06-03" ;
+    ex:name "Nicolaus Copernicus" ;
+    ex:nationality "Kingdom of Poland" ;
+    ex:occupation "astronomer",
+        "canon",
+        "diplomat",
+        "economist",
+        "jurist",
+        "legal scholar",
+        "mathematician",
+        "philosopher",
+        "physician",
+        "physicist",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q624> a ex:Person ;
+    ex:birthDate "1974-11-09" ;
+    ex:name "Alessandro Del Piero" ;
+    ex:nationality "Italy" ;
+    ex:occupation "association football player",
+        "color commentator" .
+
+<http://www.wikidata.org/entity/Q632> a ex:Person ;
+    ex:birthDate "1899-06-20" ;
+    ex:deathDate "1943-07-08" ;
+    ex:name "Jean Moulin" ;
+    ex:nationality "France" ;
+    ex:occupation "French resistance fighter",
+        "art dealer",
+        "official" .
+
+<http://www.wikidata.org/entity/Q633> a ex:Person ;
+    ex:birthDate "1945-11-12" ;
+    ex:name "Neil Young" ;
+    ex:nationality "Canada",
+        "United States" ;
+    ex:occupation "actor",
+        "autobiographer",
+        "director",
+        "film actor",
+        "film director",
+        "guitarist",
+        "pianist",
+        "record producer",
+        "singer",
+        "singer-songwriter",
+        "songwriter" .
+
+<http://www.wikidata.org/entity/Q635> a ex:Person ;
+    ex:birthDate "-0068-01-11" ;
+    ex:deathDate "-0029-08-10" ;
+    ex:name "Cleopatra" ;
+    ex:nationality "Ptolemaic Kingdom" ;
+    ex:occupation "monarch",
+        "sovereign" .
+
+<http://www.wikidata.org/entity/Q636> a ex:Person ;
+    ex:birthDate "1958-07-30" ;
+    ex:name "Kate Bush" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "film actor",
+        "film director",
+        "mime artist",
+        "musician",
+        "record producer",
+        "recording artist",
+        "singer",
+        "songwriter" .
+
+<http://www.wikidata.org/entity/Q640> a ex:Person ;
+    ex:birthDate "1969-01-01" ;
+    ex:name "Harald Krichel" ;
+    ex:nationality "Germany" ;
+    ex:occupation "Wikimedian",
+        "photographer" .
+
+<http://www.wikidata.org/entity/Q651> a ex:Person ;
+    ex:birthDate "1807-06-30" ;
+    ex:deathDate "1887-09-14" ;
+    ex:name "Friedrich Theodor Vischer" ;
+    ex:nationality "Kingdom of Württemberg" ;
+    ex:occupation "art critic",
+        "art historian",
+        "literary theorist",
+        "novelist",
+        "philosopher",
+        "playwright",
+        "poet",
+        "politician",
+        "university teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q675> a ex:Person ;
+    ex:birthDate "1775-01-20" ;
+    ex:deathDate "1836-06-10" ;
+    ex:name "André-Marie Ampère" ;
+    ex:nationality "France" ;
+    ex:occupation "chemist",
+        "engineer",
+        "inventor",
+        "mathematician",
+        "philosopher",
+        "physicist" .
+
+<http://www.wikidata.org/entity/Q680> a ex:Person ;
+    ex:birthDate "1745-02-18" ;
+    ex:deathDate "1827-03-05" ;
+    ex:name "Alessandro Volta" ;
+    ex:nationality "Cisalpine Republic",
+        "Duchy of Milan",
+        "Kingdom of Lombardy–Venetia",
+        "Venezuela" ;
+    ex:occupation "academic",
+        "chemist",
+        "inventor",
+        "physicist" .
+
+<http://www.wikidata.org/entity/Q692> a ex:Person ;
+    ex:birthDate "1564-04-01" ;
+    ex:deathDate "1616-05-03" ;
+    ex:name "William Shakespeare" ;
+    ex:nationality "Kingdom of England" ;
+    ex:occupation "playwright" .
+
+<http://www.wikidata.org/entity/Q80> a ex:Person ;
+    ex:birthDate "1955-06-08" ;
+    ex:name "Tim Berners-Lee" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "author",
+        "computer scientist",
+        "engineer",
+        "inventor",
+        "physicist",
+        "programmer",
+        "university teacher",
+        "web developer" .
+
+<http://www.wikidata.org/entity/Q839> a ex:Person ;
+    ex:birthDate "1993-09-09" ;
+    ex:name "Georgina Cassar" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "rhythmic gymnast" .
+
+<http://www.wikidata.org/entity/Q845> a ex:Person ;
+    ex:birthDate "1879-02-06" ;
+    ex:deathDate "1941-11-25" ;
+    ex:name "Pedro Aguirre Cerda" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q848> a ex:Person ;
+    ex:birthDate "1868-12-20" ;
+    ex:deathDate "1950-08-24" ;
+    ex:name "Arturo Alessandri" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "librarian",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q849> a ex:Person ;
+    ex:birthDate "1431-01-01" ;
+    ex:deathDate "1463-01-01" ;
+    ex:name "François Villon" ;
+    ex:nationality "Kingdom of France" ;
+    ex:occupation "lyricist",
+        "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q853> a ex:Person ;
+    ex:birthDate "1932-04-04" ;
+    ex:deathDate "1986-12-29" ;
+    ex:name "Andrei Tarkovsky" ;
+    ex:nationality "France",
+        "Italy",
+        "Soviet Union" ;
+    ex:occupation "actor",
+        "biographer",
+        "director",
+        "film actor",
+        "film director",
+        "film editor",
+        "film screenwriter",
+        "screenwriter",
+        "theatrical director" .
+
+<http://www.wikidata.org/entity/Q855> a ex:Person ;
+    ex:birthDate "1878-12-18" ;
+    ex:deathDate "1953-03-05" ;
+    ex:name "Joseph Stalin" ;
+    ex:nationality "Russian Empire",
+        "Russian Socialist Federative Soviet Republic",
+        "Soviet Union" ;
+    ex:occupation "linguist",
+        "official",
+        "opinion journalist",
+        "politician",
+        "revolutionary",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q857> a ex:Person ;
+    ex:birthDate "1858-12-27" ;
+    ex:deathDate "1930-07-16" ;
+    ex:name "Juan Luis Sanfuentes" ;
+    ex:nationality "Chile" ;
+    ex:occupation "lawyer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q859> a ex:Person ;
+    ex:birthDate "-0428-01-01" ;
+    ex:deathDate "-0348-01-01" ;
+    ex:name "Plato" ;
+    ex:nationality "Classical Athens" ;
+    ex:occupation "epigrammatist",
+        "philosopher",
+        "philosopher of law",
+        "poet",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q862> a ex:Person ;
+    ex:birthDate "1940-05-24" ;
+    ex:deathDate "1996-01-28" ;
+    ex:name "Joseph Brodsky" ;
+    ex:nationality "Soviet Union",
+        "United States",
+        "statelessness" ;
+    ex:occupation "dramaturge",
+        "essayist",
+        "lecturer",
+        "playwright",
+        "poet",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q868> a ex:Person ;
+    ex:birthDate "-0383-01-01" ;
+    ex:deathDate "-0321-01-01" ;
+    ex:name "Aristotle" ;
+    ex:occupation "philosopher" .
+
+<http://www.wikidata.org/entity/Q873> a ex:Person ;
+    ex:birthDate "1949-06-22" ;
+    ex:name "Meryl Streep" ;
+    ex:nationality "United States" ;
+    ex:occupation "actor",
+        "film actor",
+        "film producer",
+        "stage actor",
+        "television actor",
+        "television producer",
+        "voice actor" .
+
+<http://www.wikidata.org/entity/Q882> a ex:Person ;
+    ex:birthDate "1889-04-16" ;
+    ex:deathDate "1977-12-25" ;
+    ex:name "Charlie Chaplin" ;
+    ex:nationality "United Kingdom",
+        "United Kingdom of Great Britain and Ireland" ;
+    ex:occupation "actor",
+        "autobiographer",
+        "comedian",
+        "composer",
+        "director",
+        "film actor",
+        "film director",
+        "film editor",
+        "film producer",
+        "film score composer",
+        "film screenwriter",
+        "producer",
+        "screenwriter",
+        "stage actor",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q885> a ex:Person ;
+    ex:birthDate "1867-12-05" ;
+    ex:deathDate "1935-05-12" ;
+    ex:name "Józef Piłsudski" ;
+    ex:nationality "Russian Empire",
+        "Second Polish Republic" ;
+    ex:occupation "military leader",
+        "military officer",
+        "military personnel",
+        "politician",
+        "statesperson" .
+
+<http://www.wikidata.org/entity/Q892> a ex:Person ;
+    ex:birthDate "1892-01-03" ;
+    ex:deathDate "1973-09-02" ;
+    ex:name "J. R. R. Tolkien" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "author",
+        "children's writer",
+        "essayist",
+        "historian",
+        "illustrator",
+        "librettist",
+        "linguist",
+        "literary critic",
+        "literary historian",
+        "military officer",
+        "novelist",
+        "philologist",
+        "poet",
+        "prose writer",
+        "teacher",
+        "translator",
+        "university teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q905> a ex:Person ;
+    ex:birthDate "1883-07-03" ;
+    ex:deathDate "1924-06-03" ;
+    ex:name "Franz Kafka" ;
+    ex:nationality "Cisleithania",
+        "Czechoslovakia" ;
+    ex:occupation "aphorist",
+        "claims adjuster",
+        "diarist",
+        "fabulist",
+        "jurist",
+        "lawyer",
+        "librettist",
+        "novelist",
+        "poet",
+        "poet lawyer",
+        "prose writer",
+        "screenwriter",
+        "short story writer",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q909> a ex:Person ;
+    ex:birthDate "1899-08-24" ;
+    ex:deathDate "1986-06-14" ;
+    ex:name "Jorge Luis Borges" ;
+    ex:nationality "Argentina" ;
+    ex:occupation "essayist",
+        "librarian",
+        "literary critic",
+        "opinion journalist",
+        "poet",
+        "screenwriter",
+        "short story writer",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q91> a ex:Person ;
+    ex:birthDate "1809-02-12" ;
+    ex:deathDate "1865-04-15" ;
+    ex:name "Abraham Lincoln" ;
+    ex:nationality "United States" ;
+    ex:occupation "farmer",
+        "lawyer",
+        "military officer",
+        "politician",
+        "postmaster",
+        "statesperson",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q913> a ex:Person ;
+    ex:birthDate "-0469-01-01" ;
+    ex:deathDate "-0398-02-10" ;
+    ex:name "Socrates" ;
+    ex:nationality "Classical Athens" ;
+    ex:occupation "ethicist",
+        "philosopher",
+        "teacher",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q920> a ex:Person ;
+    ex:birthDate "1937-01-14" ;
+    ex:deathDate "2012-10-29" ;
+    ex:name "J. Bernlef" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "lyricist",
+        "novelist",
+        "poet",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q926> a ex:Person ;
+    ex:birthDate "1872-07-16" ;
+    ex:deathDate "1928-06-18" ;
+    ex:name "Roald Amundsen" ;
+    ex:nationality "Norway" ;
+    ex:occupation "aircraft pilot",
+        "explorer",
+        "film director",
+        "naval aviator",
+        "polar explorer",
+        "researcher",
+        "sailor",
+        "traveler",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q927> a ex:Person ;
+    ex:birthDate "1927-07-29" ;
+    ex:deathDate "2010-10-30" ;
+    ex:name "Harry Mulisch" ;
+    ex:nationality "Kingdom of the Netherlands" ;
+    ex:occupation "essayist",
+        "novelist",
+        "playwright",
+        "poet",
+        "screenwriter",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q930> a ex:Person ;
+    ex:birthDate "1890-08-03" ;
+    ex:deathDate "1974-11-28" ;
+    ex:name "Konstantin Melnikov" ;
+    ex:nationality "Russian Empire",
+        "Soviet Union" ;
+    ex:occupation "architect",
+        "painter" .
+
+<http://www.wikidata.org/entity/Q935> a ex:Person ;
+    ex:birthDate "1643-01-04" ;
+    ex:deathDate "1727-03-31" ;
+    ex:name "Isaac Newton" ;
+    ex:nationality "Kingdom of England",
+        "Kingdom of Great Britain" ;
+    ex:occupation "mathematician",
+        "philosopher" .
+
+<http://www.wikidata.org/entity/Q939> a ex:Person ;
+    ex:birthDate "1798-10-12" ;
+    ex:deathDate "1834-09-24" ;
+    ex:name "Pedro I of Brazil" ;
+    ex:nationality "Empire of Brazil",
+        "Kingdom of Portugal" ;
+    ex:occupation "composer",
+        "monarch",
+        "poet",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q9457> a ex:Person ;
+    ex:birthDate "1935-05-05" ;
+    ex:name "Abid Surti" ;
+    ex:nationality "British Raj",
+        "Dominion of India",
+        "India" ;
+    ex:occupation "cartoonist",
+        "environmentalist",
+        "painter",
+        "playwright",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q9458> a ex:Person ;
+    ex:birthDate "0571-04-22" ;
+    ex:deathDate "0632-06-11" ;
+    ex:name "Muhammad" ;
+    ex:occupation "consignor",
+        "herder",
+        "merchant",
+        "military leader",
+        "politician",
+        "preacher",
+        "prophet" .
+
+<http://www.wikidata.org/entity/Q946> a ex:Person ;
+    ex:birthDate "1957-04-22" ;
+    ex:name "Donald Tusk" ;
+    ex:nationality "Poland" ;
+    ex:occupation "head of government",
+        "historian",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q9475> a ex:Person ;
+    ex:birthDate "1980-07-03" ;
+    ex:name "Harbhajan Singh" ;
+    ex:nationality "India" ;
+    ex:occupation "cricketer" .
+
+<http://www.wikidata.org/entity/Q9486> a ex:Person ;
+    ex:birthDate "1944-09-15" ;
+    ex:deathDate "2017-01-12" ;
+    ex:name "Graham Taylor" ;
+    ex:nationality "United Kingdom" ;
+    ex:occupation "association football manager",
+        "association football player",
+        "sports commentator" .
+
+<http://www.wikidata.org/entity/Q9488> a ex:Person ;
+    ex:birthDate "1973-04-24" ;
+    ex:name "Sachin Tendulkar" ;
+    ex:nationality "India" ;
+    ex:occupation "cricketer",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q949> a ex:Person ;
+    ex:birthDate "1908-05-23" ;
+    ex:deathDate "1991-01-30" ;
+    ex:name "John Bardeen" ;
+    ex:nationality "United States" ;
+    ex:occupation "electrical engineer",
+        "inventor",
+        "physicist",
+        "university teacher" .
+
+<http://www.wikidata.org/entity/Q9509> a ex:Person ;
+    ex:birthDate "1954-10-30" ;
+    ex:name "Piero Gros" ;
+    ex:nationality "Italy" ;
+    ex:occupation "alpine skier",
+        "politician" .
+
+<http://www.wikidata.org/entity/Q9513> a ex:Person ;
+    ex:birthDate "1931-10-15" ;
+    ex:deathDate "2015-07-27" ;
+    ex:name "A. P. J. Abdul Kalam" ;
+    ex:nationality "Dominion of India",
+        "India" ;
+    ex:occupation "politician" .
+
+<http://www.wikidata.org/entity/Q9535> a ex:Person ;
+    ex:birthDate "1965-11-02" ;
+    ex:name "Shah Rukh Khan" ;
+    ex:nationality "India" ;
+    ex:occupation "actor",
+        "dancer",
+        "film actor",
+        "film producer",
+        "screenwriter",
+        "television actor",
+        "television presenter",
+        "television producer" .
+
+<http://www.wikidata.org/entity/Q9537> a ex:Person ;
+    ex:birthDate "1950-01-01" ;
+    ex:name "Glenda Schroeder" ;
+    ex:nationality "United States" ;
+    ex:occupation "computer scientist",
+        "engineer" .
+
+<http://www.wikidata.org/entity/Q9543> a ex:Person ;
+    ex:birthDate "1965-12-27" ;
+    ex:name "Salman Khan" ;
+    ex:nationality "India",
+        "United Kingdom" ;
+    ex:occupation "actor",
+        "film actor",
+        "film producer",
+        "singer",
+        "television actor",
+        "television presenter",
+        "television producer",
+        "voice actor" .
+
+<http://www.wikidata.org/entity/Q9546> a ex:Person ;
+    ex:birthDate "1056-01-01",
+        "1058-01-01" ;
+    ex:deathDate "1111-12-26" ;
+    ex:name "Al-Ghazali" ;
+    ex:nationality "Seljuk Empire" ;
+    ex:occupation "Islamic jurist",
+        "Sufi",
+        "autobiographer",
+        "journal editor",
+        "journalist",
+        "mutakallim",
+        "philosopher",
+        "poet" .
+
+<http://www.wikidata.org/entity/Q984> a ex:Person ;
+    ex:birthDate "1879-10-14" ;
+    ex:deathDate "1954-09-19" ;
+    ex:name "Miles Franklin" ;
+    ex:nationality "Australia" ;
+    ex:occupation "non-fiction writer",
+        "novelist",
+        "women's rights activist",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q989> a ex:Person ;
+    ex:birthDate "1920-05-18" ;
+    ex:deathDate "2005-04-02" ;
+    ex:name "John Paul II" ;
+    ex:nationality "Poland" ;
+    ex:occupation "Catholic bishop",
+        "Latin Catholic priest",
+        "archbishop",
+        "author",
+        "autobiographer",
+        "human rights activist",
+        "latin catholic deacon",
+        "philosopher",
+        "poet",
+        "politician",
+        "professor",
+        "transitional deacon",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q991> a ex:Person ;
+    ex:birthDate "1821-11-11" ;
+    ex:deathDate "1881-02-09" ;
+    ex:name "Fyodor Dostoyevsky" ;
+    ex:nationality "Russian Empire" ;
+    ex:occupation "biographer",
+        "essayist",
+        "journalist",
+        "novelist",
+        "opinion journalist",
+        "philosopher",
+        "prose writer",
+        "short story writer",
+        "translator",
+        "writer" .
+
+<http://www.wikidata.org/entity/Q997> a ex:Person ;
+    ex:birthDate "1921-05-21" ;
+    ex:deathDate "1989-12-14" ;
+    ex:name "Andrei Sakharov" ;
+    ex:nationality "Russian Socialist Federative Soviet Republic",
+        "Soviet Union" ;
+    ex:occupation "human rights activist",
+        "nuclear physicist",
+        "physicist",
+        "politician" .
+

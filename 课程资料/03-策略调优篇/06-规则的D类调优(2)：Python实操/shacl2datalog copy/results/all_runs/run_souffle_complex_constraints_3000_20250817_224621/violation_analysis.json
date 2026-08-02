@@ -1,0 +1,67 @@
+{
+  "run_id": "souffle_complex_constraints_3000_20250817_224621",
+  "count": 12,
+  "details": [
+    {
+      "entity": "\"Q1752\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q1417\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q1817\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q558\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q555\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3102\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q25089\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3671\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q9546\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Birth date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3345\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    },
+    {
+      "entity": "\"Q3547\"",
+      "constraint": "maxCount",
+      "message": "Death date should be reasonable if present"
+    }
+  ],
+  "timestamp": "2025-08-17T22:46:22.024475"
+}
