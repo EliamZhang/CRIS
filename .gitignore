@@ -5,12 +5,12 @@
 工具包/13_lending_club_tree_rule_mining/input/lending_club_loan_two.csv
 
 # 课程资料超大文件（>40MB 数据文件，不入库）
-课程资料/04-报表篇/01-Vintage报表(3)：基于Python的代码实操/repay_plan_data_new.csv
-课程资料/04-报表篇/01-Vintage报表(3)：基于Python的代码实操/repay_actual_data_new.csv
-课程资料/04-报表篇/02-迁徙率报表(2)：Python代码实操/repay_plan_data_new.csv
-课程资料/04-报表篇/02-迁徙率报表(2)：Python代码实操/repay_actual_data_new.csv
+课程资料/04-报表分析与资产质量监控/01-Vintage报表：Python实操/repay_plan_data_new.csv
+课程资料/04-报表分析与资产质量监控/01-Vintage报表：Python实操/repay_actual_data_new.csv
+课程资料/04-报表分析与资产质量监控/02-迁徙率报表：Python实操/repay_plan_data_new.csv
+课程资料/04-报表分析与资产质量监控/02-迁徙率报表：Python实操/repay_actual_data_new.csv
 课程资料/07-机器学习模型篇/8-Oputuna+LGBM模型调参(2)：Python实操/数据代码/feature_data.xls
-课程资料/02-策略开发篇/04-基于交叉表生成规则/lending_club_loan_two.csv
-课程资料/02-策略开发篇/05-基于决策树生成规则(2)：节点可视化/lending_club_loan_two.csv
-课程资料/02-策略开发篇/05-基于决策树生成规则(3)：自动化挖掘/lending_club_loan_two.csv
+课程资料/02-策略开发与规则体系/04-规则生成：交叉表分析/lending_club_loan_two.csv
+课程资料/02-策略开发与规则体系/05-决策树规则(1)：节点可视化与解读/lending_club_loan_two.csv
+课程资料/02-策略开发与规则体系/05-决策树规则(2)：自动化规则挖掘/lending_club_loan_two.csv
 课程资料/06-评分卡模型篇/17-评分卡模型拒绝推断/reject_data.csv.drivedownload
