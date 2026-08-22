@@ -158,4 +158,4 @@
 - **PDF → 图片**：`fitz`（PyMuPDF）逐页渲染 PNG；合并大图用 Pillow 网格拼接
 - **zip 解压**：中文文件名 zip 需 GBK 修复（`raw.encode("cp437").decode("gbk")`）后用 zipfile 解压
 - **图片型 PDF 转文本**：Tesseract OCR，`TESSDATA_PREFIX=$HOME/tessdata`，`pytesseract` + 灰度放大预处理
-- **git**：当前活跃分支 `feature/课程资料-图片与解压文件`；main 为发布主线
+- **git**：`staging` 为活跃开发分支，`main` 为发布主线
