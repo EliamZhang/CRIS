@@ -160,3 +160,13 @@
 - **zip 解压**：中文文件名 zip 需 GBK 修复（`raw.encode("cp437").decode("gbk")`）后用 zipfile 解压
 - **图片型 PDF 转文本**：Tesseract OCR，`TESSDATA_PREFIX=$HOME/tessdata`，`pytesseract` + 灰度放大预处理
 - **git**：`staging` 为活跃开发分支，`main` 为发布主线
+
+---
+
+## 七、学习协作约定
+
+`专题研修/06-信贷投放专题/信贷投放专题_专题综述.md` 是用户的学习路线图（7 个阶段：①平台优化机制 → ②信贷漏斗与数据回传 → ③Attribution/MMP/Cohort → ④Quality/Value 优化 → ⑤人群/素材/出价/Budget → ⑥A/B Test/Lift/Incrementality → ⑦Risk-adjusted LTV/ROI 预算）。用户会沿路线图通过对话学习消费信贷广告投放优化，遇到问题随时提问。
+
+- **分工**：用户负责按顺序阅读、完成实操任务、提问；Claude 负责讲解答疑、按阶段生成配套 Python 实操（06 篇目尚无 ipynb，需逐步补齐，用教学模拟数据）、用各阶段过关标准出题批改、把讨论成果沉淀回路线图并维护进度标记。
+- **节奏**：以阶段为最小循环（读 → 做 → 提问 → 讲解/实操/批改 → 更新进度），每完成一个阶段按用户指示提交。
+- **边界**：真实广告后台操作由用户在工作环境完成；Claude 提供概念、计算逻辑、模拟数据与模拟环境。可复用仓库资产：专题研修 04（Vintage/迁徙率 ipynb）、专题研修 05（KS/Lift 等）、06 篇目 01~04 配套文档。
