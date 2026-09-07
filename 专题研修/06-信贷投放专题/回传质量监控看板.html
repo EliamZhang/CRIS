@@ -23,6 +23,7 @@
   --warn: #fab219;
   --serious: #ec835a;
   --critical: #d03b3b;
+  --observe: #3987e5;
   --band: rgba(12,163,12,0.14);
   --band-edge: rgba(12,163,12,0.45);
 }
@@ -44,6 +45,7 @@
   --warn: #fab219;
   --serious: #ec835a;
   --critical: #d03b3b;
+  --observe: #2a78d6;
   --band: rgba(12,163,12,0.12);
   --band-edge: rgba(12,163,12,0.5);
 }
@@ -76,6 +78,7 @@ h1 { font-size: 22px; margin: 0; font-weight: 650; }
 .tile .num { font-size: 26px; font-weight: 650; font-variant-numeric: tabular-nums; margin-bottom: 4px; }
 .tile .lab { color: var(--ink-2); font-size: 12.5px; }
 .tile .st { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; margin-left: 8px; }
+.mini-tiles { grid-template-columns: 1fr 1fr; margin-bottom: 12px; }
 @media (max-width: 860px) { .tiles { grid-template-columns: repeat(2, 1fr); } }
 
 /* ===== 区块卡片 ===== */
@@ -91,6 +94,8 @@ th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--gri
 th { color: var(--muted); font-weight: 500; font-size: 12px; }
 td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
 tr:last-child td { border-bottom: none; }
+.table-scroll { width: 100%; overflow-x: auto; }
+.recon-table table { min-width: 880px; }
 
 /* ===== 状态徽章 ===== */
 .badge { display: inline-flex; align-items: center; gap: 5px; font-size: 12.5px; font-weight: 600; white-space: nowrap; }
@@ -99,6 +104,7 @@ tr:last-child td { border-bottom: none; }
 .badge.warn { color: var(--warn); --c: var(--warn); }
 .badge.serious { color: var(--serious); --c: var(--serious); }
 .badge.critical { color: var(--critical); --c: var(--critical); }
+.badge.observe { color: var(--observe); --c: var(--observe); }
 
 /* ===== 进度条 ===== */
 .prow { display: grid; grid-template-columns: 150px 1fr 74px 90px; align-items: center; gap: 12px; padding: 7px 0; }
@@ -109,8 +115,28 @@ tr:last-child td { border-bottom: none; }
 .track .band { position: absolute; top: 0; bottom: 0; background: var(--band); border-left: 1px dashed var(--band-edge); border-right: 1px dashed var(--band-edge); }
 .track .tick { position: absolute; top: -3px; bottom: -3px; width: 1px; background: var(--axis); }
 .prow .val { text-align: right; font-variant-numeric: tabular-nums; font-weight: 600; }
+.prow > div:last-child .badge { white-space: normal; }
 .legend { display: flex; gap: 14px; flex-wrap: wrap; color: var(--ink-2); font-size: 12px; margin-top: 10px; }
 .legend .sw { display: inline-block; width: 10px; height: 10px; border-radius: 3px; margin-right: 5px; vertical-align: -1px; }
+
+/* ===== 有效回传 ===== */
+.quality-row {
+  display: grid; grid-template-columns: 140px minmax(0, 1fr) 92px;
+  align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--grid);
+}
+.quality-row:last-child { border-bottom: none; }
+.quality-row .nm { font-size: 13px; }
+.quality-row .nm small { color: var(--muted); }
+.quality-row .flow { color: var(--ink-2); font-size: 12.5px; min-width: 0; }
+.quality-row .flow b { color: var(--ink-1); font-weight: 600; }
+.quality-row .result { text-align: right; white-space: nowrap; }
+.quality-row .rate { display: block; font-size: 15px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.quality-row .raw { color: var(--muted); font-size: 11.5px; margin-top: 2px; }
+.pipeline {
+  margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: var(--page);
+  color: var(--ink-2); font-size: 12px;
+}
+.pipeline b { color: var(--ink-1); }
 
 /* ===== SVG ===== */
 svg { display: block; width: 100%; }
@@ -124,11 +150,25 @@ svg .bar { shape-rendering: geometricPrecision; }
 .alert { display: flex; gap: 12px; align-items: flex-start; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 10px; background: var(--page); }
 .alert .ic { flex: 0 0 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #000; }
 .alert.warn .ic { background: var(--warn); }
+.alert.serious .ic { background: var(--serious); }
 .alert.good .ic { background: var(--good); color: #fff; }
+.alert.observe .ic { background: var(--observe); color: #fff; }
 .alert .tt { font-weight: 600; font-size: 13.5px; }
 .alert .de { color: var(--ink-2); font-size: 12.5px; margin-top: 2px; }
 .alert .ac { font-size: 12.5px; margin-top: 4px; }
 .alert .ac b { color: var(--ink-1); }
+.alert .meta { color: var(--muted); font-size: 11.5px; margin-top: 5px; }
+
+@media (max-width: 640px) {
+  .wrap { padding-left: 14px; padding-right: 14px; }
+  .card { padding: 16px; }
+  .prow { grid-template-columns: 1fr 70px; gap: 6px 10px; }
+  .prow .track { grid-column: 1 / -1; grid-row: 2; }
+  .prow > div:last-child { grid-column: 1 / -1; }
+  .quality-row { grid-template-columns: 1fr 84px; }
+  .quality-row .flow { grid-column: 1 / -1; grid-row: 2; }
+  .mini-tiles { grid-template-columns: 1fr; }
+}
 
 /* ===== 悬浮提示 ===== */
 #tip {
@@ -154,39 +194,41 @@ footer b { color: var(--ink-2); }
     <button id="themeBtn" type="button">☀ 浅色模式</button>
   </header>
 
-  <div class="banner">🔬 <b>教学演示数据</b>——按"真实感漏斗"量级模拟（日均提交 ≈ 124、放款 ≈ 25），对应《学习笔记_信贷投放专题.md》6.3 监控样例。今日埋了三个异常：<b>1 笔重复回传、1 笔撤回未同步、1 笔时区日切</b>，各自在下面四个维度中显形。</div>
+  <div class="banner">🔬 <b>教学演示数据</b>——按"真实感漏斗"量级模拟（日均提交 ≈ 124、放款 ≈ 25）。今日有 <b>3 条未恢复告警</b>：1 笔重复业务事件、1 笔撤回未同步、放款回传长尾超 SLA；另有 <b>1 条跨时区日切待观察</b>，预计次日自动平账。</div>
 
   <!-- 统计卡 -->
   <div class="tiles" id="tiles"></div>
 
-  <!-- ① 三方对账表 -->
+  <!-- 告警处置 -->
   <div class="card">
-    <h2>① 三方日级对账表</h2>
+    <h2>告警处置 · 需处置 3 / 待观察 1</h2>
+    <div class="desc">优先看未恢复事项；每条给出影响、第一处置动作、责任人和当前状态。</div>
+    <div id="alerts"></div>
+  </div>
+
+  <!-- 三方对账表 -->
+  <div class="card">
+    <h2>三方日级对账</h2>
     <div class="desc">平台后台 vs MMP vs 后端真实，按事件 × 日期 × OS 拆分（此处为当日全量汇总）。差异 ≠ 0 即需要读数定位。</div>
-    <table id="recon"></table>
+    <div class="table-scroll recon-table"><table id="recon"></table></div>
   </div>
 
-  <div class="grid2">
-    <!-- ② 覆盖率 -->
-    <div class="card">
-      <h2>② 覆盖率</h2>
-      <div class="desc">已回传 ÷ 后端真实事件数。健康区间 99%–100%（绿色带）——低于 99% 是漏报，<b>超过 100% 同样是病</b>（重复回传 / 撤销未同步）。</div>
-      <div id="coverage"></div>
-      <div class="legend"><span><span class="sw" style="background:var(--good)"></span>健康区间内</span><span><span class="sw" style="background:var(--warn)"></span>超 100%（重复/漏撤销）</span></div>
-    </div>
-
-    <!-- ④ 一致性 -->
-    <div class="card">
-      <h2>④ 一致性</h2>
-      <div class="desc">与核心业务表逐日核对。金额、状态、事件时间三类字段的一致率，阈值 99%。</div>
-      <div id="consistency"></div>
-    </div>
-  </div>
-
-  <!-- ③ 时延 -->
+  <!-- 覆盖率升级为有效回传率 -->
   <div class="card">
-    <h2>③ 时延（upload_time − event_time）</h2>
-    <div class="desc">看 P50 / P90 / P99 分位数，不只看平均值。横轴为对数刻度（分钟）。虚线为 submit 事件的 P90 告警线（10 分钟）——注意放款事件天然延迟 1–3 天，阈值须按事件分层，不可共用。</div>
+    <h2>回传有效性</h2>
+    <div class="desc"><b>原始覆盖率</b>用于发现漏报、重复和漏撤销；<b>有效回传率</b> = 平台成功接收、通过业务有效性校验、匹配成功且仍在归因窗口内的真实事件数 ÷ 后端应回传事件数。两者必须同时看。</div>
+    <div id="coverage"></div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--warn)"></span>原始覆盖异常</span>
+      <span><span class="sw" style="background:var(--good)"></span>最终有效率达标</span>
+      <span><span class="sw" style="background:var(--observe)"></span>待跨日平账</span>
+    </div>
+  </div>
+
+  <!-- 时延 -->
+  <div class="card">
+    <h2>回传时延（upload_time − event_time）</h2>
+    <div class="desc">这里只衡量<b>事件发生后多久传到平台</b>，不包含申请到放款的业务耗时。看 P50 / P90 / P99，并按事件设置独立 SLA；图中虚线仅标记 submit 的 P90 告警线（10 分钟）。</div>
     <div id="latency"></div>
     <div class="legend">
       <span><span class="sw" style="background:var(--seq-250)"></span>P50（常规水平）</span>
@@ -196,31 +238,31 @@ footer b { color: var(--ink-2); }
   </div>
 
   <div class="grid2">
-    <!-- ⑤ 唯一性 -->
+    <!-- 一致性 -->
     <div class="card">
-      <h2>⑤ 唯一性</h2>
-      <div class="desc">重复 event_id 与重复业务事件率，阈值 0.1%。</div>
-      <div id="uniqueness"></div>
+      <h2>一致性</h2>
+      <div class="desc">与核心业务表逐日核对。金额、状态、事件时间三类字段的一致率，阈值 99%。</div>
+      <div id="consistency"></div>
     </div>
 
-    <!-- 告警联动 -->
+    <!-- 唯一性 -->
     <div class="card">
-      <h2>⑥ 告警联动（当日 3 条）</h2>
-      <div class="desc">按严重程度与责任人分派，每条配第一处置动作。</div>
-      <div id="alerts"></div>
+      <h2>唯一性</h2>
+      <div class="desc">同时监控重复 event_id 和重复业务事件；后者可发现“重试生成了新 event_id”的隐性重复。</div>
+      <div id="uniqueness"></div>
     </div>
   </div>
 
   <!-- 覆盖率 7 日趋势 -->
   <div class="card">
-    <h2>application_submitted 覆盖率 · 近 7 日趋势</h2>
-    <div class="desc">绿色带为健康区间 99%–100%。末日的 100.8% 突破上限，与"重复回传"告警同源。鼠标悬停查看每日数值。</div>
+    <h2>application_submitted 原始覆盖率 · 近 7 日趋势</h2>
+    <div class="desc">绿色带为健康区间 99%–100%。末日的 100.8% 突破上限，与“重复业务事件”告警同源；该趋势用于发现异常，不代表最终有效率。鼠标悬停查看每日数值。</div>
     <div id="trend"></div>
   </div>
 
   <footer>
-    <b>口径说明</b>：覆盖率分母一律使用<b>后端真实事件数</b>（用平台数做分母会形成"自己报、自己算"的循环验证）；时延统计以 event_time 为基准，补数按业务发生日落位。<br>
-    <b>演示数据</b>：教学用假设数据，不代表任何真实业务水平。三个异常对应的排查路径见《学习笔记_信贷投放专题.md》小节 6。
+    <b>口径说明</b>：所有比率的分母均使用<b>后端应回传事件数</b>；原始覆盖率保留重复、撤销和跨日差异用于发现问题，有效回传率则在业务有效性、平台接收、标识匹配和归因窗口校验后计算。时延只计算 upload_time − event_time，不包含申请到放款的业务耗时；补数按业务发生日落位。<br>
+    <b>演示数据</b>：教学用假设数据，不代表任何真实业务水平。工程质量看“数是否正确可用”，业务信号的区分度、利润同向性另行评估。
   </footer>
 </div>
 
@@ -255,65 +297,60 @@ function hideTip() { TIP.style.display = "none"; }
 
 /* ---------- 工具 ---------- */
 const fmt = (n, d = 1) => n.toFixed(d);
+const statusLabel = {
+  good: "✓ 正常",
+  warn: "⚠ 需处置",
+  serious: "! 严重",
+  observe: "○ 待观察",
+};
 
 /* ---------- 统计卡 ---------- */
 const tiles = [
-  { num: "3", lab: "当日告警", st: ["serious", "⚠ 需处置"] },
-  { num: "3/4", lab: "对账异常行", st: ["warn", "⚠ 差异待核"] },
-  { num: "1 笔", lab: "重复回传（submitted）", st: ["warn", "⚠ 幂等失效"] },
-  { num: "720 分", lab: "放款 P99 时延", st: ["warn", "⚠ 逼近归因窗口"] },
+  { num: "3", lab: "未恢复告警", st: ["serious", "⚠ 需处置"] },
+  { num: "3 笔", lab: "预计受影响事件", st: ["warn", "⚠ 控制影响"] },
+  { num: "1 项", lab: "待观察对账差异", st: ["observe", "○ 次日复核"] },
+  { num: "100.0%", lab: "submitted 有效回传率", st: ["good", "✓ 真值未漏"] },
 ];
 document.getElementById("tiles").innerHTML = tiles.map(t =>
   `<div class="tile"><div class="num">${t.num}<span class="st badge ${t.st[0]}">${t.st[1]}</span></div><div class="lab">${t.lab}</div></div>`
 ).join("");
 
-/* ---------- ① 三方对账表 ---------- */
+/* ---------- 三方对账表 ---------- */
 const reconRows = [
-  { ev: "application_started", cn: "开始申请", p: 231, m: 230, b: 230, diff: "+0.4%", st: "good", note: "1 笔 23:58 提交跨时区日切，明日自动平账" },
-  { ev: "application_submitted", cn: "提交申请", p: 125, m: 124, b: 124, diff: "+0.8%", st: "warn", note: "1 笔重复回传，转唯一性核查" },
-  { ev: "application_approved", cn: "审批通过", p: 46, m: 45, b: 45, diff: "+2.2%", st: "warn", note: "1 笔撤回未同步，转一致性核查" },
-  { ev: "loan_disbursed", cn: "放款", p: 25, m: 25, b: 25, diff: "0.0%", st: "good", note: "账实相符" },
+  { ev: "application_started", cn: "开始申请", p: 231, m: 230, b: 230, pdiff: "+1 / +0.4%", mdiff: "0 / 0.0%", st: "observe", note: "1 笔跨时区日切，次日复核是否自动平账" },
+  { ev: "application_submitted", cn: "提交申请", p: 125, m: 124, b: 124, pdiff: "+1 / +0.8%", mdiff: "0 / 0.0%", st: "warn", note: "1 笔重复业务事件，转唯一性核查" },
+  { ev: "application_approved", cn: "审批通过", p: 46, m: 45, b: 45, pdiff: "+1 / +2.2%", mdiff: "0 / 0.0%", st: "warn", note: "1 笔撤回未同步，转一致性核查" },
+  { ev: "loan_disbursed", cn: "放款", p: 25, m: 25, b: 25, pdiff: "0 / 0.0%", mdiff: "0 / 0.0%", st: "good", note: "数量对平；另有 1 笔时延超 SLA" },
 ];
 document.getElementById("recon").innerHTML =
-  `<thead><tr><th>事件</th><th class="num">平台后台</th><th class="num">MMP</th><th class="num">后端真实</th><th class="num">差异</th><th>状态</th><th>读数</th></tr></thead><tbody>` +
+  `<thead><tr><th>事件</th><th class="num">平台后台</th><th class="num">MMP</th><th class="num">后端真实</th><th class="num">平台－后端</th><th class="num">MMP－后端</th><th>状态</th><th>读数</th></tr></thead><tbody>` +
   reconRows.map(r =>
     `<tr><td>${r.cn}<br><small style="color:var(--muted)">${r.ev}</small></td>` +
     `<td class="num">${r.p}</td><td class="num">${r.m}</td><td class="num">${r.b}</td>` +
-    `<td class="num">${r.diff}</td>` +
-    `<td><span class="badge ${r.st}">${r.st === "good" ? "✓ 正常" : "⚠ 异常"}</span></td>` +
+    `<td class="num">${r.pdiff}</td><td class="num">${r.mdiff}</td>` +
+    `<td><span class="badge ${r.st}">${statusLabel[r.st]}</span></td>` +
     `<td style="color:var(--ink-2);font-size:12.5px">${r.note}</td></tr>`
   ).join("") + `</tbody>`;
 
-/* ---------- ② 覆盖率 ---------- */
+/* ---------- 覆盖率与有效回传率 ---------- */
 const covRows = [
-  { ev: "开始申请", small: "application_started", b: 230, r: 230, cov: 100.0, st: "good", note: "" },
-  { ev: "提交申请", small: "application_submitted", b: 124, r: 125, cov: 100.8, st: "warn", note: "超 100%：重复回传" },
-  { ev: "审批通过", small: "application_approved", b: 45, r: 46, cov: 102.2, st: "warn", note: "超 100%：撤回未同步" },
-  { ev: "放款", small: "loan_disbursed", b: 25, r: 25, cov: 100.0, st: "good", note: "" },
+  { ev: "开始申请", small: "application_started", b: 230, raw: 231, eff: 230, rawCov: 100.4, effCov: 100.0, st: "observe", note: "跨时区日切 1" },
+  { ev: "提交申请", small: "application_submitted", b: 124, raw: 125, eff: 124, rawCov: 100.8, effCov: 100.0, st: "warn", note: "重复业务事件 1" },
+  { ev: "审批通过", small: "application_approved", b: 45, raw: 46, eff: 45, rawCov: 102.2, effCov: 100.0, st: "warn", note: "失效状态 1" },
+  { ev: "放款", small: "loan_disbursed", b: 25, raw: 25, eff: 25, rawCov: 100.0, effCov: 100.0, st: "good", note: "数量正常，时延另看 SLA" },
 ];
-(function () {
-  const LO = 95, HI = 103; // 轨道刻度范围
-  const pos = v => ((v - LO) / (HI - LO)) * 100;
-  document.getElementById("coverage").innerHTML = covRows.map(r => {
-    const w = Math.max(2, Math.min(100, pos(r.cov)));
-    const color = r.cov > 100 ? "var(--warn)" : (r.cov < 99 ? "var(--critical)" : "var(--good)");
-    return `<div class="prow">
-      <div class="nm">${r.ev}<br><small>${r.small}</small></div>
-      <div class="track">
-        <div class="band" style="left:${pos(99)}%;width:${pos(100)-pos(99)}%"></div>
-        <div class="tick" style="left:${pos(99)}%"></div>
-        <div class="tick" style="left:${pos(100)}%"></div>
-        <div class="fill" style="width:${w}%;background:${color}" title="已回传 ${r.r} ÷ 后端真实 ${r.b}"></div>
-      </div>
-      <div class="val">${fmt(r.cov)}%</div>
-      <div><span class="badge ${r.st}">${r.st === "good" ? "✓" : "⚠"} ${r.note || "正常"}</span></div>
-    </div>`;
-  }).join("");
-})();
+document.getElementById("coverage").innerHTML = covRows.map(r => `
+  <div class="quality-row">
+    <div class="nm">${r.ev}<br><small>${r.small}</small></div>
+    <div class="flow"><b>原始 ${r.raw}/${r.b} = ${fmt(r.rawCov)}%</b>　→　有效 ${r.eff}/${r.b}<div class="raw"><span class="badge ${r.st}">${r.note}</span></div></div>
+    <div class="result"><span class="rate">${fmt(r.effCov)}%</span><span class="badge good">✓ 真值覆盖</span></div>
+  </div>`).join("") + `
+  <div class="pipeline"><b>submitted 核验链路：</b>应传 124 → 平台原始计数 125 → 业务唯一键核验 124 → 标识匹配 124 → 窗口内 124<br>
+  损失拆解：平台拒收 0　·　匹配失败 0　·　超归因窗口 0　·　额外无效事件 1</div>`;
 
 /* ---------- ④ 一致性 ---------- */
 const conRows = [
-  { nm: "金额一致率", v: 99.6, st: "good", note: "1 笔币种修正待核" },
+  { nm: "金额一致率", v: 99.6, st: "observe", note: "达标，1 笔币种修正待核" },
   { nm: "状态一致率", v: 97.8, st: "warn", note: "1 笔撤回未同步（见对账表）" },
   { nm: "event_time 一致率", v: 100.0, st: "good", note: "正常" },
 ];
@@ -326,42 +363,44 @@ document.getElementById("consistency").innerHTML = conRows.map(r => {
       <div class="fill" style="width:${r.v}%;background:${color}"></div>
     </div>
     <div class="val">${fmt(r.v)}%</div>
-    <div><span class="badge ${r.st}">${r.st === "good" ? "✓" : "⚠"} ${r.note}</span></div>
+    <div><span class="badge ${r.st}">${r.note}</span></div>
   </div>`;
 }).join("") +
 `<div class="legend"><span><span class="sw" style="background:var(--axis)"></span>竖线 = 99% 阈值</span></div>`;
 
-/* ---------- ⑤ 唯一性 ---------- */
+/* ---------- 唯一性 ---------- */
 document.getElementById("uniqueness").innerHTML = `
-  <div class="tiles" style="grid-template-columns:1fr 1fr;margin-bottom:12px">
-    <div class="tile"><div class="num">1<span class="st badge warn">⚠ 告警</span></div><div class="lab">重复 event_id 数（submitted，02:00 重试未幂等）</div></div>
+  <div class="tiles mini-tiles">
+    <div class="tile"><div class="num">0<span class="st badge good">✓ 正常</span></div><div class="lab">重复 event_id 数</div></div>
     <div class="tile"><div class="num">0.8%<span class="st badge warn">⚠ 超阈值</span></div><div class="lab">重复业务事件率（阈值 0.1%）</div></div>
   </div>
-  <div style="color:var(--ink-2);font-size:12.5px">幂等三件套：at-least-once 通道 + 全局唯一 event_id（一次生成、重试原样重发）+ 双端去重。幂等不是自动的，是"你保证"的。</div>`;
+  <div style="color:var(--ink-2);font-size:12.5px">02:00 重试生成了新的 event_id，所以“重复 ID”为 0，但按业务唯一键识别出 1 笔重复事件。重试必须原样复用首次生成的 event_id，接收端再按该 ID 幂等去重。</div>`;
 
-/* ---------- ⑥ 告警联动 ---------- */
+/* ---------- 告警处置 ---------- */
 const alerts = [
-  { st: "warn", tt: "唯一性告警：application_submitted 重复回传 1 笔", de: "02:00 回传服务报错重试，同一事件被发送两次，event_id 未保持原样。", ac: "<b>处置：</b>查重试日志，重试原样重发 event_id（修幂等）&nbsp;·&nbsp;<b>责任人：</b>研发" },
-  { st: "warn", tt: "一致性告警：application_approved 1 笔撤回未同步", de: "用户 2 小时内撤回申请，后端已撤销，平台账本仍保留该笔转化（且被当正样本学习）。", ac: "<b>处置：</b>回传修正事件（同 event_id，status = revoked），平台同步扣减&nbsp;·&nbsp;<b>责任人：</b>数据" },
-  { st: "good", tt: "对账差异（自动平账）：application_started +1 笔", de: "23:58 提交跨时区日切——后端按本地日、平台按统一时区记账。", ac: "<b>处置：</b>无需处理，明日自动平账&nbsp;·&nbsp;<b>责任人：</b>—" },
+  { st: "serious", ic: "!", tt: "时延告警：loan_disbursed 回传长尾超 SLA", de: "P90 = 45 分钟，仍在 60 分钟 SLA 内；但 P99 达 720 分钟，超过 120 分钟长尾阈值。数量虽已对平，仍有 1 笔信号进入模型过晚。", ac: "<b>第一动作：</b>检查发送队列最老消息与失败重试日志，确认积压范围", meta: "影响：1 笔　·　责任人：研发　·　状态：未恢复" },
+  { st: "warn", ic: "⚠", tt: "唯一性告警：application_submitted 重复业务事件 1 笔", de: "02:00 回传服务重试时生成了新 event_id，ID 查重未命中，但业务唯一键识别出重复。", ac: "<b>第一动作：</b>核查重试日志，改为原样复用首次 event_id", meta: "影响：1 笔　·　责任人：研发　·　状态：处理中" },
+  { st: "warn", ic: "⚠", tt: "一致性告警：application_approved 撤回未同步 1 笔", de: "后端已撤销，平台仍保留该笔转化，可能继续作为正样本参与学习。", ac: "<b>第一动作：</b>使用原 event_id 回传 status = revoked 的修正事件", meta: "影响：1 笔　·　责任人：数据　·　状态：待处理" },
+  { st: "observe", ic: "○", tt: "待观察：application_started 跨时区日切 +1 笔", de: "23:58 发生的事件在平台与后端按不同日界归账，预计次日自动平账。", ac: "<b>复核动作：</b>次日同口径重跑对账；未平账再升级告警", meta: "影响：暂不计　·　责任人：数据　·　状态：观察中" },
 ];
 document.getElementById("alerts").innerHTML = alerts.map(a =>
-  `<div class="alert ${a.st}"><div class="ic">${a.st === "warn" ? "⚠" : "✓"}</div>
-   <div><div class="tt">${a.tt}</div><div class="de">${a.de}</div><div class="ac">${a.ac}</div></div></div>`
+  `<div class="alert ${a.st}"><div class="ic">${a.ic}</div>
+   <div><div class="tt">${a.tt}</div><div class="de">${a.de}</div><div class="ac">${a.ac}</div><div class="meta">${a.meta}</div></div></div>`
 ).join("");
 
-/* ---------- ③ 时延（对数轴横向分组条形图） ---------- */
+/* ---------- 时延（对数轴横向分组条形图） ---------- */
 (function () {
   const data = [
-    { nm: "开始申请", ev: "application_started", p50: 0.1, p90: 0.5, p99: 2, st: "good" },
-    { nm: "提交申请", ev: "application_submitted", p50: 0.3, p90: 2, p99: 15, st: "good" },
-    { nm: "放款", ev: "loan_disbursed", p50: 30, p90: 180, p99: 720, st: "warn" },
+    { nm: "开始申请", ev: "application_started", p50: 0.1, p90: 0.5, p99: 2, st: "good", status: "✓ P90≤5m" },
+    { nm: "提交申请", ev: "application_submitted", p50: 0.3, p90: 2, p99: 15, st: "good", status: "✓ P90≤10m" },
+    { nm: "审批通过", ev: "application_approved", p50: 0.5, p90: 3, p99: 20, st: "good", status: "✓ P90≤15m" },
+    { nm: "放款", ev: "loan_disbursed", p50: 30, p90: 45, p99: 720, st: "serious", status: "! P99>120m" },
   ];
-  const W = 720, H = 190, LX = 108, RX = 700;
+  const W = 720, H = 236, LX = 108, RX = 650;
   const lo = Math.log2(0.1), hi = Math.log2(1024);
   const x = v => LX + (Math.log2(v) - lo) / (hi - lo) * (RX - LX);
   const ticks = [0.1, 1, 10, 100, 1000];
-  const rows = data.length, rowH = 46, barH = 13, groupPad = 14;
+  const rowH = 46, barH = 13;
   const cols = [
     { k: "p50", c: "var(--seq-250)" },
     { k: "p90", c: "var(--seq-400)" },
@@ -390,14 +429,14 @@ document.getElementById("alerts").innerHTML = alerts.map(a =>
         <title>${r.nm} · ${col.k.toUpperCase()} = ${fmt(v)} 分钟</title></rect>`;
       // P99 选择性直接标注
       if (j === 2) {
-        svg += `<text x="${Math.min(bx + bw + 6, W - 40)}" y="${by + 10}" fill="var(--ink-2)" style="font-size:11px">${fmt(v)}</text>`;
+        svg += `<text x="${Math.min(bx + 6, W - 92)}" y="${by + 10}" fill="var(--ink-2)" style="font-size:11px">${fmt(v)}</text>`;
       }
       if (i === 0 && j === 0) {
         svg += `<text x="${LX + 4}" y="${by + 10}" fill="var(--ink-1)" style="font-size:10.5px">${fmt(v)}</text>`;
       }
     });
     // 状态
-    svg += `<text x="${W - 8}" y="${gy + 22}" text-anchor="end" style="font-size:12px" fill="${r.st === "warn" ? "var(--serious)" : "var(--good)"}">${r.st === "warn" ? "⚠ P99 12h" : "✓"}</text>`;
+    svg += `<text x="${W - 8}" y="${gy + 22}" text-anchor="end" style="font-size:11px" fill="${r.st === "serious" ? "var(--serious)" : "var(--good)"}">${r.status}</text>`;
   });
   svg += `</svg>`;
   document.getElementById("latency").innerHTML = svg;
