@@ -1,11 +1,11 @@
 <!doctype html>
 <html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="澳大利亚信贷产品多渠道归因、Google Ads、业务漏斗与回传健康监控中心">
-  <title>信贷投放与归因监控中心</title>
-  <style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="信贷投放与归因监控中心：多渠道协同、风险质量、增量证据、回传对账。单文件离线演示。">
+<title>信贷投放与归因监控中心 · Cohort & Incrementality</title>
+<style>
     :root {
       --navy-950: #061426;
       --navy-900: #0a1d33;
@@ -554,971 +554,766 @@
       .alert-row > :nth-child(3), .alert-row > :nth-child(4) { display: none; }
       .trace-summary { grid-template-columns: repeat(2, minmax(0,1fr)); }
     }
-  </style>
+
+/* v2: preserve the navy/gold identity, improve hierarchy and scope transparency. */
+:root{--sidebar:234px}
+body{font-size:16px}
+button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible,a:focus-visible{outline:3px solid #c79d45;outline-offset:3px}
+button:disabled{opacity:.5;cursor:wait}
+.topbar{position:relative;min-height:94px;gap:10px}
+.brand-title{font-size:16px}.brand-sub,.demo-note,.subtle,.tag,.kpi-foot,.timeline-time{font-size:12px}
+.brand{min-height:94px}.brand-copy{min-width:0}
+.nav-btn{min-height:45px}.nav-count{font-size:12px}
+.filterbar{position:static;display:block;overflow:visible;padding:14px 28px;background:#edf2f8}
+.filter-row{display:flex;flex-wrap:wrap;gap:8px}
+.filter{height:auto;min-height:40px;font-size:13px}
+.filter select{max-width:230px;font-size:14px;padding:6px 0}
+.filter input{max-width:145px;font-size:14px;border:0;background:transparent}
+.filterbar details{margin-top:10px}
+.filterbar summary{font-size:14px;color:#34455d;cursor:pointer;padding:4px 0 8px}
+.filterbar details[open] summary{margin-bottom:6px}
+.scope-block{padding:12px 28px 0;color:#34455d;font-size:14px}
+.scope-block p{margin:4px 0}.scope-hint{color:#66758a;font-size:13px}
+.content{padding-top:14px}
+#view>.card,#view>.grid,#view>.callout,#view>details{margin-bottom:16px}
+#observation:not(:empty){margin-bottom:14px}
+.kpi-grid{gap:12px}.kpi{padding:17px 16px}.kpi-label{font-size:14px}.kpi-value{font-size:25px}
+.kpi-foot{display:block;line-height:1.6;margin-top:10px;color:#66758a}
+.card-head h3{font-size:16px}.card-head p,.section-head p{font-size:14px;line-height:1.6}
+.card-body{padding:18px}
+.table-wrap{max-width:100%;scrollbar-width:thin}
+table{font-size:14px;font-variant-numeric:tabular-nums}
+th{font-size:13px;background:#f1f5fa}
+td{vertical-align:top}
+td small,th small{display:block;color:#66758a;font-size:12px}
+td:first-child{max-width:360px;white-space:normal;min-width:130px}
+.sort{border:0;background:transparent;font:inherit;color:inherit;font-weight:700;padding:0;text-align:inherit}
+caption{text-align:left;margin-bottom:10px}
+.link,.card-link{color:#2463a7;background:transparent;border:0;padding:3px 0;font-size:14px;text-align:left;cursor:pointer}
+.link:hover{text-decoration:underline}
+.callout{font-size:14px;line-height:1.7}
+.tag{white-space:normal}.muted{font-size:14px;line-height:1.7}
+.section-head h2{font-size:22px}
+.decision{border:1px solid #dce4ee;border-left:3px solid #2463a7;padding:16px;border-radius:10px;background:#fcfdff}
+.decision.warn{border-left-color:#c79d45}
+.decision-title{display:flex;gap:8px;align-items:flex-start;font-size:16px}
+.decision dl{display:grid;grid-template-columns:70px 1fr;gap:8px;font-size:14px;line-height:1.7}
+.decision dt{color:#66758a}.decision dd{margin:0}
+.heat th{min-width:100px}.heat td{padding:4px}
+.heat button{border:0;border-radius:5px;min-width:72px;width:100%;padding:13px 7px;font-size:14px}
+.heat button:hover{outline:2px solid #c79d45}
+.path-node{display:inline-block;margin:3px 0;font-size:13px}
+.funnel{grid-template-columns:repeat(auto-fit,minmax(105px,1fr))}
+.funnel-stage span,.funnel-stage em{font-size:13px}
+.progress-row{font-size:14px;grid-template-columns:150px 1fr 85px}
+.chart-caption{font-size:14px;font-weight:700;margin-bottom:10px}
+.trend-panel{min-width:0}.trend-panel svg{display:block;width:100%;height:auto}
+.scenario-controls{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:18px}
+.scenario-controls label{display:flex;align-items:center;gap:8px;font-size:14px}
+select{border:1px solid #ced8e4;border-radius:6px;padding:7px;color:#152238;background:white}
+input[type=range]{accent-color:#b88e35;max-width:160px}
+.experiment-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:18px 0}
+.experiment-grid label{font-size:14px}
+.experiment-grid input{width:100%;padding:8px;border:1px solid #ced8e4;border-radius:7px;margin-top:5px}
+#experimentResult{margin-top:15px}
+details.card summary{cursor:pointer;font-weight:700;font-size:16px}
+details.card p,details.card li{font-size:14px;line-height:1.8}
+#metricResults td{white-space:normal;min-width:180px}
+.sample-links{padding:12px 0;font-size:14px}
+.timeline-title{font-size:15px}.timeline-copy{font-size:14px}.trace-field span{font-size:12px}
+dialog{border:0;border-radius:16px;padding:24px;width:min(760px,calc(100vw - 32px));max-height:90dvh;color:#152238;box-shadow:0 20px 80px #06142660}
+dialog::backdrop{background:#06142699}
+#channelDrawer{width:min(1100px,calc(100vw - 32px))}
+.dialog-help{font-size:14px;line-height:1.7;color:#66758a}
+.form-row label{font-size:14px}
+.dialog-buttons{display:flex;flex-wrap:wrap;gap:8px}
+.page-meta{flex-wrap:wrap;font-size:13px}
+.section-head label{font-size:14px}
+@media(max-width:1100px){.kpi-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.four-col{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:980px){:root{--sidebar:76px}.topbar{flex-wrap:wrap}.two-even,.two-col{grid-template-columns:1fr}}
+@media(max-width:680px){
+ :root{--sidebar:0px}.sidebar{height:74px}.nav-btn{min-width:76px;flex-direction:column;gap:2px}
+ .nav-btn span:not(.nav-icon):not(.nav-count){display:block;font-size:11px}
+ .nav-icon{height:18px}.nav{padding:5px}.main{padding-bottom:78px}
+ .topbar{padding:16px}.top-actions{flex-wrap:wrap}.top-actions .btn:not(.gold){display:inline-flex;font-size:12px}
+ .filterbar{padding:12px 14px}.filter{flex:1;min-width:150px}.filter select{max-width:100%;width:100%}
+ .scope-block{padding:10px 14px 0}.filter{display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:6px 10px}
+ .section-head{flex-direction:column;gap:10px}.kpi-grid,.four-col,.trace-summary{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .experiment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.kpi-value{font-size:21px}
+ .card-body{padding:14px}.card-head{padding:14px}.decision dl{grid-template-columns:60px 1fr}
+ .toast{bottom:84px;right:12px;left:12px;max-width:none}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+</style>
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" aria-label="主导航">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true"></div>
-        <div class="brand-copy">
-          <div class="brand-title">信贷监控中心</div>
-          <div class="brand-sub">Attribution & Lending Ops</div>
-        </div>
-      </div>
-      <div class="nav-label">监控视图</div>
-      <nav class="nav">
-        <button class="nav-btn active" data-view="overview" aria-label="经营总览"><span class="nav-icon">▦</span><span>经营总览</span></button>
-        <button class="nav-btn" data-view="channels" aria-label="渠道与漏斗"><span class="nav-icon">⌁</span><span>渠道与漏斗</span></button>
-        <button class="nav-btn" data-view="google" aria-label="谷歌归因"><span class="nav-icon">G</span><span>Google 归因</span></button>
-        <button class="nav-btn" data-view="owned" aria-label="自主归因"><span class="nav-icon">◎</span><span>自主归因</span></button>
-        <button class="nav-btn" data-view="postback" aria-label="回传监控"><span class="nav-icon">⇄</span><span>回传监控</span></button>
-        <button class="nav-btn" data-view="health" aria-label="系统健康"><span class="nav-icon">◇</span><span>系统健康</span></button>
-        <button class="nav-btn" data-view="alerts" aria-label="告警中心"><span class="nav-icon">!</span><span>告警中心</span><span class="nav-count" id="alertCount">4</span></button>
-        <button class="nav-btn" data-view="trace" aria-label="单笔追踪"><span class="nav-icon">⌕</span><span>单笔追踪</span></button>
-        <button class="nav-btn" data-view="dictionary" aria-label="指标字典"><span class="nav-icon">≡</span><span>指标字典</span></button>
-      </nav>
-      <div class="sidebar-foot">
-        <div class="health-mini"><span class="pulse-dot"></span><span>核心链路运行中</span></div>
-        <div class="demo-note">当前为演示数据。通过右上角“数据接入”导入统一 JSON 或连接同源接口。</div>
-      </div>
-    </aside>
+<div class="app-shell">
+<aside class="sidebar" aria-label="主导航">
+ <div class="brand"><div class="brand-mark" aria-hidden="true"></div><div class="brand-copy"><div class="brand-title">信贷监控中心</div><div class="brand-sub">Attribution & Lending Ops</div></div></div>
+ <div class="nav-label">决策与诊断</div><nav class="nav"><button class="nav-btn" data-view="overview" aria-label="经营总览"><span class="nav-icon" aria-hidden="true">▦</span><span>经营总览</span></button>
+<button class="nav-btn" data-view="channels" aria-label="渠道与信贷质量"><span class="nav-icon" aria-hidden="true">⌁</span><span>渠道与信贷质量</span></button>
+<button class="nav-btn" data-view="synergy" aria-label="渠道协同与蚕食"><span class="nav-icon" aria-hidden="true">⇌</span><span>渠道协同与蚕食</span></button>
+<button class="nav-btn" data-view="increment" aria-label="增量与预算"><span class="nav-icon" aria-hidden="true">↗</span><span>增量与预算</span></button>
+<button class="nav-btn" data-view="google" aria-label="Google 归因"><span class="nav-icon" aria-hidden="true">G</span><span>Google 归因</span></button>
+<button class="nav-btn" data-view="owned" aria-label="自主归因"><span class="nav-icon" aria-hidden="true">◎</span><span>自主归因</span></button>
+<button class="nav-btn" data-view="postback" aria-label="回传监控"><span class="nav-icon" aria-hidden="true">⇄</span><span>回传监控</span></button>
+<button class="nav-btn" data-view="health" aria-label="系统健康"><span class="nav-icon" aria-hidden="true">◇</span><span>系统健康</span></button>
+<button class="nav-btn" data-view="alerts" aria-label="告警中心"><span class="nav-icon" aria-hidden="true">!</span><span>告警中心</span><span id="alertCount" class="nav-count">0</span></button>
+<button class="nav-btn" data-view="trace" aria-label="单笔追踪"><span class="nav-icon" aria-hidden="true">⌕</span><span>单笔追踪</span></button>
+<button class="nav-btn" data-view="dictionary" aria-label="指标字典"><span class="nav-icon" aria-hidden="true">≡</span><span>指标字典</span></button></nav><div class="sidebar-foot"><div class="health-mini"><span class="pulse-dot"></span><span id="sourceFoot">离线演示 · 无生产连接</span></div><div class="demo-note">可运行的确定性演示数据。归因贡献不等于真实增量。</div></div>
+</aside>
+<main class="main">
+ <header class="topbar"><div><h1 class="page-title" id="currentTitle">经营总览</h1><div class="page-meta"><span class="status-pill warn" id="dataMode">演示数据</span><span id="lastUpdated"></span></div></div>
+ <div class="top-actions"><button class="btn" id="exportBtn">导出当前视图</button><button class="btn" id="refreshBtn">刷新</button><button class="btn gold" id="dataSourceBtn">数据接入</button></div></header>
+ <div class="filterbar" aria-label="全局筛选"><div class="filter-row" id="primaryFilters"></div><details open><summary>细分筛选 · Campaign / 新老客 / 地区 / 设备 / 品牌词 / Cohort</summary><div class="filter-row" id="advancedFilters"></div></details></div>
+ <div class="scope-block"><p id="scope" aria-live="polite"></p><p id="scopeHint" class="scope-hint"></p></div>
+ <div class="content"><div id="observation"></div><section id="view" aria-label="当前监控视图"></section></div>
+</main>
+</div>
+<dialog id="channelDrawer" aria-labelledby="drawerTitle"><div class="drawer-head"><h2 id="drawerTitle">渠道详情</h2><button class="icon-btn" data-close="channelDrawer" aria-label="关闭渠道详情">×</button></div><div id="drawerContent"></div></dialog>
+<dialog id="dataModal" aria-labelledby="dataModalTitle">
+ <div class="modal-head"><h2 id="dataModalTitle">数据接入</h2><button class="icon-btn" data-close="dataModal" aria-label="关闭数据接入">×</button></div>
+ <p class="dialog-help">采用 v2 完整明细快照。日期、人群、路径、成本与风险标签通过校验后一起替换；不会将导入汇总数据与演示数据混合。</p>
+ <div class="form-row"><label for="endpointInput">已鉴权的同源 JSON 接口</label><input id="endpointInput" type="text" placeholder="/api/lending-monitor" autocomplete="off"></div>
+ <div class="form-row"><label for="intervalInput">自动刷新周期</label><select id="intervalInput"><option value="0">关闭</option><option value="60">每1分钟</option><option value="300">每5分钟</option><option value="900">每15分钟</option></select></div>
+ <div class="form-row"><label for="fileInput">导入完整本地 JSON（最大50MB）</label><input id="fileInput" type="file" accept=".json,application/json"></div>
+ <p class="dialog-help">直接双击 HTML 即可演示和导入文件。接口连接需要通过 HTTP(S) 打开此页面。元数据需包含 schemaVersion=2、asOf、currency=AUD、timezone=Australia/Sydney、valuationVersion、costBasis=acquisition_cohort_allocated；顶层数组为 records、postbacks、jobs。</p>
+ <div class="dialog-buttons"><button class="btn" id="sampleBtn">下载完整演示 JSON</button><button class="btn" id="snapshotBtn">下载当前快照</button><button class="btn" id="resetDemoBtn">恢复演示数据</button><button class="btn primary" id="connectBtn">保存并连接</button></div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<noscript><p>本文件需要启用浏览器 JavaScript 才能计算指标与交互。</p></noscript>
+<script>
 
-    <main class="main">
-      <header class="topbar">
-        <div>
-          <h1 class="page-title" id="currentTitle">经营总览</h1>
-          <div class="page-meta">
-            <span class="status-pill"><span class="tiny-dot"></span>系统在线</span>
-            <span>最后更新 <span id="lastUpdated">2026-09-07 22:40 AEST</span></span>
-          </div>
-        </div>
-        <div class="top-actions">
-          <button class="btn" id="exportBtn">导出当前视图</button>
-          <button class="btn" id="refreshBtn">刷新</button>
-          <button class="btn gold" id="dataSourceBtn">数据接入</button>
-        </div>
-      </header>
+"use strict";
+(() => {
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const sum=(a,k)=>a.reduce((n,r)=>n+(typeof k==="function"?k(r):Number(r[k])||0),0);
+const div=(a,b)=>b>0?a/b:null;
+const num=(v,d=0)=>v==null||!Number.isFinite(Number(v))?"—":Number(v).toLocaleString("en-AU",{minimumFractionDigits:d,maximumFractionDigits:d});
+const money=(v,d=0)=>v==null?"—":"A$"+num(v,d);
+const percent=(v,d=1)=>v==null?"—":num(100*v,d)+"%";
+const mult=v=>v==null?"—":num(v,2)+"×";
+const round=v=>Math.round(v*100)/100;
+const dayMS=86400000, stamp=d=>Date.parse(d+"T00:00:00Z");
+const add=(d,n)=>new Date(stamp(d)+n*dayMS).toISOString().slice(0,10);
+const age=(d,end)=>Math.round((stamp(end)-stamp(d))/dayMS);
+const monthAdd=(d,n)=>{const a=new Date(stamp(d)),date=a.getUTCDate();a.setUTCDate(1);a.setUTCMonth(a.getUTCMonth()+n);const end=new Date(Date.UTC(a.getUTCFullYear(),a.getUTCMonth()+1,0)).getUTCDate();a.setUTCDate(Math.min(date,end));return a.toISOString().slice(0,10)};
+const uniq=a=>[...new Set(a)], copy=o=>JSON.parse(JSON.stringify(o));
+const CH=["Google Search","Google PMax","Meta","TikTok","Affiliate","CRM","Organic","Direct"];
+const color={"Google Search":"#2463a7","Google PMax":"#6493c9","Meta":"#7055ad","TikTok":"#35475d","Affiliate":"#b88e35","CRM":"#138a62","Organic":"#718b96","Direct":"#8895a5","Unknown":"#a0a7b1"};
+const CAM={
+"Google Search":["AU_Search_Brand","AU_Search_NonBrand_HighIntent","AU_Search_Rates"],
+"Google PMax":["AU_PMax_QualifiedLead"],Meta:["AU_Meta_Prospecting","AU_Meta_Retargeting"],
+TikTok:["AU_TikTok_Video"],Affiliate:["AU_Affiliate_AF17"],CRM:["AU_CRM_Email_SMS"],
+Organic:["AU_Organic"],Direct:["AU_Direct"],Unknown:["Unknown"]};
+const MODEL={lastPaid:"Last Paid · 最后付费",firstTouch:"First Paid · 首次付费",lastNonDirect:"Last Non-direct · 最后非直接",lastTouch:"Last Touch · 实际末触",linear:"Linear · 渠道均分",timeDecay:"Time-decay · 7天半衰",dda:"DDA 示例权重（未训练）",markov:"Markov 示例权重（未训练）"};
+const TITLES={overview:"经营总览",channels:"渠道与信贷质量",synergy:"渠道协同与蚕食",increment:"增量与预算",google:"Google 归因",owned:"自主归因",postback:"回传监控",health:"系统健康",alerts:"告警中心",trace:"单笔追踪",dictionary:"指标字典"};
+const tag=(s,t="info")=>'<span class="tag '+t+'">'+esc(s)+'</span>';
+const note=(s,t="info")=>'<div class="callout '+t+'">'+s+'</div>';
+const card=(title,sub,body)=>'<article class="card"><header class="card-head"><div><h3>'+title+'</h3><p>'+sub+'</p></div></header><div class="card-body">'+body+'</div></article>';
+const kpi=(label,value,foot,gold=false)=>'<article class="card kpi '+(gold?"gold-accent":"")+'"><div class="kpi-label">'+label+'</div><div class="kpi-value">'+value+'</div><div class="kpi-foot">'+foot+'</div></article>';
+const empty=s=>'<div class="empty">'+(s||"此筛选组合没有数据，请调整日期或筛选条件。")+'</div>';
+function table(head,rows,caption=""){return '<div class="table-wrap"><table>'+(caption?'<caption>'+esc(caption)+'</caption>':"")+'<thead><tr>'+head.map((h,i)=>'<th><button class="sort" data-sort="'+i+'" title="按此列排序">'+h+' ↕</button></th>').join("")+'</tr></thead><tbody>'+(rows.length?rows.map(r=>'<tr>'+r.map(v=>'<td>'+v+'</td>').join("")+'</tr>').join(""):'<tr><td colspan="'+head.length+'">'+empty()+'</td></tr>')+'</tbody></table></div>'}
+function bar(label,n,d,display){return '<div class="progress-row"><span>'+label+'</span><div class="progress-track"><div class="progress-fill" style="width:'+(d>0?Math.min(100,Math.max(0,n/d*100)):0)+'%"></div></div><strong>'+display+'</strong></div>'}
+const paid=c=>["Google Search","Google PMax","Meta","TikTok","Affiliate"].includes(c);
+const isGoogle=c=>c==="Google Search"||c==="Google PMax";
+let seed=20260908;
+function rand(){seed=(Math.imul(1664525,seed)+1013904223)>>>0;return seed/4294967296}
+const choose=a=>a[Math.floor(rand()*a.length)];
+function makeDemo(){
+ seed=20260908;
+ const data={meta:{schemaVersion:2,asOf:"2026-09-07",timezone:"Australia/Sydney",currency:"AUD",mode:"演示数据",valuationVersion:"expected_lifetime_v1",costBasis:"acquisition_cohort_allocated"},records:[],postbacks:[],jobs:[]};
+ let serial=10400;
+ for(let d=0;d<190;d++){
+  const cohort=add("2026-03-02",d);
+  for(let j=0;j<CH.length*5;j++){
+   const channel=CH[Math.floor(j/5)], campaign=choose(CAM[channel]), id="V-"+(++serial);
+   const customer=channel==="CRM"?(rand()<.88?"old":"new"):(rand()<.23?"old":"new");
+   const region=choose(["NSW","VIC","QLD"]),device=rand()<.7?"mobile":"desktop",product=rand()<.64?"fixed":"loc";
+   const brand=channel==="Google Search"?(campaign.includes("_Brand")?"brand":"nonbrand"):"na";
+   const quality=[.72,.50,.55,.39,.77,.80,.75,.70][CH.indexOf(channel)];
+   const started=rand()<.80, submitted=started&&rand()<.76;
+   const appDay=submitted?add(cohort,1+Math.floor(rand()*(serial%13===0?36:4))):null;
+   const qualified=submitted&&rand()<quality*(device==="mobile"?.98:1.04);
+   const qDay=qualified?add(appDay,1):null;
+   const approved=qualified&&rand()<(.69+(customer==="old"?.10:0)-(channel==="Google PMax"&&d>157?.15:0));
+   const aDay=approved?add(qDay,1):null, willFund=approved&&rand()<.80;
+   const fDay=willFund?add(aDay,1+Math.floor(rand()*5)):null;
+   const funded=fDay&&fDay<=data.meta.asOf?fDay:null;
+   const known=v=>v&&v<=data.meta.asOf?v:null;
+   const touches=[];
+   const pushTouch=(ch,day,cam)=>{const campaign=cam||choose(CAM[ch]);touches.push({id:id+"-T"+touches.length,day,channel:ch,campaign,brand:ch==="Google Search"?(campaign==="AU_Search_Brand"?"brand":"nonbrand"):"na",kind:paid(ch)?"click":"session",consent:true})};
+   pushTouch(channel,cohort,campaign);
+   if(funded){
+    if(["Meta","TikTok","Google PMax"].includes(channel)&&rand()<.68) pushTouch("Google Search",add(funded,-1),"AU_Search_Brand");
+    else if(rand()<.34) pushTouch(choose(["CRM","Google Search","Organic"]),add(funded,-1));
+    if(rand()<.48)pushTouch("Direct",funded,"AU_Direct");
+   }
+   if(serial%31===0)touches.push(copy(touches[0]));
+   if(serial%47===0)touches.forEach(t=>t.consent=false);
+   const costs=uniq(touches.map(t=>t.channel)).map(ch=>({channel:ch,campaign:touches.find(t=>t.channel===ch).campaign,amount:round(ch==="Direct"||ch==="Organic"?0:ch==="CRM"?1+rand()*3:ch==="Google Search"?9+rand()*18:15+rand()*32)}));
+   const amount=funded?Math.round((3500+rand()*12500)/100)*100:0;
+   const interest=round(amount*.24),fees=round(amount*.009),fundingCost=round(amount*.071),servicingCost=funded?210:0;
+   const risk=(channel==="TikTok"?.11:channel==="Google PMax"?.088:.052)+(customer==="old"?-.012:0);
+   const loss=round(amount*risk), firstDue=funded?monthAdd(funded,1):null,thirdDue=funded?monthAdd(funded,3):null;
+   const m1Observed=firstDue&&add(firstDue,30)<=data.meta.asOf,m3Observed=thirdDue&&add(thirdDue,30)<=data.meta.asOf;
+   const r={id,userId:"USR-"+serial,applicationId:known(appDay)?"APP-"+serial:null,loanId:funded?"LN-"+serial:null,cohort,channel,campaign,brand,customer,region,device,product,
+    impressions:paid(channel)?Math.round(400+rand()*1100):0,clicks:paid(channel)?1+Math.floor(rand()*4):0,sessions:1,started:started?cohort:null,
+    submitted:known(appDay),qualified:known(qDay),approved:known(aDay),funded,loanAmount:amount,interest,fees,fundingCost,servicingCost,expectedLoss:loss,
+    ltv:round((interest+fees-fundingCost-servicingCost-loss)*(customer==="new"?1.2:1)),
+    fraud:known(appDay)?rand()<(channel==="TikTok"?.055:.012):null,firstDue,thirdDue,
+    m1bad:m1Observed?rand()<risk:null,m3bad:m3Observed?rand()<risk*1.42:null,touches,costs};
+   data.records.push(r);
+   ["submitted","qualified","approved","funded"].forEach(event=>{
+    if(!r[event])return;
+    const google=r.touches.some(t=>isGoogle(t.channel)&&t.consent&&t.day<=r[event]&&age(t.day,r[event])<=30);
+    const matchable=google&&rand()>.04,queued=matchable&&rand()>.014,sent=queued&&rand()>.014,accepted=sent&&rand()>.013;
+    const processed=accepted&&rand()>.018,reported=processed&&age(r[event],data.meta.asOf)>=3&&rand()>.025;
+    const latency=sent?Math.round(1-Math.log(Math.max(.001,rand()))*(event==="funded"?26:9)):null;
+    data.postbacks.push({recordId:id,businessKey:(event==="funded"?r.loanId:r.applicationId)+":"+event,eventId:"EV-"+serial+"-"+event,
+     event,day:r[event],eligible:google,matchable,queued,sent,accepted,processed,reported,
+     rawCount:reported?(serial%53===0?2:1):0,mmp:reported,latency,amountOk:serial%79!==0,statusOk:serial%83!==0,timeOk:serial%97!==0});
+   });
+  }
+ }
+ data.jobs=[
+ {name:"Web Tracking",owner:"Web",freshness:2,sla:5,success:99.92},
+ {name:"CRM / LOS Truth Sync",owner:"Data",freshness:6,sla:15,success:99.86},
+ {name:"Identity Bridge",owner:"Data",freshness:18,sla:20,success:98.71},
+ {name:"Owned Attribution",owner:"Analytics",freshness:46,sla:60,success:99.40},
+ {name:"Google Postback Worker",owner:"Data Platform",freshness:4,sla:10,success:99.48},
+ {name:"Google Diagnostics Poller",owner:"MarTech",freshness:38,sla:45,success:97.90},
+ {name:"Platform Cost Ingestion",owner:"Data",freshness:72,sla:180,success:99.76}];
+ return data;
+}
+let data=makeDemo(),state={view:"overview",period:180,end:data.meta.asOf,channel:"all",campaign:"all",product:"all",customer:"all",region:"all",device:"all",brand:"all",cohort:"all",maturity:14,model:"lastPaid",window:30,group:"channel",googleTime:"cohort",ack:{},query:"",pathPair:null,budget:0,budgetChannel:"Meta",curveK:1};
+let records=[],finance=[],base=[],scopedPost=[],alerts=[],lastFocus=null,timer=null,endpoint="",fetching=false,sourceStatus="本地演示 · 无实时连接",importAudit={duplicateRecords:0},dataVersion=0,requestController=null;
+const minSample=30;
+function paths(r,window=state.window){
+ const end=r.funded||r.submitted||data.meta.asOf,seen=new Set();
+ return r.touches.filter(t=>{if(seen.has(t.id))return false;seen.add(t.id);return t.consent&&t.day<=end&&age(t.day,end)<=window&&(t.kind==="click"||t.kind==="session")}).sort((a,b)=>a.day.localeCompare(b.day));
+}
+function weights(r,model=state.model,window=state.window){
+ const p=paths(r,window),w={};
+ const put=(ch,v)=>{w[ch]=(w[ch]||0)+v};
+ if(!p.length)return {Unknown:1};
+ const channelList=uniq(p.map(t=>t.channel)),non=p.filter(t=>t.channel!=="Direct"),pay=p.filter(t=>paid(t.channel));
+ if(model==="lastPaid"||model==="firstTouch"){const a=pay.length?pay:non.length?non:p;put(a[model==="firstTouch"?0:a.length-1].channel,1)}
+ else if(model==="lastNonDirect")put((non.length?non:p).at(-1).channel,1);
+ else if(model==="lastTouch")put(p.at(-1).channel,1);
+ else if(model==="linear")channelList.forEach(ch=>put(ch,1/channelList.length));
+ else if(model==="timeDecay"){p.forEach(t=>put(t.channel,Math.pow(.5,age(t.day,r.funded||r.submitted||data.meta.asOf)/7)))}
+ else { // Explicit teaching weights only; these are not trained DDA / Markov estimators.
+  channelList.forEach((ch,i)=>put(ch,model==="dda"?(i===0?1.5:1):(i===0?1.8:1.1)));
+ }
+ const total=sum(Object.values(w),x=>x);Object.keys(w).forEach(ch=>w[ch]/=total);
+ return w;
+}
+const contribution=r=>r.interest+r.fees-r.fundingCost-r.servicingCost-r.expectedLoss;
+const acquisitionCost=r=>sum(r.costs,"amount");
+function inScope(r,ignore){
+ const start=add(state.end,1-state.period);
+ return r.cohort>=start&&r.cohort<=state.end&&age(r.cohort,data.meta.asOf)>=state.maturity&&
+ ["channel","campaign","product","customer","region","device","brand"].every(k=>k===ignore||state[k]==="all"||r[k]===state[k])&&
+ (state.cohort==="all"||r.cohort.slice(0,7)===state.cohort);
+}
+function quality(rows){
+ const q={n:rows.length,spend:sum(rows,acquisitionCost),clicks:sum(rows,"clicks"),impressions:sum(rows,"impressions"),sessions:sum(rows,"sessions")};
+ ["started","submitted","qualified","approved","funded"].forEach(k=>q[k]=rows.filter(r=>r[k]).length);
+ q.amount=sum(rows,"loanAmount");q.value=sum(rows.filter(r=>r.funded),contribution);
+ q.fraudN=rows.filter(r=>r.submitted&&r.fraud!=null).length;q.fraudBad=rows.filter(r=>r.submitted&&r.fraud===true).length;
+ for(const m of [1,3]){const due=m===1?"firstDue":"thirdDue",bad="m"+m+"bad",eligible=rows.filter(r=>r.funded&&r[due]&&add(r[due],30)<=data.meta.asOf);
+ q["m"+m+"Eligible"]=eligible.length;q["m"+m+"N"]=eligible.filter(r=>r[bad]!=null).length;q["m"+m+"Bad"]=eligible.filter(r=>r[bad]===true).length;}
+ const newRows=rows.filter(r=>r.customer==="new"),users=uniq(newRows.filter(r=>r.funded).map(r=>r.userId));
+ q.newSpend=sum(newRows,acquisitionCost);q.newUsers=users.length;q.newLtv=sum(newRows.filter(r=>r.funded),"ltv");
+ return q;
+}
+function financeRows(rows,model=state.model){
+ const map=new Map([...CH,"Unknown"].map(ch=>[ch,{channel:ch,spend:0,funded:0,value:0,newSpend:0,newUsers:0,newLtv:0}]));
+ for(const r of rows){
+  for(const c of r.costs){if(!map.has(c.channel))map.set(c.channel,{channel:c.channel,spend:0,funded:0,value:0,newSpend:0,newUsers:0,newLtv:0});const row=map.get(c.channel);row.spend+=c.amount;if(r.customer==="new")row.newSpend+=c.amount;}
+  if(!r.funded)continue;
+  const w=weights(r,model);
+  for(const [ch,v]of Object.entries(w)){const row=map.get(ch);row.funded+=v;row.value+=v*contribution(r);if(r.customer==="new"){row.newUsers+=v;row.newLtv+=v*r.ltv;}}
+ }
+ return [...map.values()];
+}
+function recompute(){
+ base=data.records.filter(r=>inScope(r));records=base.filter(r=>r.funded);finance=financeRows(base);
+ const ids=new Set(base.map(r=>r.id));scopedPost=data.postbacks.filter(p=>ids.has(p.recordId));
+ alerts=deriveAlerts();
+}
+function riskCell(q,m){const n=q["m"+m+"N"],eligible=q["m"+m+"Eligible"],bad=q["m"+m+"Bad"];
+ return percent(div(bad,n))+' <small>'+num(bad)+' / '+num(n)+'</small>'+(n<minSample?'<br>'+tag(n?"小样本":"未成熟或缺报","warn"):"")+(eligible>n?'<br>'+tag("缺报 "+num(eligible-n),"bad"):"")}
+function groups(rows,key){const map=new Map();rows.forEach(r=>{const k=key==="cohort"?r.cohort.slice(0,7):r[key];if(!map.has(k))map.set(k,[]);map.get(k).push(r)});return [...map].map(([name,list])=>({name,list,q:quality(list)}))}
+function dimensionsLabel(key,val){return ({new:"新客",old:"老客",fixed:"分期贷",loc:"循环贷",mobile:"移动端",desktop:"桌面端",brand:"品牌词",nonbrand:"非品牌词",na:"非搜索 / 不适用"})[val]||val}
+function drillButton(key,v){return '<button class="link" data-drill="'+esc(key)+'" data-value="'+esc(v)+'">'+esc(dimensionsLabel(key,v))+' ↗</button>'}
+function qualityTable(rows,key){
+ return table(["维度","Cohort成本","有效申请","合格率","审批率¹","放款率²","真实放款","平均本金","欺诈率","M1 30+","M3 30+","风险调整贡献³","LTV/CAC⁴"],
+ groups(rows,key).map(({name,q})=>[drillButton(key,name),money(q.spend),num(q.submitted),percent(div(q.qualified,q.submitted)),percent(div(q.approved,q.qualified)),percent(div(q.funded,q.approved)),num(q.funded),money(div(q.amount,q.funded)),percent(div(q.fraudBad,q.fraudN))+'<small>'+q.fraudBad+' / '+q.fraudN+'</small>',riskCell(q,1),riskCell(q,3),money(q.value),q.newUsers?mult(div(q.newLtv,q.newSpend)):"—"]));
+}
+function creditTable(rows=finance){
+ return table(["获功渠道","Cohort内渠道成本","放款 credit","归因 CAC-Funded","贡献价值 credit","贡献 ROAS","新客 LTV/CAC"],
+ rows.map(r=>['<button class="link" data-channel-detail="'+esc(r.channel)+'">'+esc(r.channel)+' ↗</button>',money(r.spend),num(r.funded,2),money(div(r.spend,r.funded),2),money(r.value),mult(div(r.value,r.spend)),r.newUsers?mult(div(r.newLtv,r.newSpend)):"—"]));
+}
+function deriveAlerts(){
+ const a=[],q=quality(base),f=scopedPost.filter(p=>p.event==="funded"&&p.sent),lat=quantile(f.map(p=>p.latency),.9);
+ const bad=scopedPost.filter(p=>p.sent&&(!p.amountOk||!p.statusOk||!p.timeOk));
+ if(bad.length)a.push({id:"post-quality",level:"P1",title:"回传字段一致性异常",reason:"有已发送业务事件的金额、状态或时间未与业务事实对齐。",impact:num(bad.length)+" 个事件需复核；API 接收不代表数据正确。",action:"按业务唯一键核对；核实后在业务系统中更正和重新对账。",owner:"Data Platform",view:"postback"});
+ if(lat!=null&&lat>60)a.push({id:"post-latency",level:"P1",title:"Funded P90 时延超标",reason:"事件发生到首次发送的 P90 高于本页 60 分钟阈值。",impact:"当前 P90 "+num(lat)+" 分钟，样本 "+f.length+"；平台学习反馈滞后。",action:"拆分源系统、队列与发送耗时，定位积压。",owner:"Loan Ops / Data",view:"postback"});
+ const x=closingStats(),n=sum(x,"base"),cl=sum(x,r=>r.brand+r.direct);
+ if(n>0)a.push({id:"closing",level:"P2",title:"上游触点被品牌词 / Direct 收口",reason:"在含 Meta、TikTok、PMax 的放款路径中，存在其他渠道承担实际末触的情况。",impact:"逐渠道收口 "+num(cl)+" / "+num(n)+"，含渠道间重复；仅是路径相关性。",action:"保持拓新与收口预算分别观测，设计品牌词 Holdout 或 Geo Lift。",owner:"Analytics / Acquisition",view:"synergy"});
+ if(q.m3N>=minSample&&div(q.m3Bad,q.m3N)>.08)a.push({id:"m3",level:"P1",title:"成熟贷款 M3 30+ 偏高",reason:"第三期应还日后 30 天的已观测样本中，逾期率高于演示阈值 8%。",impact:"坏样本 "+q.m3Bad+" / "+q.m3N+"；不同渠道组合可能影响整体率。",action:"按新老客、地区、设备和同月 Cohort 下钻，结合策略版本复核。",owner:"Risk",view:"channels"});
+ return a;
+}
+function quantile(a,p){a=a.filter(v=>v!=null).sort((x,y)=>x-y);if(!a.length)return null;return a[Math.max(0,Math.ceil(a.length*p)-1)]}
+function trendChart(rows){
+ const buckets=groups(rows,"cohort").map(g=>({name:g.name,spend:g.q.spend,funded:g.q.funded}));
+ function panel(key,label,c){
+  if(!buckets.length)return empty();
+  const max=Math.max(1,...buckets.map(r=>r[key])),w=560,h=185,l=54,b=32,t=12,iw=w-l-15,ih=h-b-t;
+  let s='<svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="'+label+'"><title>'+label+'，按获客月汇总</title>';
+  for(let i=0;i<4;i++){const y=t+ih*i/3;s+='<line x1="'+l+'" y1="'+y+'" x2="'+(w-15)+'" y2="'+y+'" stroke="#e2e8f0"/><text x="'+(l-5)+'" y="'+(y+4)+'" text-anchor="end" font-size="12" fill="#66758a">'+num(max*(1-i/3))+'</text>'}
+  buckets.forEach((r,i)=>{const bw=iw/buckets.length*.55,x=l+(i+.2)*iw/buckets.length,y=t+ih*(1-r[key]/max);s+='<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+(t+ih-y)+'" rx="3" fill="'+c+'"><title>'+r.name+' · '+label+' '+num(r[key])+'</title></rect><text x="'+(x+bw/2)+'" y="'+(h-7)+'" text-anchor="middle" font-size="12" fill="#66758a">'+r.name.slice(5)+'</text>'});return '<div class="trend-panel"><div class="chart-caption">'+label+'</div>'+s+'</svg></div>';
+ }
+ return '<div class="grid two-even">'+panel("spend","成本 · AUD","#2463a7")+panel("funded","真实放款 · 笔","#c79d45")+'</div><p class="muted">独立标尺；趋势不代表因果。首末月份可能是不完整月份，不直接据此判断增长率。</p>';
+}
+function decisionCard(a){return '<article class="decision '+(a.level==="P1"?"warn":"")+'"><div class="decision-title">'+tag(a.level,a.level==="P1"?"warn":"info")+' <strong>'+esc(a.title)+'</strong></div><dl><dt>原因线索</dt><dd>'+esc(a.reason)+'</dd><dt>影响</dt><dd>'+esc(a.impact)+'</dd><dt>建议动作</dt><dd>'+esc(a.action)+'</dd></dl><button class="link" data-jump="'+a.view+'">查看证据 →</button></article>'}
+function overviewView(){
+ const q=quality(base);
+ return '<div class="section-head"><div><h2>先判断经营质量，再分配渠道功劳</h2><p>所有金额均为 AUD。预期贡献价值不含本金，且尚未扣获客成本。</p></div>'+tag("无已验证增量结果","warn")+'</div>'+
+ '<div class="grid kpi-grid">'+kpi("Cohort 获客成本",money(q.spend),"包含未转化流量的分摊成本",true)+kpi("真实放款",num(q.funded),"loan_id 唯一 · 不随归因模型变")+kpi("CAC-Funded",money(div(q.spend,q.funded),1),"Cohort成本 / 真实放款")+kpi("预期贡献 ROAS",mult(div(q.value,q.spend)),"风险调整贡献 / Cohort成本",true)+kpi("M3 30+ 逾期率",percent(div(q.m3Bad,q.m3N)),num(q.m3Bad)+" / "+num(q.m3N)+" 已观测贷款")+kpi("获客后预期净贡献",money(q.value-q.spend),"预期风险调整贡献 − 获客成本")+'</div>'+
+ card("优先处理","异常 → 原因线索 → 影响 → 建议动作；阈值为演示配置。",alerts.length?'<div class="grid two-even">'+alerts.slice(0,4).map(decisionCard).join("")+'</div>':note("当前范围未触发演示阈值；不等于已经证明投放有效。"))+
+ card("Cohort 趋势","同一筛选人群、同一数据快照，成本与业务结果均按首访获客日归组。",trendChart(base))+
+ card("渠道功劳与价值","当前模型："+esc(MODEL[state.model])+"。每笔放款的数量和贡献价值使用相同权重。",creditTable())+
+ note("业务质量按固定获客来源评价；上表按营销触点分配功劳。归因 CAC-Funded 不等于增量 CAC。Organic / Direct 的媒体成本为 0，不代表获客没有人员、SEO 等全成本。");
+}
+function channelsView(){
+ const q=quality(base),stages=[["开始申请",q.started],["有效申请",q.submitted],["合格申请",q.qualified],["审批通过",q.approved],["真实放款",q.funded]];
+ return '<div class="section-head"><div><h2>量、质、风险与回报</h2><p>固定首访来源的同一获客 Cohort，审批率采用 Approved / Qualified。</p></div><label>下钻维度 '+select("group",["channel","campaign","customer","region","device","brand","cohort"],["渠道","Campaign","新老客","地区","设备","品牌 / 非品牌","获客月份"],state.group)+'</label></div>'+
+ card("信贷漏斗","前置阶段只使用业务事实；媒体点击和会话另列，避免跨来源构造伪漏斗。",'<div class="funnel">'+stages.map((x,i)=>'<div class="funnel-stage"><span>'+x[0]+'</span><strong>'+num(x[1])+'</strong><em>'+(i?percent(div(x[1],stages[i-1][1])):"同 Cohort")+'</em></div>').join("")+'</div><p class="muted">媒体点击 '+num(q.clicks)+' · 首访会话 '+num(q.sessions)+'。此处包括 Organic / Direct 会话，不计算混合渠道 Click→Session。</p>')+
+ card("流量与申请成本","媒体点击/曝光仅为首访付费来源的演示计数；Cohort CPA 包括未转化流量。",'<div class="grid four-col">'+kpi("付费首访曝光",num(q.impressions),"平台计数演示")+kpi("付费首访点击",num(q.clicks),"CTR "+percent(div(q.clicks,q.impressions)))+kpi("首访会话",num(q.sessions),"含 Organic / Direct")+kpi("Cohort CPA-Submit",money(div(q.spend,q.submitted),1),"同Cohort成本 / 有效申请")+'</div>')+
+ card("信贷质量明细","点击维度值继续下钻；点击表头排序。M1/M3 单元格附坏样本 / 有效观察样本。",qualityTable(base,state.group))+
+ note("¹ 审批率 = Approved / Qualified；审批通过占全部申请比例为 "+percent(div(q.approved,q.submitted))+"。² 放款率 = Funded / Approved。桥接：CAC = CPA-Submit /（合格率 × 审批率 × 放款率）；分子都使用同一 Cohort 成本。")+
+ note("³ 预期风险调整贡献 = 利息 + 费用 − 资金成本 − 服务成本 − 预期信用损失；本页使用同一全生命周期预测口径。⁴ LTV/CAC 仅计算新客首贷客户；LTV 为含预期复借的折现贡献，CAC 包含该新客 Cohort 未转化流量成本。老客不命名为新客 CAC。")+
+ card("观察资格","逾期率不是当前逾期余额率。缺少风险标签与未成熟必须分别处理。",'<div class="grid three-col">'+kpi("欺诈率",percent(div(q.fraudBad,q.fraudN)),q.fraudBad+" / "+q.fraudN+" 已完成欺诈判定申请")+kpi("M1 30+",percent(div(q.m1Bad,q.m1N)),"应成熟 "+q.m1Eligible+" · 已观测 "+q.m1N)+kpi("M3 30+",percent(div(q.m3Bad,q.m3N)),"应成熟 "+q.m3Eligible+" · 已观测 "+q.m3N)+'</div>');
+}
+function select(id,values,labels,value){return '<select id="'+id+'">'+values.map((v,i)=>'<option value="'+esc(v)+'"'+(String(value)===String(v)?" selected":"")+'>'+esc(labels[i])+'</option>').join("")+'</select>'}
+function pathRows(){
+ const map=new Map();for(const r of records){const p=paths(r),a=p.map(t=>t.channel==="Google Search"?t.channel+(t.brand==="brand"?" · 品牌词":" · 非品牌词"):t.channel),key=(a.length?a:["Unknown"]).join(" → ");if(!map.has(key))map.set(key,{path:a.length?a:["Unknown"],channels:p.map(t=>t.channel),loans:[],days:0});const x=map.get(key);x.loans.push(r);x.days+=p.length?age(p[0].day,r.funded):0}
+ return [...map.values()].sort((a,b)=>b.loans.length-a.loans.length);
+}
+function closingStats(){return ["Meta","TikTok","Google PMax"].map(ch=>{let n=0,brand=0,direct=0;for(const r of records){const p=paths(r);if(!p.some(t=>t.channel===ch))continue;n++;const last=p.at(-1);if(p.slice(0,-1).some(t=>t.channel===ch)){if(last.channel==="Direct")direct++;if(last.channel==="Google Search"&&last.brand==="brand")brand++;}}return {channel:ch,base:n,brand,direct}})}
+function synergyView(){
+ const ps=records.map(r=>({r,p:paths(r)})),valid=ps.filter(x=>x.p.length),multi=valid.filter(x=>uniq(x.p.map(t=>t.channel)).length>1);
+ const sets=Object.fromEntries(CH.map(ch=>[ch,new Set(ps.filter(x=>x.p.some(t=>t.channel===ch)).map(x=>x.r.loanId))]));
+ const pair=state.pathPair;
+ const filtered=pathRows().filter(p=>!pair||pair.every(ch=>p.channels.includes(ch)));
+ const shown=filtered.slice(0,12),shownN=sum(shown,p=>p.loans.length);
+ const roles=CH.map(ch=>{const n=sets[ch].size,first=ps.filter(x=>x.p[0]?.channel===ch).length,last=ps.filter(x=>x.p.at(-1)?.channel===ch).length,assist=ps.filter(x=>x.p.slice(0,-1).some(t=>t.channel===ch)).length;return [esc(ch),num(n),num(first),num(assist),num(last),percent(div(assist,n))]});
+ let heat='<div class="table-wrap"><table class="heat"><thead><tr><th>行 → 条件分母</th>'+CH.map(ch=>'<th>'+esc(ch)+'</th>').join("")+'</tr></thead><tbody>';
+ CH.forEach(a=>{heat+='<tr><th>'+esc(a)+'<small>n = '+sets[a].size+'</small></th>'+CH.map(b=>{const n=[...sets[a]].filter(id=>sets[b].has(id)).length,v=div(n,sets[a].size);return '<td><button data-pair="'+esc(a)+"|"+esc(b)+'" style="background:rgba(36,99,167,'+(v==null?.02:.06+v*.65)+');color:'+(v>.6?"white":"#152238")+'" title="两渠道共同出现 '+n+' 笔 / 行渠道 '+sets[a].size+' 笔">'+(a===b?"—":percent(v,0))+'</button></td>'}).join("")+'</tr>'});heat+='</tbody></table></div>';
+ return '<div class="section-head"><div><h2>谁拓新，谁助攻，谁最终收口</h2><p>基于有同意标识的放款路径；缺失触点不做推断。</p></div>'+tag("相关性证据 · 不证明蚕食","warn")+'</div>'+
+ '<div class="grid four-col">'+kpi("多渠道路径重叠率",percent(div(multi.length,valid.length)),multi.length+" / "+valid.length+" 可观测路径",true)+kpi("First / Last 不同",percent(div(valid.filter(x=>x.p[0].channel!==x.p.at(-1).channel).length,valid.length)),"实际首末触渠道不同")+kpi("平均触点数",num(div(sum(valid,x=>x.p.length),valid.length),2),"去重触点，保留有效重复访问")+kpi("路径不可观测",num(ps.length-valid.length),"归入 Unknown，不补造触点")+'</div>'+
+ card("上游渠道 → 收口去向","分母为包含该上游渠道的去重放款；Google 品牌和 Direct 按实际末触互斥。各渠道行不可相加。",table(["上游渠道","参与放款","Google 品牌末触","Direct 末触","被两者收口率"],closingStats().map(r=>[r.channel,num(r.base),num(r.brand),num(r.direct),percent(div(r.brand+r.direct,r.base))])))+
+ card("渠道重叠矩阵","P(列渠道出现 | 行渠道出现) = 共同放款 / 行渠道放款。不是曝光受众重叠率，也不是对称 Jaccard。点击单元格筛选下方路径。",heat)+
+ card("转化路径",pair?"已筛选："+esc(pair.join(" + "))+' <button class="link" id="clearPair">清除路径筛选</button>':"展示 Top 12；其余仍计入上方统计，不把 Top 路径当成全量。",table(["完整可观测路径","去重放款","占全部放款","平均首触至放款"],shown.map(p=>[p.path.map(x=>'<span class="path-node">'+esc(x)+'</span>').join(' <span class="muted">→</span> '),num(p.loans.length),percent(div(p.loans.length,records.length)),num(p.days/p.loans.length,1)+" 天"]))+'<p class="muted">当前展示 '+shownN+' 笔；路径筛选命中 '+sum(filtered,p=>p.loans.length)+' 笔；全部放款 '+records.length+' 笔。</p>')+
+ card("First / Assist / Last 角色","First = 实际首触；Last = 实际末触；Assist = 任一非末次触点。每个角色内按 loan_id 去重，角色可重叠，不能相加为转化总量。",table(["渠道","参与放款","First","Assist","Last","助攻参与率"],roles))+
+ note("Meta → 品牌词 → Direct 的末触记在 Direct；Last Non-direct 会给品牌词功劳。路径收口可能来自正常协同、自然需求、追踪缺失或竞争替代，不能直接量化蚕食。建议做品牌词 Holdout（随机保留对照）或 Geo Lift（地域增量实验），看全渠道后端新客首贷与风险调整贡献。");
+}
 
-      <div class="filterbar" aria-label="全局筛选">
-        <label class="filter">日期
-          <select id="periodFilter" aria-label="日期范围">
-            <option value="7">最近 7 天</option>
-            <option value="14">最近 14 天</option>
-            <option value="30" selected>最近 30 天</option>
-          </select>
-        </label>
-        <label class="filter">产品
-          <select id="productFilter" aria-label="产品">
-            <option value="all">全部个人贷款</option>
-            <option value="fixed">Fixed-term Personal Loan</option>
-            <option value="loc">Line of Credit</option>
-          </select>
-        </label>
-        <label class="filter">渠道
-          <select id="channelFilter" aria-label="渠道">
-            <option value="all">全部渠道</option>
-          </select>
-        </label>
-        <label class="filter">归因
-          <select id="modelFilter" aria-label="归因模型">
-            <option value="lastPaid">Last Paid Click 30d</option>
-            <option value="firstTouch">First Paid Touch</option>
-            <option value="lastNonDirect">Last Non-direct</option>
-            <option value="dda">Owned DDA</option>
-            <option value="markov">Markov</option>
-          </select>
-        </label>
-        <div class="filter">仅成熟 Cohort <button class="switch on" id="maturitySwitch" aria-label="切换仅成熟 Cohort" aria-pressed="true"></button></div>
-        <span class="filter-spacer"></span>
-        <span class="filter data-mode" id="dataMode">演示数据</span>
-      </div>
+function incrementView(){
+ const q=quality(base);
+ return '<div class="section-head"><div><h2>归因解释功劳，实验识别增量</h2><p>当前数据集没有实验分组或经校准的 MMM 结果。以下不会把 credit 自动折算为增量。</p></div>'+tag("增量尚未验证","warn")+'</div>'+
+ '<div class="grid four-col">'+kpi("归因放款",num(sum(finance,"funded"),2),"按所选模型分配，非因果",true)+kpi("增量新客首贷","—","缺少试验 / 对照数据")+kpi("增量 CAC","—","缺少已验证增量首贷")+kpi("增量贡献 ROAS","—","缺少已验证增量贡献")+'</div>'+
+ card("证据与预算建议","不同证据层级不能互相替代。",table(["证据","当前状态","能回答的问题","建议动作"],[
+ ["可观测路径 / credit",tag("相关性","warn"),"哪些渠道出现在放款前，谁得到规则功劳","联合查看成熟质量；不按末触独断砍预算"],
+ ["Holdout · 随机对照",tag("未接入","gray"),"对照条件下新增多少首贷客户","预注册人群、首贷定义、样本量和观察期；按分组 ITT（意向处理）分析"],
+ ["Geo Lift · 地域实验",tag("未接入","gray"),"地域预算变化带来多少全渠道增量","匹配基线并随机分组，检查跨区污染；保留转化冷却期"],
+ ["MMM · 营销组合模型",tag("未接入","gray"),"跨渠道长期贡献与响应曲线估计","纳入季节、价格、策略、供给与品牌需求；报告不确定性，用实验校准"]
+ ]))+
+ card("预算情景工具","假设饱和曲线，非历史 MMM 拟合、非真实增量预测。用当前归因贡献单点校准，只用于敏感性分析。",
+ '<div class="scenario-controls"><label>渠道 '+select("budgetChannel",CH,CH,state.budgetChannel)+'</label><label>预算调整 <input id="budget" type="range" min="-30" max="30" step="5" value="'+state.budget+'"> <output id="budgetOut">'+state.budget+'%</output></label><label>半饱和成本 K / 当前成本 '+select("curveK",[.5,1,2],["0.5 倍","1.0 倍","2.0 倍"],state.curveK)+'</label></div><div id="budgetResult"></div>')+
+ '<details class="card card-pad"><summary>独立 Holdout 计算示例 · 不属于当前筛选的业务结果</summary><p class="muted">此例仅演示已结束、独立随机用户分组的计算。每人最多一笔新客首贷；所有已分组用户均纳入分母。输入值保留在本次页面会话，不能代替真实实验。</p><div class="experiment-grid">'+
+ [["nt","试验组分配用户",10000],["nc","对照组分配用户",10000],["yt","试验组首贷客户",1000],["yc","对照组首贷客户",780],["st","试验组广告费",20000],["sc","对照组广告费",0],["vt","试验组贡献总额",450000],["vc","对照组贡献总额",351000]].map(x=>'<label>'+x[1]+'<input type="number" id="exp-'+x[0]+'" value="'+x[2]+'" min="0" step="1"></label>').join("")+'</div><button class="btn primary" id="calculateExperiment">计算示例</button><div id="experimentResult">'+note("点击计算后显示示例结果；不会改变上方“尚未验证”的指标。")+'</div></details>';
+}
+function budgetRender(){
+ const el=$("#budgetResult");if(!el)return;
+ const r=finance.find(x=>x.channel===state.budgetChannel),out=$("#budgetOut");out.textContent=(state.budget>0?"+":"")+state.budget+"%";
+ if(!r||r.spend<=0||r.value<=0){el.innerHTML=empty("当前渠道没有正成本与正贡献，无法校准此假设曲线。");return}
+ const s=r.spend,K=s*state.curveK,A=r.value*(K+s)/s,V=x=>A*x/(K+x),s1=s*(1+state.budget/100),v1=V(s1),sat=s1/(K+s1),m=A*K/Math.pow(K+s1,2);
+ let svg='<svg viewBox="0 0 620 180" role="img" aria-label="假设预算响应曲线"><title>单点校准假设：V(S) = A × S / (K + S)，非增量预测</title>',pts=[];
+ const maxX=2*s,maxY=V(maxX);
+ for(let i=0;i<=40;i++){const x=maxX*i/40;pts.push((55+530*i/40)+","+(145-125*V(x)/maxY))}
+ svg+='<line x1="55" y1="145" x2="585" y2="145" stroke="#aab7c6"/><polyline points="'+pts.join(" ")+'" fill="none" stroke="#2463a7" stroke-width="3"/>';
+ for(const [x,c,label]of [[s,"#66758a","当前"],[s1,"#c79d45","情景"]])svg+='<circle cx="'+(55+530*x/maxX)+'" cy="'+(145-125*V(x)/maxY)+'" r="5" fill="'+c+'"><title>'+label+" 成本 "+money(x)+" · 假设贡献 "+money(V(x))+'</title></circle>';
+ svg+='<text x="55" y="169" font-size="12">0</text><text x="585" y="169" text-anchor="end" font-size="12">成本 '+money(maxX)+'</text><text x="55" y="13" font-size="12">假设贡献 '+money(maxY)+'</text></svg>';
+ el.innerHTML='<div class="grid four-col">'+kpi("情景成本",money(s1),"当前 "+money(s))+kpi("假设贡献变化",money(v1-r.value),"非新增收入承诺")+kpi("假设预算饱和度",percent(sat),"V(S)/A = S/(K+S)")+kpi("假设边际 ROAS",mult(m),"dV/dS，非已验证 iROAS")+'</div>'+svg+note("公式 V(S)=A×S/(K+S)；A 为假设贡献上限，K 为半饱和成本。此处 A="+money(A)+"，K="+money(K)+"。改变 K 可得到不同边际结论，说明单个观测点不能识别真实响应曲线。预算饱和度是本工具自定义指标，不能当作广告平台通用标准。","") ;
+}
+function experimentResult(v){
+ const keys=["nt","nc","yt","yc","st","sc","vt","vc"];
+ if(keys.some(k=>!Number.isFinite(v[k])||v[k]<0)||v.nt<=0||v.nc<=0||!["nt","nc","yt","yc"].every(k=>Number.isInteger(v[k]))||v.yt>v.nt||v.yc>v.nc)throw Error("用户与转化必须为非负整数，组样本大于 0，转化数不能超过组样本。金额必须有效且非负。");
+ const scale=v.nt/v.nc,pt=v.yt/v.nt,pc=v.yc/v.nc,inc=v.yt-v.yc*scale,cost=v.st-v.sc*scale,value=v.vt-v.vc*scale;
+ const se=Math.sqrt(pt*(1-pt)/v.nt+pc*(1-pc)/v.nc)*v.nt,lo=inc-1.96*se,hi=inc+1.96*se;
+ const adequate=Math.min(v.yt,v.nt-v.yt,v.yc,v.nc-v.yc)>=10;
+ return {inc,cost,value,lo:adequate?lo:null,hi:adequate?hi:null,cac:inc>0&&cost>0?cost/inc:null,iroas:cost>0?value/cost:null,adequate};
+}
+function runExperiment(){
+ try{
+  const v=Object.fromEntries(["nt","nc","yt","yc","st","sc","vt","vc"].map(k=>[k,$("#exp-"+k).value.trim()===""?NaN:Number($("#exp-"+k).value)])),x=experimentResult(v);
+  $("#experimentResult").innerHTML='<div class="grid four-col">'+kpi("示例增量首贷",num(x.inc,1),"组规模校正后的差值")+kpi("示例增量 CAC",money(x.cac,1),"归一后成本差 / 增量首贷")+kpi("示例贡献 iROAS",mult(x.iroas),"贡献差 / 归一后成本差")+kpi("首贷差 95% CI",x.adequate?num(x.lo,1)+" ～ "+num(x.hi,1):"样本不足","独立伯努利正态近似")+'</div>'+
+  note("ΔY=Yt−Yc×Nt/Nc；ΔS=St−Sc×Nt/Nc；ΔV=Vt−Vc×Nt/Nc。"+(x.lo!=null&&x.lo<=0?"转化区间跨越 0，不能声称正向增量已得到验证。":"这仍是输入演算，不验证随机化、无污染或数据真实性。")+" ΔY≤0 或 ΔS≤0 时增量 CAC 不适用；本计算器没有价值方差，不能给 iROAS 置信区间。Geo 实验需要按随机化地域聚类推断，不能套用此用户级区间。","warn");
+ }catch(e){$("#experimentResult").innerHTML=note(esc(e.message),"danger")}
+}
+function googleView(){
+ const keys=new Set(base.map(r=>r.id));
+ // Event-date mode uses the same demographic/cohort filters but explicitly selects event day within dates.
+ const p=scopedPost.filter(p=>p.eligible&&(state.googleTime!=="event"||(p.day>=add(state.end,1-state.period)&&p.day<=state.end)));
+ const evNames=["submitted","qualified","approved","funded"];
+ const gs=finance.filter(r=>isGoogle(r.channel));
+ const rows=evNames.map(event=>{const a=p.filter(x=>x.event===event),reportable=a.filter(x=>age(x.day,data.meta.asOf)>=3);
+ return [esc(event),num(a.length),num(a.filter(x=>x.sent).length),num(a.filter(x=>x.reported).length),num(reportable.length),percent(div(reportable.filter(x=>x.reported).length,reportable.length))]});
+ return '<div class="section-head"><div><h2>平台资格与公司归因分开</h2><p>本演示提供 Google 回传与处理观测，未伪造广告平台 DDA 报表。</p></div><label>对账范围 '+select("googleTime",["cohort","event"],["所选获客 Cohort 的全部事件","所选 Cohort ∩ 日期内业务事件"],state.googleTime)+'</label></div>'+
+ note("全局日期定义是首访获客日；事件日选项额外限制 event_date，不能拿它的分母计算投放 CAC。平台实际互动日 Conversions、All conv. 和平台 DDA 需单独导入对应口径报表，不以内部估算冒充。")+
+ card("Google 在所选 Cohort 中的功劳","与其他渠道共用同一个内部模型和窗口；可能与 Google 回传资格不一致。",creditTable(gs))+
+ card("按 Conversion Action 对账","一业务事件一行；Reported 指演示处理日志中按业务键核实的归因确认，不等于 API Accepted。T+3 是本演示稳定观察阈值，不是平台保证。",table(["事件","应回传事件","已发送","已核实 Reported","T+3应传分母","T+3确认比例"],rows))+
+ card("Google Campaign 下钻","固定首访 Campaign 的信贷质量；包含品牌词、非品牌词与 PMax。",qualityTable(base.filter(r=>isGoogle(r.channel)),"campaign"))+
+ '<details class="card card-pad"><summary>转换动作配置、日期口径与平台模型边界</summary>'+table(["Conversion Action","建议优化状态","计数治理","说明"],[
+ ["AU_Application_Submitted","Secondary","One / 去重业务键","申请行为诊断"],
+ ["AU_Qualified_Application","Primary · 质量优化实验","One / 申请","与 Funded 分属不同出价实验；同一 Campaign 不同时累加"],
+ ["AU_Approved","Secondary","One / 申请","用于过程诊断"],
+ ["AU_Funded","Primary · 价值优化实验","One / 首贷客户或贷款，需明确","价值不含本金，不传敏感风控字段"]
+ ])+note("互动日用于媒体优化；事件日用于业务对账；上传日只用于链路时延。平台自归因各自可能认领同一放款，不能跨平台求和。GA4 First user、Session、关键事件归因是不同作用域。Last Click 与 DDA 比较必须固定事件、人群、窗口和价值口径。")+'</details>';
+}
+function ownedView(){
+ const models=Object.keys(MODEL),all=models.map(m=>financeRows(base,m)),covered=records.filter(r=>paths(r).length).length;
+ const drift=Math.abs(sum(finance,"funded")-records.length);
+ return '<div class="section-head"><div><h2>一笔事实，多种功劳分配</h2><p>每个模型、每笔放款的 credit 和为 1；数量和价值一起重分配。</p></div>'+tag("credit 总量误差 "+num(drift,8),drift<1e-8?"good":"bad")+'</div>'+
+ note("DDA、Markov 仅保留可操作的教学示例权重，未训练、未估计移除效应，不代表算法结果；不能据此确定预算。正式版本应接入模型产出的 loan_id × channel × weight × model_version × window，并校验归一。","")+
+ '<div class="grid three-col">'+kpi("真实放款",num(records.length),"loan_id 唯一",true)+kpi("可观测归因覆盖",percent(div(covered,records.length)),covered+" / "+records.length)+kpi("Unknown credit",num(finance.find(x=>x.channel==="Unknown").funded,2),"无有效且被允许的窗口内触点")+'</div>'+
+ card("同一批放款的模型对比","对比不改变信贷真实漏斗；各模型列合计等于放款总量。",table(["渠道",...models.map(m=>esc(MODEL[m]))],[...CH,"Unknown"].map(ch=>[ch,...all.map(rows=>num(rows.find(r=>r.channel===ch).funded,2))]).concat([["合计",...all.map(rows=>num(sum(rows,"funded"),2))]])))+
+ card("当前模型的数量与价值","Last Paid / First Paid 只认付费渠道；CRM 为自有渠道。无付费触点则回退非 Direct，无非 Direct 则回退 Direct。",creditTable())+
+ '<details class="card card-pad"><summary>模型定义与治理</summary><p>Last Touch 保留实际 Direct 收口；Last Non-direct 跳过 Direct；Linear 按不同渠道均分，避免重复触点奖励；Time-decay 按触点距放款的自然日，以 7 天半衰期加权。Shapley（组合边际分配）和 Markov（路径移除效应）都是模型分配方法，依赖可观测路径与假设，不天然等同因果增量。</p><p>本页窗口采用 Sydney 业务自然日回看 7/30/90 天，事件当日可入选；仅包含点击与站内会话，不混入展示或互动观看。重复 touch_id 去重，未同意、事后、超窗触点排除。归因版本：owned_rules_v2；成本分配：acquisition_cohort_allocated；价值版本：'+esc(data.meta.valuationVersion)+'.</p></details>';
+}
+function postStats(a){
+ const n=k=>a.filter(p=>p[k]).length;
+ const matured=a.filter(p=>age(p.day,data.meta.asOf)>=3);
+ return {truth:a.length,eligible:n("eligible"),matchable:n("matchable"),queued:n("queued"),sent:n("sent"),accepted:n("accepted"),processed:n("processed"),reported:n("reported"),raw:sum(a,"rawCount"),mmp:n("mmp"),stable:matured.filter(p=>p.eligible).length,stableReported:matured.filter(p=>p.reported).length,p90:quantile(a.filter(p=>p.sent).map(p=>p.latency),.9)};
+}
+function postbackView(){
+ if(!scopedPost.length)return card("回传监控","当前筛选范围",empty("未提供回传日志。后端业务仍可分析，回传覆盖率不可计算。"));
+ const p=postStats(scopedPost),events=["submitted","qualified","approved","funded"],stage=[["后端事实",p.truth],["Google应传",p.eligible],["具备允许标识",p.matchable],["进入队列",p.queued],["唯一已发送",p.sent],["API接受",p.accepted],["处理成功",p.processed],["已核实Reported",p.reported]];
+ const rows=events.map(e=>{const a=scopedPost.filter(x=>x.event===e),s=postStats(a);return [e,...["truth","eligible","matchable","queued","sent","accepted","processed","reported"].map(k=>num(s[k])),percent(div(s.sent,s.matchable)),percent(div(s.reported,s.eligible))]});
+ const recon=events.map(e=>{const a=scopedPost.filter(x=>x.event===e&&age(x.day,data.meta.asOf)>=3),s=postStats(a);return [e,num(s.eligible),num(s.raw),num(s.mmp),num(s.reported),num(s.raw-s.eligible),percent(div(s.raw,s.eligible)),percent(div(s.reported,s.eligible))]});
+ const metrics=["amountOk","statusOk","timeOk"],sent=scopedPost.filter(p=>p.sent),dups=scopedPost.filter(p=>p.rawCount>1);
+ return '<div class="section-head"><div><h2>回传链路与事实对账</h2><p>业务键去重：申请阶段 application_id + event；放款阶段 loan_id + event。每个阶段单独对账。</p></div>'+tag("业务事件数 ≠ 放款数","info")+'</div>'+
+ '<div class="grid four-col">'+kpi("发送覆盖率",percent(div(p.sent,p.matchable)),"唯一发送 / 具备标识可上传")+kpi("端到端送达",percent(div(p.sent,p.eligible)),"唯一发送 / Google应传")+kpi("API 接收率",percent(div(p.accepted,p.sent)),"Accepted / Sent")+kpi("P90 首次发送时延",num(p.p90)+" min","所有事件 · SLA 60 min")+'</div>'+
+ card("端到端链路","具备标识是应传人群的子集；Sent 不高于 Queued。Reported 不是 API 成功率。",'<div class="funnel">'+stage.map((x,i)=>'<div class="funnel-stage"><span>'+x[0]+'</span><strong>'+num(x[1])+'</strong><em>'+(i?percent(div(x[1],stage[i-1][1])):"基准")+'</em></div>').join("")+'</div>')+
+ card("事件拆解","链路使用导入时固化的 Google 资格（演示回看 30 天），不随内部归因模型或窗口变化。",table(["Event","Backend","Expected","Matchable","Queued","Sent","Accepted","Processed","Reported","发送/可上传","Reported/Expected"],rows))+
+ card("三方对账与有效性","所选 Cohort 内、事件满 T+3 的范围。平台原始计数可含重复；不能把 >100% 当作优质覆盖。",table(["事件","后端应传","平台原始","MMP核实","平台有效唯一","原始−应传","原始覆盖率","有效确认率"],recon))+
+ '<div class="grid two-even">'+card("一致性 / 唯一性","校验分母为已发送唯一业务事件。",metrics.map((k,i)=>bar(["金额一致率","状态一致率","事件时间一致率"][i],sent.filter(p=>p[k]).length,sent.length,percent(div(sent.filter(p=>p[k]).length,sent.length)))).join("")+
+ note("额外平台原始计数 "+num(sum(dups,p=>p.rawCount-1))+"；受重复影响业务键 "+dups.length+"。重复率分母为已发送业务键："+percent(div(dups.length,p.sent))+"。重试应复用 event_id；业务唯一键仍需独立校验。",""))+
+ card("首次发送时延","使用 nearest-rank（最近秩）分位数；单位分钟，未发送不记 0。",table(["事件","P50","P90","P99","已发送样本"],events.map(e=>{const a=scopedPost.filter(p=>p.event===e&&p.sent);return [e,...[.5,.9,.99].map(q=>num(quantile(a.map(p=>p.latency),q))),num(a.length)]})))+'</div>'+
+ card("错误定位","按丢失阶段定位责任，避免将未到报告观察期的事件误判为漏报。",table(["断点","数量","责任人","建议"],[
+ ["无允许匹配标识",num(p.eligible-p.matchable),"Web / Data","检查 consent 与 Click ID Bridge"],
+ ["可上传但未入队",num(p.matchable-p.queued),"Data Platform","检查资格筛选与队列写入"],
+ ["已入队未发送",num(p.queued-p.sent),"Data Platform","检查积压与重试"],
+ ["API未接受",num(p.sent-p.accepted),"MarTech","按 request_id 查看字段、时间、认证诊断"],
+ ["处理未成功",num(p.accepted-p.processed),"MarTech","查询最终请求状态"],
+ ["成熟应传但未确认",num(p.stable-p.stableReported),"Data / Analytics","拆解窗口、身份、处理时滞与平台归因"]
+ ]));
+}
+function healthView(){
+ const noTouch=records.filter(r=>!paths(r).length).length,rawTouches=sum(base,r=>r.touches.length),dedupTouches=sum(base,r=>uniq(r.touches.map(t=>t.id)).length),badWeights=records.filter(r=>Math.abs(sum(Object.values(weights(r)),x=>x)-1)>1e-9).length;
+ return '<div class="section-head"><div><h2>数据能否支持当前结论</h2><p>数据质量随业务筛选变化；下方系统任务属于全局快照，明确不应用业务筛选。</p></div>'+tag(sourceStatus,sourceStatus.includes("失败")?"bad":"info")+'</div>'+
+ '<div class="grid four-col">'+kpi("重复触点被移除",num(rawTouches-dedupTouches),"touch_id 去重")+kpi("无可观测路径",percent(div(noTouch,records.length)),noTouch+" / "+records.length)+kpi("credit 守恒失败",num(badWeights),"每笔 credit 和应为 1")+kpi("导入重复记录",num(importAudit.duplicateRecords),"完全相同记录已去重")+'</div>'+
+ card("系统任务 / SLA","全局快照；freshness 单位分钟，基于数据集 asOf。演示状态不表示当前机器正在运行这些服务。",table(["任务","Owner","新鲜度 min","SLA min","成功率","状态"],data.jobs.map(j=>[esc(j.name),esc(j.owner),num(j.freshness),num(j.sla),num(j.success,2)+"%",tag(j.freshness<=j.sla?"未超时":"超时",j.freshness<=j.sla?"good":"bad")])))+
+ card("数据契约与质量护栏","JSON 使用完整快照替换，不与演示数据拼接；缺少可下钻明细时拒绝导入。",table(["检查","处理规则"],[
+ ["事实唯一","id、application_id、loan_id 唯一；不同记录冲突直接拒绝"],
+ ["阶段顺序","先申请再合格再审批再放款；事件不得晚于快照"],
+ ["价值","金额有限；预期损失不重复扣除实际坏账；本金不计入贡献"],
+ ["风险标签","M1 / M3 必须达到应还日 +30 才参与分母；未成熟强制空值"],
+ ["人群与成本","首访维度固定；成本包含未转化人群并按获客 Cohort 分摊"],
+ ["显示缺失","无分母、无实验、无成熟标签用 —；不默认为 0"],
+ ["敏感信息","仅展示脱敏 ID；生产数据接入应在受控聚合后端完成"]
+ ]));
+}
+function alertsView(){
+ const open=alerts.filter(a=>!state.ack[a.id]);
+ return '<div class="section-head"><div><h2>告警与行动</h2><p>仅展示当前筛选触发的事项。确认表示已知悉，不表示已解决。</p></div>'+tag(open.length+" 待确认",open.length?"warn":"good")+'</div>'+
+ '<div class="grid four-col">'+["P0","P1","P2"].map(l=>kpi(l,num(open.filter(a=>a.level===l).length),"当前待确认")).join("")+kpi("已确认",num(alerts.length-open.length),"保留在当前会话")+'</div>'+
+ (alerts.length?alerts.map(a=>card(esc(a.title),esc(a.owner)+" · "+a.id,decisionCard(a)+(state.ack[a.id]?tag("已确认，待业务闭环","gray"):'<button class="btn ack-btn" data-ack="'+a.id+'">确认已知悉</button>'))).join(""):empty("当前筛选未触发演示告警。"))+
+ note("阈值示例：Funded P90 >60 分钟；M3 30+ >8% 且有效样本 ≥30；回传字段不一致需逐笔复核。当前工具不向投放后台下发任何预算或暂停操作。");
+}
+function traceView(){
+ const preferred=state.query||base.find(r=>r.applicationId)?.applicationId||"";
+ return '<div class="section-head"><div><h2>单笔端到端追踪</h2><p>按 application_id 或 loan_id 精确查询全数据集；结果会标注是否属于当前筛选。</p></div>'+tag("脱敏演示标识","gray")+'</div>'+
+ card("业务事实 → 触点 → 功劳 → 回传","支持 Enter 查询。点击样本可以直接查看。",'<div class="trace-controls"><input class="search-input" id="traceInput" aria-label="申请或贷款 ID" value="'+esc(preferred)+'"><button class="btn primary" id="traceBtn">查询</button></div><div class="sample-links">'+base.filter(r=>r.applicationId).slice(0,4).map(r=>'<button class="link" data-trace="'+esc(r.applicationId)+'">'+esc(r.applicationId)+'</button>').join(" · ")+'</div><div id="traceResult"></div>');
+}
+function traceRender(){
+ const input=$("#traceInput");if(!input)return;state.query=input.value.trim().toUpperCase();
+ const r=data.records.find(r=>r.applicationId===state.query||r.loanId===state.query);
+ if(!r){$("#traceResult").innerHTML=empty("未找到该申请或贷款 ID。可从样本链接选择。");return}
+ const p=paths(r),w=weights(r),events=[];
+ r.touches.forEach(t=>events.push({day:t.day,title:t.channel+" · "+t.campaign,copy:"触点 "+t.id+" · "+(p.some(x=>x.id===t.id)?"存在合格触点（同ID只计一次）":"未获同意、超窗或在事件之后")}));
+ ["submitted","qualified","approved","funded"].forEach(k=>{if(r[k])events.push({day:r[k],title:k,copy:"后端唯一业务事实"})});
+ data.postbacks.filter(x=>x.recordId===r.id).forEach(x=>events.push({day:x.day,title:x.event+" 回传",copy:x.eventId+" · "+(x.eligible?(x.reported?"已核实 Reported":x.sent?"已发送，未确认归因":"尚未发送"):"无 Google 资格，正确排除")+" · 首次发送 "+num(x.latency)+" min"}));
+ events.sort((a,b)=>a.day.localeCompare(b.day));
+ $("#traceResult").innerHTML='<div class="trace-summary">'+[["Application",r.applicationId],["Loan",r.loanId||"—"],["User",r.userId],["筛选范围",inScope(r)?"范围内":"范围外，精确查询"]].map(x=>'<div class="trace-field"><span>'+x[0]+'</span><strong>'+esc(x[1])+'</strong></div>').join("")+'</div>'+
+ note("固定获客："+esc(r.channel)+"；Cohort："+r.cohort+"；"+(r.funded?"预期风险调整贡献 "+money(contribution(r)):"尚未放款，以下仅为路径规则预览")+"。"+esc(MODEL[state.model])+"："+Object.entries(w).map(([k,v])=>esc(k)+" "+percent(v)).join(" · "))+
+ '<div class="timeline">'+events.map(e=>'<div class="timeline-item"><div class="timeline-time">'+e.day+'</div><div class="timeline-title">'+esc(e.title)+'</div><div class="timeline-copy">'+esc(e.copy)+'</div></div>').join("")+'</div>';
+}
+const METRICS=[
+ ["渠道路径重叠率","协同","涉及 ≥2 不同渠道的放款 / 存在合格路径的放款","loanId, touches.id/channel/day/consent","按贷款去重；非曝光受众重叠"],
+ ["两渠道条件重叠","协同","共同出现贷款 / 行渠道出现贷款","loanId, touches.channel","有方向；对角线不展示"],
+ ["品牌 / Direct 收口率","协同","上游在非末次出现且品牌或Direct实际末触的贷款 / 含该上游的贷款","touches.campaign/day/channel","两去向互斥；上游行间可重叠"],
+ ["First / Assist / Last","协同","首触 / 任一非末次参与 / 实际末触的去重贷款数","loanId, touches.id/day/channel","角色可重叠，不能相加"],
+ ["增量新客首贷","增量","Yt − Yc × Nt/Nc","实验ID/分组/分配用户Nt,Nc/去重首贷Yt,Yc","组规模归一；ITT；当前无真实实验"],
+ ["增量 CAC","增量","(St − Sc × Nt/Nc) / Δ新客首贷","实验成本St,Sc及增量首贷","ΔS>0且ΔY>0；否则不适用"],
+ ["增量贡献 ROAS","增量","(Vt − Vc × Nt/Nc) / (St − Sc × Nt/Nc)","全渠道同口径贡献Vt,Vc及实验成本","贡献不是本金；需价值方差/聚类信息求区间"],
+ ["预算饱和度（假设）","预算","V(S)/A = S/(K+S)","S,假设上限A,半饱和成本K","本工具自定义；非可验证事实"],
+ ["边际 ROAS（假设）","预算","dV/dS = A×K/(K+S)^2；有限步长为 ΔV/ΔS","预算响应曲线参数及适用范围","历史平均ROAS不等于边际；需实验/MMM校准"],
+ ["合格率","信贷","合格申请 / 有效申请","applicationId,submitted,qualified","固定首访Cohort；不用归因credit"],
+ ["审批率","信贷","审批通过 / 合格申请","qualified,approved","另列通过/全部申请；桥接公式不能重复乘合格率"],
+ ["放款率","信贷","真实放款 / 审批通过","approved,loanId,funded","同一批获客、同一观察快照"],
+ ["平均放款金额","信贷","放款本金合计 / 真实放款数","loanAmount,loanId","本金仅作规模，不进入ROAS分子"],
+ ["欺诈率","风险","已确认欺诈申请 / 已完成欺诈判定的有效申请","applicationId,fraud","fraud=null 为未判定，排除分母"],
+ ["M1 30+","风险","首期在应还+30日仍未偿清贷款 / 首期应还+30已到且有标签贷款","loanId,firstDue,m1bad,asOf","首期DPD30+，不是自然月末M1桶"],
+ ["M3 30+","风险","第三期在应还+30日仍未偿清贷款 / 第三期应还+30已到且有标签贷款","loanId,thirdDue,m3bad,asOf","第三期DPD30+；非MOB3任意逾期；样本<30标注"],
+ ["预期风险调整贡献","价值","利息+费用−资金成本−服务成本−预期信用损失","interest,fees,fundingCost,servicingCost,expectedLoss","同一生命周期预测；尚未扣获客；不重复扣实际损失"],
+ ["贡献 ROAS","价值","按同一credit分配的风险调整贡献 / 渠道Cohort分摊成本","贡献明细,credit,costs.channel/amount","零成本为—；无费用全成本不能作财务ROI"],
+ ["新客 LTV/CAC","价值","(新客折现贡献/新客首贷客户)/(新客Cohort成本/新客首贷客户)","userId,customer,ltv,costs","ltv为上游已折现贡献输入；演示用单贷贡献×1.2作情景值；仅首贷新客，含未转化成本"],
+ ["CAC-Funded","获客","Cohort成本 / 放款（归因表使用同模型credit）","costs.amount,loanId,credit","贷款成本指标；新客首贷CAC另用customer与userId"],
+ ["发送覆盖 / 端到端","回传","Sent/Matchable；另列 Sent/Expected","businessKey,eligible,matchable,sent","可上传分母与应传分母分开"],
+ ["API接收 / 处理 / 确认","回传","Accepted/Sent；Processed/Accepted；Reported/Expected","accepted,processed,reported","日志确认与平台汇总credit不同；API接收不等于归因"],
+ ["P90 首次发送时延","回传","nearest-rank P90(first_sent_time − event_time)","latency；正式需event_time/first_sent_time","仅已发送事件；不把上传日当事件日"],
+ ["有效性 / 一致性 / 唯一性","回传","有效唯一Reported/Expected；字段匹配/唯一Sent；重复业务键/Sent","businessKey,eventId,rawCount,amountOk,statusOk,timeOk","原始覆盖可>100%；需核实重复和撤销"]
+];
+function dictionaryView(){
+ return '<div class="section-head"><div><h2>指标定义、公式与数据契约</h2><p>版本 owned_rules_v2 · '+METRICS.length+' 项；页面使用固定业务自然日，AUD，预测价值口径。</p></div></div>'+
+ card("指标字典","输入名称、公式、字段或限制进行搜索。",'<input id="metricSearch" class="search-input" aria-label="搜索指标" placeholder="搜索，例如 M3、分母、增量、credit"><div id="metricResults"></div>')+
+ '<details class="card card-pad"><summary>本次优化：主要问题与解决方案</summary><ol><li>比例缩放、产品筛选无效、成熟度乘固定系数：改为明细筛选，成本和事实一起限定 Cohort。</li><li>功劳数变但价值不变、信贷漏斗混入 credit：业务质量固定首访归组，归因数量与价值同权分配。</li><li>渠道缺少 Direct、搜索品牌拆分与协同判断：增加条件重叠矩阵、首辅末角色、完整路径与末触去向。</li><li>增量与 attribution 混同：无实验保持缺失，单列证据等级与假设预算工具。</li><li>风控观察窗缺失：新增合格、审批、放款、欺诈、按应还日成熟的 M1/M3、预期贡献与新客 LTV/CAC。</li><li>回传分母链路矛盾、导出与视图不一致、数据导入混入演示：重建子集关系、按当前视图导出、校验完整快照后原子替换。</li></ol></details>'+
+ '<details class="card card-pad"><summary>数据接入所需字段和边界</summary><p>meta：schemaVersion=2、asOf、timezone=Australia/Sydney、currency=AUD、mode、valuationVersion、costBasis=acquisition_cohort_allocated。records：每行一个唯一首访获客实体，本版本每实体最多一申请一放款，新客一人一首贷。必须纳入未申请和未放款流量。成本按所属获客 Cohort 分摊；生产费用应在受控仓库按可审计方法分摊，不按模型credit倒推。</p><p>维度：id/userId/applicationId/loanId/cohort/channel/campaign/brand/customer/region/device/product；阶段日期 started/submitted/qualified/approved/funded；价值和风险字段见上表。touches：id、day、channel、campaign、brand、kind、consent。costs：channel、campaign、amount。postbacks：recordId、businessKey、eventId、event、day、eligible、matchable、queued、sent、accepted、processed、reported、rawCount、mmp、latency、amountOk/statusOk/timeOk。jobs：name、owner、freshness、sla、success。</p><p>所有日期为 Sydney 业务自然日 YYYY-MM-DD。原始时戳需上游按带时区数据归一；本页不将自然日窗冒充精确滚动小时窗。postbacks 和 jobs 可为空数组，此时显示无数据，绝不填充演示。下载完整演示 JSON 可获得真实可导入字段样例。</p></details>'+
+ card("方法参考","官方资料用于方法边界；本页业务指标为明确定义的自有口径，不声称采用平台统一标准。",'<ul><li><a href="https://support.google.com/google-ads/answer/14102450?hl=en" target="_blank" rel="noopener noreferrer">Google：用户级 Conversion Lift 指标</a></li><li><a href="https://support.google.com/google-ads/answer/14097193?hl=en" target="_blank" rel="noopener noreferrer">Google：Geo Lift 与跨区污染</a></li><li><a href="https://developers.google.com/meridian/docs/post-modeling/roi-mroi-response-curves" target="_blank" rel="noopener noreferrer">Meridian：增量、边际 ROI 与响应曲线</a></li><li><a href="https://support.google.com/analytics/answer/10596865?hl=en" target="_blank" rel="noopener noreferrer">GA4：归因模型与互动日 / 事件日作用域</a></li></ul>');
+}
+function metricRender(){const q=($("#metricSearch")?.value||"").toLowerCase();$("#metricResults").innerHTML=table(["指标","模块","定义 / 公式","所需字段","口径限制"],METRICS.filter(r=>r.join(" ").toLowerCase().includes(q)).map(r=>r.map(esc)))}
 
-      <div class="content">
-        <section class="view active" id="view-overview"></section>
-        <section class="view" id="view-channels"></section>
-        <section class="view" id="view-google"></section>
-        <section class="view" id="view-owned"></section>
-        <section class="view" id="view-postback"></section>
-        <section class="view" id="view-health"></section>
-        <section class="view" id="view-alerts"></section>
-        <section class="view" id="view-trace"></section>
-        <section class="view" id="view-dictionary"></section>
-      </div>
-    </main>
-  </div>
+function validDate(v){return typeof v==="string"&&/^\d{4}-\d{2}-\d{2}$/.test(v)&&Number.isFinite(stamp(v))&&new Date(stamp(v)).toISOString().slice(0,10)===v}
+function validateData(input){
+ const fail=s=>{throw Error(s)},finite=(v,min=-Infinity)=>typeof v==="number"&&Number.isFinite(v)&&v>=min;
+ if(!input||Array.isArray(input)||typeof input!=="object")fail("JSON 顶层必须是对象");
+ if(input.meta?.schemaVersion!==2)fail("需要 schemaVersion=2 的明细快照。旧汇总JSON没有真实下钻能力，请下载新版完整样例。");
+ const m=input.meta;if(!validDate(m.asOf)||m.currency!=="AUD"||m.timezone!=="Australia/Sydney"||m.costBasis!=="acquisition_cohort_allocated"||typeof m.valuationVersion!=="string")fail("meta 日期、AUD币种、Sydney时区、价值版本或Cohort分摊成本口径不符合契约");
+ if(!Array.isArray(input.records)||!Array.isArray(input.postbacks)||!Array.isArray(input.jobs))fail("records、postbacks、jobs 必须为数组；后两者无数据时传 []");
+ if(input.records.length>100000||input.postbacks.length>400000)fail("本地演示工具限制10万获客明细、40万业务日志");
+ const ids=new Map(),appIds=new Set(),loanIds=new Set(),newUsers=new Set();let duplicates=0;
+ const normalized=[];
+ for(const r of input.records){
+  if(!r||typeof r!=="object")fail("记录必须为对象");
+  if(typeof r.id!=="string"||!r.id||typeof r.userId!=="string"||!r.userId)fail("缺少 id/userId");
+  if(ids.has(r.id)){if(JSON.stringify(ids.get(r.id))===JSON.stringify(r)){duplicates++;continue}fail("id 冲突："+r.id)}
+  ids.set(r.id,r);
+  for(const k of ["cohort","channel","campaign","brand","customer","region","device","product"])if(typeof r[k]!=="string"||!r[k])fail(r.id+" 缺少维度 "+k);
+  if(!validDate(r.cohort)||r.cohort>m.asOf||!CH.includes(r.channel))fail(r.id+" Cohort或渠道不合法");
+  if(!["new","old"].includes(r.customer)||!["fixed","loc"].includes(r.product)||!["brand","nonbrand","na"].includes(r.brand))fail(r.id+" 客群/产品/品牌分类不合法");
+  let previous=r.cohort;
+  for(const k of ["started","submitted","qualified","approved","funded"]){
+   const v=r[k];if(v!==null&&!validDate(v))fail(r.id+" "+k+" 需为日期或null");
+   if(v){if(v<previous||v>m.asOf)fail(r.id+" 阶段时间倒置/晚于快照");previous=v;}
+  }
+  if(r.submitted&&!r.started||r.qualified&&!r.submitted||r.approved&&!r.qualified||r.funded&&!r.approved)fail(r.id+" 缺少前置阶段");
+  for(const [field,set,yes]of [["applicationId",appIds,r.submitted],["loanId",loanIds,r.funded]]){
+   if(yes){if(typeof r[field]!=="string"||!r[field]||set.has(r[field]))fail(field+" 缺失或重复");set.add(r[field])}else if(r[field]!==null)fail(r.id+" 未发生事件的ID应为null");
+  }
+  if(r.customer==="new"){if(newUsers.has(r.userId))fail("本版本新客userId只允许一个首访获客实体；请在上游合并："+r.userId);newUsers.add(r.userId)}
+  for(const k of ["impressions","clicks","sessions"])if(!Number.isInteger(r[k])||r[k]<0)fail(r.id+" 媒体计数不合法");
+  for(const k of ["loanAmount","interest","fees","fundingCost","servicingCost","expectedLoss"])if(!finite(r[k],0))fail(r.id+" 金额字段 "+k+" 不合法");
+  if(!finite(r.ltv)||!r.funded&&r.loanAmount!==0)fail(r.id+" LTV/本金状态不合法");
+  if(![true,false,null].includes(r.fraud))fail(r.id+" fraud 应为布尔或null");
+  for(const [due,bad]of [["firstDue","m1bad"],["thirdDue","m3bad"]]){
+   if(r.funded){if(!validDate(r[due])||r[due]<r.funded)fail(r.id+" 应还日不合法")}else if(r[due]!==null)fail(r.id+" 未放款不应有应还日");
+   if(![true,false,null].includes(r[bad]))fail(r.id+" 风险标签不合法");
+   if((!r.funded||add(r[due],30)>m.asOf)&&r[bad]!==null)fail(r.id+" 未成熟风险标签必须为null");
+  }
+  if(r.funded&&r.thirdDue<r.firstDue)fail(r.id+" 第三期应还日早于首期");
+  if(!Array.isArray(r.touches)||!Array.isArray(r.costs))fail(r.id+" touches/costs 必须为数组");
+  const touchIds=new Map();
+  for(const t of r.touches){
+   if(!t||typeof t.id!=="string"||!validDate(t.day)||t.day<r.cohort||t.day>m.asOf||!CH.includes(t.channel)||typeof t.campaign!=="string"||!["brand","nonbrand","na"].includes(t.brand)||!["click","session"].includes(t.kind)||typeof t.consent!=="boolean")fail(r.id+" 触点字段不合法");
+   if(touchIds.has(t.id)&&JSON.stringify(touchIds.get(t.id))!==JSON.stringify(t))fail(r.id+" 同touch_id内容冲突");
+   touchIds.set(t.id,t);
+  }
+  const first=[...touchIds.values()].sort((a,b)=>a.day.localeCompare(b.day))[0];
+  if(first&&(first.day!==r.cohort||first.channel!==r.channel||first.campaign!==r.campaign||first.brand!==r.brand))fail(r.id+" 首访维度与原始首触不一致");
+  for(const c of r.costs)if(!c||!CH.includes(c.channel)||typeof c.campaign!=="string"||!finite(c.amount,0))fail(r.id+" 成本字段不合法");
+  normalized.push(r);
+ }
+ const business=new Set();
+ for(const p of input.postbacks){
+  const r=ids.get(p.recordId);
+  if(!r||!["submitted","qualified","approved","funded"].includes(p.event)||!r[p.event]||p.day!==r[p.event])fail("回传日志不能关联业务事实");
+  const key=(p.event==="funded"?r.loanId:r.applicationId)+":"+p.event;
+  if(p.businessKey!==key||business.has(key)||typeof p.eventId!=="string")fail("回传业务键缺失、错误或重复");
+  business.add(key);
+  for(const k of ["eligible","matchable","queued","sent","accepted","processed","reported","mmp","amountOk","statusOk","timeOk"])if(typeof p[k]!=="boolean")fail("回传布尔字段缺失："+k);
+  const stages=["eligible","matchable","queued","sent","accepted","processed","reported"];
+  for(let i=1;i<stages.length;i++)if(p[stages[i]]&&!p[stages[i-1]])fail("回传子集链路断裂："+key);
+  if(!Number.isInteger(p.rawCount)||p.rawCount<0||p.rawCount<(p.reported?1:0)||p.sent&&!finite(p.latency,0)||!p.sent&&p.latency!==null)fail("回传原始计数/时延错误："+key);
+ }
+ if(input.postbacks.length&&business.size!==sum(normalized,r=>["submitted","qualified","approved","funded"].filter(k=>r[k]).length))fail("回传快照应包含所有业务阶段（包括无Google资格）；缺日志请传空数组，不能以不完整分母对账");
+ for(const j of input.jobs)if(typeof j.name!=="string"||typeof j.owner!=="string"||!finite(j.freshness,0)||!finite(j.sla,0)||!finite(j.success,0)||j.success>100)fail("jobs 字段错误");
+ return {data:{meta:copy(input.meta),records:copy(normalized),postbacks:copy(input.postbacks),jobs:copy(input.jobs)},audit:{duplicateRecords:duplicates}};
+}
+function buildFilters(){
+ const cs=uniq(data.records.filter(r=>state.channel==="all"||r.channel===state.channel).map(r=>r.campaign));
+ if(state.campaign!=="all"&&!cs.includes(state.campaign))state.campaign="all";
+ const fields=[
+ ["period","日期跨度",[7,14,30,90,180,365],["最近7天","最近14天","最近30天","最近90天","最近180天","最近365天"]],
+ ["channel","首访获客渠道",["all",...CH],["全部渠道",...CH]],
+ ["model","归因模型",Object.keys(MODEL),Object.values(MODEL)],
+ ["window","归因回看窗口",[7,30,90],["7自然日","30自然日","90自然日"]],
+ ["maturity","Cohort观察龄",[0,14,75,140],["全部（含未成熟）","获客满14天","获客满75天（M1参考）","获客满140天（M3参考）"]]];
+ const extra=[
+ ["campaign","首访 Campaign",["all",...cs],["全部Campaign",...cs]],
+ ["product","产品",["all","fixed","loc"],["全部产品","分期贷","循环贷"]],
+ ["customer","新老客",["all","new","old"],["全部客群","新客","老客"]],
+ ["region","地区",["all",...uniq(data.records.map(r=>r.region))],["全部地区",...uniq(data.records.map(r=>r.region))]],
+ ["device","首访设备",["all",...uniq(data.records.map(r=>r.device))],["全部设备",...uniq(data.records.map(r=>r.device)).map(v=>dimensionsLabel("device",v))]],
+ ["brand","首访品牌分类",["all","brand","nonbrand","na"],["全部分类","品牌词","非品牌词","非搜索/不适用"]],
+ ["cohort","获客月份",["all",...uniq(data.records.map(r=>r.cohort.slice(0,7)))],["全部月份",...uniq(data.records.map(r=>r.cohort.slice(0,7)))]]];
+ const markup=f=>'<label class="filter">'+f[1]+select("f-"+f[0],f[2],f[3],state[f[0]])+'</label>';
+ $("#primaryFilters").innerHTML=fields.map(markup).join("")+'<label class="filter">Cohort截止日 <input type="date" id="f-end" value="'+state.end+'" max="'+data.meta.asOf+'"></label>';
+ $("#advancedFilters").innerHTML=extra.map(markup).join("")+'<button class="btn small" id="resetFilters">重置筛选</button>';
+}
+function scopeText(){
+ const start=add(state.end,1-state.period),q=quality(base);
+ let s="获客 Cohort "+start+" → "+state.end+" · 观察快照 "+data.meta.asOf+" · Sydney业务日 · "+num(base.length)+" 个首访实体 / "+num(q.funded)+" 笔放款";
+ const earliest=data.records.reduce((d,r)=>r.cohort<d?r.cohort:d,data.meta.asOf);if(data.records.length&&start<earliest)s+=" · 注意：已载入数据始于 "+earliest+"，请求区间未完整覆盖";
+ const selected=["channel","campaign","product","customer","region","device","brand","cohort"].filter(k=>state[k]!=="all").map(k=>dimensionsLabel(k,state[k]));
+ s+=(selected.length?" · "+selected.join(" / "):" · 全部首访维度");
+ return s;
+}
+function render(){
+ recompute();$("#currentTitle").textContent=TITLES[state.view];$("#scope").textContent=scopeText();
+ $("#scopeHint").textContent=(state.view==="trace"?"精确ID追踪可查询筛选范围外记录。":state.view==="dictionary"?"指标字典为全局口径，不受业务筛选影响。":"全局渠道/Campaign/品牌/设备按固定首访维度选人；完整路径及成本保留全部后续渠道。")+" 成本为获客Cohort分摊，不是媒体服务日现金花费。";
+ $("#sourceFoot").textContent=data.meta.mode==="演示数据"?"离线演示 · 无生产连接":data.meta.mode+" · 完整快照";
+ $("#dataMode").textContent=data.meta.mode||"已导入数据";$("#lastUpdated").textContent=data.meta.asOf+" 快照 · "+sourceStatus;
+ $("#alertCount").textContent=alerts.filter(a=>!state.ack[a.id]).length;
+ $$(".nav-btn").forEach(b=>{b.classList.toggle("active",b.dataset.view===state.view);b.setAttribute("aria-current",b.dataset.view===state.view?"page":"false")});
+ const fn={overview:overviewView,channels:channelsView,synergy:synergyView,increment:incrementView,google:googleView,owned:ownedView,postback:postbackView,health:healthView,alerts:alertsView,trace:traceView,dictionary:dictionaryView}[state.view];
+ $("#view").innerHTML=fn();
+ if(state.view==="increment")budgetRender();
+ if(state.view==="trace")traceRender();
+ if(state.view==="dictionary")metricRender();
+ $("#observation").innerHTML=state.maturity<14?note("包含获客不足14天的人群：放款尚未充分观察，CAC可能偏高；风险指标仅在对应应还日成熟且有标签时计算。",""):state.period<=30?note("当前为近期获客范围；M1/M3可能尚未成熟，—不是0%逾期。获客满14天仅为初步观察，长转化路径仍可能未完成；更不等于风险表现成熟。",""):"";
+}
+function switchView(view){if(!TITLES[view])return;state.view=view;state.pathPair=null;history.replaceState(null,"","#"+view);render();window.scrollTo({top:0,behavior:"instant"})}
+function toast(text,error=false){const el=$("#toast");el.textContent=text;el.className="toast show"+(error?" error":"");clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.className="toast",4500)}
+function showDialog(id){lastFocus=document.activeElement;$("#"+id).showModal()}
+function closeDialog(id){$("#"+id).close();if(lastFocus?.isConnected)lastFocus.focus()}
+function detail(ch){
+ const f=finance.find(r=>r.channel===ch),owned=base.filter(r=>r.channel===ch),q=quality(owned);
+ $("#drawerTitle").textContent=ch+" · 当前筛选";
+ $("#drawerContent").innerHTML=card("功劳与成本","所选Cohort中此渠道的费用和放款功劳。",creditTable(f?[f]:[]))+
+ card("固定首访客群","以下仅为该渠道首访的业务质量，不混用功劳作为漏斗分母。",'<div class="grid two-even">'+kpi("真实放款",num(q.funded),"固定首访来源")+kpi("合格率",percent(div(q.qualified,q.submitted)),q.qualified+" / "+q.submitted)+'</div>'+qualityTable(owned,"campaign"))+
+ '<button class="btn primary" data-drill="channel" data-value="'+esc(ch)+'">下钻该渠道首访客群</button>';
+ showDialog("channelDrawer");
+}
+function download(content,name,type){const url=URL.createObjectURL(new Blob([content],{type})),a=document.createElement("a");a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function csvText(){
+ const rows=[["视图",TITLES[state.view]],["范围",scopeText()],["口径",$("#scopeHint").textContent],["归因",MODEL[state.model],"窗口自然日",state.window],["数据来源",data.meta.mode],[]];
+ $$("#view .kpi").forEach(k=>rows.push([k.querySelector(".kpi-label").textContent,k.querySelector(".kpi-value").textContent,k.querySelector(".kpi-foot").textContent]));
+ $$("#view table").forEach(t=>{rows.push([],[t.closest(".card")?.querySelector("h3")?.textContent||"明细"]);t.querySelectorAll("tr").forEach(tr=>rows.push(Array.from(tr.cells).map(c=>c.textContent.replace(/\s*↕\s*/g,"").trim())))});
+ if(state.view==="trace")rows.push(["追踪ID",state.query],...$$("#traceResult .timeline-item").map(t=>[t.innerText]));
+ if(state.view==="alerts")alerts.forEach(a=>rows.push([a.level,a.title,a.reason,a.impact,a.action,a.owner,state.ack[a.id]?"已确认":"待确认"]));
+ return "\ufeff"+rows.map(row=>row.map(v=>{let s=String(v??"");if(/^[=+@-]/.test(s)&&!/^[-+]?\d+(\.\d+)?$/.test(s))s="'"+s;return '"'+s.replace(/"/g,'""')+'"'}).join(",")).join("\r\n");
+}
+function clearFilters(){
+ Object.assign(state,{period:180,end:data.meta.asOf,channel:"all",campaign:"all",product:"all",customer:"all",region:"all",device:"all",brand:"all",cohort:"all",maturity:14,pathPair:null});
+ buildFilters();render();
+}
+function applyData(input,source){const checked=validateData(input);dataVersion++;if(requestController)requestController.abort();data=checked.data;importAudit=checked.audit;data.meta.mode=source;state.ack={};state.query="";sourceStatus=source+" · "+new Date().toLocaleTimeString("zh-CN");clearFilters()}
+async function fetchEndpoint(){
+ if(!endpoint||fetching)return;fetching=true;$("#refreshBtn").disabled=true;
+ const controller=new AbortController(),version=dataVersion,timeout=setTimeout(()=>controller.abort(),20000);requestController=controller;
+ try{const response=await fetch(endpoint,{credentials:"same-origin",redirect:"error",headers:{"Accept":"application/json"},signal:controller.signal});if(!response.ok)throw Error("HTTP "+response.status);
+ const next=await response.json(),checked=validateData(next);if(version!==dataVersion)return;
+ data=checked.data;importAudit=checked.audit;data.meta.mode="同源接口";sourceStatus="接口成功 · "+new Date().toLocaleTimeString("zh-CN");
+ if(state.end>data.meta.asOf)state.end=data.meta.asOf;
+ for(const k of ["channel","campaign","product","customer","region","device","brand"])if(state[k]!=="all"&&!data.records.some(r=>r[k]===state[k]))state[k]="all";
+ if(state.cohort!=="all"&&!data.records.some(r=>r.cohort.startsWith(state.cohort)))state.cohort="all";
+ buildFilters();render();toast("完整快照已校验并替换");
+ }catch(e){if(version===dataVersion){sourceStatus="刷新失败，保留上一完整快照";render();toast("接口失败："+e.message,true)}}
+ finally{clearTimeout(timeout);if(requestController===controller)requestController=null;fetching=false;$("#refreshBtn").disabled=false}
+}
+function configureConnection(){
+ if(fetching){toast("当前请求尚未结束，请等待后再更改接口。");return}
+ try{
+  const raw=$("#endpointInput").value.trim(),seconds=Number($("#intervalInput").value);
+  if(raw){const u=new URL(raw,location.href);if(!["http:","https:"].includes(location.protocol)||u.origin!==location.origin||u.username||u.password)throw Error("只支持当前页面同源HTTP(S)接口；直接打开HTML时请使用本地JSON导入");endpoint=u.href}else endpoint="";
+  if(timer)clearInterval(timer);timer=null;
+  if(endpoint&&seconds)timer=setInterval(fetchEndpoint,seconds*1000);
+  closeDialog("dataModal");if(endpoint)fetchEndpoint();else toast("自动接口已关闭；继续使用当前快照");
+ }catch(e){toast(e.message,true)}
+}
+function bind(){
+ document.addEventListener("change",e=>{
+  const id=e.target.id;
+  if(id.startsWith("f-")){const key=id.slice(2),value=e.target.value;
+   if(key==="end"&&(!validDate(value)||value>data.meta.asOf)){e.target.value=state.end;toast("截止日期须为有效业务日，且不晚于数据快照",true);return}
+   state[key]=["period","window","maturity"].includes(key)?Number(value):value;state.pathPair=null;buildFilters();render();return;
+  }
+  if(id==="group"){state.group=e.target.value;render()}
+  if(id==="googleTime"){state.googleTime=e.target.value;render()}
+  if(id==="budgetChannel"||id==="curveK"){state[id]=id==="curveK"?Number(e.target.value):e.target.value;budgetRender()}
+ });
+ document.addEventListener("input",e=>{if(e.target.id==="budget"){state.budget=Number(e.target.value);budgetRender()}if(e.target.id==="metricSearch")metricRender()});
+ document.addEventListener("click",e=>{
+  const b=e.target.closest("button");if(!b)return;
+  if(b.dataset.view)switchView(b.dataset.view);
+  if(b.dataset.jump)switchView(b.dataset.jump);
+  if(b.dataset.drill){const key=b.dataset.drill;if(b.dataset.value==="Unknown"){toast("Unknown 为归因缺失桶，没有固定首访客群");return}state[key]=b.dataset.value;if(key==="channel")state.campaign="all";state.view="channels";if($("#channelDrawer").open)closeDialog("channelDrawer");buildFilters();render()}
+  if(b.dataset.channelDetail)detail(b.dataset.channelDetail);
+  if(b.dataset.pair){state.pathPair=b.dataset.pair.split("|");render();$("#view .heat").closest(".card").nextElementSibling?.scrollIntoView({block:"start",behavior:"smooth"})}
+  if(b.id==="clearPair"){state.pathPair=null;render()}
+  if(b.dataset.ack){state.ack[b.dataset.ack]=true;render();toast("已确认知悉；仍需在业务系统闭环")}
+  if(b.dataset.trace){$("#traceInput").value=b.dataset.trace;traceRender()}
+  if(b.id==="traceBtn")traceRender();
+  if(b.id==="calculateExperiment")runExperiment();
+  if(b.id==="resetFilters")clearFilters();
+  if(b.dataset.close)closeDialog(b.dataset.close);
+  if(b.id==="exportBtn"){download(csvText(),"信贷监控_"+state.view+"_"+state.end+".csv","text/csv;charset=utf-8");toast("已导出当前视图及筛选口径")}
+  if(b.id==="dataSourceBtn")showDialog("dataModal");
+  if(b.id==="connectBtn")configureConnection();
+  if(b.id==="sampleBtn")download(JSON.stringify(makeDemo()),"信贷监控_v2_完整演示.json","application/json");
+  if(b.id==="snapshotBtn")download(JSON.stringify(data),"信贷监控_v2_当前快照.json","application/json");
+  if(b.id==="resetDemoBtn"){if(timer)clearInterval(timer);timer=null;endpoint="";$("#endpointInput").value="";$("#intervalInput").value="0";applyData(makeDemo(),"演示数据");closeDialog("dataModal");toast("已恢复演示数据")}
+  if(b.id==="refreshBtn"){if(endpoint)fetchEndpoint();else{render();toast("已从当前快照重算；业务观察日保持 "+data.meta.asOf)}}
+  if(b.dataset.sort!==undefined){const index=Number(b.dataset.sort),t=b.closest("table"),body=t.tBodies[0],direction=b.dataset.order==="asc"?-1:1;b.dataset.order=direction===1?"asc":"desc";
+   const cell=r=>r.cells[index]?.textContent.trim()||"",numeric=v=>{const s=v.replace(/A\$|,|%|×|↗/g,"").trim();return s!==""&&Number.isFinite(Number(s))?Number(s):null};
+   [...body.rows].sort((a,c)=>{const av=cell(a),bv=cell(c),an=numeric(av),bn=numeric(bv);return direction*(an!=null&&bn!=null?an-bn:av.localeCompare(bv,"zh-CN",{numeric:true}))}).forEach(r=>body.append(r));
+  }
+ });
+ $("#fileInput").addEventListener("change",async e=>{
+  const file=e.target.files[0];if(!file)return;
+  try{if(file.size>50*1024*1024)throw Error("文件超过50MB，请先聚合缩小");const input=JSON.parse(await file.text());validateData(input);
+   if(timer)clearInterval(timer);timer=null;endpoint="";$("#endpointInput").value="";$("#intervalInput").value="0";
+   applyData(input,"本地JSON导入");closeDialog("dataModal");toast("完整数据集已导入，演示数据已替换");
+  }catch(error){toast("导入失败："+error.message,true)}finally{e.target.value=""}
+ });
+ document.addEventListener("keydown",e=>{if(e.key==="Enter"&&e.target.id==="traceInput")traceRender()});
+ for(const id of ["channelDrawer","dataModal"]){const d=$("#"+id);d.addEventListener("click",e=>{if(e.target===d){const r=d.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)closeDialog(id)}});d.addEventListener("close",()=>{if(lastFocus?.isConnected)lastFocus.focus()})}
+ window.addEventListener("hashchange",()=>{const view=location.hash.slice(1);if(TITLES[view]){state.view=view;render()}});
+}
+buildFilters();bind();
+if(window.matchMedia("(max-width:680px)").matches)document.querySelector(".filterbar details").open=false;
+const initial=location.hash.slice(1);if(TITLES[initial])state.view=initial;
+render();
+// Read-only calculation hooks for reproducible QA and third-party integration, no external actions.
+window.LendingMonitor={getSnapshot:()=>copy(data),getState:()=>copy(state),getComputed:()=>({quality:quality(base),finance:copy(finance),recordCount:records.length,postback:postStats(scopedPost)}),validateData,weights,paths,quality,financeRows,experimentResult,csvText};
+})();
 
-  <div class="drawer-backdrop" id="channelDrawer">
-    <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
-      <div class="drawer-head">
-        <h2 id="drawerTitle">渠道详情</h2>
-        <button class="icon-btn" data-close="channelDrawer" aria-label="关闭">×</button>
-      </div>
-      <div id="drawerContent"></div>
-    </aside>
-  </div>
-
-  <div class="modal-backdrop" id="dataModal">
-    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="dataModalTitle">
-      <div class="modal-head">
-        <div>
-          <h2 id="dataModalTitle">数据接入</h2>
-          <div class="subtle">静态页面不应保存密钥；生产环境请通过同源、已鉴权的后端聚合接口提供数据。</div>
-        </div>
-        <button class="icon-btn" data-close="dataModal" aria-label="关闭">×</button>
-      </div>
-      <div class="form-row">
-        <label for="endpointInput">同源 JSON 接口（可选）</label>
-        <input id="endpointInput" placeholder="/api/lending-monitor">
-      </div>
-      <div class="form-row">
-        <label for="intervalInput">自动刷新周期</label>
-        <select id="intervalInput">
-          <option value="0">关闭</option>
-          <option value="60">每 1 分钟</option>
-          <option value="300">每 5 分钟</option>
-          <option value="900">每 15 分钟</option>
-        </select>
-      </div>
-      <div class="form-row">
-        <label>或导入本地 JSON</label>
-        <input type="file" id="fileInput" accept="application/json,.json">
-      </div>
-      <div class="callout info">接口返回值需包含 <span class="mono">meta、channels、daily、postback、alerts、traces</span> 等顶层字段。可以只返回需要更新的字段，页面会与现有结构合并。</div>
-      <div class="form-row">
-        <label>最小接口结构</label>
-        <div class="code-block">{
-  "meta": {"updatedAt": "2026-09-07 22:40 AEST", "mode": "生产数据"},
-  "channels": [{"channel": "Google Search", "spend": 86420, "applications": 7620, "funded": 1322}],
-  "postback": {"stages": [{"name": "Sent", "value": 1550}]},
-  "alerts": []
-}</div>
-      </div>
-      <div class="modal-actions">
-        <button class="btn" id="resetDemoBtn">恢复演示数据</button>
-        <button class="btn primary" id="connectBtn">保存并连接</button>
-      </div>
-    </div>
-  </div>
-
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-
-  <script>
-    (function () {
-      "use strict";
-
-      var COLORS = {
-        "Google Search": "#2463a7",
-        "Google PMax": "#5a8fd1",
-        "Meta": "#7055ad",
-        "TikTok": "#26364d",
-        "Affiliate": "#c79d45",
-        "CRM": "#138a62",
-        "Organic": "#78909c"
-      };
-
-      var MODEL_LABELS = {
-        lastPaid: "Last Paid Click 30d",
-        firstTouch: "First Paid Touch",
-        lastNonDirect: "Last Non-direct",
-        dda: "Owned DDA",
-        markov: "Markov"
-      };
-
-      var DEMO_DATA = {
-        meta: {
-          updatedAt: "2026-09-07 22:40 AEST",
-          mode: "演示数据",
-          timezone: "Australia/Sydney",
-          currency: "AUD",
-          modelVersion: "owned_last_paid_click_30d_v1.2",
-          cohortMaturity: "T+14"
-        },
-        channels: [
-          {channel:"Google Search", source:"google / cpc", status:"healthy", spend:86420, impressions:1820000, clicks:61300, sessions:58420, starts:11240, applications:7620, qualified:4925, approved:2180, funded:1322, value:412400, firstTouch:1180, lastPaid:1322, lastNonDirect:1288, dda:1250, markov:1210, assists:724, delta:4.8},
-          {channel:"Google PMax", source:"google / cross-network", status:"watch", spend:31880, impressions:2940000, clicks:26900, sessions:24720, starts:4210, applications:2432, qualified:1180, approved:492, funded:251, value:70280, firstTouch:280, lastPaid:251, lastNonDirect:260, dda:310, markov:340, assists:308, delta:-8.2},
-          {channel:"Meta", source:"meta / paid_social", status:"healthy", spend:54260, impressions:3610000, clicks:82100, sessions:75600, starts:9460, applications:5320, qualified:2610, approved:1010, funded:526, value:141420, firstTouch:680, lastPaid:526, lastNonDirect:548, dda:630, markov:650, assists:603, delta:7.1},
-          {channel:"TikTok", source:"tiktok / paid_social", status:"watch", spend:19400, impressions:4890000, clicks:47900, sessions:40250, starts:3120, applications:1690, qualified:620, approved:198, funded:91, value:20600, firstTouch:160, lastPaid:91, lastNonDirect:105, dda:130, markov:150, assists:226, delta:-14.4},
-          {channel:"Affiliate", source:"partners / affiliate", status:"healthy", spend:42700, impressions:410000, clicks:17350, sessions:16980, starts:5010, applications:3120, qualified:2100, approved:1130, funded:710, value:209450, firstTouch:720, lastPaid:710, lastNonDirect:698, dda:690, markov:660, assists:244, delta:2.6},
-          {channel:"CRM", source:"crm / email-sms", status:"healthy", spend:6500, impressions:538000, clicks:42000, sessions:33000, starts:3800, applications:1820, qualified:1310, approved:720, funded:501, value:160000, firstTouch:390, lastPaid:501, lastNonDirect:530, dda:430, markov:440, assists:337, delta:5.4},
-          {channel:"Organic", source:"organic / referral / direct", status:"healthy", spend:0, impressions:0, clicks:0, sessions:69800, starts:8120, applications:4830, qualified:3210, approved:1590, funded:1020, value:321000, firstTouch:1011, lastPaid:1020, lastNonDirect:992, dda:981, markov:971, assists:181, delta:1.9}
-        ],
-        paths: [
-          {path:["Google Search","Direct"], conversions:598, days:3.2, rate:100},
-          {path:["Affiliate"], conversions:510, days:2.1, rate:85},
-          {path:["Organic","Direct"], conversions:480, days:5.7, rate:80},
-          {path:["Meta","Google Search","Direct"], conversions:392, days:8.4, rate:66},
-          {path:["CRM","Google Search"], conversions:275, days:4.5, rate:46},
-          {path:["Google PMax","Google Search"], conversions:230, days:6.2, rate:38},
-          {path:["TikTok","Google Search"], conversions:168, days:9.1, rate:28}
-        ],
-        googleCampaigns: [
-          {campaign:"AU_Search_NonBrand_HighIntent", type:"Search", spend:48280, clicks:28440, applications:3290, approved:980, funded:610, conversions:603.4, allConversions:4581.2, byConvTime:628, roas:4.06, status:"Eligible"},
-          {campaign:"AU_Search_Brand", type:"Search", spend:11260, clicks:16980, applications:2360, approved:790, funded:502, conversions:496.8, allConversions:3214.5, byConvTime:511, roas:7.82, status:"Eligible"},
-          {campaign:"AU_Search_Rates", type:"Search", spend:26880, clicks:15880, applications:1970, approved:410, funded:210, conversions:207.8, allConversions:2672.7, byConvTime:221, roas:2.74, status:"Limited"},
-          {campaign:"AU_PMax_QualifiedLead", type:"PMax", spend:31880, clicks:26900, applications:2432, approved:492, funded:251, conversions:244.6, allConversions:3382.9, byConvTime:260, roas:2.20, status:"Learning"}
-        ],
-        googleModels: [
-          {channel:"Search Non-brand", last:610, dda:674, delta:10.5},
-          {channel:"Search Brand", last:502, dda:438, delta:-12.7},
-          {channel:"Search Rates", last:210, dda:226, delta:7.6},
-          {channel:"PMax", last:251, dda:285, delta:13.5}
-        ],
-        conversionActions: [
-          {name:"AU_Application_Submitted", category:"Submit lead form", primary:"Secondary", count:"One", model:"Data-driven", freshness:"8 min", quality:"Excellent"},
-          {name:"AU_Qualified_Application", category:"Qualified lead", primary:"Primary", count:"One", model:"Data-driven", freshness:"14 min", quality:"Good"},
-          {name:"AU_Approved", category:"Converted lead", primary:"Secondary", count:"One", model:"Data-driven", freshness:"19 min", quality:"Good"},
-          {name:"AU_Funded", category:"Converted lead", primary:"Primary · value pilot", count:"One", model:"Data-driven", freshness:"27 min", quality:"Needs attention"}
-        ],
-        attributionModels: {
-          lastPaid: {"Google Search":1322,"Google PMax":251,"Meta":526,"TikTok":91,"Affiliate":710,"CRM":501,"Organic":1020},
-          firstTouch: {"Google Search":1180,"Google PMax":280,"Meta":680,"TikTok":160,"Affiliate":720,"CRM":390,"Organic":1011},
-          lastNonDirect: {"Google Search":1288,"Google PMax":260,"Meta":548,"TikTok":105,"Affiliate":698,"CRM":530,"Organic":992},
-          dda: {"Google Search":1250,"Google PMax":310,"Meta":630,"TikTok":130,"Affiliate":690,"CRM":430,"Organic":981},
-          markov: {"Google Search":1210,"Google PMax":340,"Meta":650,"TikTok":150,"Affiliate":660,"CRM":440,"Organic":971}
-        },
-        postback: {
-          stages: [
-            {name:"Backend Truth", value:1612, hint:"去重真实放款"},
-            {name:"Expected Google", value:1573, hint:"应回传人群"},
-            {name:"Matchable", value:1531, hint:"有允许的标识"},
-            {name:"Queued", value:1558, hint:"进入队列"},
-            {name:"Sent", value:1550, hint:"实际发送"},
-            {name:"API Accepted", value:1542, hint:"请求接收"},
-            {name:"Destination", value:1518, hint:"处理成功"},
-            {name:"Reported", value:1481, hint:"T+3 报表"}
-          ],
-          events: [
-            {event:"Application", backend:10320, expected:10150, matchable:9886, queued:10094, sent:10040, accepted:9980, destination:9850, reported:9675, coverage:98.9},
-            {event:"Qualified", backend:6250, expected:6120, matchable:5972, queued:6091, sent:6040, accepted:6012, destination:5910, reported:5768, coverage:98.7},
-            {event:"Approved", backend:2840, expected:2780, matchable:2715, queued:2769, sent:2751, accepted:2739, destination:2681, reported:2598, coverage:99.0},
-            {event:"Funded", backend:1612, expected:1573, matchable:1531, queued:1558, sent:1550, accepted:1542, destination:1518, reported:1481, coverage:98.5}
-          ],
-          latency: [
-            {event:"Application", p50:2, p90:8, p99:31, unit:"min"},
-            {event:"Qualified", p50:5, p90:24, p99:92, unit:"min"},
-            {event:"Approved", p50:9, p90:41, p99:167, unit:"min"},
-            {event:"Funded", p50:14, p90:52, p99:214, unit:"min"}
-          ],
-          errors: [
-            {error:"Missing Click ID / Match Data", count:118, ratio:49.8, owner:"Web / Data"},
-            {error:"Invalid Conversion Time", count:42, ratio:17.7, owner:"Data Platform"},
-            {error:"Duplicate Conversion", count:36, ratio:15.2, owner:"Backend"},
-            {error:"Invalid Conversion Action", count:21, ratio:8.9, owner:"MarTech"},
-            {error:"Auth / Permission", count:3, ratio:1.3, owner:"Platform"},
-            {error:"Other", count:17, ratio:7.1, owner:"Data Platform"}
-          ],
-          identifiers: [
-            {name:"GCLID", value:89.6},
-            {name:"GBRAID", value:3.8},
-            {name:"WBRAID", value:2.4},
-            {name:"Enhanced user data", value:92.1},
-            {name:"No usable identifier", value:4.2}
-          ],
-          recon: [
-            {ev:"application_started", cn:"开始申请", p:231, m:230, b:230, pdiff:"+1 / +0.4%", mdiff:"0 / 0.0%", st:"observe", note:"1 笔跨时区日切，次日复核是否自动平账"},
-            {ev:"application_submitted", cn:"提交申请", p:125, m:124, b:124, pdiff:"+1 / +0.8%", mdiff:"0 / 0.0%", st:"warn", note:"1 笔重复业务事件，转唯一性核查"},
-            {ev:"application_approved", cn:"审批通过", p:46, m:45, b:45, pdiff:"+1 / +2.2%", mdiff:"0 / 0.0%", st:"warn", note:"1 笔撤回未同步，转一致性核查"},
-            {ev:"loan_disbursed", cn:"放款", p:25, m:25, b:25, pdiff:"0 / 0.0%", mdiff:"0 / 0.0%", st:"good", note:"数量对平；另有 1 笔时延超 SLA"}
-          ],
-          validity: [
-            {ev:"开始申请", small:"application_started", b:230, raw:231, eff:230, rawCov:100.4, effCov:100.0, st:"observe", note:"跨时区日切 1"},
-            {ev:"提交申请", small:"application_submitted", b:124, raw:125, eff:124, rawCov:100.8, effCov:100.0, st:"warn", note:"重复业务事件 1"},
-            {ev:"审批通过", small:"application_approved", b:45, raw:46, eff:45, rawCov:102.2, effCov:100.0, st:"warn", note:"失效状态 1"},
-            {ev:"放款", small:"loan_disbursed", b:25, raw:25, eff:25, rawCov:100.0, effCov:100.0, st:"good", note:"数量正常，时延另看 SLA"}
-          ],
-          validityPipeline: "submitted 核验链路：应传 124 → 平台原始计数 125 → 业务唯一键核验 124 → 标识匹配 124 → 窗口内 124；损失拆解：平台拒收 0 · 匹配失败 0 · 超归因窗口 0 · 额外无效事件 1",
-          consistency: [
-            {nm:"金额一致率", v:99.6, st:"observe", note:"达标，1 笔币种修正待核"},
-            {nm:"状态一致率", v:97.8, st:"warn", note:"1 笔撤回未同步（见对账表）"},
-            {nm:"event_time 一致率", v:100.0, st:"good", note:"正常"}
-          ],
-          uniqueness: { dupEventId: 0, dupBizRate: 0.8, threshold: 0.1, note: "02:00 重试生成了新的 event_id，所以“重复 ID”为 0，但按业务唯一键识别出 1 笔重复事件。重试必须原样复用首次生成的 event_id，接收端再按该 ID 幂等去重。" },
-          coverageTrend: { days: ["08-31","09-01","09-02","09-03","09-04","09-05","09-06"], vals: [99.9,100.0,99.7,100.0,99.8,100.0,100.8] }
-        },
-        jobs: [
-          {name:"Web Tracking", owner:"Web", status:"Healthy", freshness:"2 min", sla:"< 5 min", runtime:"实时", success:99.92},
-          {name:"CRM / LOS Truth Sync", owner:"Data", status:"Healthy", freshness:"6 min", sla:"< 15 min", runtime:"3m 18s", success:99.86},
-          {name:"Identity Bridge", owner:"Data", status:"Watch", freshness:"18 min", sla:"< 20 min", runtime:"7m 42s", success:98.71},
-          {name:"Owned Attribution", owner:"Data Science", status:"Healthy", freshness:"46 min", sla:"< 60 min", runtime:"11m 09s", success:99.40},
-          {name:"Google Postback Worker", owner:"Data Platform", status:"Healthy", freshness:"4 min", sla:"< 10 min", runtime:"实时", success:99.48},
-          {name:"Google Diagnostics Poller", owner:"MarTech", status:"Watch", freshness:"38 min", sla:"< 45 min", runtime:"4m 31s", success:97.90},
-          {name:"Platform Cost Ingestion", owner:"Data", status:"Healthy", freshness:"1.2 hr", sla:"< 3 hr", runtime:"8m 27s", success:99.76}
-        ],
-        dataQuality: [
-          {name:"UTM 完整率", value:98.8, target:99, status:"watch"},
-          {name:"Paid Session Click ID", value:95.8, target:96, status:"watch"},
-          {name:"Application ID 关联率", value:99.3, target:99, status:"good"},
-          {name:"自主归因覆盖率", value:96.9, target:96, status:"good"},
-          {name:"重复事件率", value:0.34, target:0.5, inverse:true, status:"good"},
-          {name:"Direct / Unknown", value:8.7, target:10, inverse:true, status:"good"}
-        ],
-        alerts: [
-          {id:"ALT-2409", severity:"P0", title:"AU_Funded conversion value 异常批次已阻断", detail:"14 条事件的币种字段缺失，发送前校验已拦截，未进入 Google。", scope:"Google Postback", owner:"Data Platform", time:"22:31", status:"Open"},
-          {id:"ALT-2408", severity:"P1", title:"Funded P90 回传时延超过 45 分钟", detail:"当前 52 分钟，主要集中在 LOS truth_ready 延迟。", scope:"Funded", owner:"Loan System", time:"22:10", status:"Open"},
-          {id:"ALT-2407", severity:"P1", title:"Google PMax 成熟 CAC 较基线上升 18%", detail:"CPA-Submit 稳定，Qualified Rate 与 Funding Rate 同时下降。", scope:"Google PMax", owner:"Acquisition", time:"20:42", status:"Open"},
-          {id:"ALT-2406", severity:"P2", title:"Identity Bridge 成功率低于目标", detail:"98.71%，iOS WebView 的 WBRAID 关联失败增加。", scope:"Attribution", owner:"Data", time:"18:20", status:"Open"},
-          {id:"ALT-2405", severity:"P2", title:"Meta → Google Search 路径占比上升", detail:"近 7 天上升 4.2pp，建议检查品牌搜索收口与增量重叠。", scope:"Cross-channel", owner:"Analytics", time:"16:05", status:"Acknowledged"}
-        ],
-        traces: {
-          "APP-10482": {
-            applicationId:"APP-10482", userId:"USR-783104", loanId:"LN-34081", status:"Funded",
-            owned:"Google Search", model:"Last Paid Click 30d v1.2", value:"AUD 318",
-            timeline:[
-              {time:"2026-09-01 09:14:02", type:"touch", title:"Meta 广告点击", copy:"utm_source=meta · campaign=AU_Meta_Prospecting_Video · fbclid captured"},
-              {time:"2026-09-04 19:07:31", type:"touch", title:"Organic Search 会话", copy:"查询品牌相关内容 · session_id=S-89131"},
-              {time:"2026-09-06 21:11:48", type:"touch", title:"Google Search 广告点击", copy:"NonBrand HighIntent · gclid captured · keyword=personal loan online"},
-              {time:"2026-09-06 21:20:04", type:"business", title:"申请提交", copy:"application_submitted · 后端去重成功"},
-              {time:"2026-09-06 21:20:12", type:"postback", title:"Application 回传成功", copy:"request_id=REQ-68102 · destination=SUCCESS"},
-              {time:"2026-09-07 08:42:19", type:"business", title:"审批通过", copy:"approved · expected funded contribution calculated"},
-              {time:"2026-09-07 08:42:41", type:"postback", title:"Approved 回传成功", copy:"request_id=REQ-69442 · destination=SUCCESS"},
-              {time:"2026-09-07 14:22:08", type:"business", title:"放款成功", copy:"funded · loan_id=LN-34081 · value=AUD 318"},
-              {time:"2026-09-07 14:37:53", type:"postback", title:"Funded 回传成功", copy:"request_id=REQ-70118 · Google report pending"}
-            ]
-          },
-          "APP-10441": {
-            applicationId:"APP-10441", userId:"USR-782638", loanId:"—", status:"Approved",
-            owned:"Affiliate", model:"Last Paid Click 30d v1.2", value:"AUD 226 expected",
-            timeline:[
-              {time:"2026-09-03 12:04:10", type:"touch", title:"Affiliate 点击", copy:"partner=AF-17 · sub_id captured"},
-              {time:"2026-09-03 12:12:26", type:"business", title:"申请提交", copy:"application_submitted · source verified"},
-              {time:"2026-09-03 12:13:08", type:"postback", title:"Application 回传", copy:"Affiliate S2S acknowledged"},
-              {time:"2026-09-05 10:31:44", type:"business", title:"审批通过", copy:"approved · waiting for offer acceptance"},
-              {time:"2026-09-05 10:34:17", type:"error", title:"Google 不回传", copy:"无 Google eligible touch，正确排除，不属于漏报"}
-            ]
-          }
-        },
-        metrics: [
-          {name:"Spend", module:"媒体", formula:"平台服务日期口径的广告花费", source:"Platform API", owner:"Acquisition", cadence:"小时", threshold:"预算节奏 ±10%"},
-          {name:"CTR", module:"媒体", formula:"Clicks ÷ Impressions", source:"Platform API", owner:"Acquisition", cadence:"小时", threshold:"按渠道基线"},
-          {name:"CPC", module:"媒体", formula:"Spend ÷ Clicks", source:"Platform API", owner:"Acquisition", cadence:"小时", threshold:"按 Campaign 目标"},
-          {name:"Click-to-Session Rate", module:"页面", formula:"Landing Sessions ÷ Ad Clicks", source:"Web + Platform", owner:"Web/Data", cadence:"小时", threshold:"较 7 日基线 -10pp"},
-          {name:"Submit Rate", module:"漏斗", formula:"Valid Applications ÷ Landing Sessions", source:"CRM + Web", owner:"Product", cadence:"日", threshold:"按渠道/设备基线"},
-          {name:"Qualified Rate", module:"信贷", formula:"Qualified Applications ÷ Valid Applications", source:"LOS", owner:"Risk", cadence:"日", threshold:"较成熟基线 -10%"},
-          {name:"Approval Rate", module:"信贷", formula:"Approved ÷ Valid Applications（另看 Approved ÷ Qualified）", source:"LOS", owner:"Risk", cadence:"日", threshold:"按策略版本"},
-          {name:"Funding Rate", module:"信贷", formula:"Funded ÷ Approved", source:"Core Lending", owner:"Loan Ops", cadence:"日", threshold:"较成熟基线 -10%"},
-          {name:"CPA-Submit", module:"经济", formula:"Spend ÷ Attributed Valid Applications", source:"Owned Attribution", owner:"Acquisition", cadence:"日", threshold:"目标 CPA"},
-          {name:"CAC-Funded", module:"经济", formula:"Spend ÷ Attributed Funded Loans", source:"Owned Attribution", owner:"Acquisition/Finance", cadence:"成熟日", threshold:"目标 CAC"},
-          {name:"Contribution ROAS", module:"经济", formula:"Attributed Risk-adjusted Contribution ÷ Spend", source:"Finance + Attribution", owner:"Finance", cadence:"周", threshold:"> 目标线"},
-          {name:"Attribution Coverage", module:"归因", formula:"有有效营销触点的业务事件 ÷ Backend Truth", source:"Touchpoint + Truth", owner:"Data", cadence:"小时", threshold:">= 96%"},
-          {name:"Direct / Unknown Rate", module:"归因", formula:"Direct 或 Unknown 转化 ÷ Backend Truth", source:"Owned Attribution", owner:"Data", cadence:"日", threshold:"<= 10%"},
-          {name:"First/Last Divergence", module:"归因", formula:"First Touch 与 Last Touch 不同的转化 ÷ 已归因转化", source:"Owned Attribution", owner:"Analytics", cadence:"周", threshold:"观察"},
-          {name:"Google Identifier Coverage", module:"回传", formula:"有允许匹配标识的 Expected Google Events ÷ Expected Google Events", source:"Identity Bridge", owner:"Web/Data", cadence:"小时", threshold:">= 96%"},
-          {name:"Send Coverage", module:"回传", formula:"Unique Sent ÷ Upload-eligible Events", source:"Postback Log", owner:"Data Platform", cadence:"实时", threshold:">= 98%"},
-          {name:"API Success", module:"回传", formula:"API Accepted ÷ Sent", source:"Postback Log", owner:"Data Platform", cadence:"实时", threshold:">= 99%"},
-          {name:"P90 Postback Latency", module:"回传", formula:"P90(send_time − event_time)", source:"Postback Log", owner:"Data Platform", cadence:"实时", threshold:"Funded < 60 min"},
-          {name:"Google Reported Ratio", module:"一致性", formula:"Google by-conv-time ÷ Expected Google Events", source:"Google + Truth", owner:"Data/MarTech", cadence:"T+1/T+3", threshold:"按成熟基线"},
-          {name:"Duplicate Rate", module:"质量", formula:"Duplicate Events ÷ Sent Events", source:"Postback Log", owner:"Backend", cadence:"实时", threshold:"< 0.5%"}
-        ]
-      };
-
-      function buildDaily() {
-        var rows = [];
-        for (var i = 29; i >= 0; i--) {
-          var d = new Date(Date.UTC(2026, 8, 7 - i));
-          var wave = Math.sin((29 - i) / 2.7);
-          var spend = Math.round(7350 + wave * 720 + ((29 - i) % 7 === 1 ? 520 : 0));
-          var applications = Math.round(780 + wave * 56 + ((29 - i) % 5) * 7);
-          var funded = Math.round(137 + wave * 12 + ((29 - i) % 4) * 2);
-          var roas = +(3.62 + wave * .24 - ((29 - i) % 6 === 0 ? .18 : 0)).toFixed(2);
-          rows.push({
-            date: (d.getUTCMonth()+1) + "/" + d.getUTCDate(),
-            spend: spend,
-            applications: applications,
-            funded: funded,
-            cac: +(spend / funded).toFixed(1),
-            roas: roas
-          });
-        }
-        return rows;
-      }
-      DEMO_DATA.daily = buildDaily();
-
-      var appData = deepClone(DEMO_DATA);
-      var state = {
-        view: "overview",
-        period: 30,
-        channel: "all",
-        product: "all",
-        model: "lastPaid",
-        matureOnly: true,
-        endpoint: localStorage.getItem("lendingMonitorEndpoint") || "",
-        interval: +(localStorage.getItem("lendingMonitorInterval") || 0),
-        timer: null,
-        acknowledged: {}
-      };
-
-      function deepClone(obj) { return JSON.parse(JSON.stringify(obj)); }
-      function $(sel, root) { return (root || document).querySelector(sel); }
-      function $all(sel, root) { return Array.prototype.slice.call((root || document).querySelectorAll(sel)); }
-      function esc(value) {
-        return String(value == null ? "" : value).replace(/[&<>"']/g, function (m) {
-          return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[m];
-        });
-      }
-      function fmt(value, digits) {
-        var n = Number(value || 0);
-        return n.toLocaleString("en-AU", {maximumFractionDigits: digits == null ? 0 : digits, minimumFractionDigits: digits == null ? 0 : digits});
-      }
-      function money(value, digits) { return "A$" + fmt(value, digits == null ? 0 : digits); }
-      function pct(value, digits) { return fmt(value, digits == null ? 1 : digits) + "%"; }
-      function ratio(a,b) { return b ? a / b : 0; }
-      function weightedScale() { return Math.min(1, state.period / 30); }
-      function modelCredit(channel) {
-        var map = appData.attributionModels && appData.attributionModels[state.model];
-        return map && map[channel.channel] != null ? map[channel.channel] : channel.funded;
-      }
-      function filteredChannels() {
-        return appData.channels.filter(function(c){ return state.channel === "all" || c.channel === state.channel; });
-      }
-      function currentChannelsScaled() {
-        var scale = weightedScale();
-        return filteredChannels().map(function(c) {
-          var copy = Object.assign({}, c);
-          ["spend","impressions","clicks","sessions","starts","applications","qualified","approved","funded","value","assists"].forEach(function(k){
-            copy[k] = Math.round((copy[k] || 0) * scale);
-          });
-          copy.attributedFunded = Math.round(modelCredit(c) * scale * (state.matureOnly ? .96 : 1));
-          return copy;
-        });
-      }
-      function sum(rows, key) { return rows.reduce(function(a,r){ return a + (+r[key] || 0); }, 0); }
-      function tag(text, type) { return '<span class="tag ' + (type || "gray") + '">' + esc(text) + '</span>'; }
-      function statusTag(status) {
-        var type = /healthy|eligible|excellent|good|success/i.test(status) ? "good" : /open|needs|limited|watch|learning|partial/i.test(status) ? "warn" : "gray";
-        return tag(status, type);
-      }
-      function delta(value, inverse) {
-        var good = inverse ? value <= 0 : value >= 0;
-        return '<span class="delta ' + (good ? "up" : "down") + '">' + (value >= 0 ? "+" : "") + fmt(value,1) + '%</span>';
-      }
-      function kpi(label, value, foot, deltaHtml, gold) {
-        return '<article class="card kpi ' + (gold ? "gold-accent" : "") + '"><div class="kpi-label">' + label +
-          '</div><div class="kpi-value">' + value + '</div><div class="kpi-foot"><span>' + (foot || "") +
-          '</span>' + (deltaHtml || "") + '</div></article>';
-      }
-      function ringCard(label, value, display, foot, color) {
-        return '<article class="card health-card"><div><h4>' + label + '</h4><div class="health-number">' + display +
-          '</div><p>' + foot + '</p></div><div class="metric-ring" style="--value:' + Math.max(0,Math.min(100,value)) +
-          ';--ring-color:' + (color || "#138a62") + '"><strong>' + Math.round(value) + '%</strong></div></article>';
-      }
-      function sectionHead(title, copy, action) {
-        return '<div class="section-head"><div><h2>' + title + '</h2><p>' + copy + '</p></div>' + (action ? '<div class="section-actions">' + action + '</div>' : '') + '</div>';
-      }
-      function card(title, subtitle, body, extraClass) {
-        return '<article class="card ' + (extraClass || "") + '"><header class="card-head"><div><h3>' + title + '</h3>' +
-          (subtitle ? '<p>' + subtitle + '</p>' : '') + '</div></header><div class="card-body">' + body + '</div></article>';
-      }
-      function sparkline(values, color) {
-        var w=92,h=26,p=2,min=Math.min.apply(null,values),max=Math.max.apply(null,values),range=max-min||1;
-        var pts=values.map(function(v,i){ return (p+i*(w-2*p)/(values.length-1)) + "," + (h-p-(v-min)*(h-2*p)/range); }).join(" ");
-        return '<svg width="92" height="26" viewBox="0 0 92 26" aria-hidden="true"><polyline points="' + pts + '" fill="none" stroke="' + color + '" stroke-width="2"/></svg>';
-      }
-
-      function lineChart(el, rows) {
-        if (!el || !rows.length) return;
-        var w=760,h=245,l=48,r=20,t=15,b=34,innerW=w-l-r,innerH=h-t-b;
-        var maxSpend=Math.max.apply(null,rows.map(function(x){return x.spend;}));
-        var maxFund=Math.max.apply(null,rows.map(function(x){return x.funded;}));
-        function x(i){ return l + i * innerW / Math.max(1,rows.length-1); }
-        function ys(v){ return t + innerH - v/maxSpend*innerH; }
-        function yf(v){ return t + innerH - v/maxFund*innerH; }
-        var spendPath=rows.map(function(d,i){return (i?"L":"M")+x(i).toFixed(1)+","+ys(d.spend).toFixed(1);}).join(" ");
-        var fundPath=rows.map(function(d,i){return (i?"L":"M")+x(i).toFixed(1)+","+yf(d.funded).toFixed(1);}).join(" ");
-        var grid="",labels="",points="";
-        for(var g=0;g<=4;g++){
-          var gy=t+g*innerH/4;
-          grid+='<line class="chart-grid" x1="'+l+'" y1="'+gy+'" x2="'+(w-r)+'" y2="'+gy+'"/>';
-          grid+='<text class="axis-label" x="'+(l-8)+'" y="'+(gy+4)+'" text-anchor="end">'+money(maxSpend*(4-g)/4/1000,1)+'k</text>';
-        }
-        var step=Math.max(1,Math.floor(rows.length/6));
-        rows.forEach(function(d,i){
-          if(i%step===0||i===rows.length-1) labels+='<text class="axis-label" x="'+x(i)+'" y="'+(h-8)+'" text-anchor="middle">'+d.date+'</text>';
-          points+='<circle class="chart-point" cx="'+x(i)+'" cy="'+ys(d.spend)+'" r="3.2" fill="#2463a7"><title>'+d.date+' Spend '+money(d.spend)+'</title></circle>';
-          points+='<circle class="chart-point" cx="'+x(i)+'" cy="'+yf(d.funded)+'" r="3.2" fill="#c79d45"><title>'+d.date+' Funded '+d.funded+'</title></circle>';
-        });
-        el.innerHTML='<div class="chart-legend"><span class="legend-item"><i class="legend-line" style="background:#2463a7"></i>Spend（左轴）</span><span class="legend-item"><i class="legend-line" style="background:#c79d45"></i>Funded（标准化趋势）</span></div><svg viewBox="0 0 '+w+' '+h+'" role="img" aria-label="花费与放款趋势">'+grid+labels+'<path d="'+spendPath+'" fill="none" stroke="#2463a7" stroke-width="2.6"/><path d="'+fundPath+'" fill="none" stroke="#c79d45" stroke-width="2.6"/>'+points+'</svg>';
-      }
-
-      function bars(rows, valueKey, maxValue, colorKey) {
-        maxValue = maxValue || Math.max.apply(null, rows.map(function(r){ return +r[valueKey] || 0; })) || 1;
-        return rows.map(function(r){
-          var value=+r[valueKey]||0, width=Math.max(2,value/maxValue*100);
-          return '<div class="progress-row"><span>'+esc(r.channel||r.name||r.event)+'</span><div class="progress-track"><div class="progress-fill" style="width:'+width+'%;background:'+(colorKey?COLORS[r[colorKey]]||"#2463a7":"#2463a7")+'"></div></div><strong class="right">'+fmt(value, value%1?1:0)+'</strong></div>';
-        }).join("");
-      }
-
-      function overviewView() {
-        var rows=currentChannelsScaled();
-        var spend=sum(rows,"spend"), apps=sum(rows,"applications"), approved=sum(rows,"approved"), funded=sum(rows,"attributedFunded"), value=sum(rows,"value");
-        var cac=ratio(spend,funded), roas=ratio(value,spend);
-        var days=appData.daily.slice(-state.period);
-        var html=sectionHead("经营总览","统一查看渠道花费、信贷漏斗、成熟放款、风险调整价值和数据链路健康。渠道功劳采用 " + MODEL_LABELS[state.model] + "。", tag(appData.meta.cohortMaturity,"info"));
-        html+='<div class="grid kpi-grid">'+
-          kpi("媒体花费",money(spend),"vs 上一周期",delta(3.6),true)+
-          kpi("有效申请",fmt(apps),"CRM 去重口径",delta(5.1))+
-          kpi("审批通过",fmt(approved),"Approval Rate "+pct(ratio(approved,apps)*100),delta(2.4))+
-          kpi("归因放款",fmt(funded),MODEL_LABELS[state.model],delta(4.2))+
-          kpi("CAC-Funded",money(cac,1),"目标 A$60",delta(-6.8,true))+
-          kpi("Contribution ROAS",fmt(roas,2)+"×","目标 3.00×",delta(5.9),true)+
-          '</div>';
-        html+='<div class="grid health-grid">'+
-          ringCard("自主归因覆盖",96.9,"96.9%","目标 ≥96%","#138a62")+
-          ringCard("Postback Coverage",98.5,"98.5%","Funded · Sent/Eligible","#138a62")+
-          ringCard("API Success",99.48,"99.48%","Google accepted/sent","#138a62")+
-          ringCard("P90 回传时延",86.7,"52 min","目标 <60 min","#b7791f")+
-          '</div>';
-        var channelRows=rows.map(function(c){
-          var q=ratio(c.qualified,c.applications)*100, ar=ratio(c.approved,c.applications)*100, fr=ratio(c.attributedFunded,c.approved)*100;
-          return '<tr class="clickable-row" data-channel="'+esc(c.channel)+'"><td><div class="channel-cell"><span class="channel-dot" style="background:'+COLORS[c.channel]+'"></span>'+esc(c.channel)+'</div><div class="subtle">'+esc(c.source)+'</div></td><td>'+money(c.spend)+'</td><td>'+fmt(c.applications)+'</td><td>'+pct(q)+'</td><td>'+pct(ar)+'</td><td>'+fmt(c.attributedFunded)+'</td><td>'+money(ratio(c.spend,c.attributedFunded),1)+'</td><td>'+fmt(ratio(c.value,c.spend),2)+'×</td><td>'+delta(c.delta)+'</td></tr>';
-        }).join("");
-        html+='<div class="grid two-col">'+card("花费与成熟放款趋势","点击日期 cohort；最近日期按成熟开关处理。",'<div class="chart" id="overviewTrend"></div>')+
-          card("当前主要信号","从异常、趋势与数据链路中挑出需要先处理的事项。",
-            '<div class="callout danger"><strong>P0：</strong>14 条 Funded 价值币种缺失，已在发送前阻断，未污染 Google。</div>'+
-            '<div style="height:10px"></div><div class="callout"><strong>P1：</strong>Funded P90 回传时延 52 分钟，接近 60 分钟 SLA。</div>'+
-            '<div style="height:10px"></div><div class="callout info"><strong>归因：</strong>Meta → Google Search 路径占比上升，品牌收口需要增量验证。</div>'+
-            '<div style="height:14px"></div><div class="path-list">'+renderMiniPaths(4)+'</div>')+
-          '</div>';
-        html+='<div style="height:14px"></div>'+card("渠道经营对比","点击任意渠道查看漏斗、首末触差异和诊断。所有转化均按当前自主归因模型计算。",'<div class="table-wrap"><table><thead><tr><th>渠道</th><th>Spend</th><th>Applications</th><th>Qualified Rate</th><th>Approval Rate</th><th>Funded</th><th>CAC</th><th>Value/Cost</th><th>趋势</th></tr></thead><tbody>'+channelRows+'</tbody></table></div>');
-        $("#view-overview").innerHTML=html;
-        lineChart($("#overviewTrend"),days);
-        bindChannelRows();
-      }
-
-      function renderMiniPaths(limit) {
-        return appData.paths.slice(0,limit||7).map(function(p){
-          var chain=p.path.map(function(n){return '<span class="path-node">'+esc(n)+'</span>';}).join('<span class="path-arrow">→</span>');
-          return '<div class="path-row"><div class="path-chain">'+chain+'</div><strong>'+fmt(p.conversions)+'</strong><div class="path-bar"><span style="width:'+p.rate+'%"></span></div><span class="subtle">'+p.days+'d</span></div>';
-        }).join("");
-      }
-
-      function channelsView() {
-        var rows=currentChannelsScaled();
-        var maxFund=Math.max.apply(null,rows.map(function(c){return c.attributedFunded;}));
-        var table=rows.map(function(c){
-          return '<tr class="clickable-row" data-channel="'+esc(c.channel)+'"><td><div class="channel-cell"><span class="channel-dot" style="background:'+COLORS[c.channel]+'"></span>'+esc(c.channel)+'</div></td><td>'+money(c.spend)+'</td><td>'+fmt(c.clicks)+'</td><td>'+fmt(c.sessions)+'</td><td>'+pct(ratio(c.sessions,c.clicks)*100)+'</td><td>'+fmt(c.starts)+'</td><td>'+fmt(c.applications)+'</td><td>'+pct(ratio(c.applications,c.sessions)*100)+'</td><td>'+fmt(c.qualified)+'</td><td>'+fmt(c.approved)+'</td><td>'+fmt(c.attributedFunded)+'</td><td>'+money(ratio(c.spend,c.attributedFunded),1)+'</td></tr>';
-        }).join("");
-        var funnelTotals=[
-          {name:"Clicks",value:sum(rows,"clicks")},{name:"Sessions",value:sum(rows,"sessions")},{name:"Starts",value:sum(rows,"starts")},
-          {name:"Applications",value:sum(rows,"applications")},{name:"Qualified",value:sum(rows,"qualified")},{name:"Approved",value:sum(rows,"approved")},{name:"Funded",value:sum(rows,"attributedFunded")}
-        ];
-        var funnel=funnelTotals.map(function(s,i){
-          var prev=i?funnelTotals[i-1].value:s.value;
-          return '<div class="funnel-stage"><span>'+s.name+'</span><strong>'+fmt(s.value)+'</strong><em>'+(i?pct(ratio(s.value,prev)*100):"入口")+'</em></div>';
-        }).join("");
-        var html=sectionHead("渠道与信贷漏斗","同时观察渠道流量效率和申请质量。CPA 变差时，先拆 CPC、提交率、合格率、审批率和放款率。",'<button class="btn small" data-jump="owned">查看归因模型</button>');
-        html+=card("全链路漏斗","当前筛选范围 · 每一阶段使用后端去重事件。",'<div class="funnel">'+funnel+'</div>');
-        html+='<div style="height:14px"></div><div class="grid two-even">'+
-          card("渠道归因放款","当前模型："+MODEL_LABELS[state.model],bars(rows,"attributedFunded",maxFund,"channel"))+
-          card("Top 转化路径","Conversions · Avg. days to funded",'<div class="path-list">'+renderMiniPaths(7)+'</div>')+
-          '</div>';
-        html+='<div style="height:14px"></div>'+card("渠道明细","Click 与 Session 不要求完全相等；异常时检查跳转、标签、consent 和无效点击。",'<div class="table-wrap"><table><thead><tr><th>渠道</th><th>Spend</th><th>Clicks</th><th>Sessions</th><th>Click→Session</th><th>Starts</th><th>Applications</th><th>Submit Rate</th><th>Qualified</th><th>Approved</th><th>Funded</th><th>CAC</th></tr></thead><tbody>'+table+'</tbody></table></div>');
-        html+='<div style="height:14px"></div><div class="grid three-col">'+
-          card("桥接公式","CAC-Funded = CPA-Submit ÷（Qualified Rate × Approval Rate × Funding Rate）",'<div class="callout info">当 CPA-Submit 稳定但 CAC 上涨时，先按三率定位，不要直接判断“媒体变贵”。</div>')+
-          card("需重点切分","避免总量掩盖结构变化",'<div class="model-tabs">'+["Campaign","Creative","Keyword","Search term","State","Device","Brand / Non-brand","Cohort"].map(function(x){return tag(x,"gray");}).join("")+'</div>')+
-          card("决策口径","平台与公司口径各司其职",'<p class="muted" style="font-size:12px;margin:0">平台自归因用于平台内出价；自主归因用于跨渠道预算；Backend Truth 用于财务；Lift/MMM 用于判断真实增量。</p>')+
-          '</div>';
-        $("#view-channels").innerHTML=html;
-        bindChannelRows();
-        bindJumps();
-      }
-
-      function googleView() {
-        var rows=appData.googleCampaigns;
-        var spend=sum(rows,"spend"), clicks=sum(rows,"clicks"), funded=sum(rows,"funded"), apps=sum(rows,"applications");
-        var table=rows.map(function(r){
-          return '<tr><td><strong>'+esc(r.campaign)+'</strong><div class="subtle">'+esc(r.type)+'</div></td><td>'+money(r.spend)+'</td><td>'+fmt(r.clicks)+'</td><td>'+fmt(r.applications)+'</td><td>'+fmt(r.funded)+'</td><td>'+fmt(r.conversions,1)+'</td><td>'+fmt(r.allConversions,1)+'</td><td>'+fmt(r.byConvTime)+'</td><td>'+fmt(r.roas,2)+'×</td><td>'+statusTag(r.status)+'</td></tr>';
-        }).join("");
-        var modelRows=appData.googleModels.map(function(r){
-          return '<tr><td>'+esc(r.channel)+'</td><td>'+fmt(r.last)+'</td><td>'+fmt(r.dda)+'</td><td>'+delta(r.delta)+'</td><td>'+sparkline([r.last*.88,r.last*.95,r.last,r.dda*.96,r.dda],"#2463a7")+'</td></tr>';
-        }).join("");
-        var actionRows=appData.conversionActions.map(function(a){
-          return '<tr><td><strong>'+esc(a.name)+'</strong><div class="subtle">'+esc(a.category)+'</div></td><td>'+tag(a.primary,/Primary/.test(a.primary)?"info":"gray")+'</td><td>'+a.count+'</td><td>'+a.model+'</td><td>'+a.freshness+'</td><td>'+statusTag(a.quality)+'</td></tr>';
-        }).join("");
-        var html=sectionHead("Google 归因","平台内优化看点击日期口径；与 CRM 对账使用 All conv. (by conv. time) 并按 Conversion action 分段。",tag("Google Ads + GA4","info"));
-        html+='<div class="grid kpi-grid">'+
-          kpi("Google Spend",money(spend),"Search + PMax",delta(3.2),true)+
-          kpi("Clicks",fmt(clicks),"Google Ads",delta(4.7))+
-          kpi("Applications",fmt(apps),"All actions 分段",delta(5.3))+
-          kpi("Funded",fmt(funded),"Backend event",delta(2.6))+
-          kpi("CAC-Funded",money(ratio(spend,funded),1),"Google owned credit",delta(-2.1,true))+
-          kpi("T+3 Reported Ratio","94.2%","by conversion time",delta(-1.6))+
-          '</div>';
-        html+='<div class="grid two-even">'+
-          card("日期口径要分开","同一放款在两个视角中的用途",
-            '<div class="stage-grid" style="grid-template-columns:repeat(2,minmax(160px,1fr))"><div class="stage-card"><span class="subtle">按广告互动日期</span><div class="big">Campaign CPA / ROAS</div><div class="ratio">用于出价和渠道优化</div></div><div class="stage-card"><span class="subtle">按转化发生日期</span><div class="big">CRM Reconciliation</div><div class="ratio">用于业务事件对账</div></div></div><div class="callout" style="margin-top:12px">不要拿默认 Conversions 与当天后端 Funded 直接比较，也不要按 upload date 对账。</div>')+
-          card("Google Attribution Paths","平台内路径信号",
-            '<div class="four-col grid"><div class="stage-card"><span class="subtle">Avg. days</span><div class="big">6.4d</div><div class="ratio">Click → Funded</div></div><div class="stage-card"><span class="subtle">Interactions</span><div class="big">2.7</div><div class="ratio">平均互动数</div></div><div class="stage-card"><span class="subtle">Assist share</span><div class="big">38.6%</div><div class="ratio">非末触参与</div></div><div class="stage-card"><span class="subtle">Cross-device</span><div class="big">7.9%</div><div class="ratio">Google 报告</div></div></div>')+
-          '</div>';
-        html+='<div style="height:14px"></div><div class="grid two-col">'+
-          card("Campaign 归因与对账","Conversions 是 Primary；All conversions 还包含 Secondary 和特殊来源。",'<div class="table-wrap"><table><thead><tr><th>Campaign</th><th>Spend</th><th>Clicks</th><th>Apps</th><th>Funded</th><th>Conversions</th><th>All conv.</th><th>By conv. time</th><th>Value/Cost</th><th>Status</th></tr></thead><tbody>'+table+'</tbody></table></div>')+
-          card("Last Click vs DDA","小数 credit 属于正常的功劳拆分。",'<div class="table-wrap"><table><thead><tr><th>范围</th><th>Last</th><th>DDA</th><th>变化</th><th>趋势</th></tr></thead><tbody>'+modelRows+'</tbody></table></div>')+
-          '</div>';
-        html+='<div style="height:14px"></div>'+card("Conversion Actions 配置审计","不要把 Application、Approved、Funded 全部作为同一 Campaign 的 Primary 后相加。Lead 通常 Count=One。",'<div class="table-wrap"><table><thead><tr><th>Conversion Action</th><th>优化状态</th><th>Count</th><th>Model</th><th>Freshness</th><th>Diagnostics</th></tr></thead><tbody>'+actionRows+'</tbody></table></div>');
-        html+='<div style="height:14px"></div><div class="grid three-col">'+
-          card("Google Ads 使用","出价与关键词优化",'<ul class="muted" style="font-size:12px;padding-left:18px"><li>Conversions、Cost/conv.</li><li>Conv. value / cost</li><li>Paths、Assists、Model comparison</li><li>Click-date cohort</li></ul>')+
-          card("GA4 使用","跨渠道行为与路径",'<ul class="muted" style="font-size:12px;padding-left:18px"><li>First user：首次获取</li><li>Session：本次访问</li><li>Event-scoped：关键事件归因</li><li>Attribution paths / models</li></ul>')+
-          card("自主系统使用","财务和跨渠道统一",'<ul class="muted" style="font-size:12px;padding-left:18px"><li>Backend Truth</li><li>Last Paid / First / Assist</li><li>统一窗口与币种</li><li>实验校准增量</li></ul>')+
-          '</div>';
-        $("#view-google").innerHTML=html;
-      }
-
-      function ownedView() {
-        var models=[
-          {key:"lastPaid",title:"Last Paid Click",copy:"最后一个合格付费点击获得 100% 功劳。稳定、可审计，适合作为第一版预算主口径。",tags:["单触点","预算主口径"]},
-          {key:"firstTouch",title:"First Paid Touch",copy:"最早付费触点获得功劳，用于识别拓新渠道；不能单独评价末端促成。",tags:["拓新","辅助视图"]},
-          {key:"lastNonDirect",title:"Last Non-direct",copy:"最后一个非 Direct 触点获得功劳，避免 Direct 收割，但 Organic/CRM 可能覆盖付费来源。",tags:["单触点","经营分析"]},
-          {key:"linear",title:"Linear",copy:"所有有效触点平均分配功劳。易理解，但会奖励无意义的重复触点。",tags:["多触点","规则模型"]},
-          {key:"timeDecay",title:"Time-decay",copy:"距离转化越近权重越高，需明确半衰期；仍是人为规则，不代表因果。",tags:["多触点","规则模型"]},
-          {key:"markov",title:"Markov",copy:"根据路径状态和移除效应分配渠道价值。适合协同分析，但依赖样本和路径清洗。",tags:["多触点","模型"]},
-          {key:"shapley",title:"Shapley",copy:"按渠道在不同组合中的边际贡献分配功劳。理论完整，但计算与解释成本较高。",tags:["多触点","模型"]}
-        ];
-        var cards=models.map(function(m){
-          return '<article class="card model-card"><h4>'+m.title+'</h4><p>'+m.copy+'</p><footer>'+m.tags.map(function(t){return tag(t,m.key===state.model?"info":"gray");}).join("")+'</footer></article>';
-        }).join("");
-        var channels=appData.channels;
-        var modelKeys=["lastPaid","firstTouch","lastNonDirect","dda","markov"];
-        var modelRows=channels.map(function(c){
-          var cells=modelKeys.map(function(k){return '<td>'+fmt(appData.attributionModels[k][c.channel])+'</td>';}).join("");
-          return '<tr><td><div class="channel-cell"><span class="channel-dot" style="background:'+COLORS[c.channel]+'"></span>'+c.channel+'</div></td>'+cells+'<td>'+fmt(c.assists)+'</td></tr>';
-        }).join("");
-        var coverageData=[
-          {name:"有效营销触点",value:96.9},{name:"Application ID Bridge",value:99.3},{name:"First Touch 可识别",value:97.4},{name:"Last Paid 可识别",value:94.8},{name:"完整路径 ≥2 触点",value:57.2},{name:"Direct / Unknown",value:8.7}
-        ];
-        var html=sectionHead("自主归因","一笔业务事实只计一次；同一模型下 credit 总和必须等于 1。平台回传资格与公司归因赢家分开保存。",tag(appData.meta.modelVersion,"purple"));
-        html+='<div class="grid three-col">'+cards+'</div>';
-        html+='<div style="height:14px"></div><div class="grid two-col">'+
-          card("归因模型对比","同一批成熟 Funded 在不同模型下的渠道功劳。",'<div class="table-wrap"><table><thead><tr><th>渠道</th><th>Last Paid</th><th>First Paid</th><th>Last Non-direct</th><th>Owned DDA</th><th>Markov</th><th>Assists</th></tr></thead><tbody>'+modelRows+'</tbody></table></div>')+
-          card("身份与归因覆盖","Unknown 保留为 Unknown，不使用未经同意的模糊匹配强行补齐。",coverageData.map(function(x,i){return '<div class="progress-row"><span>'+x.name+'</span><div class="progress-track"><div class="progress-fill '+(i===5?"gold":"green")+'" style="width:'+x.value+'%"></div></div><strong>'+pct(x.value)+'</strong></div>';}).join(""))+
-          '</div>';
-        html+='<div style="height:14px"></div><div class="grid two-even">'+
-          card("推荐决策体系","不要寻找一个“万能归因数字”",
-            '<div class="stage-grid" style="grid-template-columns:repeat(2,minmax(160px,1fr))"><div class="stage-card"><span class="subtle">财务事实</span><div class="big">Backend Truth</div><div class="ratio">真实申请/放款/价值</div></div><div class="stage-card"><span class="subtle">预算主口径</span><div class="big">Last Paid 30d</div><div class="ratio">统一跨渠道 CAC</div></div><div class="stage-card"><span class="subtle">经营分析</span><div class="big">First + Assist</div><div class="ratio">拓新与协同</div></div><div class="stage-card"><span class="subtle">因果校准</span><div class="big">Lift / MMM</div><div class="ratio">真实增量</div></div></div>')+
-          card("模型治理","所有输出必须可复现",
-            '<ul class="muted" style="font-size:12px;padding-left:18px"><li>模型名、版本、窗口、生效日</li><li>Direct、身份、测试流量和撤销规则</li><li>路径入选原因与 credit reason code</li><li>同一事件权重和校验为 1</li><li>历史版本可重算，不覆盖原始触点</li><li>预测模型不声称为因果结果</li></ul><div class="callout" style="margin-top:10px">初期建议固定 owned_last_paid_click_30d_v1，并同时输出 First Paid 和完整路径。</div>')+
-          '</div>';
-        $("#view-owned").innerHTML=html;
-      }
-
-      function postbackView() {
-        var p=appData.postback, stages=p.stages;
-        var expected=stages[1].value, sent=stages[4].value, accepted=stages[5].value, reported=stages[7].value;
-        var funnel=stages.map(function(s,i){
-          var rate=i?ratio(s.value,stages[i-1].value)*100:100;
-          return '<div class="funnel-stage"><span>'+esc(s.name)+'</span><strong>'+fmt(s.value)+'</strong><em>'+(i?pct(rate):"基准")+'</em><span>'+esc(s.hint)+'</span></div>';
-        }).join("");
-        var eventRows=p.events.map(function(e){
-          return '<tr><td><strong>'+e.event+'</strong></td><td>'+fmt(e.backend)+'</td><td>'+fmt(e.expected)+'</td><td>'+fmt(e.matchable)+'</td><td>'+fmt(e.queued)+'</td><td>'+fmt(e.sent)+'</td><td>'+fmt(e.accepted)+'</td><td>'+fmt(e.destination)+'</td><td>'+fmt(e.reported)+'</td><td>'+pct(e.coverage)+'</td><td>'+pct((e.reported/e.expected)*100)+'</td></tr>';
-        }).join("");
-        var latencyRows=p.latency.map(function(l){
-          var max=240;
-          return '<tr><td>'+l.event+'</td><td>'+l.p50+' '+l.unit+'</td><td>'+l.p90+' '+l.unit+'</td><td>'+l.p99+' '+l.unit+'</td><td><div class="progress-track" style="width:180px"><div class="progress-fill '+(l.p90>60?"red":"green")+'" style="width:'+Math.min(100,l.p90/max*100)+'%"></div></div></td><td>'+statusTag(l.p90<30?"Healthy":l.p90<60?"Watch":"Breach")+'</td></tr>';
-        }).join("");
-        var errorRows=p.errors.map(function(e){
-          return '<div class="progress-row" style="grid-template-columns:190px 1fr 55px"><span>'+e.error+'<br><span class="subtle">'+e.owner+'</span></span><div class="progress-track"><div class="progress-fill '+(e.ratio>30?"red":"gold")+'" style="width:'+e.ratio+'%"></div></div><strong>'+e.count+'</strong></div>';
-        }).join("");
-        var idRows=p.identifiers.map(function(i){
-          return '<div class="progress-row"><span>'+i.name+'</span><div class="progress-track"><div class="progress-fill '+(/No usable/.test(i.name)?"red":"green")+'" style="width:'+i.value+'%"></div></div><strong>'+pct(i.value)+'</strong></div>';
-        }).join("");
-        var html=sectionHead("回传监控","从 Backend Truth 一直监控到 Google 最终报表。API 200 / request_id 只代表接收，不等于最终归因成功。",tag("Data Manager API","info"));
-        html+='<div class="grid health-grid">'+
-          ringCard("Send Coverage",ratio(sent,expected)*100,pct(ratio(sent,expected)*100),"Sent / Expected","#138a62")+
-          ringCard("P90 Latency",86.7,"52 min","Funded · SLA <60m","#b7791f")+
-          ringCard("API Success",ratio(accepted,sent)*100,pct(ratio(accepted,sent)*100),"Accepted / Sent","#138a62")+
-          ringCard("Reported Ratio",ratio(reported,expected)*100,pct(ratio(reported,expected)*100),"T+3 · by conv. time","#b7791f")+
-          '</div>';
-        html+=card("端到端 Coverage 漏斗","分母从后端真实事件向下定义；非 Google 获客不能直接作为 Google 匹配率分母。",'<div class="funnel">'+funnel+'</div>');
-        html+='<div style="height:14px"></div>'+card("按业务事件对账","Google 报表使用 All conv. (by conv. time)，并按 Conversion action 分段。",'<div class="table-wrap"><table><thead><tr><th>Event</th><th>Backend</th><th>Expected</th><th>Matchable</th><th>Queued</th><th>Sent</th><th>Accepted</th><th>Destination</th><th>Reported</th><th>Send Coverage</th><th>Reported Ratio</th></tr></thead><tbody>'+eventRows+'</tbody></table></div>');
-        html+='<div style="height:14px"></div><div class="grid two-even">'+
-          card("回传时延分位数","同时监控 Source、Queue、Send、API、Destination 和 Report latency。",'<div class="table-wrap"><table><thead><tr><th>Event</th><th>P50</th><th>P90</th><th>P99</th><th>P90 相对范围</th><th>状态</th></tr></thead><tbody>'+latencyRows+'</tbody></table></div>')+
-          card("Identifier Coverage","标识存在不等于最终可匹配；哈希也不替代合法基础和同意。",idRows)+
-          '</div>';
-        html+='<div style="height:14px"></div><div class="grid two-even">'+
-          card("错误分布","按错误类型、批次、Conversion Action、浏览器和发布版本下钻。",errorRows)+
-          card("状态与处理节奏","Google 的处理延迟必须和内部链路延迟分开",
-            '<div class="timeline"><div class="timeline-item postback"><div class="timeline-time">T+0 实时</div><div class="timeline-title">Truth → Queue → Sent → Accepted</div><div class="timeline-copy">发现内部漏传、积压、认证和格式问题。</div></div><div class="timeline-item"><div class="timeline-time">约 30 分钟后</div><div class="timeline-title">RetrieveRequestStatus</div><div class="timeline-copy">查询 request_id，直到 SUCCESS / PARTIAL_SUCCESS / FAILURE。</div></div><div class="timeline-item business"><div class="timeline-time">T+1 / T+3</div><div class="timeline-title">Google 报表对账</div><div class="timeline-copy">GBRAID/WBRAID 等可能需要更长处理时间。</div></div><div class="timeline-item business"><div class="timeline-time">T+7 / 成熟期</div><div class="timeline-title">稳定归因与业务质量</div><div class="timeline-copy">结合 Click → Funded 转化延迟评价。</div></div></div>')+
-          '</div>';
-        var recon = appData.postback.recon || [];
-        if (recon.length) {
-          var stMap = { good: "good", warn: "warn", observe: "info" };
-          var reconRows = recon.map(function (r) {
-            return '<tr><td><strong>'+esc(r.cn)+'</strong><div class="subtle mono">'+esc(r.ev)+'</div></td>'+
-              '<td>'+fmt(r.p)+'</td><td>'+fmt(r.m)+'</td><td>'+fmt(r.b)+'</td>'+
-              '<td>'+esc(r.pdiff)+'</td><td>'+esc(r.mdiff)+'</td>'+
-              '<td>'+tag(r.st==="good"?"对平":r.st==="warn"?"需处置":"待观察",stMap[r.st]||"gray")+'</td>'+
-              '<td class="muted">'+esc(r.note)+'</td></tr>';
-          }).join("");
-          var validityRows = (appData.postback.validity || []).map(function (r) {
-            var color = r.rawCov > 100 ? "#c94242" : r.rawCov >= 99 ? "#138a62" : "#b7791f";
-            return '<tr><td><strong>'+esc(r.ev)+'</strong><div class="subtle mono">'+esc(r.small)+'</div></td>'+
-              '<td>'+fmt(r.b)+'</td><td>'+fmt(r.raw)+'</td>'+
-              '<td><strong style="color:'+color+'">'+fmt(r.rawCov,1)+'%</strong></td>'+
-              '<td>'+fmt(r.eff)+'</td><td>'+fmt(r.effCov,1)+'%</td>'+
-              '<td>'+tag(r.note,stMap[r.st]||"gray")+'</td></tr>';
-          }).join("");
-          var trend = appData.postback.coverageTrend;
-          var trendSpark = trend && trend.vals && trend.vals.length ? sparkline(trend.vals, "#2463a7") : "";
-          var consistencyHtml = (appData.postback.consistency || []).map(function (r) {
-            var color = r.v >= 99 ? "#138a62" : "#b7791f";
-            return '<div class="progress-row" style="grid-template-columns:170px 1fr 60px"><span>'+esc(r.nm)+'<br><span class="subtle">'+esc(r.note)+'</span></span>'+
-              '<div class="progress-track"><div class="progress-fill" style="width:'+Math.min(100,r.v)+'%;background:'+color+'"></div></div>'+
-              '<strong>'+fmt(r.v,1)+'%</strong></div>';
-          }).join("");
-          var u = appData.postback.uniqueness || {};
-          var uniquenessHtml = '<div class="stage-grid" style="grid-template-columns:repeat(2,minmax(140px,1fr))">'+
-            '<div class="stage-card"><span class="subtle">重复 event_id 数</span><div class="big">'+fmt(u.dupEventId||0)+'</div><div class="ratio">'+tag("正常","good")+'</div></div>'+
-            '<div class="stage-card"><span class="subtle">重复业务事件率</span><div class="big">'+fmt(u.dupBizRate||0,1)+'%</div><div class="ratio" style="color:#b7791f">阈值 '+(u.threshold!=null?fmt(u.threshold,1)+"%":"0.1%")+'</div></div></div>'+
-            (u.note?'<div class="callout danger" style="margin-top:12px">'+esc(u.note)+'</div>':"");
-          html+='<div style="height:14px"></div><div class="grid two-even">'+
-            card("三方日级对账","平台后台 vs MMP vs 后端真实，按事件 × 日期 × OS 拆分。差异 ≠ 0 即需要读数定位。",'<div class="table-wrap"><table><thead><tr><th>事件</th><th>平台后台</th><th>MMP</th><th>后端真实</th><th>平台−后端</th><th>MMP−后端</th><th>状态</th><th>读数</th></tr></thead><tbody>'+reconRows+'</tbody></table></div><div class="callout info" style="margin-top:12px">本卡为单日切片示例（2026-09-06），用于演示跨时区日切、重复业务事件、撤回未同步等异常读数；页面其余部分为 30 天口径。</div>')+
-            card("回传有效性","原始覆盖率用于发现漏报、重复和漏撤销；有效回传率 = 平台成功接收、通过业务有效性校验、匹配成功且仍在归因窗口内的真实事件数 ÷ 后端应回传事件数。两者必须同时看。",'<div class="table-wrap"><table><thead><tr><th>事件</th><th>后端应传</th><th>平台原始</th><th>原始覆盖率</th><th>有效</th><th>有效回传率</th><th>状态</th></tr></thead><tbody>'+validityRows+'</tbody></table></div><div class="callout" style="margin-top:12px"><strong>'+esc(appData.postback.validityPipeline||"")+'</strong></div>'+(trendSpark?'<div style="display:flex;align-items:center;gap:12px;margin-top:10px"><span class="subtle">submitted 原始覆盖率 · 近 7 日（健康带 99%–100%）</span>'+trendSpark+'</div>':""))+
-            '</div>';
-          html+='<div style="height:14px"></div><div class="grid two-even">'+
-            card("一致性","与核心业务表逐日核对：金额、状态、事件时间三类字段的一致率，阈值 99%。",consistencyHtml+'<div class="subtle" style="margin-top:8px">进度条左端 0%、右端 100%，达标线 99%。</div>')+
-            card("唯一性","同时监控重复 event_id 和重复业务事件；后者可发现“重试生成了新 event_id”的隐性重复。",uniquenessHtml)+
-            '</div>';
-        }
-        $("#view-postback").innerHTML=html;
-      }
-
-      function healthView() {
-        var jobs=appData.jobs;
-        var jobRows=jobs.map(function(j){
-          return '<tr><td><strong>'+j.name+'</strong></td><td>'+j.owner+'</td><td>'+statusTag(j.status)+'</td><td>'+j.freshness+'</td><td>'+j.sla+'</td><td>'+j.runtime+'</td><td>'+pct(j.success,2)+'</td></tr>';
-        }).join("");
-        var quality=appData.dataQuality.map(function(q){
-          var good=q.inverse?q.value<=q.target:q.value>=q.target;
-          return '<div class="stage-card"><span class="subtle">'+q.name+'</span><div class="big">'+pct(q.value)+'</div><div class="ratio" style="color:'+(good?"#138a62":"#b7791f")+'">目标 '+(q.inverse?"≤":"≥")+pct(q.target)+'</div></div>';
-        }).join("");
-        var html=sectionHead("系统健康","监控媒体采集、业务事实、身份桥接、归因任务、平台回传和报表拉取的完整数据生产链。",tag("7 个核心任务","info"));
-        html+='<div class="stage-grid">'+quality+'</div>';
-        html+='<div style="height:14px"></div>'+card("数据任务与 SLA","Freshness 是当前最新成功数据距现在的时间；成功率不能替代完整性和一致性。",'<div class="table-wrap"><table><thead><tr><th>任务</th><th>Owner</th><th>状态</th><th>Freshness</th><th>SLA</th><th>Runtime</th><th>Success</th></tr></thead><tbody>'+jobRows+'</tbody></table></div>');
-        html+='<div style="height:14px"></div><div class="grid three-col">'+
-          card("采集质量","入口是否完整",'<ul class="muted" style="font-size:12px;padding-left:18px"><li>UTM 枚举与完整率</li><li>Click ID 入站覆盖</li><li>Click → Session 差异</li><li>跨域与 redirect 保留</li><li>Consent 状态与版本</li></ul>')+
-          card("业务事实质量","事件是否真实",'<ul class="muted" style="font-size:12px;padding-left:18px"><li>重复/测试/机器人</li><li>状态回退与撤销</li><li>事件早于前置阶段</li><li>application_id / loan_id 孤儿</li><li>事件定义版本</li></ul>')+
-          card("归因与回传质量","链路是否可用",'<ul class="muted" style="font-size:12px;padding-left:18px"><li>Credit sum = 1</li><li>Direct / Unknown 趋势</li><li>Queue backlog / DLQ age</li><li>Request diagnostics</li><li>Backend vs Platform</li></ul>')+
-          '</div>';
-        html+='<div style="height:14px"></div><div class="callout danger"><strong>数据安全：</strong>信用评分、负债、逾期、银行流水、收入、拒贷原因不得进入 URL、通用 dataLayer 或广告平台日志。生产接口使用字段 allowlist 和受控聚合。</div>';
-        $("#view-health").innerHTML=html;
-      }
-
-      function alertsView() {
-        var open=appData.alerts.filter(function(a){return a.status!=="Acknowledged"&&!state.acknowledged[a.id];}).length;
-        var rows=appData.alerts.map(function(a){
-          var ack=a.status==="Acknowledged"||state.acknowledged[a.id];
-          return '<div class="alert-row '+(ack?"ack":"")+'"><div><span class="severity '+a.severity.toLowerCase()+'">'+a.severity+'</span><div class="subtle">'+a.id+'</div></div><div><div class="alert-title">'+esc(a.title)+'</div><div class="alert-detail">'+esc(a.detail)+'</div></div><div>'+esc(a.scope)+'</div><div><strong>'+esc(a.owner)+'</strong><div class="subtle">'+a.time+'</div></div><div>'+(ack?tag("已确认","gray"):'<button class="btn small ack-btn" data-alert="'+a.id+'">确认</button>')+'</div></div>';
-        }).join("");
-        var html=sectionHead("告警中心","绝对阈值、历史基线、最小样本量和连续窗口共同决定告警。P0 才考虑自动阻断或暂停。",tag(open+" 个待处理",open?"bad":"good"));
-        html+='<div class="grid four-col">'+
-          kpi("P0","1","立即处理","",true)+kpi("P1","2","本日闭环","")+kpi("P2","1","本周处理","")+kpi("已确认","1","保留 incident 记录","")+
-          '</div><div style="height:14px"></div>';
-        html+=card("当前告警","确认不等于关闭；恢复后仍需记录根因、影响和预防动作。",'<div>'+rows+'</div>');
-        html+='<div style="height:14px"></div><div class="grid two-even">'+
-          card("阈值样例","上线后按真实量级校准",
-            '<div class="table-wrap"><table><thead><tr><th>级别</th><th>触发条件</th><th>最小样本/窗口</th></tr></thead><tbody><tr><td>'+tag("P0","bad")+'</td><td>核心回传归零、敏感数据外泄、错误价值批量发送</td><td>立即</td></tr><tr><td>'+tag("P1","warn")+'</td><td>Send Coverage &lt;98% 或 API Success &lt;99%</td><td>≥50 条，连续 2 窗口</td></tr><tr><td>'+tag("P1","warn")+'</td><td>Funded P90 &gt;60 min</td><td>连续 30 min</td></tr><tr><td>'+tag("P2","info")+'</td><td>Direct/Unknown 较基线上升 20%</td><td>连续 3 天</td></tr></tbody></table></div>')+
-          card("责任路由","告警必须有唯一第一责任人",
-            '<div class="table-wrap"><table><thead><tr><th>问题</th><th>第一责任人</th><th>协同</th></tr></thead><tbody><tr><td>花费/预算</td><td>Acquisition</td><td>Finance/Data</td></tr><tr><td>页面/表单</td><td>Product/Web</td><td>QA</td></tr><tr><td>Truth 缺失</td><td>Core Lending/Data</td><td>Risk/Ops</td></tr><tr><td>Click ID/UTM</td><td>Web/Data</td><td>Acquisition</td></tr><tr><td>Queue/API</td><td>Data Platform</td><td>MarTech</td></tr><tr><td>隐私/敏感数据</td><td>Privacy & Compliance</td><td>Security/Engineering</td></tr></tbody></table></div>')+
-          '</div>';
-        $("#view-alerts").innerHTML=html;
-        $all(".ack-btn").forEach(function(b){ b.addEventListener("click",function(){state.acknowledged[b.dataset.alert]=true; renderAlertsOnly(); toast("告警已确认，仍需在恢复后关闭 incident。");}); });
-        updateAlertCount();
-      }
-      function renderAlertsOnly(){ alertsView(); }
-      function updateAlertCount(){
-        var n=appData.alerts.filter(function(a){return a.status!=="Acknowledged"&&!state.acknowledged[a.id];}).length;
-        $("#alertCount").textContent=n;
-      }
-
-      function traceView() {
-        var keys=Object.keys(appData.traces);
-        var html=sectionHead("单笔端到端追踪","输入 application_id，检查触点、业务状态、自主归因、平台回传、request_id 和错误。",tag("仅演示脱敏 ID","gray"));
-        html+='<div class="grid two-col"><article class="card"><div class="card-body"><div class="trace-controls"><input class="search-input mono" id="traceInput" value="'+keys[0]+'" placeholder="例如 APP-10482"><button class="btn primary" id="traceBtn">查询</button></div><div class="subtle" style="margin-top:8px">演示可用：'+keys.join("、")+'</div><div id="traceResult"></div></div></article>'+
-          card("排查顺序","从业务事实向平台逐层定位",
-            '<div class="timeline"><div class="timeline-item business"><div class="timeline-title">1. Backend Truth</div><div class="timeline-copy">事件是否真实、去重、时间和状态是否正确。</div></div><div class="timeline-item"><div class="timeline-title">2. Identity Bridge</div><div class="timeline-copy">click/session/application/user/loan 是否正确关联。</div></div><div class="timeline-item postback"><div class="timeline-title">3. Postback</div><div class="timeline-copy">eligible、queue、sent、accepted、destination。</div></div><div class="timeline-item"><div class="timeline-title">4. Reporting</div><div class="timeline-copy">等待处理期，再按 by conv. time 对账。</div></div></div><div class="callout danger">生产看板应按角色隐藏 click ID、用户数据和敏感信贷字段；不要把原始 payload 展示给普通投放人员。</div>')+
-          '</div>';
-        $("#view-trace").innerHTML=html;
-        $("#traceBtn").addEventListener("click",renderTraceResult);
-        $("#traceInput").addEventListener("keydown",function(e){if(e.key==="Enter")renderTraceResult();});
-        renderTraceResult();
-      }
-      function renderTraceResult() {
-        var input=$("#traceInput"), out=$("#traceResult"); if(!input||!out)return;
-        var key=input.value.trim().toUpperCase(), tr=appData.traces[key];
-        if(!tr){out.innerHTML='<div class="empty">未找到该 application_id。演示数据只包含 APP-10482 和 APP-10441。</div>';return;}
-        var fields=[
-          ["Application",tr.applicationId],["User",tr.userId],["Loan",tr.loanId],["Status",tr.status],
-          ["Owned channel",tr.owned],["Model",tr.model],["Value",tr.value],["Privacy","Masked"]
-        ].map(function(x){return '<div class="trace-field"><span>'+x[0]+'</span><strong>'+esc(x[1])+'</strong></div>';}).join("");
-        var timeline=tr.timeline.map(function(i){return '<div class="timeline-item '+i.type+'"><div class="timeline-time">'+esc(i.time)+'</div><div class="timeline-title">'+esc(i.title)+'</div><div class="timeline-copy">'+esc(i.copy)+'</div></div>';}).join("");
-        out.innerHTML='<div class="trace-summary">'+fields+'</div><div class="timeline">'+timeline+'</div>';
-      }
-
-      function dictionaryView() {
-        var html=sectionHead("指标字典","每个指标固定定义、分母、来源、Owner、更新频率和阈值；看板改口径必须先更新字典版本。",tag(appData.metrics.length+" 项核心指标","info"));
-        html+='<article class="card"><div class="card-body"><input class="search-input" id="metricSearch" placeholder="搜索指标、公式、模块或 Owner"><div class="table-wrap" style="margin-top:12px"><table><thead><tr><th>指标</th><th>模块</th><th>公式 / 定义</th><th>Source</th><th>Owner</th><th>频率</th><th>目标 / 阈值</th></tr></thead><tbody id="metricBody"></tbody></table></div></div></article>';
-        html+='<div style="height:14px"></div><div class="grid three-col">'+
-          card("分母原则","Coverage 必须从真实应处理事件开始。",'<p class="muted" style="font-size:12px">Google 匹配相关指标使用 Expected Google Population，而不是全公司所有放款；同时保留 Backend Truth 作为总量。</p>')+
-          card("时间原则","interaction time 与 conversion time 分开。",'<p class="muted" style="font-size:12px">渠道优化看点击 cohort；CRM 对账看事件发生时间；最新 cohort 必须展示成熟度。</p>')+
-          card("价值原则","本金不等于收入。",'<p class="muted" style="font-size:12px">平台 value 和经营 ROAS 使用经审批的风险调整后贡献价值，或在不成熟时先只优化数量。</p>')+
-          '</div>';
-        $("#view-dictionary").innerHTML=html;
-        $("#metricSearch").addEventListener("input",renderMetricRows);
-        renderMetricRows();
-      }
-      function renderMetricRows(){
-        var body=$("#metricBody"), q=($("#metricSearch")?$("#metricSearch").value:"").trim().toLowerCase();
-        var rows=appData.metrics.filter(function(m){return !q||Object.keys(m).some(function(k){return String(m[k]).toLowerCase().indexOf(q)>=0;});});
-        body.innerHTML=rows.map(function(m){return '<tr><td><strong>'+esc(m.name)+'</strong></td><td>'+tag(m.module,"gray")+'</td><td class="muted">'+esc(m.formula)+'</td><td>'+esc(m.source)+'</td><td>'+esc(m.owner)+'</td><td>'+esc(m.cadence)+'</td><td>'+esc(m.threshold)+'</td></tr>';}).join("") || '<tr><td colspan="7"><div class="empty">没有匹配指标</div></td></tr>';
-      }
-
-      function showChannelDrawer(name) {
-        var c=appData.channels.find(function(x){return x.channel===name;}); if(!c)return;
-        $("#drawerTitle").textContent=c.channel+" 详情";
-        var credit=appData.attributionModels[state.model][c.channel];
-        var steps=[
-          ["Clicks",c.clicks],["Sessions",c.sessions],["Applications",c.applications],["Qualified",c.qualified],["Approved",c.approved],["Funded credit",credit]
-        ];
-        var max=steps[0][1]||1;
-        var barsHtml=steps.map(function(s){return '<div class="progress-row"><span>'+s[0]+'</span><div class="progress-track"><div class="progress-fill" style="width:'+Math.max(2,s[1]/max*100)+'%;background:'+COLORS[c.channel]+'"></div></div><strong>'+fmt(s[1])+'</strong></div>';}).join("");
-        $("#drawerContent").innerHTML='<div class="grid two-even">'+kpi("Spend",money(c.spend),"30 天","",true)+kpi("CAC-Funded",money(ratio(c.spend,credit),1),MODEL_LABELS[state.model],"")+'</div><div style="height:14px"></div>'+card("漏斗",c.source,barsHtml)+
-          '<div style="height:14px"></div>'+card("归因角色","同一真实放款在多个视角下的渠道功劳。",'<div class="table-wrap"><table><tbody><tr><td>First Paid</td><td>'+fmt(appData.attributionModels.firstTouch[c.channel])+'</td></tr><tr><td>Last Paid</td><td>'+fmt(appData.attributionModels.lastPaid[c.channel])+'</td></tr><tr><td>Owned DDA</td><td>'+fmt(appData.attributionModels.dda[c.channel])+'</td></tr><tr><td>Markov</td><td>'+fmt(appData.attributionModels.markov[c.channel])+'</td></tr><tr><td>Assisted</td><td>'+fmt(c.assists)+'</td></tr></tbody></table></div>')+
-          '<div style="height:14px"></div><div class="callout info">预算结论需结合成熟 CAC、Contribution ROAS 与 Lift/MMM。平台自归因不能跨平台直接相加。</div>';
-        $("#channelDrawer").classList.add("open");
-      }
-      function bindChannelRows() {
-        $all("[data-channel]").forEach(function(row){row.addEventListener("click",function(){showChannelDrawer(row.dataset.channel);});});
-      }
-      function bindJumps() {
-        $all("[data-jump]").forEach(function(b){b.addEventListener("click",function(){switchView(b.dataset.jump);});});
-      }
-
-      function renderAll() {
-        overviewView();
-        channelsView();
-        googleView();
-        ownedView();
-        postbackView();
-        healthView();
-        alertsView();
-        traceView();
-        dictionaryView();
-        $("#lastUpdated").textContent=appData.meta.updatedAt||"—";
-        $("#dataMode").textContent=appData.meta.mode||"已接入数据";
-        updateAlertCount();
-      }
-
-      var TITLES={
-        overview:"经营总览",channels:"渠道与漏斗",google:"Google 归因",owned:"自主归因",
-        postback:"回传监控",health:"系统健康",alerts:"告警中心",trace:"单笔追踪",dictionary:"指标字典"
-      };
-      function switchView(view) {
-        state.view=view;
-        $all(".view").forEach(function(v){v.classList.toggle("active",v.id==="view-"+view);});
-        $all(".nav-btn").forEach(function(b){b.classList.toggle("active",b.dataset.view===view);});
-        $("#currentTitle").textContent=TITLES[view];
-        history.replaceState(null,"","#"+view);
-        window.scrollTo({top:0,behavior:"smooth"});
-      }
-
-      function toast(message,isError) {
-        var el=$("#toast"); el.textContent=message; el.className="toast show"+(isError?" error":"");
-        clearTimeout(toast._timer); toast._timer=setTimeout(function(){el.className="toast";},2800);
-      }
-
-      function mergeData(target, source) {
-        if(!source||typeof source!=="object")return target;
-        Object.keys(source).forEach(function(k){
-          if(source[k]&&typeof source[k]==="object"&&!Array.isArray(source[k])&&target[k]&&typeof target[k]==="object"&&!Array.isArray(target[k])) target[k]=mergeData(target[k],source[k]);
-          else target[k]=source[k];
-        });
-        return target;
-      }
-      function validateData(data) {
-        if(!data||typeof data!=="object")throw new Error("JSON 顶层必须是对象");
-        if(data.channels&&!Array.isArray(data.channels))throw new Error("channels 必须是数组");
-        if(data.alerts&&!Array.isArray(data.alerts))throw new Error("alerts 必须是数组");
-        return true;
-      }
-      async function fetchEndpoint(showMessage) {
-        if(!state.endpoint)return;
-        try {
-          var response=await fetch(state.endpoint,{credentials:"same-origin",headers:{"Accept":"application/json"}});
-          if(!response.ok)throw new Error("HTTP "+response.status);
-          var data=await response.json(); validateData(data);
-          appData=mergeData(deepClone(appData),data);
-          appData.meta=appData.meta||{}; appData.meta.mode=appData.meta.mode||"生产数据";
-          appData.meta.updatedAt=appData.meta.updatedAt||new Date().toLocaleString("zh-CN");
-          renderAll();
-          if(showMessage)toast("数据已刷新");
-        } catch(err) { if(showMessage)toast("连接失败："+err.message,true); }
-      }
-      function configureTimer() {
-        if(state.timer)clearInterval(state.timer);
-        state.timer=null;
-        if(state.endpoint&&state.interval>0)state.timer=setInterval(function(){fetchEndpoint(false);},state.interval*1000);
-      }
-      function exportCsv() {
-        var rows=currentChannelsScaled();
-        var headers=["channel","spend","clicks","sessions","applications","qualified","approved","attributed_funded","cac_funded","value_cost","model"];
-        var lines=[headers.join(",")];
-        rows.forEach(function(c){
-          lines.push([c.channel,c.spend,c.clicks,c.sessions,c.applications,c.qualified,c.approved,c.attributedFunded,(ratio(c.spend,c.attributedFunded)).toFixed(2),(ratio(c.value,c.spend)).toFixed(3),MODEL_LABELS[state.model]].map(function(v){return '"'+String(v).replace(/"/g,'""')+'"';}).join(","));
-        });
-        var blob=new Blob(["\ufeff"+lines.join("\n")],{type:"text/csv;charset=utf-8"});
-        var url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="lending-monitor-"+state.view+".csv";a.click();URL.revokeObjectURL(url);
-        toast("当前渠道数据已导出");
-      }
-
-      function initControls() {
-        var cf=$("#channelFilter");
-        appData.channels.forEach(function(c){var o=document.createElement("option");o.value=c.channel;o.textContent=c.channel;cf.appendChild(o);});
-        $("#periodFilter").value=String(state.period);
-        $("#modelFilter").value=state.model;
-        $("#endpointInput").value=state.endpoint;
-        $("#intervalInput").value=String(state.interval);
-        $("#periodFilter").addEventListener("change",function(e){state.period=+e.target.value;renderAll();});
-        $("#channelFilter").addEventListener("change",function(e){state.channel=e.target.value;renderAll();});
-        $("#productFilter").addEventListener("change",function(e){state.product=e.target.value;renderAll();toast("演示数据已切换产品视图");});
-        $("#modelFilter").addEventListener("change",function(e){state.model=e.target.value;renderAll();});
-        $("#maturitySwitch").addEventListener("click",function(){
-          state.matureOnly=!state.matureOnly;this.classList.toggle("on",state.matureOnly);this.setAttribute("aria-pressed",String(state.matureOnly));renderAll();
-        });
-        $("#exportBtn").addEventListener("click",exportCsv);
-        $("#refreshBtn").addEventListener("click",function(){if(state.endpoint)fetchEndpoint(true);else{appData.meta.updatedAt=new Date().toLocaleString("zh-CN")+" local";renderAll();toast("演示数据时间已刷新");}});
-        $("#dataSourceBtn").addEventListener("click",function(){$("#dataModal").classList.add("open");});
-        $("#connectBtn").addEventListener("click",function(){
-          state.endpoint=$("#endpointInput").value.trim();state.interval=+$("#intervalInput").value;
-          localStorage.setItem("lendingMonitorEndpoint",state.endpoint);localStorage.setItem("lendingMonitorInterval",String(state.interval));
-          configureTimer();$("#dataModal").classList.remove("open");
-          if(state.endpoint)fetchEndpoint(true);else toast("未填写接口，继续使用当前数据");
-        });
-        $("#resetDemoBtn").addEventListener("click",function(){
-          appData=deepClone(DEMO_DATA);state.endpoint="";state.interval=0;
-          localStorage.removeItem("lendingMonitorEndpoint");localStorage.removeItem("lendingMonitorInterval");
-          $("#endpointInput").value="";$("#intervalInput").value="0";configureTimer();renderAll();toast("已恢复演示数据");
-        });
-        $("#fileInput").addEventListener("change",function(e){
-          var file=e.target.files[0];if(!file)return;
-          var reader=new FileReader();
-          reader.onload=function(){
-            try{var data=JSON.parse(reader.result);validateData(data);appData=mergeData(deepClone(appData),data);appData.meta=appData.meta||{};appData.meta.mode="本地导入";appData.meta.updatedAt=new Date().toLocaleString("zh-CN");renderAll();$("#dataModal").classList.remove("open");toast("JSON 已导入");}
-            catch(err){toast("导入失败："+err.message,true);}
-          };
-          reader.readAsText(file);
-        });
-        $all("[data-close]").forEach(function(b){b.addEventListener("click",function(){$("#"+b.dataset.close).classList.remove("open");});});
-        ["channelDrawer","dataModal"].forEach(function(id){$("#"+id).addEventListener("click",function(e){if(e.target.id===id)e.currentTarget.classList.remove("open");});});
-        $all(".nav-btn").forEach(function(b){b.addEventListener("click",function(){switchView(b.dataset.view);});});
-        document.addEventListener("keydown",function(e){if(e.key==="Escape"){$("#channelDrawer").classList.remove("open");$("#dataModal").classList.remove("open");}});
-      }
-
-      initControls();
-      renderAll();
-      var hash=location.hash.replace("#","");
-      if(TITLES[hash])switchView(hash);
-      configureTimer();
-      if(state.endpoint)fetchEndpoint(false);
-    })();
-  </script>
+</script>
 </body>
 </html>
