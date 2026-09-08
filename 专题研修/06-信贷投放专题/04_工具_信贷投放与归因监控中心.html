@@ -814,7 +814,27 @@
             {name:"WBRAID", value:2.4},
             {name:"Enhanced user data", value:92.1},
             {name:"No usable identifier", value:4.2}
-          ]
+          ],
+          recon: [
+            {ev:"application_started", cn:"开始申请", p:231, m:230, b:230, pdiff:"+1 / +0.4%", mdiff:"0 / 0.0%", st:"observe", note:"1 笔跨时区日切，次日复核是否自动平账"},
+            {ev:"application_submitted", cn:"提交申请", p:125, m:124, b:124, pdiff:"+1 / +0.8%", mdiff:"0 / 0.0%", st:"warn", note:"1 笔重复业务事件，转唯一性核查"},
+            {ev:"application_approved", cn:"审批通过", p:46, m:45, b:45, pdiff:"+1 / +2.2%", mdiff:"0 / 0.0%", st:"warn", note:"1 笔撤回未同步，转一致性核查"},
+            {ev:"loan_disbursed", cn:"放款", p:25, m:25, b:25, pdiff:"0 / 0.0%", mdiff:"0 / 0.0%", st:"good", note:"数量对平；另有 1 笔时延超 SLA"}
+          ],
+          validity: [
+            {ev:"开始申请", small:"application_started", b:230, raw:231, eff:230, rawCov:100.4, effCov:100.0, st:"observe", note:"跨时区日切 1"},
+            {ev:"提交申请", small:"application_submitted", b:124, raw:125, eff:124, rawCov:100.8, effCov:100.0, st:"warn", note:"重复业务事件 1"},
+            {ev:"审批通过", small:"application_approved", b:45, raw:46, eff:45, rawCov:102.2, effCov:100.0, st:"warn", note:"失效状态 1"},
+            {ev:"放款", small:"loan_disbursed", b:25, raw:25, eff:25, rawCov:100.0, effCov:100.0, st:"good", note:"数量正常，时延另看 SLA"}
+          ],
+          validityPipeline: "submitted 核验链路：应传 124 → 平台原始计数 125 → 业务唯一键核验 124 → 标识匹配 124 → 窗口内 124；损失拆解：平台拒收 0 · 匹配失败 0 · 超归因窗口 0 · 额外无效事件 1",
+          consistency: [
+            {nm:"金额一致率", v:99.6, st:"observe", note:"达标，1 笔币种修正待核"},
+            {nm:"状态一致率", v:97.8, st:"warn", note:"1 笔撤回未同步（见对账表）"},
+            {nm:"event_time 一致率", v:100.0, st:"good", note:"正常"}
+          ],
+          uniqueness: { dupEventId: 0, dupBizRate: 0.8, threshold: 0.1, note: "02:00 重试生成了新的 event_id，所以“重复 ID”为 0，但按业务唯一键识别出 1 笔重复事件。重试必须原样复用首次生成的 event_id，接收端再按该 ID 幂等去重。" },
+          coverageTrend: { days: ["08-31","09-01","09-02","09-03","09-04","09-05","09-06"], vals: [99.9,100.0,99.7,100.0,99.8,100.0,100.8] }
         },
         jobs: [
           {name:"Web Tracking", owner:"Web", status:"Healthy", freshness:"2 min", sla:"< 5 min", runtime:"实时", success:99.92},
@@ -1218,6 +1238,46 @@
           card("状态与处理节奏","Google 的处理延迟必须和内部链路延迟分开",
             '<div class="timeline"><div class="timeline-item postback"><div class="timeline-time">T+0 实时</div><div class="timeline-title">Truth → Queue → Sent → Accepted</div><div class="timeline-copy">发现内部漏传、积压、认证和格式问题。</div></div><div class="timeline-item"><div class="timeline-time">约 30 分钟后</div><div class="timeline-title">RetrieveRequestStatus</div><div class="timeline-copy">查询 request_id，直到 SUCCESS / PARTIAL_SUCCESS / FAILURE。</div></div><div class="timeline-item business"><div class="timeline-time">T+1 / T+3</div><div class="timeline-title">Google 报表对账</div><div class="timeline-copy">GBRAID/WBRAID 等可能需要更长处理时间。</div></div><div class="timeline-item business"><div class="timeline-time">T+7 / 成熟期</div><div class="timeline-title">稳定归因与业务质量</div><div class="timeline-copy">结合 Click → Funded 转化延迟评价。</div></div></div>')+
           '</div>';
+        var recon = appData.postback.recon || [];
+        if (recon.length) {
+          var stMap = { good: "good", warn: "warn", observe: "info" };
+          var reconRows = recon.map(function (r) {
+            return '<tr><td><strong>'+esc(r.cn)+'</strong><div class="subtle mono">'+esc(r.ev)+'</div></td>'+
+              '<td>'+fmt(r.p)+'</td><td>'+fmt(r.m)+'</td><td>'+fmt(r.b)+'</td>'+
+              '<td>'+esc(r.pdiff)+'</td><td>'+esc(r.mdiff)+'</td>'+
+              '<td>'+tag(r.st==="good"?"对平":r.st==="warn"?"需处置":"待观察",stMap[r.st]||"gray")+'</td>'+
+              '<td class="muted">'+esc(r.note)+'</td></tr>';
+          }).join("");
+          var validityRows = (appData.postback.validity || []).map(function (r) {
+            var color = r.rawCov > 100 ? "#c94242" : r.rawCov >= 99 ? "#138a62" : "#b7791f";
+            return '<tr><td><strong>'+esc(r.ev)+'</strong><div class="subtle mono">'+esc(r.small)+'</div></td>'+
+              '<td>'+fmt(r.b)+'</td><td>'+fmt(r.raw)+'</td>'+
+              '<td><strong style="color:'+color+'">'+fmt(r.rawCov,1)+'%</strong></td>'+
+              '<td>'+fmt(r.eff)+'</td><td>'+fmt(r.effCov,1)+'%</td>'+
+              '<td>'+tag(r.note,stMap[r.st]||"gray")+'</td></tr>';
+          }).join("");
+          var trend = appData.postback.coverageTrend;
+          var trendSpark = trend && trend.vals && trend.vals.length ? sparkline(trend.vals, "#2463a7") : "";
+          var consistencyHtml = (appData.postback.consistency || []).map(function (r) {
+            var color = r.v >= 99 ? "#138a62" : "#b7791f";
+            return '<div class="progress-row" style="grid-template-columns:170px 1fr 60px"><span>'+esc(r.nm)+'<br><span class="subtle">'+esc(r.note)+'</span></span>'+
+              '<div class="progress-track"><div class="progress-fill" style="width:'+Math.min(100,r.v)+'%;background:'+color+'"></div></div>'+
+              '<strong>'+fmt(r.v,1)+'%</strong></div>';
+          }).join("");
+          var u = appData.postback.uniqueness || {};
+          var uniquenessHtml = '<div class="stage-grid" style="grid-template-columns:repeat(2,minmax(140px,1fr))">'+
+            '<div class="stage-card"><span class="subtle">重复 event_id 数</span><div class="big">'+fmt(u.dupEventId||0)+'</div><div class="ratio">'+tag("正常","good")+'</div></div>'+
+            '<div class="stage-card"><span class="subtle">重复业务事件率</span><div class="big">'+fmt(u.dupBizRate||0,1)+'%</div><div class="ratio" style="color:#b7791f">阈值 '+(u.threshold!=null?fmt(u.threshold,1)+"%":"0.1%")+'</div></div></div>'+
+            (u.note?'<div class="callout danger" style="margin-top:12px">'+esc(u.note)+'</div>':"");
+          html+='<div style="height:14px"></div><div class="grid two-even">'+
+            card("三方日级对账","平台后台 vs MMP vs 后端真实，按事件 × 日期 × OS 拆分。差异 ≠ 0 即需要读数定位。",'<div class="table-wrap"><table><thead><tr><th>事件</th><th>平台后台</th><th>MMP</th><th>后端真实</th><th>平台−后端</th><th>MMP−后端</th><th>状态</th><th>读数</th></tr></thead><tbody>'+reconRows+'</tbody></table></div><div class="callout info" style="margin-top:12px">本卡为单日切片示例（2026-09-06），用于演示跨时区日切、重复业务事件、撤回未同步等异常读数；页面其余部分为 30 天口径。</div>')+
+            card("回传有效性","原始覆盖率用于发现漏报、重复和漏撤销；有效回传率 = 平台成功接收、通过业务有效性校验、匹配成功且仍在归因窗口内的真实事件数 ÷ 后端应回传事件数。两者必须同时看。",'<div class="table-wrap"><table><thead><tr><th>事件</th><th>后端应传</th><th>平台原始</th><th>原始覆盖率</th><th>有效</th><th>有效回传率</th><th>状态</th></tr></thead><tbody>'+validityRows+'</tbody></table></div><div class="callout" style="margin-top:12px"><strong>'+esc(appData.postback.validityPipeline||"")+'</strong></div>'+(trendSpark?'<div style="display:flex;align-items:center;gap:12px;margin-top:10px"><span class="subtle">submitted 原始覆盖率 · 近 7 日（健康带 99%–100%）</span>'+trendSpark+'</div>':""))+
+            '</div>';
+          html+='<div style="height:14px"></div><div class="grid two-even">'+
+            card("一致性","与核心业务表逐日核对：金额、状态、事件时间三类字段的一致率，阈值 99%。",consistencyHtml+'<div class="subtle" style="margin-top:8px">进度条左端 0%、右端 100%，达标线 99%。</div>')+
+            card("唯一性","同时监控重复 event_id 和重复业务事件；后者可发现“重试生成了新 event_id”的隐性重复。",uniquenessHtml)+
+            '</div>';
+        }
         $("#view-postback").innerHTML=html;
       }
 
