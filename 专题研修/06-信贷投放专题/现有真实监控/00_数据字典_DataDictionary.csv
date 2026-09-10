@@ -37,7 +37,7 @@
 06_获客明细主表_Records_样例,userId,用户 ID,用户唯一标识,USR-2001,新客（customer=new）全表唯一；老客可跨获客实体复用（样例 USR-2016/USR-2031/USR-2044 各出现 2 次）,原始字段,原始层-明细样例,id,普通字段,records[].userId,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,applicationId,申请 ID,申请唯一标识，仅 submitted 非空时填写,APP-2001,未提交申请必须留空；全表唯一,原始字段,原始层-明细样例,id,条件唯一键,records[].applicationId,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,loanId,贷款 ID,贷款唯一标识，仅 funded 非空时填写,LN-2001,未放款必须留空；全表唯一；loan_id 唯一保证放款数不随归因模型变化,原始字段,原始层-明细样例,id,条件唯一键,records[].loanId,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,cohort,首访日期,获客 Cohort 基准日，格式 YYYY-MM-DD（文本）,2026-05-01,看板契约要求完整日期；首触点 day 必须与 cohort 一致,原始字段,原始层-明细样例,id,普通字段,records[].cohort,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,cohort,首访日期,获客 Cohort 基准日，格式 YYYY-MM-DD（文本）,5/1/2026,看板契约要求完整日期；首触点 day 必须与 cohort 一致,原始字段,原始层-明细样例,id,普通字段,records[].cohort,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,channel,首访渠道,渠道枚举：Google Search / Google PMax / Meta / TikTok / Affiliate / CRM / Organic / Direct,Google Search,固定首访来源，不随归因模型变化,原始字段,原始层-明细样例,id,普通字段,records[].channel,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,campaign,首访 Campaign,首访发生的 Campaign 名称,AU_Search_Brand,与首触点 campaign 一致,原始字段,原始层-明细样例,id,普通字段,records[].campaign,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,brand,品牌词分类,brand=品牌词；nonbrand=非品牌词；na=不适用,brand,仅 Google Search 区分 brand/nonbrand，其他渠道均为 na,原始字段,原始层-明细样例,id,普通字段,records[].brand,组装schemaVersion=2 JSON
@@ -45,11 +45,11 @@
 06_获客明细主表_Records_样例,region,地区,州枚举：NSW / VIC / QLD,NSW,样例数据仅含三州,原始字段,原始层-明细样例,id,普通字段,records[].region,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,device,设备,mobile / desktop,mobile,,原始字段,原始层-明细样例,id,普通字段,records[].device,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,product,产品类型,fixed=固定期限贷款；loc=循环额度（Line of Credit）,fixed,,原始字段,原始层-明细样例,id,普通字段,records[].product,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,started,开始申请日期,开始申请（Started）日期，样例 = cohort,2026-05-01,阶段日期逐级非空：started→submitted→qualified→approved→funded,原始字段,原始层-明细样例,id,普通字段,records[].started,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,submitted,提交申请日期,提交有效申请（Submitted）日期,2026-05-02,未提交留空,原始字段,原始层-明细样例,id,普通字段,records[].submitted,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,qualified,合格日期,通过准入门槛（Qualified）日期,2026-05-03,未合格留空；合格率=qualified÷submitted（固定首访 Cohort，不用归因 credit 做分母）,原始字段,原始层-明细样例,id,普通字段,records[].qualified,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,approved,审批通过日期,审批通过（Approved）日期,2026-05-04,未通过留空；审批率=approved÷qualified,原始字段,原始层-明细样例,id,普通字段,records[].approved,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,funded,放款日期,真实放款（Funded）日期,2026-05-05,未放款留空；放款率=funded÷approved,原始字段,原始层-明细样例,id,普通字段,records[].funded,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,started,开始申请日期,开始申请（Started）日期，样例 = cohort,5/1/2026,阶段日期逐级非空：started→submitted→qualified→approved→funded,原始字段,原始层-明细样例,id,普通字段,records[].started,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,submitted,提交申请日期,提交有效申请（Submitted）日期,5/2/2026,未提交留空,原始字段,原始层-明细样例,id,普通字段,records[].submitted,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,qualified,合格日期,通过准入门槛（Qualified）日期,5/3/2026,未合格留空；合格率=qualified÷submitted（固定首访 Cohort，不用归因 credit 做分母）,原始字段,原始层-明细样例,id,普通字段,records[].qualified,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,approved,审批通过日期,审批通过（Approved）日期,5/4/2026,未通过留空；审批率=approved÷qualified,原始字段,原始层-明细样例,id,普通字段,records[].approved,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,funded,放款日期,真实放款（Funded）日期,5/5/2026,未放款留空；放款率=funded÷approved,原始字段,原始层-明细样例,id,普通字段,records[].funded,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,impressions,首访媒体曝光数,首访渠道的媒体曝光次数,620,仅付费渠道有值；Organic/Direct/CRM 为 0,原始字段,原始层-明细样例,id,普通字段,records[].impressions,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,clicks,首访媒体点击数,首访渠道的媒体点击次数,2,同上；CTR=clicks÷impressions,原始字段,原始层-明细样例,id,普通字段,records[].clicks,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,sessions,首访会话数,首访会话次数,1,,原始字段,原始层-明细样例,id,普通字段,records[].sessions,组装schemaVersion=2 JSON
@@ -60,19 +60,19 @@
 06_获客明细主表_Records_样例,servicingCost,服务成本,运营服务成本 AUD；样例为放款固定 210,210,未放款为 0,加工字段,原始层-明细样例,id,普通字段,records[].servicingCost,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,expectedLoss,预期信用损失,预期信用损失 AUD；公式 = loanAmount × 渠道风险率（基准 5.2%，TikTok 11%，Google PMax 8.8%，老客 −1.2pp）,270.4,未放款为 0；预期损失只扣一次，不重复叠加逾期率×本金,加工字段,原始层-明细样例,id,普通字段,records[].expectedLoss,组装schemaVersion=2 JSON
 06_获客明细主表_Records_样例,ltv,折现贡献预测 LTV,上游折现贡献预测 AUD；公式 = (interest+fees−fundingCost−servicingCost−expectedLoss) × 新客系数（new=1.2，old=1.0）,534.24,未放款为 0；样例新客 LTV 用单贷贡献×1.2，不是已验证复借预测；正式需上游折现、期限、复借假设,加工字段,原始层-明细样例,id,普通字段,records[].ltv,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,fraud,欺诈判定,已确认欺诈：TRUE/FALSE；未提交申请留空（null）,False,null 表示未判定，不计入欺诈率分母；欺诈率=已确认欺诈÷已完成判定的有效申请,原始字段,原始层-明细样例,id,普通字段,records[].fraud,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,firstDue,首期应还日,首期应还日期；公式 = 放款日 +1 个月（同日）,2026-06-05,仅放款记录填写；未放款留空,加工字段,原始层-明细样例,id,普通字段,records[].firstDue,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,m1bad,首期 30+ 逾期标签,首期在应还日+30 天仍未偿清：TRUE/FALSE；公式口径：首期 DPD30+,False,仅在「firstDue+30 天 ≤ 快照日期 asOf」时填 TRUE/FALSE，否则必须留空（未成熟）；样例 asOf=2026-09-07,加工字段,原始层-明细样例,id,普通字段,records[].m1bad,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,thirdDue,第三期应还日,第三期应还日期；公式 = 放款日 +3 个月（同日）,2026-08-05,仅放款记录填写,加工字段,原始层-明细样例,id,普通字段,records[].thirdDue,组装schemaVersion=2 JSON
-06_获客明细主表_Records_样例,m3bad,第三期 30+ 逾期标签,第三期在应还日+30 天仍未偿清：TRUE/FALSE；公式口径：第三期 DPD30+（非 MOB3 任意逾期）,False,仅在「thirdDue+30 天 ≤ asOf」时填 TRUE/FALSE，否则留空；样本 <30 笔时看板标注,加工字段,原始层-明细样例,id,普通字段,records[].m3bad,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,fraud,欺诈判定,已确认欺诈：TRUE/FALSE；未提交申请留空（null）,FALSE,null 表示未判定，不计入欺诈率分母；欺诈率=已确认欺诈÷已完成判定的有效申请,原始字段,原始层-明细样例,id,普通字段,records[].fraud,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,firstDue,首期应还日,首期应还日期；公式 = 放款日 +1 个月（同日）,6/5/2026,仅放款记录填写；未放款留空,加工字段,原始层-明细样例,id,普通字段,records[].firstDue,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,m1bad,首期 30+ 逾期标签,首期在应还日+30 天仍未偿清：TRUE/FALSE；公式口径：首期 DPD30+,FALSE,仅在「firstDue+30 天 ≤ 快照日期 asOf」时填 TRUE/FALSE，否则必须留空（未成熟）；样例 asOf=2026-09-07,加工字段,原始层-明细样例,id,普通字段,records[].m1bad,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,thirdDue,第三期应还日,第三期应还日期；公式 = 放款日 +3 个月（同日）,8/5/2026,仅放款记录填写,加工字段,原始层-明细样例,id,普通字段,records[].thirdDue,组装schemaVersion=2 JSON
+06_获客明细主表_Records_样例,m3bad,第三期 30+ 逾期标签,第三期在应还日+30 天仍未偿清：TRUE/FALSE；公式口径：第三期 DPD30+（非 MOB3 任意逾期）,FALSE,仅在「thirdDue+30 天 ≤ asOf」时填 TRUE/FALSE，否则留空；样本 <30 笔时看板标注,加工字段,原始层-明细样例,id,普通字段,records[].m3bad,组装schemaVersion=2 JSON
 07_触点明细_Touches_样例,recordId,关联获客实体,关联 06_Records 的 id,V-2001,一对多：一个获客实体可有多条触点,原始字段,原始层-明细样例,recordId+touchId,主键组成,records[].touches[].recordId,组装schemaVersion=2 JSON
 07_触点明细_Touches_样例,touchId,触点 ID,触点唯一标识，同实体内唯一,V-2001-T1,同 ID 同内容 = 重复触点，看板自动去重（样例 V-2028-T1 出现 2 次）,原始字段,原始层-明细样例,recordId+touchId,主键组成,records[].touches[].id,组装schemaVersion=2 JSON
-07_触点明细_Touches_样例,day,触点日期,触点发生日期 YYYY-MM-DD；约束：cohort ≤ day ≤ asOf,2026-05-01,首触点 day 必须 = 主表 cohort,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].day,组装schemaVersion=2 JSON
+07_触点明细_Touches_样例,day,触点日期,触点发生日期 YYYY-MM-DD；约束：cohort ≤ day ≤ asOf,5/1/2026,首触点 day 必须 = 主表 cohort,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].day,组装schemaVersion=2 JSON
 07_触点明细_Touches_样例,channel,触点渠道,渠道枚举同 06（8 个固定值）,Google Search,多触路径的每一跳；与 06 首访渠道解耦,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].channel,组装schemaVersion=2 JSON
 07_触点明细_Touches_样例,campaign,触点 Campaign,该触点所属 Campaign,AU_Search_Brand,,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].campaign,组装schemaVersion=2 JSON
 07_触点明细_Touches_样例,brand,品牌词分类,brand / nonbrand / na,brand,同 06 规则,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].brand,组装schemaVersion=2 JSON
 07_触点明细_Touches_样例,kind,触点类型,click=付费渠道点击；session=自然/自有/Direct 会话,click,付费渠道（Google Search/PMax/Meta/TikTok/Affiliate）为 click,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].kind,组装schemaVersion=2 JSON
-07_触点明细_Touches_样例,consent,同意标识,用户是否同意数据采集：TRUE/FALSE,True,Google 资格判断要求 consent=TRUE（样例 V-2023 全 FALSE、V-2015 品牌触点 FALSE 演示资格缺失）,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].consent,组装schemaVersion=2 JSON
+07_触点明细_Touches_样例,consent,同意标识,用户是否同意数据采集：TRUE/FALSE,TRUE,Google 资格判断要求 consent=TRUE（样例 V-2023 全 FALSE、V-2015 品牌触点 FALSE 演示资格缺失）,原始字段,原始层-明细样例,recordId+touchId,普通字段,records[].touches[].consent,组装schemaVersion=2 JSON
 08_成本分摊明细_Costs_样例,recordId,关联获客实体,关联 06_Records 的 id,V-2001,一对多：每个渠道/Campaign 组合一行,原始字段,原始层-明细样例,recordId+channel+campaign,主键组成,records[].costs[].recordId,组装schemaVersion=2 JSON
 08_成本分摊明细_Costs_样例,channel,分摊渠道,成本分摊到的渠道（CH 8 渠道枚举）,Google Search,,原始字段,原始层-明细样例,recordId+channel+campaign,主键组成,records[].costs[].channel,组装schemaVersion=2 JSON
 08_成本分摊明细_Costs_样例,campaign,分摊 Campaign,成本分摊到的 Campaign,AU_Search_Brand,,原始字段,原始层-明细样例,recordId+channel+campaign,主键组成,records[].costs[].campaign,组装schemaVersion=2 JSON
@@ -81,20 +81,20 @@
 09_回传日志_Postbacks_样例,businessKey,业务键,公式：businessKey = (funded ? loanId : applicationId) + ':' + event,APP-2001:submitted,funded 事件用 loanId，其余事件用 applicationId；全表唯一，看板以此对账,加工字段,原始层-明细样例,businessKey,主键组成,postbacks[].businessKey,组装schemaVersion=2 JSON
 09_回传日志_Postbacks_样例,eventId,事件 ID,回传事件唯一标识,EV-2001-submitted,样例 EV-2001-submitted,原始字段,原始层-明细样例,businessKey,条件唯一键,postbacks[].eventId,组装schemaVersion=2 JSON
 09_回传日志_Postbacks_样例,event,事件类型,枚举：submitted / qualified / approved / funded,submitted,与 06 阶段对应；无 Google 资格的事件也必须列全（拒绝选择性日志）,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].event,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,day,业务发生日期,业务事件发生日期，必须 = 06 对应阶段日期,2026-05-02,看板校验 day 与业务事实一致,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].day,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,eligible,Google 资格,是否有 Google 回传资格；条件 = 事件前 30 天内存在带 consent 的 Google（Search/PMax）触点,True,由 07 触点推导，不随内部归因模型变化,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].eligible,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,matchable,可匹配业务键,资格事件能否匹配到业务键,True,eligible 为前提（子集链）,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].matchable,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,queued,进入队列,事件进入发送队列,True,matchable 为前提,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].queued,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,sent,唯一已发送,事件已唯一发送到 Google,True,queued 为前提；重复发送见 rawCount,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].sent,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,accepted,API 接受,Google API 已接受,True,sent 为前提；API 接收 ≠ 归因确认,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].accepted,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,processed,处理成功,回传处理成功,True,accepted 为前提,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].processed,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,reported,已核实 Reported,Google 已核实确认该归因,True,processed 为前提，且事件距 asOf ≥3 天（T+3 观察期）；Reported 不等于平台 DDA 汇总,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].reported,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,day,业务发生日期,业务事件发生日期，必须 = 06 对应阶段日期,5/2/2026,看板校验 day 与业务事实一致,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].day,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,eligible,Google 资格,是否有 Google 回传资格；条件 = 事件前 30 天内存在带 consent 的 Google（Search/PMax）触点,TRUE,由 07 触点推导，不随内部归因模型变化,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].eligible,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,matchable,可匹配业务键,资格事件能否匹配到业务键,TRUE,eligible 为前提（子集链）,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].matchable,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,queued,进入队列,事件进入发送队列,TRUE,matchable 为前提,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].queued,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,sent,唯一已发送,事件已唯一发送到 Google,TRUE,queued 为前提；重复发送见 rawCount,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].sent,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,accepted,API 接受,Google API 已接受,TRUE,sent 为前提；API 接收 ≠ 归因确认,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].accepted,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,processed,处理成功,回传处理成功,TRUE,accepted 为前提,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].processed,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,reported,已核实 Reported,Google 已核实确认该归因,TRUE,processed 为前提，且事件距 asOf ≥3 天（T+3 观察期）；Reported 不等于平台 DDA 汇总,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].reported,组装schemaVersion=2 JSON
 09_回传日志_Postbacks_样例,rawCount,原始回传计数,原始回传事件计数（含重复）,1,reported=TRUE 时 ≥1；>1 表示重复回传需核实（样例 V-2028 为 2）,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].rawCount,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,mmp,MMP 确认,是否经 MMP 确认：TRUE/FALSE,True,样例口径 mmp=reported；真实数据以 MMP 实际确认为准,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].mmp,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,mmp,MMP 确认,是否经 MMP 确认：TRUE/FALSE,TRUE,样例口径 mmp=reported；真实数据以 MMP 实际确认为准,原始字段,原始层-明细样例,businessKey,普通字段,postbacks[].mmp,组装schemaVersion=2 JSON
 09_回传日志_Postbacks_样例,latency,首次发送时延（分钟）,首次发送时延；公式 = firstSentTime − eventTime（分钟）,8,仅 sent=TRUE 时有值；P90 时延 = nearest-rank P90(latency)；时戳明细见 14,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].latency,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,amountOk,金额一致性,回传金额与业务金额一致：TRUE/FALSE,True,样例含 1 行 FALSE 异常（V-2010 funded）,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].amountOk,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,statusOk,状态一致性,回传状态与业务状态一致：TRUE/FALSE,True,样例含 1 行 FALSE 异常（V-2011 approved）,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].statusOk,组装schemaVersion=2 JSON
-09_回传日志_Postbacks_样例,timeOk,时间一致性,回传时间与业务时间一致：TRUE/FALSE,True,样例含 1 行 FALSE 异常（V-2003 funded）,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].timeOk,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,amountOk,金额一致性,回传金额与业务金额一致：TRUE/FALSE,TRUE,样例含 1 行 FALSE 异常（V-2010 funded）,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].amountOk,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,statusOk,状态一致性,回传状态与业务状态一致：TRUE/FALSE,TRUE,样例含 1 行 FALSE 异常（V-2011 approved）,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].statusOk,组装schemaVersion=2 JSON
+09_回传日志_Postbacks_样例,timeOk,时间一致性,回传时间与业务时间一致：TRUE/FALSE,TRUE,样例含 1 行 FALSE 异常（V-2003 funded）,加工字段,原始层-明细样例,businessKey,普通字段,postbacks[].timeOk,组装schemaVersion=2 JSON
 10_系统任务SLA_Jobs_样例,name,任务名,数据链路任务名称,Web Tracking,全局快照，不随业务筛选变化,原始字段,原始层-明细样例,name,主键组成,jobs[].name,组装schemaVersion=2 JSON
 10_系统任务SLA_Jobs_样例,owner,归属团队,任务归属团队,Web,,原始字段,原始层-明细样例,name,普通字段,jobs[].owner,组装schemaVersion=2 JSON
 10_系统任务SLA_Jobs_样例,freshness,数据新鲜度,数据新鲜度，单位分钟（基于数据集 asOf）,2,样例状态不表示当前机器正在运行该服务,加工字段,原始层-明细样例,name,普通字段,jobs[].freshness,组装schemaVersion=2 JSON
@@ -103,8 +103,8 @@
 11_增量实验Holdout_Experiment_样例,experimentId,实验编号,Holdout 实验唯一编号,HOLD-2026-03,看板「增量与预算」为手工输入，本表记录真实实验分组结果,原始字段,补充证据层-样例,experimentId+group,主键组成,手工录入增量实验模块,手工录入
 11_增量实验Holdout_Experiment_样例,experimentName,实验名称,实验名称,新客获客渠道关闭 Holdout,,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
 11_增量实验Holdout_Experiment_样例,group,分组,test=试验组；control=对照组,test,独立随机用户分组；每人最多一笔新客首贷,原始字段,补充证据层-样例,experimentId+group,主键组成,手工录入增量实验模块,手工录入
-11_增量实验Holdout_Experiment_样例,periodStart,实验开始,实验期开始日期 YYYY-MM-DD,2026-05-01,,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
-11_增量实验Holdout_Experiment_样例,periodEnd,实验结束,实验期结束日期 YYYY-MM-DD,2026-06-30,,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
+11_增量实验Holdout_Experiment_样例,periodStart,实验开始,实验期开始日期 YYYY-MM-DD,5/1/2026,,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
+11_增量实验Holdout_Experiment_样例,periodEnd,实验结束,实验期结束日期 YYYY-MM-DD,6/30/2026,,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
 11_增量实验Holdout_Experiment_样例,assignedUsers,分组用户数 N,组内分配用户数（Nt/Nc）,10000,增量首贷公式：ΔY = Yt − Yc × Nt/Nc（ITT，组规模归一）,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
 11_增量实验Holdout_Experiment_样例,firstLoanUsers,组内首贷数 Y,组内新客首贷数（Yt/Yc）,1000,去重首贷；所有已分组用户均纳入分母,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
 11_增量实验Holdout_Experiment_样例,adSpendAud,组内广告费 S,组内广告费 AUD（St/Sc）,20000,增量 CAC = (St − Sc×Nt/Nc) ÷ Δ首贷，需 ΔS>0 且 ΔY>0；对照组可为 0（渠道关闭实验）,原始字段,补充证据层-样例,experimentId+group,普通字段,手工录入增量实验模块,手工录入
@@ -125,8 +125,8 @@
 14_回传事件时戳明细_PostbackTimestamps_样例,eventId,事件 ID,与 09 的 eventId 一致（仅已发送事件）,EV-2001-approved,看板词典：P90 时延「正式需 event_time/first_sent_time」,原始字段,补充证据层-样例,eventId,主键组成,当前不直接导入HTML,上游核对/分析层关联
 14_回传事件时戳明细_PostbackTimestamps_样例,businessKey,业务键,与 09 的 businessKey 一致,APP-2001:approved,,加工字段,补充证据层-样例,eventId,普通字段,当前不直接导入HTML,上游核对/分析层关联
 14_回传事件时戳明细_PostbackTimestamps_样例,event,事件类型,与 09 的 event 一致,approved,,原始字段,补充证据层-样例,eventId,普通字段,当前不直接导入HTML,上游核对/分析层关联
-14_回传事件时戳明细_PostbackTimestamps_样例,eventTime,业务事件时间,业务事件发生时间，格式 YYYY-MM-DD HH:MM（Sydney 本地时间）,2026-05-04 18:21,上游加工字段；组装 JSON 时不导入,加工字段,补充证据层-样例,eventId,普通字段,当前不直接导入HTML,上游核对/分析层关联
-14_回传事件时戳明细_PostbackTimestamps_样例,firstSentTime,首次发送时间,首次发送时间；公式 = eventTime + 发送时延,2026-05-04 18:32,同上；不把上传日当事件日,加工字段,补充证据层-样例,eventId,普通字段,当前不直接导入HTML,上游核对/分析层关联
+14_回传事件时戳明细_PostbackTimestamps_样例,eventTime,业务事件时间,业务事件发生时间，格式 YYYY-MM-DD HH:MM（Sydney 本地时间）,5/4/2026 18:21,上游加工字段；组装 JSON 时不导入,加工字段,补充证据层-样例,eventId,普通字段,当前不直接导入HTML,上游核对/分析层关联
+14_回传事件时戳明细_PostbackTimestamps_样例,firstSentTime,首次发送时间,首次发送时间；公式 = eventTime + 发送时延,5/4/2026 18:32,同上；不把上传日当事件日,加工字段,补充证据层-样例,eventId,普通字段,当前不直接导入HTML,上游核对/分析层关联
 14_回传事件时戳明细_PostbackTimestamps_样例,latencyMin,时延分钟,时延分钟数；公式 = firstSentTime − eventTime,11,与 09 的 latency 完全一致（样例 57 行一一对应）,加工字段,补充证据层-样例,eventId,普通字段,当前不直接导入HTML,上游核对/分析层关联
 15_Google平台对账报表_GoogleAdsReport_样例,month,月份,月份，格式 YYYY-MM,2026-07,平台侧导出模板；看板本身不伪造平台 DDA 报表,原始字段,补充证据层-样例,month+campaign+conversionAction,主键组成,当前不直接导入HTML,上游核对/分析层关联
 15_Google平台对账报表_GoogleAdsReport_样例,campaign,Campaign,Google Campaign（与 12 的 Google 行一致）,AU_Search_Brand,,原始字段,补充证据层-样例,month+campaign+conversionAction,主键组成,当前不直接导入HTML,上游核对/分析层关联
@@ -140,8 +140,8 @@
 16_地域实验GeoLift_GeoExperiment_样例,experimentName,实验名称,实验名称,QLD+VIC 品牌搜索投放增量（Geo Lift）,,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
 16_地域实验GeoLift_GeoExperiment_样例,region,地域,州（地域为随机化/聚类单元）,QLD,,原始字段,补充证据层-样例,experimentId+region+group,主键组成,当前不直接导入HTML,上游核对/分析层关联
 16_地域实验GeoLift_GeoExperiment_样例,group,分组,test=投放增量地域；control=维持原投放地域,test,,原始字段,补充证据层-样例,experimentId+region+group,主键组成,当前不直接导入HTML,上游核对/分析层关联
-16_地域实验GeoLift_GeoExperiment_样例,periodStart,实验开始,实验期开始日期,2026-05-01,,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
-16_地域实验GeoLift_GeoExperiment_样例,periodEnd,实验结束,实验期结束日期,2026-06-30,,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
+16_地域实验GeoLift_GeoExperiment_样例,periodStart,实验开始,实验期开始日期,5/1/2026,,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
+16_地域实验GeoLift_GeoExperiment_样例,periodEnd,实验结束,实验期结束日期,6/30/2026,,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
 16_地域实验GeoLift_GeoExperiment_样例,prePeriodFirstLoans,实验前首贷基线,实验前同周期首贷数（基线平衡检查）,380,test/control 的 prePeriod 差异需检验,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
 16_地域实验GeoLift_GeoExperiment_样例,mediaSpendAud,实验期媒体费,实验期媒体费 AUD,58000,地域级投放差异构成干预,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
 16_地域实验GeoLift_GeoExperiment_样例,firstLoanUsers,实验期首贷数,实验期新客首贷数,425,因果效果需按地域聚类推断，出区间估计,原始字段,补充证据层-样例,experimentId+region+group,普通字段,当前不直接导入HTML,上游核对/分析层关联
